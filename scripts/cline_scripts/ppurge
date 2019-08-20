@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+package="$*"
+sudo apt remove --purge "$package" &&
+sudo apt -y autoclean       &&
+sudo apt -y autoremove

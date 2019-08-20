@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+url="$*"
+wget --mirror --convert-links --adjust-extension --page-requisites --no-parent --continue --show-progress --random-wait "$url"

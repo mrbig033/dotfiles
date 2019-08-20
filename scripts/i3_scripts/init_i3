@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# tmux
+
+"$HOME"/scripts/i3_scripts/tmux_startup
+
+# night mode
+redshift
+
+# composition
+pkill compton
+compton -b --backend glx
+
+# touchpad
+synclient TapButton1=1 TouchpadOff=0 PalmDetect=1

@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+clear
+# pngquant --force --quality=50-100 --skip-if-larger --verbose --ext "-png.conv" *.png
+pngquant --quality=15-100 --verbose --ext "-png.conv" *.png

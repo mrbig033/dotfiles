@@ -1,0 +1,100 @@
+rename .emacs.d
+search  em
+search scri
+find i3-
+search lit
+search blog
+rename blog
+search state
+search exten
+search ext
+search chro
+search web
+md 05_jumbomtr
+rename 05_Jumbotron
+search eva
+search neon
+md screenshots
+touch eva.irg
+rename eva.org
+md Eva
+rename 06_Navbar
+touch navbar.html
+rename videos
+rename 
+rename shots_ep1
+rename ep01
+open_with 0 f
+open_with 1 f
+rename eva01
+rename 00_06_31__00105.png
+find 003
+md 
+compress hydras.7z
+md mutable
+search log
+search hist
+search scr
+search vlc
+touch a1
+touch a2
+touch a3
+md dir1
+md dir2
+touch LLLLL
+rename em.back01
+md em.back03
+search feh
+md conv orig
+shell mkdir conv orig
+rename i3.back
+search i3
+open_with nvim
+touch without_config
+rename without_config.txt
+rename i3
+rename mpv.back
+search mpv
+rename mpv
+find 
+search gtk
+search rofi
+search 280
+filter 
+rename 17m53s280ms_eva01.jpg_
+touch ~/eva/shots/sep/characters/ritsuko
+touch 
+touch 17m53s280ms_eva01
+rename 17m53s280ms_eva01.txt
+md orig
+rename comp
+rename 02m50s669ms_eva01.jpg
+md test
+rename rei_orig
+rename rei_resize
+rename rei_resized
+rename file.kpg
+rename file.jpg
+search bas
+find bashr
+find bna
+search bash
+search ^.bash
+open_with 
+rename .bash_history
+open_with n
+search 
+search sh-
+shell sudo Desktop 
+search sc
+open_with  f
+open_with 2 f
+search ini
+search key
+md base
+search cmus
+md mx
+rename mx_18.3
+find vl
+delete
+search in

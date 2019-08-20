@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+java -jar ~/maps/briss-0.9/briss-0.9.jar &

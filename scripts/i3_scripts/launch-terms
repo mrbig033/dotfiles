@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+st2 -t term-up -n term-up &
+st2 -t term-ranger -n term-ranger -e ~/.pyenv/shims/ranger &

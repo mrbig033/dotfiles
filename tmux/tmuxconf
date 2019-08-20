@@ -1,0 +1,87 @@
+# {{{ settings
+        set -g mouse on
+        set escape-time 0
+        set -g base-index 1
+        set -g focus-events
+        set -g history-limit 3000
+        setw -g aggressive-resize on
+        set-window-option -g pane-base-index 1
+        set -g default-terminal "tmux-256color"
+
+# }}}
+# {{{ copy
+
+    set-window-option -g mode-keys vi
+        bind-key -T copy-mode-vi 'v' send -X begin-selection
+        bind-key -T copy-mode-vi 'y' send -X copy-selection
+        bind-key -T copy-mode-vi 'r' send-keys -X rectangle-toggle
+        bind -T copy-mode-vi Enter send-keys -X copy-pipe-and-cancel "xclip -i -f -selection primary | xclip -i -selection clipboard"
+
+# }}}
+# {{{ movement
+    unbind C-b
+        set -g prefix ´
+        bind-key ´ send-prefix
+        bind-key -n M-q switch-client -p
+        bind-key -n M-w switch-client -n
+
+        bind-key -n S-right switch-client -n
+        bind-key -n S-left switch-client -p
+
+        bind-key -n S-Pageup copy-mode -u
+        bind-key -n F8 copy-mode -u
+
+        bind-key f switch-client -t 0
+        bind-key 0 switch-client -t 0
+        bind-key - switch-client -t 0
+        bind-key 1 switch-client -t 1
+        bind-key 2 switch-client -t 2
+        bind-key 3 switch-client -t 3
+        bind-key 4 switch-client -t 4
+        bind-key 5 switch-client -t 5
+        bind-key b switch-client -t bc
+        bind-key n switch-client -t nc
+        bind-key p switch-client -l
+        bind-key -n C-q switch-client -l
+
+# bind-key 6 switch-client -t 6
+# bind-key 7 switch-client -t 7
+# bind-key 8 switch-client -t 8
+# bind-key 9 switch-client -t 9
+
+# bind-key v split-window -h
+# bind-key s split-window -v
+
+# }}}
+# {{{ send all
+# https://bit.ly/2JJIeRY
+    bind S command-prompt -p "send to all:" \
+        "run \"tmux list-panes -a -F '##{session_name}:##{window_index}.##{pane_index}' \
+        | xargs -I PANE tmux send-keys -t PANE '%1' Enter\""
+# }}}
+# {{{ status
+
+    set -g status-bg black
+        set -g status-fg white
+        set -g status-right '#(date +%%a,\ %%H:%%M) '
+        bind -n M-F11 set -g status
+
+# }}}
+# {{{ plugins
+
+    set -g @plugin 'tmux-plugins/tpm'
+        set -g @plugin 'tmux-plugins/tmux-yank'
+        set -g @plugin 'tmux-plugins/tmux-open'
+        set -g @plugin 'tmux-plugins/tmux-copycat'
+        set -g @plugin 'tmux-plugins/tmux-sensible'
+        run '~/.tmux/plugins/tpm/tpm'
+
+# }}}
+# {{{ source
+    unbind y
+        bind y source-file ~/.tmux.conf; display ".tmux.conf reloaded!"
+
+        bind-key c clear-history
+# bind-key -n C-j choose-tree
+        bind-key -T prefix r command-prompt -I "#S" "rename-session '%%'"
+# }}}

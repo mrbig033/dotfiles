@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+clear && du --summarize --human-readable ./* | sort --human-numeric-sort --stable --reverse | bat ---color always

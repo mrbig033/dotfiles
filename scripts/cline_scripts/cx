@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+string="$*"
+echo -n "$string" | xclip -selection clipboard

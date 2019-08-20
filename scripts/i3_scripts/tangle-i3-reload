@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+nt ~/.config/i3/** &&
+i3-msg fullscreen disable &&
+i3-msg reload

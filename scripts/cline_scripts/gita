@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+message="Add or refresh gitignore"
+
+clear &&
+echo ""
+
+echo "adding gitignore" &&
+git add .gitignore &&
+
+echo "commiting" &&
+git commit -m "$message" &&
+
+echo "pushing" &&
+git push

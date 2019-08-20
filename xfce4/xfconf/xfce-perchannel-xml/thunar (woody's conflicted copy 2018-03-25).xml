@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="thunar" version="1.0">
+  <property name="last-view" type="string" value="ThunarDetailsView"/>
+  <property name="last-icon-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_LARGE"/>
+  <property name="last-window-width" type="int" value="1358"/>
+  <property name="last-window-height" type="int" value="760"/>
+  <property name="last-window-maximized" type="bool" value="false"/>
+  <property name="last-separator-position" type="int" value="170"/>
+  <property name="misc-single-click" type="bool" value="true"/>
+  <property name="misc-recursive-permissions" type="string" value="THUNAR_RECURSIVE_PERMISSIONS_NEVER"/>
+  <property name="last-show-hidden" type="bool" value="false"/>
+  <property name="last-side-pane" type="string" value="ThunarShortcutsPane"/>
+  <property name="hidden-devices" type="array">
+    <value type="string" value="9bf2baaa-f7f9-4d76-9b72-5fb04c39134b"/>
+    <value type="string" value="1bb2b614-f32e-431d-98b9-2c0f44dc423e"/>
+    <value type="string" value="5f6feae4-e134-41ee-914f-559a1830dfa5"/>
+    <value type="string" value="7d689dca-4634-4c89-b351-0aef17b9ac6d"/>
+    <value type="string" value="d272d39f-ad76-4ac7-a903-25039203afc4"/>
+    <value type="string" value="aa293ab1-1094-4ba9-a18b-6a4e71e67e73"/>
+    <value type="string" value="3499d1e4-5e81-4e75-b88f-a245d7f6544c"/>
+    <value type="string" value="a45a587c-de83-40b9-8bdc-3f8fc0ef05c0"/>
+    <value type="string" value="794729ca-299a-400c-8f85-bc039976e7de"/>
+  </property>
+  <property name="last-details-view-zoom-level" type="string" value="THUNAR_ZOOM_LEVEL_SMALLER"/>
+  <property name="last-details-view-column-widths" type="string" value="50,137,50,50,435,50,50,83,531"/>
+  <property name="last-sort-column" type="string" value="THUNAR_COLUMN_NAME"/>
+  <property name="last-sort-order" type="string" value="GTK_SORT_ASCENDING"/>
+</channel>

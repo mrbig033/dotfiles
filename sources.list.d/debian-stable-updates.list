@@ -1,0 +1,2 @@
+# Debian stretch Updates
+deb http://ftp.br.debian.org/debian/ stretch-updates main contrib non-free

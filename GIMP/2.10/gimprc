@@ -1,0 +1,65 @@
+# GIMP gimprc
+# 
+# This is your personal gimprc file.  Any variable defined in this file takes
+# precedence over the value defined in the system-wide gimprc:
+# /etc/gimp/2.0/gimprc
+# Most values can be set within GIMP by changing some options in the
+# Preferences dialog.
+
+(import-raw-plug-in "${gimp_plug_in_dir}/plug-ins/file-raw-placeholder/file-raw-placeholder")
+(monitor-xresolution 112.000000)
+(monitor-yresolution 113.000000)
+(default-view
+    (show-menubar yes)
+    (show-statusbar yes)
+    (show-rulers yes)
+    (show-scrollbars yes)
+    (show-selection yes)
+    (show-layer-boundary no)
+    (show-guides yes)
+    (show-grid no)
+    (show-sample-points yes)
+    (snap-to-guides yes)
+    (snap-to-grid no)
+    (snap-to-canvas no)
+    (snap-to-path no)
+    (padding-mode default)
+    (padding-color (color-rgb 1.000000 1.000000 1.000000)))
+(default-fullscreen-view
+    (show-menubar yes)
+    (show-statusbar yes)
+    (show-rulers yes)
+    (show-scrollbars yes)
+    (show-selection yes)
+    (show-layer-boundary no)
+    (show-guides yes)
+    (show-grid no)
+    (show-sample-points yes)
+    (snap-to-guides yes)
+    (snap-to-grid no)
+    (snap-to-canvas no)
+    (snap-to-path no)
+    (padding-mode default)
+    (padding-color (color-rgb 1.000000 1.000000 1.000000)))
+(can-change-accels yes)
+(theme "171186-CinzaVSAzul")
+(image-convert-indexed-palette-type web)
+(layer-resize-fill-type pattern)
+(fill-options
+    (style solid)
+    (antialias yes))
+(stroke-options
+    (style solid)
+    (antialias yes)
+    (method line)
+    (width 6.000000)
+    (unit pixels)
+    (cap-style butt)
+    (join-style miter)
+    (miter-limit 10.000000)
+    (dash-offset 0.000000)
+    (dash-info 0)
+    (emulate-brush-dynamics no))
+
+
+# end of gimprc

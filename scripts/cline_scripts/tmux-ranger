@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+tmux -L ranger
+tmux rename-session ranger
+tmux send-keys -t ranger "ranger" ENTER

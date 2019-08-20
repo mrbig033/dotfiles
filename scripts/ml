@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+clear
+
+mv vlc vlc.back &&
+
+ln -sf /home/files/dotfiles/aseprite/ /home/files/dotfiles/autokey/                  \
+       /home/files/dotfiles/beets/ /home/files/dotfiles/cmus/                         \
+       /home/files/dotfiles/feh/ /home/files/dotfiles/GIMP/                  		         \
+       /home/files/dotfiles/hexchat/ /home/files/dotfiles/i3/                         \
+       /home/files/dotfiles/i3status/ /home/files/dotfiles/inkscape/                  \
+       /home/files/dotfiles/mpv/ /home/files/dotfiles/nvim/                           \
+       /home/files/dotfiles/okular/ /home/files/dotfiles/ranger/                      \
+       /home/files/dotfiles/rofi/ /home/files/dotfiles/rtv/ /home/files/dotfiles/vim/ \
+       /home/files/dotfiles/vlc/ /home/files/dotfiles/zathura/ -t ~/config

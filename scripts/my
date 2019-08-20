@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+clear
+
+sudo apt -y update && apt -y dist-upgrade &&
+    sudo apt -y install i3 i3status rofi neovim xorg-dev xcape rubygems mpv feh    \
+        lxappearance calibre zathura zathura-pdf-poppler qbittorrent uget     \
+        xclip dmenu unclutter trash-cli arandr xbindkeys font-manager atool   \
+        silversearcher-ag clang aspell-pt-br pandoc markdown xsel xdotool     \
+        zenity lxde-settings-daemon w3m-img gcc-multilib make build-essential \
+        python-all python-pip python3-pip  python-wheel python3-wheel         \
+        python-setuptools python3-setuptools wget curl cmus                   \
+        libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev llvm  \
+        libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev           \
+        liblzma-dev python-openssl git &&
+
+    sudo apt -y build-dep emacs25 && sudo apt -y autoremove && sudo apt -y autoclean &&
+    curl https://pyenv.run | bash

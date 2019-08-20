@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+clear
+apt -y update &&
+    apt -y dist-upgrade &&
+    apt -y install i3 rofi vim neovim python-all xorg-dev xcape rubygems      \
+        lxappearance calibre zathura zathura-pdf-poppler qbittorrent uget     \
+        xclip dmenu unclutter trash-cli arandr xbindkeys font-manager atool   \
+        silversearcher-ag clang aspell-pt-br pandoc markdown xsel xdotool     \
+        zenity lxde-settings-daemon w3m-img gcc-multilib make build-essential \
+        wget curl &&
+    apt -y build-dep emacs25 &&
+    apt -y autoremove &&
+    apt -y autoclean

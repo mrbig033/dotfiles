@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<keyboard version="1">
+    <commands>
+        <key command="SaveFileCopyAs" shortcut="Ctrl+Alt+Shift+S" removed="true" />
+        <key command="SaveFileCopyAs" shortcut="Ctrl+Shift+E" />
+        <key command="CloseAllFiles" shortcut="Ctrl+Shift+W" removed="true" />
+        <key command="RepeatLastExport" shortcut="Ctrl+Shift+X" removed="true" />
+        <key command="AdvancedMode" shortcut="Ctrl+F" />
+        <key command="Exit" shortcut="Ctrl+Q" removed="true" />
+        <key command="Exit" shortcut="Ctrl+Shift+Q" />
+        <key command="Clear" shortcut="Del" />
+        <key command="Clear" shortcut="Backspace" />
+        <key command="Clear" shortcut="D" />
+        <key command="KeyboardShortcuts" shortcut="Ctrl+Alt+Shift+K" removed="true" />
+        <key command="KeyboardShortcuts" shortcut="Ctrl+Shift+K" />
+        <key command="OpenGroup" shortcut="Shift+E" removed="true" />
+        <key command="OpenGroup" shortcut="Ctrl+Shift+F" />
+        <key command="DeselectMask" shortcut="Ctrl+D" removed="true" />
+        <key command="DeselectMask" shortcut="Ctrl+Shift+W" />
+        <key command="ReselectMask" shortcut="Ctrl+Shift+D" removed="true" />
+        <key command="ReselectMask" shortcut="Ctrl+Alt+W" />
+        <key command="ShowGrid" shortcut="Ctrl+&apos;" removed="true" />
+        <key command="ShowGrid" shortcut="Ctrl+Shift+D" />
+        <key command="ShowPixelGrid" shortcut="Ctrl+Shift+&apos;" removed="true" />
+        <key command="ShowPixelGrid" shortcut="Ctrl+D" />
+        <key command="Timeline" shortcut="Tab" removed="true">
+            <param name="switch" value="true" />
+        </key>
+        <key command="Timeline" shortcut="Shift+Tab">
+            <param name="switch" value="true" />
+        </key>
+        <key command="PaletteEditor" shortcut="A" removed="true" />
+        <key command="GotoNextTab" shortcut="Ctrl+Tab" removed="true" />
+        <key command="GotoNextTab" shortcut="Ctrl+PgDn" />
+        <key command="GotoNextTab" shortcut="Alt+Q" />
+        <key command="Zoom" shortcut="1" removed="true">
+            <param name="percentage" value="100" />
+        </key>
+        <key command="Zoom" shortcut="Ctrl+1">
+            <param name="percentage" value="100" />
+        </key>
+        <key command="FitScreen" shortcut="Ctrl+0" removed="true" />
+        <key command="FitScreen" shortcut="1" />
+        <key command="PixelPerfectMode" shortcut="Shift+Z" />
+        <key command="AutocropSprite" shortcut="Ctrl+Shift+X" />
+        <key command="SymmetryMode" shortcut="Ctrl+Alt+S" />
+        <key command="ChangePixelFormat" shortcut="Ctrl+Alt+C" />
+        <key command="CanvasSize" shortcut="Ctrl+J" />
+    </commands>
+    <tools>
+        <key tool="lasso" shortcut="Q" removed="true" />
+        <key tool="lasso" shortcut="Ctrl+Q" />
+        <key tool="spray" shortcut="Shift+B" removed="true" />
+        <key tool="eraser" shortcut="E" removed="true" />
+        <key tool="eraser" shortcut="Shift+E" />
+        <key tool="eyedropper" shortcut="I" removed="true" />
+        <key tool="rectangle" shortcut="U" />
+        <key tool="rectangle" shortcut="Shift+F" />
+        <key tool="ellipse" shortcut="Shift+U" />
+        <key tool="filled_ellipse" shortcut="Shift+U" removed="true" />
+        <key tool="contour" shortcut="D" removed="true" />
+        <key tool="contour" shortcut="Shift+Space" />
+    </tools>
+    <quicktools>
+        <key tool="eyedropper" shortcut="Alt" removed="true" />
+        <key tool="eyedropper" shortcut="Q" />
+        <key tool="eraser" shortcut="E" />
+    </quicktools>
+    <actions />
+    <wheel />
+</keyboard>

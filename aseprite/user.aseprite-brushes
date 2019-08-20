@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<brushes>
+    <brush type="square" size="1" angle="0">
+        <fgcolor value="rgb{0,0,0,255}" />
+        <bgcolor value="rgb{252,204,0,255}" />
+        <inktype value="simple" />
+        <inkopacity value="255" />
+        <shade value="" />
+        <pixelperfect value="false" />
+    </brush>
+    <brush type="square" size="4" angle="0">
+        <fgcolor value="rgb{135,171,203,255}" />
+        <bgcolor value="index{0}" />
+        <inktype value="simple" />
+        <inkopacity value="255" />
+        <shade value="" />
+        <pixelperfect value="false" />
+    </brush>
+</brushes>

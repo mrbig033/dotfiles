@@ -1,0 +1,4 @@
+#!/bin/bash
+
+source ~/scripts/emacs_scripts/eclauncher "$1" &>/dev/null
+i3-msg "[title=^[emacs-notes] class=Emacs]" focus &>/dev/null

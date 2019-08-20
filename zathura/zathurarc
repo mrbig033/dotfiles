@@ -1,0 +1,44 @@
+" -*- mode: vimrc -*-
+
+set zoom-min 05
+" set zoom-step 15
+set scroll-step 150
+set scroll-wrap true
+set incremental-search true
+set statusbar-basename true
+set statusbar-home-tilde true
+set advance-pages-per-row true
+set window-title-basename true
+set window-title-home-tilde true
+set selection-clipboard clipboard
+
+map [normal] w adjust_window width
+map [normal] 0 adjust_window best-fit
+
+map [normal] = zoom in
+map [normal] - zoom out
+map [normal] + zoom reset
+map [normal] ) zoom reset
+
+map [normal] l scroll half-up
+map [normal] h scroll half-down
+
+map [normal] p navigate previous
+map [normal] n navigate next
+
+map [fullscreen] l scroll half-up
+map [fullscreen] h scroll half-down
+
+map [normal] ; focus_inputbar :
+map [normal] a toggle_statusbar
+map [normal] ct toggle_statusbar
+map [normal] cp toggle_page_mode
+
+map [normal] q focus_inputbar ":blist "
+map [normal] <C-l> focus_inputbar ":blist "
+
+map [normal] d abort
+map [normal] bm focus_inputbar ":bmark "
+map [normal] bd focus_inputbar ":bdelete "
+
+" vim: ft=vim

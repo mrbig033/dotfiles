@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<keys
+   name="My custom shortcuts">
+  <bind
+     key="k"
+     modifiers="Ctrl,Shift"
+     action="DialogSwatches"
+     display="true" />
+  <bind
+     key="K"
+     modifiers="Ctrl,Shift"
+     action="DialogSwatches" />
+  <bind
+     key="d"
+     action="EditDelete"
+     display="true" />
+  <bind
+     key="D"
+     action="EditDelete" />
+  <bind
+     key="r"
+     modifiers="Ctrl"
+     action="EditRedo"
+     display="true" />
+  <bind
+     key="R"
+     modifiers="Ctrl"
+     action="EditRedo" />
+  <bind
+     key="u"
+     action="EditUndo"
+     display="true" />
+  <bind
+     key="U"
+     action="EditUndo" />
+  <bind
+     key="q"
+     modifiers="Alt"
+     action="DialogsToggle"
+     display="true" />
+  <bind
+     key="Q"
+     modifiers="Alt"
+     action="DialogsToggle" />
+  <bind
+     key="t"
+     modifiers="Ctrl,Alt"
+     action="math.triangle"
+     display="true" />
+  <bind
+     key="T"
+     modifiers="Ctrl,Alt"
+     action="math.triangle" />
+  <bind
+     key="t"
+     modifiers="Ctrl"
+     action="ToggleToolbox"
+     display="true" />
+  <bind
+     key="T"
+     modifiers="Ctrl"
+     action="ToggleToolbox" />
+  <bind
+     key="b"
+     action="ToolPaintBucket"
+     display="true" />
+  <bind
+     key="B"
+     action="ToolPaintBucket" />
+  <bind
+     key="p"
+     modifiers="Ctrl,Alt"
+     action="FitCanvasToDrawing"
+     display="true" />
+  <bind
+     key="P"
+     modifiers="Ctrl,Alt"
+     action="FitCanvasToDrawing" />
+  <bind
+     key="5"
+     modifiers="Alt"
+     action="ToggleSnapToolbar"
+     display="true" />
+  <bind
+     key="5"
+     modifiers="Alt"
+     action="ToggleSnapToolbar" />
+  <bind
+     key="o"
+     modifiers="Ctrl"
+     action="com.nerdson.split.noprefs"
+     display="true" />
+  <bind
+     key="O"
+     modifiers="Ctrl"
+     action="com.nerdson.split.noprefs" />
+  <bind
+     key="o"
+     modifiers="Ctrl,Shift"
+     action="com.nerdson.split"
+     display="true" />
+  <bind
+     key="O"
+     modifiers="Ctrl,Shift"
+     action="com.nerdson.split" />
+  <bind
+     key="r"
+     modifiers="Ctrl,Shift"
+     action="FitCanvasToSelection"
+     display="true" />
+  <bind
+     key="R"
+     modifiers="Ctrl,Shift"
+     action="FitCanvasToSelection" />
+  <bind
+     key="s"
+     modifiers="Ctrl,Alt"
+     action="FitCanvasToSelectionOrDrawing"
+     display="true" />
+  <bind
+     key="S"
+     modifiers="Ctrl,Alt"
+     action="FitCanvasToSelectionOrDrawing" />
+  <bind
+     key="F6"
+     action="ToolPen"
+     display="true" />
+  <bind
+     key="f"
+     modifiers="Ctrl"
+     action="SelectionUnGroup"
+     display="true" />
+  <bind
+     key="F"
+     modifiers="Ctrl"
+     action="SelectionUnGroup" />
+  <bind
+     key="a"
+     modifiers="Ctrl,Shift"
+     action="DialogAlignDistribute"
+     display="true" />
+  <bind
+     key="A"
+     modifiers="Ctrl,Shift"
+     action="DialogAlignDistribute" />
+  <bind
+     key="v"
+     modifiers="Ctrl,Alt"
+     action="LayerMoveTo"
+     display="true" />
+  <bind
+     key="V"
+     modifiers="Ctrl,Alt"
+     action="LayerMoveTo" />
+  <bind
+     key="e"
+     modifiers="Ctrl,Shift"
+     action="DialogExport"
+     display="true" />
+  <bind
+     key="E"
+     modifiers="Ctrl,Shift"
+     action="DialogExport" />
+  <bind
+     key="e"
+     modifiers="Ctrl"
+     action="AlignVerticalHorizontalCenter"
+     display="true" />
+  <bind
+     key="E"
+     modifiers="Ctrl"
+     action="AlignVerticalHorizontalCenter" />
+</keys>

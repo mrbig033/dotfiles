@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+arg="$1"
+clear
+ps ax | grep -v  "bash.*grp" | grep -v  "bash.*gf" | grep -v grep | grep -i "$arg"

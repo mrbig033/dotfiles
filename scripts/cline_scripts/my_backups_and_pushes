@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+# push org notes
+git -C /home/Documents/Org add -A
+git -C /home/Documents/Org commit -am "Scheduled commit"
+git -C /home/Documents/Org push
+
+# push webdev notes
+git -C /home/Documents/Studying/Prog/WebDev add -A
+git -C /home/Documents/Studying/Prog/WebDev commit -am "Scheduled commit"
+git -C /home/Documents/Studying/Prog/WebDev push
+
+# push blog notes
+git -C /home/Documents/Creative/Literatura/Blog add -A
+git -C /home/Documents/Creative/Literatura/Blog commit -am "Scheduled commit"
+git -C /home/Documents/Creative/Literatura/Blog push
+
+#  push emacs
+git -C ~/.emacs.d add -A
+git -C ~/.emacs.d commit -am "Scheduled commit"
+git -C ~/.emacs.d push
+
+# push dotfiles
+git -C /home/dotfiles add -A
+git -C /home/dotfiles commit -am "Scheduled commit"
+git -C /home/dotfiles push

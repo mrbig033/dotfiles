@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+pkill compton
+compton -b --backend glx &>/dev/null &

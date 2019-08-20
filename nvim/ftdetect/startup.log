@@ -1,0 +1,160 @@
+
+
+times in msec
+ clock   self+sourced   self:  sourced script
+ clock   elapsed:              other lines
+
+000.016  000.016: --- NVIM STARTING ---
+000.292  000.275: locale set
+000.648  000.356: inits 1
+000.661  000.013: window checked
+000.779  000.118: parsing arguments
+000.887  000.108: expanding arguments
+000.918  000.031: inits 2
+001.619  000.701: init highlight
+003.078  001.287  001.287: sourcing /home/mrbig/.config/nvim/autoload/plug.vim
+010.216  004.683  004.683: sourcing /usr/share/nvim/runtime/filetype.vim
+010.377  000.036  000.036: sourcing /usr/share/nvim/runtime/ftplugin.vim
+010.529  000.032  000.032: sourcing /usr/share/nvim/runtime/indent.vim
+011.058  000.234  000.234: sourcing /usr/share/nvim/runtime/syntax/syncolor.vim
+011.158  000.457  000.223: sourcing /usr/share/nvim/runtime/syntax/synload.vim
+011.187  000.608  000.151: sourcing /usr/share/nvim/runtime/syntax/syntax.vim
+011.295  009.542  002.896: sourcing /home/mrbig/.config/nvim/plugins.vim
+011.731  000.401  000.401: sourcing /home/mrbig/.config/nvim/mappings.vim
+011.853  000.103  000.103: sourcing /home/mrbig/.config/nvim/abbrevs.vim
+012.085  000.102  000.102: sourcing /usr/share/nvim/runtime/syntax/nosyntax.vim
+012.488  000.171  000.171: sourcing /usr/share/nvim/runtime/syntax/syncolor.vim
+012.584  000.385  000.214: sourcing /usr/share/nvim/runtime/syntax/synload.vim
+012.610  000.664  000.177: sourcing /usr/share/nvim/runtime/syntax/syntax.vim
+012.716  000.010  000.010: sourcing /usr/share/nvim/runtime/filetype.vim
+012.831  000.008  000.008: sourcing /usr/share/nvim/runtime/ftplugin.vim
+013.473  000.166  000.166: sourcing /usr/share/nvim/runtime/syntax/syncolor.vim
+013.949  000.162  000.162: sourcing /usr/share/nvim/runtime/syntax/syncolor.vim
+021.962  009.095  008.768: sourcing /home/mrbig/.config/nvim/colors/badwolf.vim
+022.079  000.015  000.015: sourcing /usr/share/nvim/runtime/filetype.vim
+022.246  000.014  000.014: sourcing /usr/share/nvim/runtime/ftplugin.vim
+022.421  000.016  000.016: sourcing /usr/share/nvim/runtime/indent.vim
+022.720  020.986  001.117: sourcing /home/mrbig/.config/nvim/init.vim
+022.726  000.120: sourcing vimrc file(s)
+023.208  000.356  000.356: sourcing /home/mrbig/.config/nvim/plugins/plugged/CamelCaseMotion/plugin/camelcasemotion.vim
+023.416  000.150  000.150: sourcing /home/mrbig/.config/nvim/plugins/plugged/targets.vim/plugin/targets.vim
+023.698  000.217  000.217: sourcing /home/mrbig/.config/nvim/plugins/plugged/vim-vertigo/plugin/vertigo.vim
+023.834  000.076  000.076: sourcing /home/mrbig/.config/nvim/plugins/plugged/vim-lastplace/plugin/vim-lastplace.vim
+024.232  000.345  000.345: sourcing /home/mrbig/.config/nvim/plugins/plugged/auto-pairs/plugin/auto-pairs.vim
+024.376  000.085  000.085: sourcing /home/mrbig/.config/nvim/plugins/plugged/vim-linux-coding-style/plugin/linuxsty.vim
+024.509  000.074  000.074: sourcing /home/mrbig/.config/nvim/plugins/plugged/vim-titlecase/plugin/titlecase.vim
+024.954  000.391  000.391: sourcing /home/mrbig/.config/nvim/plugins/plugged/vim-eunuch/plugin/eunuch.vim
+025.187  000.173  000.173: sourcing /home/mrbig/.config/nvim/plugins/plugged/vim-rsi/plugin/rsi.vim
+025.375  000.124  000.124: sourcing /home/mrbig/.config/nvim/plugins/plugged/vim-husk/plugin/husk.vim
+026.050  000.616  000.616: sourcing /home/mrbig/.config/nvim/plugins/plugged/vim-buftabline/plugin/buftabline.vim
+026.314  000.201  000.201: sourcing /home/mrbig/.config/nvim/plugins/plugged/tabular/plugin/Tabular.vim
+026.771  000.382  000.382: sourcing /home/mrbig/.config/nvim/plugins/plugged/vim-surround/plugin/surround.vim
+026.918  000.082  000.082: sourcing /home/mrbig/.config/nvim/plugins/plugged/VimCompletesMe/plugin/VimCompletesMe.vim
+027.121  000.144  000.144: sourcing /home/mrbig/.config/nvim/plugins/plugged/vim-commentary/plugin/commentary.vim
+027.373  000.194  000.194: sourcing /home/mrbig/.config/nvim/plugins/plugged/incsearch.vim/plugin/incsearch.vim
+031.834  004.405  004.405: sourcing /home/mrbig/.config/nvim/plugins/plugged/vim-easymotion/plugin/EasyMotion.vim
+032.178  000.133  000.133: sourcing /usr/share/nvim/runtime/plugin/gzip.vim
+032.221  000.011  000.011: sourcing /usr/share/nvim/runtime/plugin/health.vim
+032.283  000.049  000.049: sourcing /usr/share/nvim/runtime/plugin/man.vim
+032.708  000.411  000.411: sourcing /usr/share/nvim/runtime/plugin/matchit.vim
+032.865  000.135  000.135: sourcing /usr/share/nvim/runtime/plugin/matchparen.vim
+033.279  000.397  000.397: sourcing /usr/share/nvim/runtime/plugin/netrwPlugin.vim
+033.424  000.126  000.126: sourcing /usr/share/nvim/runtime/plugin/rplugin.vim
+033.522  000.081  000.081: sourcing /usr/share/nvim/runtime/plugin/shada.vim
+033.559  000.020  000.020: sourcing /usr/share/nvim/runtime/plugin/spellfile.vim
+033.684  000.110  000.110: sourcing /usr/share/nvim/runtime/plugin/tarPlugin.vim
+033.777  000.077  000.077: sourcing /usr/share/nvim/runtime/plugin/tohtml.vim
+033.808  000.017  000.017: sourcing /usr/share/nvim/runtime/plugin/tutor.vim
+033.965  000.141  000.141: sourcing /usr/share/nvim/runtime/plugin/zipPlugin.vim
+033.971  001.520: loading plugins
+034.028  000.057: loading packages
+034.453  000.188  000.188: sourcing /home/mrbig/.config/nvim/plugins/plugged/tabular/autoload/tabular.vim
+035.895  001.785  001.597: sourcing /home/mrbig/.config/nvim/plugins/plugged/tabular/after/plugin/TabularMaps.vim
+035.993  000.036  000.036: sourcing /home/mrbig/.config/nvim/after/plugin/overrides.vim
+035.997  000.148: loading after plugins
+036.004  000.007: inits 3
+036.555  000.552: reading ShaDa
+037.436  000.881: clearing screen
+037.718  000.282: opening buffers
+038.736  001.017: BufEnter autocommands
+038.739  000.003: editing files in windows
+
+
+times in msec
+ clock   self+sourced   self:  sourced script
+ clock   elapsed:              other lines
+
+000.011  000.011: --- NVIM STARTING ---
+000.227  000.217: locale set
+000.534  000.307: inits 1
+000.542  000.008: window checked
+000.642  000.100: parsing arguments
+000.744  000.102: expanding arguments
+000.771  000.027: inits 2
+001.341  000.570: init highlight
+002.797  001.286  001.286: sourcing /home/mrbig/.config/nvim/autoload/plug.vim
+009.904  004.687  004.687: sourcing /usr/share/nvim/runtime/filetype.vim
+010.072  000.037  000.037: sourcing /usr/share/nvim/runtime/ftplugin.vim
+010.225  000.032  000.032: sourcing /usr/share/nvim/runtime/indent.vim
+010.758  000.235  000.235: sourcing /usr/share/nvim/runtime/syntax/syncolor.vim
+010.857  000.458  000.223: sourcing /usr/share/nvim/runtime/syntax/synload.vim
+010.886  000.610  000.151: sourcing /usr/share/nvim/runtime/syntax/syntax.vim
+010.994  009.520  002.868: sourcing /home/mrbig/.config/nvim/plugins.vim
+011.438  000.423  000.423: sourcing /home/mrbig/.config/nvim/mappings.vim
+011.561  000.105  000.105: sourcing /home/mrbig/.config/nvim/abbrevs.vim
+011.793  000.102  000.102: sourcing /usr/share/nvim/runtime/syntax/nosyntax.vim
+012.199  000.182  000.182: sourcing /usr/share/nvim/runtime/syntax/syncolor.vim
+012.292  000.391  000.208: sourcing /usr/share/nvim/runtime/syntax/synload.vim
+012.316  000.663  000.170: sourcing /usr/share/nvim/runtime/syntax/syntax.vim
+012.416  000.010  000.010: sourcing /usr/share/nvim/runtime/filetype.vim
+012.525  000.008  000.008: sourcing /usr/share/nvim/runtime/ftplugin.vim
+013.130  000.157  000.157: sourcing /usr/share/nvim/runtime/syntax/syncolor.vim
+013.587  000.158  000.158: sourcing /usr/share/nvim/runtime/syntax/syncolor.vim
+021.584  009.024  008.710: sourcing /home/mrbig/.config/nvim/colors/badwolf.vim
+021.696  000.012  000.012: sourcing /usr/share/nvim/runtime/filetype.vim
+021.803  000.008  000.008: sourcing /usr/share/nvim/runtime/ftplugin.vim
+021.909  000.008  000.008: sourcing /usr/share/nvim/runtime/indent.vim
+022.148  020.694  000.914: sourcing /home/mrbig/.config/nvim/init.vim
+022.153  000.118: sourcing vimrc file(s)
+022.632  000.344  000.344: sourcing /home/mrbig/.config/nvim/plugins/plugged/CamelCaseMotion/plugin/camelcasemotion.vim
+022.834  000.144  000.144: sourcing /home/mrbig/.config/nvim/plugins/plugged/targets.vim/plugin/targets.vim
+023.108  000.209  000.209: sourcing /home/mrbig/.config/nvim/plugins/plugged/vim-vertigo/plugin/vertigo.vim
+023.238  000.073  000.073: sourcing /home/mrbig/.config/nvim/plugins/plugged/vim-lastplace/plugin/vim-lastplace.vim
+023.623  000.332  000.332: sourcing /home/mrbig/.config/nvim/plugins/plugged/auto-pairs/plugin/auto-pairs.vim
+023.771  000.089  000.089: sourcing /home/mrbig/.config/nvim/plugins/plugged/vim-linux-coding-style/plugin/linuxsty.vim
+023.897  000.072  000.072: sourcing /home/mrbig/.config/nvim/plugins/plugged/vim-titlecase/plugin/titlecase.vim
+024.330  000.380  000.380: sourcing /home/mrbig/.config/nvim/plugins/plugged/vim-eunuch/plugin/eunuch.vim
+024.544  000.156  000.156: sourcing /home/mrbig/.config/nvim/plugins/plugged/vim-rsi/plugin/rsi.vim
+024.719  000.114  000.114: sourcing /home/mrbig/.config/nvim/plugins/plugged/vim-husk/plugin/husk.vim
+025.374  000.594  000.594: sourcing /home/mrbig/.config/nvim/plugins/plugged/vim-buftabline/plugin/buftabline.vim
+025.626  000.193  000.193: sourcing /home/mrbig/.config/nvim/plugins/plugged/tabular/plugin/Tabular.vim
+026.079  000.394  000.394: sourcing /home/mrbig/.config/nvim/plugins/plugged/vim-surround/plugin/surround.vim
+026.228  000.083  000.083: sourcing /home/mrbig/.config/nvim/plugins/plugged/VimCompletesMe/plugin/VimCompletesMe.vim
+026.432  000.145  000.145: sourcing /home/mrbig/.config/nvim/plugins/plugged/vim-commentary/plugin/commentary.vim
+026.686  000.195  000.195: sourcing /home/mrbig/.config/nvim/plugins/plugged/incsearch.vim/plugin/incsearch.vim
+031.184  004.441  004.441: sourcing /home/mrbig/.config/nvim/plugins/plugged/vim-easymotion/plugin/EasyMotion.vim
+031.528  000.132  000.132: sourcing /usr/share/nvim/runtime/plugin/gzip.vim
+031.574  000.010  000.010: sourcing /usr/share/nvim/runtime/plugin/health.vim
+031.636  000.048  000.048: sourcing /usr/share/nvim/runtime/plugin/man.vim
+032.060  000.412  000.412: sourcing /usr/share/nvim/runtime/plugin/matchit.vim
+032.218  000.135  000.135: sourcing /usr/share/nvim/runtime/plugin/matchparen.vim
+032.620  000.385  000.385: sourcing /usr/share/nvim/runtime/plugin/netrwPlugin.vim
+032.765  000.126  000.126: sourcing /usr/share/nvim/runtime/plugin/rplugin.vim
+032.870  000.081  000.081: sourcing /usr/share/nvim/runtime/plugin/shada.vim
+032.907  000.020  000.020: sourcing /usr/share/nvim/runtime/plugin/spellfile.vim
+033.030  000.110  000.110: sourcing /usr/share/nvim/runtime/plugin/tarPlugin.vim
+033.137  000.090  000.090: sourcing /usr/share/nvim/runtime/plugin/tohtml.vim
+033.168  000.017  000.017: sourcing /usr/share/nvim/runtime/plugin/tutor.vim
+033.314  000.130  000.130: sourcing /usr/share/nvim/runtime/plugin/zipPlugin.vim
+033.320  001.513: loading plugins
+033.376  000.056: loading packages
+033.785  000.180  000.180: sourcing /home/mrbig/.config/nvim/plugins/plugged/tabular/autoload/tabular.vim
+035.191  001.736  001.556: sourcing /home/mrbig/.config/nvim/plugins/plugged/tabular/after/plugin/TabularMaps.vim
+035.290  000.036  000.036: sourcing /home/mrbig/.config/nvim/after/plugin/overrides.vim
+035.294  000.147: loading after plugins
+035.301  000.007: inits 3
+035.848  000.546: reading ShaDa
+036.875  001.028: clearing screen
+037.232  000.356: opening buffers
+038.357  001.126: BufEnter autocommands
+038.361  000.004: editing files in windows

@@ -1,0 +1,5 @@
+#!/bin/bash
+
+# clear
+loadkeys /home/demo/Live-usb-storage/scripts/keychanges
+

@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+xinput --disable "ETPS/2 Elantech Touchpad"
+notify-send --expire-time=1 'touchpad disabled'

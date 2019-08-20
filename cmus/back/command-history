@@ -1,0 +1,78 @@
+bind -f common 2 view browser
+bind -f common 2 view browser 2
+bind -f common 2 view browser 
+bind
+rebind
+shell 
+add .
+add ;
+set show_hidden=false
+bind common O toggle aaa_mode
+bind common o toggle aaa_mode
+bind common ^. toggle aaa_mode
+set aaa_mode=allu
+bind -f browser i toggle show_hidden
+bind -f common ^Q quit
+bind -f common ^Q ZZ
+bind -f common ^Q :quit<enter>
+bind -f common ^C echo Type :quit<enter> to exit cmus.
+q
+bind common ^K win-remove
+unbind -f common delete
+bind -f common delete
+unbind -f common D
+bind common space mark
+bind common m mark
+bind common m win-toggle
+unbind -f common space
+unbind -f common m
+bind common u unmark
+unbind common u
+bind common U unmark
+bind common M unmark
+unbind -f common m mark
+unbind -f common ^O
+bind common m unmark
+bind common , unmark
+bind common ^[ unmark
+bind common <key> unmark
+bind common ^I unmark
+bind common ^O mark
+bind common ^I mark
+unbind -f common ^O mark
+unbind -f common ^I mark
+unbind -f common ^A mark
+bind common <key> mark
+bind common ^J mark
+bind common ^h mark
+bind common ^j mark
+unbind -f common ^M
+unbind -f common ^M mark
+bind -f common m mark
+bind common ^M mark
+bind -f common ^M toggle
+unbind -f common ^M toggle aaa_mode
+bind common ^C m mark
+bind common "^C m" mark
+bind common C-c m mark
+unbind common ^U
+bind common ^U unmark
+unmak
+unmark
+unbind common m
+bind -f common ^M toggle aaa_mode
+bind -f common ^m toggle aaa_mode
+bind -f common "" toggle aaa_mode
+bind common n search-next
+unbind -f common n
+bind -f common b player-next
+bind -f common ç player-next
+bind -f common n
+bind -f common n player-next
+bind -f common c player-pause
+1;3C
+1
+bind -f common c player-pause p
+bind -f common b player-next n
+shell q
+a .

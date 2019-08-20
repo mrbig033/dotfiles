@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+term1="$1"
+term2="$2"
+
+clear
+aptitude search "$term1" | grep -i "$term2"

@@ -1,0 +1,48 @@
+{
+    "version": "0.95.7",
+    "userCodeDir": null,
+    "folders": [
+        "/home/george/python"
+    ],
+    "settings": {
+        "interfaceType": "XRecord",
+        "undoUsingBackspace": true,
+        "workAroundApps": ".*VirtualBox.*|krdc.Krdc",
+        "hPanePosition": 566,
+        "showTrayIcon": true,
+        "menuTakesFocus": false,
+        "isFirstRun": true,
+        "serviceRunning": true,
+        "showToolbar": true,
+        "columnWidths": [
+            150,
+            50,
+            100
+        ],
+        "promptToSave": false,
+        "sortByUsageCount": true,
+        "enableQT4Workaround": false,
+        "windowDefaultSize": [
+            1362,
+            720
+        ],
+        "triggerItemByInitial": false,
+        "notificationIcon": "autokey-status",
+        "scriptGlobals": {}
+    },
+    "toggleServiceHotkey": {
+        "enabled": true,
+        "hotKey": "k",
+        "modifiers": [
+            "<shift>",
+            "<super>"
+        ]
+    },
+    "configHotkey": {
+        "enabled": true,
+        "hotKey": "k",
+        "modifiers": [
+            "<super>"
+        ]
+    }
+}

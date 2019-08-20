@@ -1,0 +1,5 @@
+#!/bin/bash
+
+~/scripts/i3_scripts/hide/hide_all &>/dev/null 
+google-chrome-stable /home/mrbig/org/Creative/Web/link_index.html &>/dev/null 
+clear

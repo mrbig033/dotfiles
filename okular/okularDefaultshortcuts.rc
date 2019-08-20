@@ -1,0 +1,43 @@
+<kpartgui version="1" name="okular">
+  <ActionProperties>
+    <Action shortcut="Ctrl+G" name="go_goto_page"/>
+    <Action shortcut="K" name="go_previous"/>
+    <Action shortcut="J" name="go_next"/>
+    <Action shortcut="Ctrl+Home; G, G" name="first_page"/>
+    <Action shortcut="Ctrl+End; Shift+G" name="last_page"/>
+    <Action shortcut="Ctrl+B; M" name="bookmark_add"/>
+    <Action shortcut="G, K" name="previous_bookmark"/>
+    <Action shortcut="G, J" name="next_bookmark"/>
+    <Action shortcut="Ctrl+F; /" name="edit_find"/>
+    <Action shortcut="F3" name="edit_find_next"/>
+    <Action shortcut="Shift+F3" name="edit_find_prev"/>
+    <Action shortcut="F5; Refresh" name="file_reload"/>
+    <Action shortcut="Esc" name="close_find_bar"/>
+    <Action shortcut="Ctrl+C; Ctrl+Ins" name="edit_copy"/>
+    <Action shortcut="Ctrl+A" name="edit_select_all"/>
+    <Action shortcut="Ctrl+Shift+S" name="file_save_as"/>
+    <Action shortcut="F7" name="show_leftpanel"/>
+    <Action shortcut="Ctrl+Shift+P" name="presentation"/>
+    <Action shortcut="B" name="switch_blackscreen_mode"/>
+    <Action shortcut="Ctrl++; =" name="view_zoom_in"/>
+    <Action shortcut="Ctrl+-; -" name="view_zoom_out"/>
+    <Action shortcut="S" name="view_fit_to_width"/>
+    <Action shortcut="P" name="view_fit_to_page"/>
+    <Action shortcut="Ctrl+J" name="fit_window_to_page"/>
+    <Action shortcut="Ctrl+1" name="mouse_drag"/>
+    <Action shortcut="Ctrl+2" name="mouse_zoom"/>
+    <Action shortcut="Alt+Shift+Left" name="go_document_back"/>
+    <Action shortcut="Alt+Shift+Right" name="go_document_forward"/>
+    <Action shortcut="Ctrl+3; V" name="mouse_select"/>
+    <Action shortcut="Ctrl+4" name="mouse_textselect"/>
+    <Action shortcut="Ctrl+5" name="mouse_tableselect"/>
+    <Action shortcut="Ctrl+6" name="mouse_magnifier"/>
+    <Action shortcut="F6" name="mouse_toggle_annotate"/>
+    <Action shortcut="Shift+Up" name="view_scroll_up"/>
+    <Action shortcut="Shift+Down" name="view_scroll_down"/>
+    <Action shortcut="Shift+Space; L" name="view_scroll_page_up"/>
+    <Action shortcut="Space; H" name="view_scroll_page_down"/>
+    <Action shortcut="Ctrl+Z; U" name="edit_undo"/>
+    <Action shortcut="Ctrl+Shift+Z" name="edit_redo"/>
+  </ActionProperties>
+</kpartgui>

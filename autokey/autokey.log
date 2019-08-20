@@ -1,0 +1,162 @@
+2019-06-13 07:08:21,117 INFO - root - Initialising application
+2019-06-13 07:08:21,124 INFO - root - Initialise global hotkeys
+2019-06-13 07:08:21,124 INFO - config-manager - No configuration found - creating new one
+2019-06-13 07:08:21,127 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2019-06-13 07:08:21,127 INFO - config-manager - Persisting configuration
+2019-06-13 07:08:21,127 INFO - config-manager - Finished persisting configuration - no errors
+2019-06-13 07:08:21,128 INFO - service - Starting service
+2019-06-13 07:08:21,233 INFO - interface - XRecord interface thread starting
+2019-06-13 07:08:21,233 INFO - service - Service now marked as running
+2019-06-13 07:08:21,269 INFO - root - Entering main()
+2019-06-13 07:08:26,811 INFO - root - Displaying configuration window
+2019-06-13 07:08:56,810 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2019-06-13 07:08:56,810 INFO - config-manager - Persisting configuration
+2019-06-13 07:08:56,811 INFO - config-manager - Backing up existing config file
+2019-06-13 07:08:56,812 INFO - config-manager - Finished persisting configuration - no errors
+2019-06-13 07:09:01,703 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2019-06-13 07:09:01,703 INFO - config-manager - Persisting configuration
+2019-06-13 07:09:01,704 INFO - config-manager - Backing up existing config file
+2019-06-13 07:09:01,705 INFO - config-manager - Finished persisting configuration - no errors
+2019-06-13 07:09:05,862 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2019-06-13 07:09:05,863 INFO - config-manager - Persisting configuration
+2019-06-13 07:09:05,864 INFO - config-manager - Backing up existing config file
+2019-06-13 07:09:05,865 INFO - config-manager - Finished persisting configuration - no errors
+2019-06-13 07:09:20,255 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2019-06-13 07:09:22,959 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2019-06-13 07:09:28,206 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2019-06-13 07:10:08,550 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2019-06-13 07:10:10,684 ERROR - interface - Error in X event loop thread
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 116, in __eventLoop
+    method(*args)
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 578, in __sendString
+    self.__checkWorkaroundNeeded()
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 863, in __checkWorkaroundNeeded
+    w = self.app.configManager.workAroundApps
+AttributeError: ConfigManager instance has no attribute 'workAroundApps'
+2019-06-13 07:10:13,753 ERROR - interface - Error in X event loop thread
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 116, in __eventLoop
+    method(*args)
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 578, in __sendString
+    self.__checkWorkaroundNeeded()
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 863, in __checkWorkaroundNeeded
+    w = self.app.configManager.workAroundApps
+AttributeError: ConfigManager instance has no attribute 'workAroundApps'
+2019-06-13 07:10:16,938 ERROR - interface - Error in X event loop thread
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 116, in __eventLoop
+    method(*args)
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 578, in __sendString
+    self.__checkWorkaroundNeeded()
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 863, in __checkWorkaroundNeeded
+    w = self.app.configManager.workAroundApps
+AttributeError: ConfigManager instance has no attribute 'workAroundApps'
+2019-06-13 07:10:27,213 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2019-06-13 07:10:29,522 ERROR - interface - Error in X event loop thread
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 116, in __eventLoop
+    method(*args)
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 578, in __sendString
+    self.__checkWorkaroundNeeded()
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 863, in __checkWorkaroundNeeded
+    w = self.app.configManager.workAroundApps
+AttributeError: ConfigManager instance has no attribute 'workAroundApps'
+2019-06-13 07:10:43,423 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2019-06-13 07:10:45,266 ERROR - interface - Error in X event loop thread
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 116, in __eventLoop
+    method(*args)
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 578, in __sendString
+    self.__checkWorkaroundNeeded()
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 863, in __checkWorkaroundNeeded
+    w = self.app.configManager.workAroundApps
+AttributeError: ConfigManager instance has no attribute 'workAroundApps'
+2019-06-13 07:10:52,432 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2019-06-13 07:10:53,867 ERROR - interface - Error in X event loop thread
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 116, in __eventLoop
+    method(*args)
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 500, in __sendStringClipboard
+    self.__fillClipboard(string)
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 537, in __fillClipboard
+    self.clipBoard.set_text(string.encode("utf-8"))
+TypeError: Gtk.Clipboard.set_text() takes exactly 3 arguments (2 given)
+2019-06-13 07:11:41,517 INFO - root - Initialising application
+2019-06-13 07:11:41,522 INFO - root - Initialise global hotkeys
+2019-06-13 07:11:41,522 INFO - config-manager - Loading config from existing file: /home/george/.config/autokey/autokey.json
+2019-06-13 07:11:41,524 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2019-06-13 07:11:41,524 INFO - config-manager - Successfully loaded configuration
+2019-06-13 07:11:41,524 INFO - service - Starting service
+2019-06-13 07:11:41,580 INFO - interface - XRecord interface thread starting
+2019-06-13 07:11:41,580 INFO - service - Service now marked as running
+2019-06-13 07:11:41,590 INFO - root - Entering main()
+2019-06-13 07:11:45,289 INFO - root - Displaying configuration window
+2019-06-13 07:11:52,372 ERROR - interface - Error in X event loop thread
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 116, in __eventLoop
+    method(*args)
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 500, in __sendStringClipboard
+    self.__fillClipboard(string)
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 537, in __fillClipboard
+    self.clipBoard.set_text(string.encode("utf-8"))
+TypeError: Gtk.Clipboard.set_text() takes exactly 3 arguments (2 given)
+2019-06-26 06:50:27,677 INFO - root - Initialising application
+2019-06-26 06:50:27,704 INFO - root - Initialise global hotkeys
+2019-06-26 06:50:27,705 INFO - config-manager - Loading config from existing file: /home/george/.config/autokey/autokey.json
+2019-06-26 06:50:27,791 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2019-06-26 06:50:27,792 INFO - config-manager - Successfully loaded configuration
+2019-06-26 06:50:27,793 INFO - service - Starting service
+2019-06-26 06:50:27,868 INFO - interface - XRecord interface thread starting
+2019-06-26 06:50:27,869 INFO - service - Service now marked as running
+2019-06-26 06:50:27,934 INFO - root - Entering main()
+2019-06-26 07:10:15,057 INFO - root - Displaying configuration window
+2019-06-26 07:10:20,066 INFO - root - Displaying configuration window
+2019-06-26 07:11:03,039 ERROR - interface - Error in X event loop thread
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 116, in __eventLoop
+    method(*args)
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 500, in __sendStringClipboard
+    self.__fillClipboard(string)
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 537, in __fillClipboard
+    self.clipBoard.set_text(string.encode("utf-8"))
+TypeError: Gtk.Clipboard.set_text() takes exactly 3 arguments (2 given)
+2019-06-26 07:11:42,312 INFO - root - Initialising application
+2019-06-26 07:11:42,320 INFO - root - Initialise global hotkeys
+2019-06-26 07:11:42,320 INFO - config-manager - Loading config from existing file: /home/george/.config/autokey/autokey.json
+2019-06-26 07:11:42,321 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2019-06-26 07:11:42,322 INFO - config-manager - Successfully loaded configuration
+2019-06-26 07:11:42,322 INFO - service - Starting service
+2019-06-26 07:11:42,375 INFO - interface - XRecord interface thread starting
+2019-06-26 07:11:42,376 INFO - service - Service now marked as running
+2019-06-26 07:11:42,389 INFO - root - Entering main()
+2019-06-26 07:11:58,185 INFO - root - Displaying configuration window
+2019-06-26 07:12:20,405 ERROR - interface - Error in X event loop thread
+Traceback (most recent call last):
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 116, in __eventLoop
+    method(*args)
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 500, in __sendStringClipboard
+    self.__fillClipboard(string)
+  File "/usr/lib/python2.7/dist-packages/autokey/interface.py", line 537, in __fillClipboard
+    self.clipBoard.set_text(string.encode("utf-8"))
+TypeError: Gtk.Clipboard.set_text() takes exactly 3 arguments (2 given)
+2019-06-26 08:40:04,061 INFO - root - Initialising application
+2019-06-26 08:40:04,102 INFO - root - Initialise global hotkeys
+2019-06-26 08:40:04,102 INFO - config-manager - Loading config from existing file: /home/george/.config/autokey/autokey.json
+2019-06-26 08:40:04,110 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2019-06-26 08:40:04,111 INFO - config-manager - Successfully loaded configuration
+2019-06-26 08:40:04,113 INFO - service - Starting service
+2019-06-26 08:40:04,296 INFO - interface - XRecord interface thread starting
+2019-06-26 08:40:04,297 INFO - service - Service now marked as running
+2019-06-26 08:40:04,364 INFO - root - Displaying configuration window
+2019-06-26 08:40:05,549 INFO - root - Displaying configuration window
+2019-06-26 08:40:06,208 INFO - root - Displaying configuration window
+2019-06-26 08:40:06,999 INFO - root - Displaying configuration window
+2019-06-26 08:40:07,471 INFO - root - Displaying configuration window
+2019-06-26 08:40:35,800 INFO - service - Undoing last abbreviation expansion
+2019-06-26 08:40:39,079 INFO - service - Undoing last abbreviation expansion
+2019-06-26 08:40:45,081 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2019-06-26 08:40:53,224 INFO - service - Undoing last abbreviation expansion
+2019-06-26 08:41:16,484 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2019-06-26 08:41:42,634 INFO - config-manager - Configuration changed - rebuilding in-memory structures
+2019-06-26 08:42:19,842 INFO - config-manager - Configuration changed - rebuilding in-memory structures

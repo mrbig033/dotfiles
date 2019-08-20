@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+ 
+for i in *
+do
+[ -d "$i" ] && apack "$i.tar" "$i"
+done

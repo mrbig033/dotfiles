@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+clear
+sudo chown --recursive --changes $USER /home/dotfiles/emacs/em/modules/ /home/dotfiles/emacs/em/init.org /home/dotfiles/emacs/em/init.el

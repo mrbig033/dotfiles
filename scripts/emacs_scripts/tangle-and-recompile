@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+~/maps/ntangle/ntangle ~/.emacs.d/init.org ~/.emacs.d/modules/** &&
+emacs --batch --eval '(byte-recompile-directory "~/.emacs.d/modules/" 0)'

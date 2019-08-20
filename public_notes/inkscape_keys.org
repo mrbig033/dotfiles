@@ -1,0 +1,145 @@
+#+OPTIONS: toc:1
+#+OPTIONS: num:1
+#+OPTIONS: html-postamble:nil
+#+STARTUP: overview
+#+AUTHOR: Davi Ramos
+#+latex_header: \hypersetup{colorlinks=true,linkcolor=blue}
+
+* Inkscape Keyboard Shortcuts                              :toc_2_gh:
+- [[#how-to-read-this][How to read this]]
+- [[#movements][Movements]]
+  - [[#panning-the-canvas][Panning the canvas]]
+  - [[#zooming][Zooming]]
+  - [[#documents][Documents]]
+- [[#creating-shapes][Creating Shapes]]
+- [[#transforming][Transforming]]
+  - [[#moving-scaling-rotating][Moving, scaling, rotating]]
+  - [[#transforming-by-keys][Transforming by keys]]
+- [[#selections][Selections]]
+  - [[#multiple-selections][Multiple Selections]]
+  - [[#grouping][Grouping]]
+  - [[#z-order][Z-order]]
+  - [[#selecting-under-and-dragging-selected][Selecting under and dragging selected]]
+  - [[#selecting-similar-objects][Selecting similar objects]]
+- [[#editing][Editing]]
+  - [[#fill-and-stroke][Fill and Stroke]]
+  - [[#duplication-and-alignment][Duplication and alignment]]
+
+* How to read this
+
+- *Control + z* means press *Control* and *z* at the same time.
+- *F7* /and/ *Shift + click* means *F7* , contextual action then *Shift + click*.
+
+* Movements
+** Panning the canvas
+- ~Control + arrows~ or ~mouse wheel~ :: scroll
+- ~Shift + mouse wheel~ :: scroll horizontally
+- ~Control + b~ :: toggle scrollbars
+** Zooming
+- ~-~ or ~=~ :: zoom
+- ~Control + mouse wheel~ :: zoom
+- ~`~ :: previous zoom
+- ~Shift + `~ :: next zoom
+** Documents
+- ~Control + n~ :: new document
+- ~Control + M + n~ :: new from template
+- ~Control + o~ :: open document
+- ~Control + s~ :: save document
+- ~Control + Shift + s~ :: save as
+- ~Control + Tab~ :: other window
+* Shapes
+- ~F2~ :: paths and notes (round stuff)
+- ~F4~ :: rectangle. ~Control + click~ makes it regular, ~Shift + click~ uses stating pointing as the center.
+- ~F5~ :: ellipses and arcs
+- ~F6~ :: freehand lines
+- ~F7~ ::  dropper (color picker)
+- ~F8~ :: text objets
+- ~Control + z~ :: undo
+- ~Control + Shift + z~ :: redo
+** Star and Polygons
+- ~*~ :: stars and polygons
+- ~Shift + drag~  :: round
+- ~Shift + click~ :: remove rounding
+** Spirals
+- ~F9~ :: spirals
+- ~Control + drag~ :: snap to 15 degree increments
+*** Outer handle
+- ~Shift + drag~ :: scale/rotate around center.
+- ~Alt + drag~ :: lock radius while rollin
+*** Inner Handle
+- ~Alt + drag vertically~ :: converge/diverge.
+- ~Alt + click~ :: reset divergence.
+- ~Shift + click~ :: move inner handle to the center.
+g/unrolling
+
+** Ellipses
+- ~F2~ and ~drag on the right handle~ :: slice
+* Transforming
+** Moving, scaling, rotating
+*** Basic
+- ~F1~ or ~SPC~ :: select tool
+*** Single Click
+- ~Control~ (dragging the object) :: restrict movement to horizontal and vertical
+- ~Control~ (dragging a handle) :: preserve ratio
+*** Double Click
+- ~Control~ (dragging a corner handle) :: rotate by 15 degrees. The cross is the center.
+- ~Control~ (dragging a non-corner hander) :: skew by 15 degrees.
+** Transforming by keys
+*** Basic
+- ~arrows~ :: move by 2px
+- ~<~ and ~>~ :: scale by 2px
+- ~[~ and ~]~ :: rotate 15°
+- ~Shift~ :: increase movement and scale by 10 times
+- ~Control + Shift + c~  :: convert shape to path
+*** Control
+- ~Control~ :: makes rotation 90°
+- ~Control + >~ :: scale up 200%
+- ~Control + <~ :: scale down 50%
+*** Meta
+- ~Alt + <~ or ~Alt + >~ :: scale by one *screen* pixel
+- ~Alt + [~ or ~Alt + ]~ :: rotates by one screen pixel
+- ~Alt + arrows~ :: move by one screen pixel
+* Selections
+** Multiple Selections
+- ~Shift + click~ or ~drag around~ :: select multiple objects
+- ~Control + a~ :: selects all objects in the current layer
+** Grouping
+
+A group behaves as a single object when you drag or transform it. ~Ctrl + u~ only ungroups the top level, you'll need to use it repeatedly for recursive ungroup.
+
+- ~Control + g~ (with the objects selected) :: create a group
+- ~Control + u~ or ~Control + Shift + g~ (with the objects selected) :: ungroup one or more groups
+- ~Control + click~ :: edit object from a group
+- ~Control + Shift + click~ :: edit multiple objects from a group
+** Z-order
+
+Tells which objects are on top and which are on the bottom.
+
+- ~PgUp~ :: raise object by one level
+- ~PgDn~ :: bury object by one level
+- ~Home~ :: raise object to the very top
+- ~End~ :: bury object to the very bottom
+- ~Tab~ :: cycles bottom-up
+- ~Shift + tab~ :: cycles top-down
+** Selecting under and dragging selected
+- ~Alt + click~ :: cycles top to bottom
+- ~Alt + drag~ :: after previous. Drag the currently selected object, not the visible one.
+** Selecting similar objects
+
+If you want to select all the blue squares, first select one of the blue squares and go run ~Fill Color~. All the objects with a fill color the same shade of blue are now selected.
+
+- ~M-e m~ :: select same menu
+* Editing
+** Fill and Stroke
+- ~Control + Shift + k~ :: color swatch dialog
+- ~Control + Shift + f~ :: fill and stroke
+- ~Control + F1~ :: gradient tool
+- ~F7~ and ~click~ ::  dropper (color picker), assign color to object fill
+- ~F7~ and ~Shift + click~ :: dropper (color picker), assign color to object stroke
+
+- *Fill* :: lets you edit the interior of the selected object(s).
+- Stroke paint :: can remove the stroke (outline) of the object, assign a color or transparency to it.
+- Stroke styles :: lets you set the width and other parameters of the stroke.
+** Duplication and alignment
+- ~Control + d~ :: duplicate object
+- ~Control + Shift + a~ :: align and distribute dialog

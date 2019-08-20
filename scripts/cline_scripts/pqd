@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+for i in *.png; do
+    pngquant --force --quality=40-100 --skip-if-larger --verbose $i
+done

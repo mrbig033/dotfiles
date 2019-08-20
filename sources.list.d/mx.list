@@ -1,0 +1,3 @@
+# MX Community Main and Test Repos
+deb http://la.mxrepo.com/mx/repo/ stretch main non-free
+#deb http://la.mxrepo.com/mx/testrepo/ stretch test
