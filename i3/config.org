@@ -121,14 +121,10 @@ client.background       #2B2C2B
 #+END_SRC
 * Startup
 #+BEGIN_SRC i3
-# exec --no-startup-id "dropbox start &"
-# exec --no-startup-id "google-chrome &"
-# exec --no-startup-id "emacs --daemon=gui-emacs &"
-# exec --no-startup-id "st2 -t term-up -n term-up &"
-# exec --no-startup-id "/home/dotfiles/scripts/i3_scripts/tmux_startup &"
-# exec --no-startup-id "st2 -t term-ranger -n term-ranger -e ~/.pyenv/shims/ranger &"
-
-exec --no-startup-id "redshift &"
+exec --no-startup-id "emacs --daemon=gui-emacs"
+exec --no-startup-id "st2 -t term-up -n term-up &"
+exec --no-startup-id "~/scripts/i3_scripts/tmux_startup &"
+exec --no-startup-id "st2 -t term-ranger -n term-ranger -e ~/.pyenv/shims/ranger &"
 exec --no-startup-id "nm-applet &"
 exec --no-startup-id "pulseaudio &"
 exec --no-startup-id "xset s 0 0 -dpms &"
@@ -137,10 +133,11 @@ exec --no-startup-id "xset r rate 200 60 &"
 exec --no-startup-id "compton -b --backend glx &"
 exec --no-startup-id "unclutter -display :0.0 -idle 0.5 &"
 exec --no-startup-id "xinput --disable 'ETPS/2 Elantech Touchpad' &"
-exec --no-startup-id "/home/dotfiles/scripts/keyboard/init_keys.sh &"
+exec --no-startup-id "~/scripts/keyboard/init_keys.sh &"
 exec --no-startup-id "synclient TapButton1=1 TouchpadOff=0 PalmDetect=1 &"
-exec --no-startup-id "sleep 10 && feh --recursive --randomize --bg-fill ~/Pictures/Wallpaper/Zen/pedramolhada.png &"
 exec --no-startup-id "xrandr --output DP-1 --off --output HDMI-1 --mode 1920x1080 --pos 0x0 --rotate normal --output eDP-1 --off --output HDMI-2 --off &"
+exec --no-startup-id "sleep 10 && redshift &"
+exec --no-startup-id "sleep 10 && feh --recursive --randomize --bg-fill ~/Wallpaper/Zen/pedramolhada.png &"
 #+END_SRC
 * Keys
 ** focus
@@ -221,14 +218,14 @@ mode "$launch" {
 # bindsym 1 exec "~/scripts/i3_scripts/touchpad_off"; mode default
 # bindsym 2 exec "~/scripts/i3_scripts/touchpad_on"; mode default
 
-bindsym Shift+w exec feh --recursive --randomize --bg-fill ~/Pictures/Wallpaper; mode default
+bindsym Shift+w exec feh --recursive --randomize --bg-fill ~/Wallpaper; mode default
 
 bindsym Menu exec "rofi -show run"; mode default
 bindsym z exec "google-chrome-stable"; mode default
 bindsym e [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "emacsclient --socket-name=gui-emacs --no-wait --create-frame"; mode default
 
-bindsym U exec "st2 -t term-up -n term-up"; mode default
-bindsym R exec "st2 -t term-ranger -n term-ranger -e ~/.pyenv/shims/ranger"; mode default
+bindsym Shift+u exec "st2 -t term-up -n term-up"; mode default
+bindsym Shift+r exec "st2 -t term-ranger -n term-ranger -e ranger"; mode default
 
 bindsym Escape mode default; exec notify-send 'mode: default'
 
@@ -518,6 +515,7 @@ for_window [class="Spotify"] move to workspace 10
 for_window [class="Gimp"] border normal
 for_window [class="Emacs"] border normal
 for_window [class="feh"] floating disable
+for_window [class="Timeshift-gtk"] floating disable
 for_window [class="octopi"] floating enable
 for_window [class="Xfburn"] floating enable
 for_window [class="Spotify"] floating disable

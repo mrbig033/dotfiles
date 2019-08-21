@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+command="$1"
+
+"$command" | mpv /home/files/Sounds/apple.mp3

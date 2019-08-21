@@ -1,3 +1,8 @@
+search  em
+search scri
+find i3-
+search lit
+search blog
 rename blog
 search state
 search exten
@@ -18,6 +23,7 @@ rename videos
 rename 
 rename shots_ep1
 rename ep01
+open_with 0 f
 open_with 1 f
 rename eva01
 rename 00_06_31__00105.png
@@ -80,6 +86,7 @@ search
 search sh-
 shell sudo Desktop 
 search sc
+open_with  f
 open_with 2 f
 search ini
 search key
@@ -90,11 +97,4 @@ rename mx_18.3
 find vl
 delete
 search in
-touch personal.org
-search typ
-touch ty
-touch zero
-md zero
-md typography
-open_with  f
-open_with 0 f
+md back

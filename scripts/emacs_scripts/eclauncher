@@ -1,7 +1,5 @@
 #!/bin/bash
 
-# ~/scripts/i3_scripts/hide/hide_only_terms &>/dev/null
-
 emacsclient --socket-name=gui-emacs --no-wait -e "(if (> (length (frame-list)) 1) 't)" | grep t
 if [ "$?" = "1" ]; then
     if [ "$DISPLAY" = "" ]; then
@@ -16,6 +14,4 @@ else
         emacsclient --socket-name=gui-emacs --no-wait --alternate-editor="" "$@"
     fi
 fi
-
-# i3-msg "[class=Emacs]" focus &>/dev/null
-# i3-msg "[title=term-right]" move scratchpad &>/dev/null
+# i3-msg "[class=Emacs]" focus
