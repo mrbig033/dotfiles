@@ -123,6 +123,7 @@ nnoremap <silent> <leader>k :silent bd!<cr>
 " }}}
 "{{{ emacs like
 
+" add mapping to make if more like Emacs
 nnoremap <leader>f gf
 
 " mark whole buffer
