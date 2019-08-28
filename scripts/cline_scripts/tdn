@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+time="$1"
+
+clear
+termdown --no-figlet -T NUCLEAR "$time" &&  mpv /home/files/Sounds/apple.mp3 &&
+echo "" &&
+echo ' ' 'NUCLEAR FINISHED' &&
+echo ""

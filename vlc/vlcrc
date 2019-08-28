@@ -2921,7 +2921,7 @@ qt-privacy-ask=0
 #lua-config=
 
 # Password (string)
-#http-password=
+http-password=read2020
 
 # Source directory (string)
 #http-src=
@@ -4293,7 +4293,7 @@ metadata-network-access=1
 #intf=
 
 # Extra interface modules (string)
-#extraintf=
+extraintf=http
 
 # Control interfaces (string)
 #control=

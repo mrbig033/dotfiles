@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+message="$1"
+time="$2"
+
+clear
+termdown --no-figlet -T "$message" "$time" &&  mpv /home/files/Sounds/apple.mp3 &&
+echo "" &&
+echo ' ' $message 'TIMER FINISHED' &&
+echo ""

@@ -251,6 +251,7 @@ bindsym Shift+w exec feh --recursive --randomize --bg-fill ~/Wallpaper; mode def
 
 bindsym Menu exec "rofi -show run"; mode default
 bindsym z exec "google-chrome-stable"; mode default
+bindsym q exec "qbittorrent"; mode default
 bindsym e [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "emacsclient --socket-name=gui-emacs --no-wait --create-frame"; mode default
 
 bindsym Shift+u exec "st2 -t term-up -n term-up"; mode default

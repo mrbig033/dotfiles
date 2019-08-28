@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+input="$1"
+output="$2"
+chunks="$3"
+
+mkvmerge --output "$output" --split "$chunks" "$input"

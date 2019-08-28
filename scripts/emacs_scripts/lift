@@ -1,0 +1,4 @@
+#!/bin/bash
+
+emacs --daemon=term-emacs &&
+emacsclient --socket-name=gui-emacs --no-wait --create-frame
