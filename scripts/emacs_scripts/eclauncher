@@ -14,4 +14,6 @@ else
         emacsclient --socket-name=gui-emacs --no-wait --alternate-editor="" "$@"
     fi
 fi
-# i3-msg "[class=Emacs]" focus
+i3-msg "[title=term-ranger]" move scratchpad &>/dev/null
+i3-msg "[title=term-up]" move scratchpad &>/dev/null
+i3-msg "[class=Emacs]" focus &>/dev/null

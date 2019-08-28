@@ -13,9 +13,36 @@ workspace_auto_back_and_forth yes
 set $Locker i3lock --show-failed-attempts --color=#000000 && sleep 1
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 
+# bar {
+# i3bar_command i3bar
+# status_command i3status
+# position bottom
+# mode dock
+# modifier none
+# binding_mode_indicator no
+
+# bindsym button4 nop
+# bindsym button5 nop
+# strip_workspace_numbers yes
+
+# colors {
+# background #222D31
+# statusline #F9FAF9
+# separator  #454947
+
+# focused_workspace  #F9FAF9 #16a085 #292F34
+# active_workspace   #595B5B #353836 #FDF6E3
+# inactive_workspace #595B5B #222D31 #EEE8D5
+# binding_mode       #16a085 #2C2C2C #F9FAF9
+# urgent_workspace   #16a085 #FDF6E3 #E5201D
+# }
+# }
+# bindsym $mod+m bar mode toggle
+
 bar {
+
 i3bar_command i3bar
-status_command i3status
+status_command i3blocks
 position bottom
 mode dock
 modifier none
@@ -81,8 +108,8 @@ client.background       #2B2C2B
 
 exec --no-startup-id "emacs --daemon=gui-emacs"
 exec --no-startup-id "st2 -t term-up -n term-up &"
-exec --no-startup-id "~/scripts/i3_scripts/tmux_startup &"
-exec --no-startup-id "st2 -t term-ranger -n term-ranger -e ~/.pyenv/shims/ranger &"
+exec --no-startup-id "~/scripts/cline_scripts/sessions.sh &"
+exec --no-startup-id "st2 -t term-ranger -n term-ranger -e ranger &"
 exec --no-startup-id "nm-applet &"
 exec --no-startup-id "pulseaudio &"
 exec --no-startup-id "xset s 0 0 -dpms &"
@@ -193,17 +220,17 @@ bindsym Down focus Down
 bindsym Up focus Up
 bindsym Right focus Right
 
-bindsym Shift+h resize shrink Left   3 px or 3 ppt
-bindsym h resize grow Left           3 px or 3 ppt
+bindsym Shift+h resize shrink Left   6 px or 6 ppt
+bindsym h resize grow Left           6 px or 6 ppt
 
-bindsym Shift+j resize shrink height 3 px or 3 ppt
-bindsym j resize grow height         3 px or 3 ppt
+bindsym Shift+j resize shrink height 6 px or 6 ppt
+bindsym j resize grow height         6 px or 6 ppt
 
-bindsym Shift+k resize shrink height 3 px or 3 ppt
-bindsym k resize grow height         3 px or 3 ppt
+bindsym Shift+k resize shrink height 6 px or 6 ppt
+bindsym k resize grow height         6 px or 6 ppt
 
-bindsym Shift+l resize shrink width  3 px or 3 ppt
-bindsym l resize grow width          3 px or 3 ppt
+bindsym Shift+l resize shrink width  6 px or 6 ppt
+bindsym l resize grow width          6 px or 6 ppt
 
 # bindsym apostrophe mode "$float_mode"
 # bindsym $mod+apostrophe exec notify-send 'float small'; mode "$float_small_steps"
@@ -399,55 +426,58 @@ bindsym $mod+XF86AudioRaiseVolume exec amixer set Master 200%+
 bindsym $mod+$alt+XF86AudioRaiseVolume exec amixer set Master 5%+
 bindsym $mod+$alt+XF86AudioLowerVolume exec amixer set Master 5%-
 
-for_window [urgent=latest] focus
-assign [class="Gnome-pomodoro"] $ws10
-for_window [class="Spotify"] move to workspace 10
-for_window [class="Gimp"] border normal
-for_window [class="Emacs"] border normal
-for_window [class="feh"] floating disable
-for_window [class="Timeshift-gtk"] floating disable
-for_window [class="octopi"] floating enable
-for_window [class="Xfburn"] floating enable
-for_window [class="Spotify"] floating disable
-for_window [class="calibre"] floating disable
-for_window [class="Clipgrab"] floating enable
-for_window [class="Oblogout"] fullscreen enable
-for_window [class="Manjaro-hello"] floating enable
-for_window [class="Pamac-manager"] floating enable
-for_window [title="File Transfer*"] floating enable
-for_window [title="About Pale Moon"] floating enable
-for_window [title="term Preferences"] floating enable
-for_window [class="Lightdm-settings"] floating enable
-for_window [class="Skype"] floating enable border normal
-for_window [title="Welcome to PyCharm"] floating disable
-for_window [class="vlc" title="Simple Preferences"] floating disable
-for_window [class="vlc" title="Advanced Preferences"] floating disable
-for_window [title="MuseScore: Play Panel"] floating enable
 for_window [class="GParted"] floating disable border normal
-for_window [class="Godot" title="^Jumper$"]  floating enable
-for_window [class="calamares"] floating enable border normal
-for_window [title="alsamixer"] floating enable border pixel 1
-for_window [class="Xfrun4"] floating enable resize set 520 200
-for_window [class="Galculator"] floating enable border pixel 1
-for_window [class="Simple-scan"] floating enable border normal
-for_window [class="Timeset-gui"] floating enable border normal
-for_window [title="Welcome to IntelliJ IDEA"] floating disable
-for_window [class="Godot" title="^Loony_Lips$"] floating enable
-for_window [class="(?i)virtualbox"] floating enable border normal
-for_window [class="File-roller"] floating enable resize set 720 400
-for_window [class="qt5ct"] floating enable sticky enable border normal
-for_window [title="i3_help"] floating enable sticky enable border normal
-for_window [class="Nitrogen"] floating enable sticky enable border normal
-for_window [class="Manjaro Settings Manager"] floating enable border normal
-for_window [class="Lxappearance"] floating enable sticky enable border normal
-for_window [class="Qtconfig-qt4"] floating enable sticky enable border normal
-for_window [class="jetbrains-idea" title="Project Structure"] floating disable
-for_window [class="(?i)System-config-printer.py"] floating enable border normal
-for_window [class="Inkscape" title="Preferences"]  floating disable resize set 720 400  move position 650
-for_window [class="Inkscape" title="Preferences"]  floating enable resize set 720 400  move position 650 0
-for_window [class="Inkscape" title="Document Properties"]  floating disable resize set 720 400  move position 650
 for_window [class="Gnome-pomodoro"] floating disable
-for_window [class="mx-tools"] floating disable
+for_window [class="Inkscape" title="Document Properties"]  floating disable resize set 720 400  move position 650
+for_window [class="Inkscape" title="Preferences"]  floating disable resize set 720 400  move position 650
+for_window [class="Spotify"] floating disable
+for_window [class="Timeshift-gtk"] floating disable
 for_window [class="VirtualBox Manager"] floating disable
+for_window [class="calibre"] floating disable
+for_window [class="feh"] floating disable
+for_window [class="jetbrains-idea" title="Project Structure"] floating disable
+for_window [class="mx-tools"] floating disable
+for_window [class="qBittorrent"] floating disable
+for_window [class="vlc" title="Advanced Preferences"] floating disable
+for_window [class="vlc" title="Simple Preferences"] floating disable
+for_window [title="Welcome to IntelliJ IDEA"] floating disable
+for_window [title="Welcome to PyCharm"] floating disable
+
+for_window [class="(?i)System-config-printer.py"] floating enable border normal
+for_window [class="(?i)virtualbox"] floating enable border normal
+for_window [class="Clipgrab"] floating enable
+for_window [class="File-roller"] floating enable resize set 720 400
+for_window [class="Galculator"] floating enable border pixel 1
+for_window [class="Godot" title="^Jumper$"]  floating enable
+for_window [class="Godot" title="^Loony_Lips$"] floating enable
+for_window [class="Inkscape" title="Preferences"]  floating enable resize set 720 400  move position 650 0
+for_window [class="Lightdm-settings"] floating enable
+for_window [class="Lxappearance"] floating enable sticky enable border normal
+for_window [class="Manjaro Settings Manager"] floating enable border normal
+for_window [class="Manjaro-hello"] floating enable
+for_window [class="Nitrogen"] floating enable sticky enable border normal
+for_window [class="Oblogout"] fullscreen enable
+for_window [class="Pamac-manager"] floating enable
+for_window [class="Qtconfig-qt4"] floating enable sticky enable border normal
+for_window [class="Simple-scan"] floating enable border normal
+for_window [class="Skype"] floating enable border normal
+for_window [class="Timeset-gui"] floating enable border normal
+for_window [class="Xfburn"] floating enable
+for_window [class="Xfrun4"] floating enable resize set 520 200
+for_window [class="calamares"] floating enable border normal
+for_window [class="octopi"] floating enable
+for_window [class="qt5ct"] floating enable sticky enable border normal
+for_window [title="About Pale Moon"] floating enable
+for_window [title="File Transfer*"] floating enable
+for_window [title="MuseScore: Play Panel"] floating enable
+for_window [title="alsamixer"] floating enable border pixel 1
+for_window [title="i3_help"] floating enable sticky enable border normal
+for_window [title="term Preferences"] floating enable
+
+assign [class="Gnome-pomodoro"] $ws10
+for_window [class="Emacs"] border normal
+for_window [class="Gimp"] border normal
+for_window [class="Spotify"] move to workspace 10
+for_window [urgent=latest] focus
 
 exec --no-startup-id i3-msg workspace $ws1

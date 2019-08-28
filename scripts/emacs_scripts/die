@@ -1,8 +1,6 @@
 #!/bin/bash
 
 clear
-# pkill -fi "emacs --daemon=gui-emacs" &&
-emacsclient --socket-name=gui-emacs --eval '(save-buffers-kill-emacs)' &&
-clear
+pkill -fi "emacs --daemon=gui-emacs" &&
 ps ax | pgrep -v grep | egrep -i 'emacs --daemon=gui-emacs'
 

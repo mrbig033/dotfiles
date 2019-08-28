@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 
-nt ~/.config/i3/** &&
-nt ~/.config/i3/scratchs/** &&
-i3-msg fullscreen disable &&
+nt ~/.config/i3/config.org
+i3-msg fullscreen disable
 i3-msg restart

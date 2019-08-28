@@ -1,5 +1,4 @@
 #!/bin/bash
 
 emacs --daemon=gui-emacs &&
-emacsclient --socket-name=gui-emacs --no-wait --create-frame --eval "(desktop-read)"
-
+emacsclient --socket-name=gui-emacs --no-wait --create-frame

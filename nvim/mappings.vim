@@ -113,8 +113,7 @@ vnoremap <leader>ce :! awk '{ print length(), $0 \| "sort -n \| cut -d\\  -f2-" 
 " nnoremap <c-x>s :SyntasticToggleMode<cr>
 " nnoremap <c-x>y :setlocal foldmethod=syntax<cr>
 "
-nnoremap <silent> <leader>e gf:silent !eclauncher %<cr>:bdelete<cr>
-nnoremap <silent> <leader>E :silent !eclauncher %<cr>:bdelete<cr>
+nnoremap <silent> <leader>e :silent !eclauncher % &>/dev/null <cr>
 nnoremap <silent> <leader>mg :Goyo<cr>:echo ""<cr>
 nnoremap <silent> <leader>mt :set showtabline=0<cr>:echo ""<cr>
 nnoremap ; :
@@ -123,14 +122,17 @@ nnoremap <silent> <leader>k :silent bd!<cr>
 
 " }}}
 "{{{ emacs like
+
+nnoremap <leader>f gf
+
 " mark whole buffer
 nnoremap <c-x>h mZgg<s-v>G
 
 " increase / decrease number
-nnoremap <c-s-a> <c-a>  
-vnoremap <c-s-a> <c-a>  
-nnoremap <c-s-x> <c-x>  
-vnoremap <c-s-x> <c-x>  
+nnoremap <c-s-a> <c-a>
+vnoremap <c-s-a> <c-a>
+nnoremap <c-s-x> <c-x>
+vnoremap <c-s-x> <c-x>
 " kill line
 inoremap <c-k> <c-o>D
 

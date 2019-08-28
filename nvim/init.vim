@@ -85,14 +85,14 @@ set display+=lastline
 set hlsearch
 set incsearch
 set showmatch
-set smartcase
-" set ignorecase
+" set smartcase
+set ignorecase
 ""}}}"}}}
 " {{{ status
-set laststatus=2
-set statusline=\ %f\ %y"
-set statusline+=\ %M
-hi StatusLine ctermbg=black ctermfg=Blue
+" set laststatus=2
+" set statusline=\ %f\ %y"
+" set statusline+=\ %M
+" hi StatusLine ctermbg=black ctermfg=Blue
 " }}}
 " {{{ functions
 " {{{ eatchar
@@ -119,7 +119,7 @@ function! s:goyo_enter()
   set showtabline=0
 endfunction
 function! s:goyo_leave()
-  hi statusline ctermbg=black
+  " hi statusline ctermbg=black
   set showtabline=2
 endfunction
 autocmd! User GoyoEnter nested call <SID>goyo_enter()

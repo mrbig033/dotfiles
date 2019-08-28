@@ -50,7 +50,7 @@ set dsp.ao.buffer_size=16384
 set dsp.ao.device_interface=
 set dsp.ao.driver=
 set dsp.ao.wav_counter=1
-set dsp.ao.wav_dir=/home/george
+set dsp.ao.wav_dir=/home/jerry
 set dsp.jack.resampling_quality=2
 set dsp.jack.server_name=
 set follow=false
@@ -75,9 +75,9 @@ set mouse=false
 set output_plugin=pulse
 set passwd=
 set pl_sort=
-set play_library=true
+set play_library=false
 set play_sorted=false
-set repeat=false
+set repeat=true
 set repeat_current=false
 set replaygain=disabled
 set replaygain_limit=true
@@ -102,19 +102,26 @@ bind browser backspace browser-up
 bind browser i toggle show_hidden
 bind browser space win-activate
 bind browser u win-update
-bind common ! push shell
+bind common ! push shell 
 bind common + vol +10%
 bind common , seek -1m
 bind common - vol -10%
 bind common . seek +1m
+bind common 1 view tree
+bind common 2 view sorted
+bind common 3 view playlist
+bind common 4 view queue
+bind common 5 view browser
+bind common 6 view filters
+bind common 7 view settings
 bind common = vol +10%
 bind common C toggle continue
 bind common D win-remove
 bind common E win-add-Q
-bind common F push filter
+bind common F push filter 
 bind common G win-bottom
 bind common I echo {}
-bind common L push live-filter
+bind common L push live-filter 
 bind common M toggle play_library
 bind common N search-prev
 bind common P win-mv-before

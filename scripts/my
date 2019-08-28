@@ -3,7 +3,7 @@
 clear
 
 sudo apt -y update && apt -y dist-upgrade &&
-    sudo apt -y install i3 i3status rofi neovim xorg-dev xcape rubygems mpv feh    \
+    sudo apt -y install i3 i3status i3lock i3blocks rofi neovim xorg-dev xcape rubygems mpv feh    \
         lxappearance calibre zathura zathura-pdf-poppler qbittorrent uget     \
         xclip dmenu unclutter trash-cli arandr xbindkeys font-manager atool   \
         silversearcher-ag clang aspell-pt-br pandoc markdown xsel xdotool     \
@@ -12,7 +12,7 @@ sudo apt -y update && apt -y dist-upgrade &&
         python-setuptools python3-setuptools wget curl cmus                   \
         libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev llvm  \
         libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev           \
-        liblzma-dev python-openssl git &&
+        liblzma-dev python-openssl git keepassxc &&
 
     sudo apt -y build-dep emacs25 && sudo apt -y autoremove && sudo apt -y autoclean &&
     curl https://pyenv.run | bash

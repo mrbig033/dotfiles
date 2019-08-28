@@ -1,5 +1,5 @@
 ﻿###
-###  vlc 3.0.7.1
+###  vlc 3.0.8
 ###
 
 ###
@@ -10,6 +10,105 @@
 
 # Sync on Intra Frame (boolean)
 #packetizer-mpegvideo-sync-iframe=0
+
+[wall] # Wall video filter
+
+# Number of columns (integer)
+#wall-cols=3
+
+# Number of rows (integer)
+#wall-rows=3
+
+# Active windows (string)
+#wall-active=
+
+# Element aspect ratio (string)
+#wall-element-aspect=16:9
+
+[clone] # Clone video filter
+
+# Number of clones (integer)
+#clone-count=2
+
+# Video output modules (string)
+#clone-vout-list=
+
+[panoramix] # Panoramix: wall with overlap video filter
+
+# Number of columns (integer)
+#panoramix-cols=-1
+
+# Number of rows (integer)
+#panoramix-rows=-1
+
+# length of the overlapping area (in %) (integer)
+#panoramix-bz-length=100
+
+# height of the overlapping area (in %) (integer)
+#panoramix-bz-height=100
+
+# Attenuation (boolean)
+#panoramix-attenuate=1
+
+# Attenuation, begin (in %) (integer)
+#panoramix-bz-begin=0
+
+# Attenuation, middle (in %) (integer)
+#panoramix-bz-middle=50
+
+# Attenuation, end (in %) (integer)
+#panoramix-bz-end=100
+
+# middle position (in %) (integer)
+#panoramix-bz-middle-pos=50
+
+# Gamma (Red) correction (float)
+#panoramix-bz-gamma-red=1.000000
+
+# Gamma (Green) correction (float)
+#panoramix-bz-gamma-green=1.000000
+
+# Gamma (Blue) correction (float)
+#panoramix-bz-gamma-blue=1.000000
+
+# Black Crush for Red (integer)
+#panoramix-bz-blackcrush-red=140
+
+# Black Crush for Green (integer)
+#panoramix-bz-blackcrush-green=140
+
+# Black Crush for Blue (integer)
+#panoramix-bz-blackcrush-blue=140
+
+# White Crush for Red (integer)
+#panoramix-bz-whitecrush-red=200
+
+# White Crush for Green (integer)
+#panoramix-bz-whitecrush-green=200
+
+# White Crush for Blue (integer)
+#panoramix-bz-whitecrush-blue=200
+
+# Black Level for Red (integer)
+#panoramix-bz-blacklevel-red=150
+
+# Black Level for Green (integer)
+#panoramix-bz-blacklevel-green=150
+
+# Black Level for Blue (integer)
+#panoramix-bz-blacklevel-blue=150
+
+# White Level for Red (integer)
+#panoramix-bz-whitelevel-red=0
+
+# White Level for Green (integer)
+#panoramix-bz-whitelevel-green=0
+
+# White Level for Blue (integer)
+#panoramix-bz-whitelevel-blue=0
+
+# Active windows (string)
+#panoramix-active=
 
 [lirc] # Infrared remote control interface
 
@@ -885,6 +984,11 @@ sout-x264-tune=film
 # SAP Strict mode (boolean)
 #sap-strict=0
 
+[notify] # LibNotify Notification Plugin
+
+# Timeout (ms) (integer)
+#notify-timeout=4000
+
 [freetype] # Freetype2 font renderer
 
 # Font (string)
@@ -950,6 +1054,73 @@ freetype-outline-thickness=0
 
 # Scaling mode (integer)
 #swscale-mode=2
+
+[visual] # Visualizer filter
+
+# Effects list (string)
+#effect-list=spectrum
+
+# Video width (integer)
+#effect-width=800
+
+# Video height (integer)
+#effect-height=500
+
+# FFT window (string)
+#effect-fft-window=flat
+
+# Kaiser window parameter (float)
+#effect-kaiser-param=3.000000
+
+# Show 80 bands instead of 20 (boolean)
+#visual-80-bands=1
+
+# Draw peaks in the analyzer (boolean)
+#visual-peaks=1
+
+# Enable original graphic spectrum (boolean)
+#spect-show-original=0
+
+# Draw the base of the bands (boolean)
+#spect-show-base=1
+
+# Base pixel radius (integer)
+#spect-radius=42
+
+# Spectral sections (integer)
+#spect-sections=3
+
+# V-plane color (integer)
+#spect-color=80
+
+# Draw bands in the spectrometer (boolean)
+#spect-show-bands=1
+
+# Show 80 bands instead of 20 (boolean)
+#spect-80-bands=1
+
+# Number of blank pixels between bands. (integer)
+#spect-separ=1
+
+# Amplification (integer)
+#spect-amp=8
+
+# Draw peaks in the analyzer (boolean)
+#spect-show-peaks=1
+
+# Peak extra width (integer)
+#spect-peak-width=61
+
+# Peak height (integer)
+#spect-peak-height=1
+
+[glspectrum] # 3D OpenGL spectrum visualization
+
+# Video width (integer)
+#glspectrum-width=400
+
+# Video height (integer)
+#glspectrum-height=300
 
 [rawvid] # Raw video demuxer
 
@@ -1222,7 +1393,7 @@ freetype-outline-thickness=0
 #prefetch-buffer-size=16384
 
 # Read size (integer)
-#prefetch-read-size=16384
+#prefetch-read-size=16777216
 
 # Seek threshold (integer)
 #prefetch-seek-threshold=16384
@@ -1360,7 +1531,7 @@ freetype-outline-thickness=0
 #sout-avi-subject=
 
 # Encoder (string)
-#sout-avi-encoder=VLC Media Player - 3.0.7.1 Vetinari
+#sout-avi-encoder=VLC Media Player - 3.0.8 Vetinari
 
 # Keywords (string)
 #sout-avi-keywords=
@@ -1598,6 +1769,23 @@ qt-privacy-ask=0
 
 # When to raise the interface (integer)
 #qt-auto-raise=1
+
+[skins2] # Skinnable Interface
+
+# Skin to use (string)
+#skins2-last=
+
+# Config of last used skin (string)
+#skins2-config=
+
+# Enable transparency effects (boolean)
+#skins2-transparency=0
+
+# Use a skinned playlist (boolean)
+#skinned-playlist=1
+
+# Display video in a skinned window if any (boolean)
+#skinned-video=1
 
 [ncurses] # Ncurses interface
 
@@ -3427,6 +3615,17 @@ logo-position=0
 # Continuous 22kHz tone (integer)
 #dvb-tone=-1
 
+[smb] # SMB input
+
+# Username (string)
+#smb-user=
+
+# Password (string)
+#smb-pwd=
+
+# SMB domain (string)
+#smb-domain=
+
 [linsys_hdsdi] # HD-SDI Input
 
 # Link # (integer)
@@ -3725,7 +3924,7 @@ vout=any
 #video-splitter=
 
 # Enable sub-pictures (boolean)
-#spu=1
+spu=0
 
 # On Screen Display (boolean)
 #osd=1
@@ -4136,13 +4335,13 @@ key-play-pause=Space
 #key-play=Browser Refresh
 
 # Faster (string)
-global-key-faster=Ctrl+Shift+}
+#global-key-faster=
 
 # Faster (string)
 key-faster==
 
 # Slower (string)
-global-key-slower=Ctrl+Shift+{
+#global-key-slower=
 
 # Slower (string)
 #key-slower=-
@@ -4154,13 +4353,13 @@ global-key-rate-normal=Ctrl+Shift++
 key-rate-normal=0
 
 # Faster (fine) (string)
-global-key-rate-faster-fine=Ctrl+Shift+n
+global-key-rate-faster-fine=Ctrl+Shift+}
 
 # Faster (fine) (string)
 #key-rate-faster-fine=]
 
 # Slower (fine) (string)
-global-key-rate-slower-fine=Ctrl+Shift+p
+global-key-rate-slower-fine=Ctrl+Shift+{
 
 # Slower (fine) (string)
 #key-rate-slower-fine=[
@@ -4190,7 +4389,7 @@ global-key-rate-slower-fine=Ctrl+Shift+p
 #key-position=t
 
 # Very short backwards jump (string)
-global-key-jump-extrashort=Ctrl+Shift+>
+global-key-jump-extrashort=Ctrl+Shift+<
 
 # Very short backwards jump (string)
 key-jump-extrashort=j

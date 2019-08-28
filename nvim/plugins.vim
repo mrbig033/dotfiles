@@ -1,5 +1,6 @@
 " {{{ plug
 call plug#begin('~/.config/nvim/plugins/plugged')
+Plug 'itchyny/lightline.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-eunuch'
@@ -67,6 +68,7 @@ let g:Vertigo_onedigit_method = 'smart4'
 " {{{ sneak
 map f <Plug>Sneak_s
 map F <Plug>Sneak_S
+let g:sneak#use_ic_scs = 0
 let g:sneak#label = 1
 let g:sneak#s_next = 1
 let g:sneak#target_labels = "asdfhjklqwertyu"
