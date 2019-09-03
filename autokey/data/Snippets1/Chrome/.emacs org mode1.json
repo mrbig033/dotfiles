@@ -1,0 +1,31 @@
+{
+    "sendMode": "kb",
+    "type": "phrase",
+    "description": "emacs org mode",
+    "showInTrayMenu": false,
+    "hotkey": {
+        "modifiers": [],
+        "hotKey": null
+    },
+    "matchCase": false,
+    "filter": {
+        "isRecursive": false,
+        "regex": "google-chrome.Google-chrome"
+    },
+    "modes": [
+        1
+    ],
+    "prompt": false,
+    "omitTrigger": false,
+    "usageCount": 8,
+    "abbreviation": {
+        "wordChars": "[^ \\n]",
+        "immediate": true,
+        "ignoreCase": false,
+        "abbreviations": [
+            "org."
+        ],
+        "triggerInside": false,
+        "backspace": true
+    }
+}

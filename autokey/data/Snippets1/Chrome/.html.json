@@ -1,0 +1,31 @@
+{
+    "hotkey": {
+        "modifiers": [],
+        "hotKey": null
+    },
+    "omitTrigger": false,
+    "description": "html",
+    "matchCase": false,
+    "showInTrayMenu": false,
+    "sendMode": "kb",
+    "abbreviation": {
+        "ignoreCase": false,
+        "abbreviations": [
+            "httt"
+        ],
+        "wordChars": "[^ \\n]",
+        "immediate": false,
+        "backspace": true,
+        "triggerInside": false
+    },
+    "type": "phrase",
+    "modes": [
+        1
+    ],
+    "usageCount": 1,
+    "prompt": false,
+    "filter": {
+        "regex": "google-chrome.Google-chrome",
+        "isRecursive": false
+    }
+}

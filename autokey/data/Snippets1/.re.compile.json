@@ -1,0 +1,31 @@
+{
+    "hotkey": {
+        "hotKey": null,
+        "modifiers": []
+    },
+    "description": "re.compile",
+    "type": "phrase",
+    "prompt": false,
+    "filter": {
+        "regex": "xfce4-terminal.Xfce4-terminal",
+        "isRecursive": false
+    },
+    "usageCount": 17,
+    "abbreviation": {
+        "immediate": true,
+        "wordChars": "[\\w]",
+        "triggerInside": false,
+        "backspace": true,
+        "abbreviations": [
+            "rr"
+        ],
+        "ignoreCase": false
+    },
+    "matchCase": false,
+    "omitTrigger": false,
+    "modes": [
+        1
+    ],
+    "sendMode": "kb",
+    "showInTrayMenu": false
+}

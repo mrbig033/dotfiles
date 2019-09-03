@@ -1,0 +1,253 @@
+" {{{ vim-plug
+call plug#begin('~/.vim/plugged')
+Plug 'tpope/vim-commentary'
+Plug 'itchyny/lightline.vim'
+Plug 'sjl/badwolf'
+Plug 'tpope/vim-rsi'
+Plug 'chrisbra/NrrwRgn'
+Plug 'tpope/vim-repeat'
+Plug 'tpope/vim-surround'
+Plug 'jiangmiao/auto-pairs'
+Plug ''
+Plug 'reedes/vim-pencil'
+Plug 'justinmk/vim-sneak'
+Plug 'junegunn/goyo.vim'
+Plug 'vim-utils/vim-husk'
+Plug 'farmergreg/vim-lastplace'
+Plug 'mbbill/undotree'
+call plug#end()
+" }}}
+" {{{ plug settings
+" {{{ narrow
+xmap <leader>n <Plug>NrrwrgnDo
+" }}}
+" {{{ goyo
+function! s:goyo_enter()
+    set showtabline=0
+endfunction
+function! s:goyo_leave()
+    hi statusline ctermbg=black
+    set showtabline=2
+endfunction
+autocmd! User GoyoEnter nested call <SID>goyo_enter()
+autocmd! User GoyoLeave nested call <SID>goyo_leave()
+let g:goyo_width = 95
+let g:goyo_height = 90
+let g:goyo_linenr = 1
+" }}}
+" {{{ sneak
+nnoremap gf f
+nnoremap gF F
+map f <Plug>Sneak_s
+map F <Plug>Sneak_S
+let g:sneak#label = 1
+let g:sneak#s_next = 1
+let g:sneak#target_labels = "asdfhjklqwertyu"
+" }}}
+" {{{ autopairs
+let g:AutoPairsShortcutToggle = '<c-c>p'
+let g:AutoPairsShortcutJump = '<c-x><c-x>'
+" }}}
+" {{{ pencil
+let g:auto_save = 1
+let g:auto_save_silent = 1
+set nocompatible
+filetype plugin on
+augroup pencil
+    autocmd!
+    autocmd FileType markdown,mkd call pencil#init()
+    autocmd FileType text         call pencil#init()
+augroup END
+let g:pencil#textwidth = 79
+" }}}
+" undo-tree
+nnoremap <F5> :UndotreeToggle<cr>
+" }}}
+" {{{ vim settings
+syntax on
+set backup
+set nu rnu
+set nowrap
+set backup
+set nu rnu
+set hidden
+set nowrap
+set nolist
+set notitle
+set showcmd
+set mouse=a
+set gdefault
+set modeline
+set undofile
+set wildmenu
+set autoread
+set ttimeout
+set hlsearch
+set tabstop=8
+set expandtab
+set linebreak
+set showmatch
+set notimeout
+set autochdir
+set linebreak
+set smartcase
+set incsearch
+set showmatch
+set lazyredraw
+set autoindent
+set noshowmode
+set noswapfile
+set splitbelow
+set splitright
+set shiftround
+set cursorline
+set guioptions=
+set matchtime=3
+set shiftwidth=4
+set textwidth=79
+set history=1000
+set autowriteall
+set showbreak =.
+set softtabstop=4
+set synmaxcol=200
+set regexpengine=1
+set conceallevel=3
+set ttimeoutlen=10
+filetype plugin on
+colorscheme badwolf
+set updatetime=1000
+colorscheme badwolf
+set foldlevelstart=0
+set undolevels=50000
+set undoreload=50000
+set foldmethod=marker
+set virtualedit=block
+set foldmethod=marker
+set display+=lastline
+set undodir=~/.vim/.undo
+syntax sync minlines=256
+set wildmode=list:longest
+set shortmess=aoOtIsTWAqF
+filetype plugin indent on
+set backupdir=~/.vim/.backup
+set backspace=indent,eol,start
+set clipboard=unnamed,unnamedplus
+set clipboard+=unnamed,unnamedplus
+set omnifunc=syntaxcomplete#Complete
+highlight EndOfBuffer ctermfg=black ctermbg=black
+hi! EndOfBuffer ctermbg=bg ctermfg=bg guibg=bg guifg=bg " hide ugly tidles
+" autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
+" autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o " Disable auto comments
+""}}}"}}}
+"{{{ mappings
+let mapleader ="\<space>"
+" folds
+nnoremap <silent> <tab> :silent execute "normal! za"<cr>
+" mark whole buffer
+nnoremap <c-x>h mzgg<s-v>g
+vnoremap <esc> <esc>`z
+
+nnoremap ! :qa!<cr>
+nnoremap Q :wqa!<cr>
+nnoremap <leader>q :bunload<cr>
+
+" increase / decrease number
+nnoremap <c-s-a> <c-a>
+vnoremap <c-s-a> <c-a>
+nnoremap <c-s-x> <c-x>
+vnoremap <c-s-x> <c-x>
+" kill line
+inoremap <c-k> <c-o>D
+
+" cursor signaling
+autocmd InsertEnter,InsertLeave * set cul!
+
+" undo
+inoremap <c-_> <c-o>u
+
+" up and down line
+inoremap <c-n> <c-o>j
+inoremap <c-p> <c-o>k
+
+nnoremap <silent> <space>mg :Goyo<cr>:echo ""<cr>
+
+nnoremap <silent> ge g_
+nnoremap <silent> gr vg_
+
+inoremap <c-f> <c-o>l
+
+nnoremap ; :
+
+nnoremap <c-s-j> ddjP
+nnoremap <c-s-k> ddkP
+
+nnoremap ! :qa!<cr>
+nnoremap q :wqa!<cr>
+nnoremap <leader>q :bunload<cr>
+nnoremap go o<esc>
+nnoremap gi o<esc>
+nnoremap <m-space> :s/\s\+/ /g<cr>w:noh<cr>:echo ""<cr>
+" {{{ windows
+
+" nnoremap <silent> <m-h> <c-w>h
+nnoremap <silent> <esc>h :noh<cr>:echo ""<cr><c-w>h
+nnoremap <silent> <esc>l :noh<cr>:echo ""<cr><c-w>l
+nnoremap <silent> <esc>j <c-w>j
+nnoremap <silent> <esc>k <c-w>k
+
+nnoremap <silent> <leader> :only<cr>
+nnoremap <silent> <leader>0 :quit<cr>
+
+nnoremap <silent> <leader>k :split<cr><c-w>
+nnoremap <silent> <leader>j :split<cr>
+nnoremap <silent> <leader>h :vsplit<cr><c-w>w
+nnoremap <silent> <leader>l :vsplit<cr>
+
+nnoremap <silent> <leader>K :botright split<cr><c-w>
+nnoremap <silent> <leader>J :botright split<cr>
+nnoremap <silent> <leader>H :botright vsplit<cr><c-w>w
+nnoremap <silent> <leader>L :botright vsplit<cr>
+
+" RESIZE WINDOWS
+" <c-w>=    balance windows
+" ctrl-w +  increase height of current window by 1 line
+" ctrl-w -  decrease height of current window by 1 line
+" ctrl-w _  maximise height of current window
+" ctrl-w |  maximise width of current window
+
+" MOVE WINDOWS
+" ctrl-w r  rotate all windows
+" ctrl-w x  exchange current window with its neighbour
+" ctrl-w H  move current window to far left
+" ctrl-w J  move current window to bottom
+" ctrl-w K  move current window to top
+" ctrl-w L  move current window to far right
+
+" }}}
+" Save when leaving insert
+" inoremap <silent> <esc> <c-o>:silent w!<cr><esc>
+" Help Single Window
+nnoremap <c-k> K:only<cr>
+
+nnoremap <silent> <esc> :silent! wa!<cr>:noh<cr>:echo ""<cr>
+
+" }}}
+" {{{ functions
+" {{{ autosave
+augroup myAutoSave!
+    autocmd!
+    au FocusLost * :silent wall!
+augroup END
+au FocusGained * :checktime
+" }}}
+" }}}}
+" {{{ abbrevs
+cabbrev s! silent wa!<bar>silent so %
+cabbrev sthis! silent wa!<bar>silent so %
+cabbrev p! let @+ = expand("%:p") <bar> echo "path yanked"
+cabbrev c! source ~/.vimrc <bar> PlugClean
+cabbrev path! let @+ = expand("%:p") <bar> echo "path yanked"
+cabbrev i! source ~/.vimrc <bar> PlugInstall
+cabbrev clean! source ~/.vimrc <bar> PlugClean
+cabbrev install! source ~/.virmc <bar> PlugInstall
+" }}}

@@ -1,0 +1,31 @@
+{
+    "hotkey": {
+        "hotKey": null,
+        "modifiers": []
+    },
+    "description": "identify",
+    "type": "phrase",
+    "prompt": false,
+    "filter": {
+        "regex": "hexchat.Hexchat",
+        "isRecursive": false
+    },
+    "usageCount": 3,
+    "abbreviation": {
+        "immediate": true,
+        "wordChars": "[\\w]",
+        "triggerInside": false,
+        "backspace": true,
+        "abbreviations": [
+            "id."
+        ],
+        "ignoreCase": false
+    },
+    "matchCase": false,
+    "omitTrigger": false,
+    "modes": [
+        1
+    ],
+    "sendMode": "kb",
+    "showInTrayMenu": false
+}

@@ -1,0 +1,29 @@
+{
+    "hotkey": {
+        "hotKey": null,
+        "modifiers": []
+    },
+    "description": "os.chdir",
+    "type": "phrase",
+    "prompt": false,
+    "filter": {
+        "regex": "xfce4-terminal.Xfce4-terminal",
+        "isRecursive": false
+    },
+    "usageCount": 0,
+    "abbreviation": {
+        "immediate": true,
+        "wordChars": "[\\w]",
+        "triggerInside": false,
+        "backspace": false,
+        "abbreviations": [
+            "os.c"
+        ],
+        "ignoreCase": false
+    },
+    "matchCase": false,
+    "omitTrigger": false,
+    "modes": [],
+    "sendMode": "kb",
+    "showInTrayMenu": false
+}

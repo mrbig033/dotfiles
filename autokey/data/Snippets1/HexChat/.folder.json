@@ -1,0 +1,23 @@
+{
+    "abbreviation": {
+        "immediate": false,
+        "wordChars": "[\\w]",
+        "triggerInside": false,
+        "backspace": true,
+        "abbreviations": [],
+        "ignoreCase": false
+    },
+    "hotkey": {
+        "hotKey": null,
+        "modifiers": []
+    },
+    "title": "HexChat",
+    "modes": [],
+    "type": "folder",
+    "showInTrayMenu": false,
+    "filter": {
+        "regex": null,
+        "isRecursive": false
+    },
+    "usageCount": 0
+}

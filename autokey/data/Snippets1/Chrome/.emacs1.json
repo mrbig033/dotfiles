@@ -1,0 +1,31 @@
+{
+    "omitTrigger": false,
+    "type": "phrase",
+    "filter": {
+        "isRecursive": false,
+        "regex": "google-chrome.Google-chrome"
+    },
+    "prompt": false,
+    "abbreviation": {
+        "wordChars": "[^ \\n]",
+        "triggerInside": false,
+        "abbreviations": [
+            "e."
+        ],
+        "immediate": true,
+        "ignoreCase": false,
+        "backspace": true
+    },
+    "hotkey": {
+        "modifiers": [],
+        "hotKey": null
+    },
+    "matchCase": false,
+    "usageCount": 2,
+    "modes": [
+        1
+    ],
+    "sendMode": "kb",
+    "description": "emacs",
+    "showInTrayMenu": false
+}

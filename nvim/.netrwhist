@@ -1,0 +1,11 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =9
+let g:netrw_dirhist_1='/usr/lib/eclipse/p2/org.eclipse.equinox.p2.core'
+let g:netrw_dirhist_2='/home/dotfiles/scripts/i3_scripts/reload'
+let g:netrw_dirhist_3='/home/george/.IntelliJIdea2019.1'
+let g:netrw_dirhist_4='/etc/init.d'
+let g:netrw_dirhist_5='/home/dotfiles/scripts/i3_scripts/reload'
+let g:netrw_dirhist_6='/home/george/.config/i3'
+let g:netrw_dirhist_7='/home/jerry/.gvfs'
+let g:netrw_dirhist_8='/home/jerry/.config/i3'
+let g:netrw_dirhist_9='/usr/local/etc/mpv'

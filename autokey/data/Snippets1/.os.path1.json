@@ -1,0 +1,31 @@
+{
+    "hotkey": {
+        "hotKey": null,
+        "modifiers": []
+    },
+    "description": "os.path",
+    "type": "phrase",
+    "prompt": false,
+    "filter": {
+        "regex": "xfce4-terminal.Xfce4-terminal",
+        "isRecursive": false
+    },
+    "usageCount": 2,
+    "abbreviation": {
+        "immediate": true,
+        "wordChars": "[\\w]",
+        "triggerInside": false,
+        "backspace": true,
+        "abbreviations": [
+            "os.p"
+        ],
+        "ignoreCase": false
+    },
+    "matchCase": false,
+    "omitTrigger": false,
+    "modes": [
+        1
+    ],
+    "sendMode": "<ctrl>+<shift>+v",
+    "showInTrayMenu": false
+}

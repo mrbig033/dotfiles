@@ -1,0 +1,58 @@
+# give color
+set colored-stats on
+# Append char to indicate type
+set visible-stats on
+# Mark symlinked directories
+set mark-symlinked-directories on
+# Color the common prefix
+set colored-completion-prefix on
+# Color the common prefix in menu-complete
+set menu-complete-display-prefix On
+# disable ctrl echoe
+set echo-control-characters off
+# fix del key
+set enable-keypad On
+# show completions early
+set show-all-if-ambiguous on
+# ignore case
+set completion-ignore-case on
+
+# M-u: Task
+# "u": "\C-k \C-uclear && ttasks\C-m"
+
+# FZF to M-u
+# https://github.com/junegunn/fzf/issues/1531#issuecomment-475153669
+"u": " \C-e\C-u`__fzf_cd__`\e\C-e\er\C-m"
+
+# M-u: Taskwarrior
+# "u": "\C-k \C-uclear && clear && task\C-m"
+
+
+# M-i: Timewarrior
+# "i": "\C-k \C-uclear && timew summary today :ids\n"
+
+# M-i: Data
+# "i": "\C-k \C-uclear && d\C-m"
+
+# M-u: Edit command in Vim
+"i": ""
+
+# C-i: Return
+# "y": "\C-k \C-uclear && timew summary today :ids\n"
+
+# Cmus
+# "m": "\C-k \C-uclear && ~/scripts/cline_scripts/cm\n"
+
+# Ranger Cd
+"": "\C-k \C-uclear && ranger\C-m"
+
+# Go To Ranger
+# "o": "\C-k \C-uclear && ~/scripts/cline_scripts/gotoranger\C-m"
+
+# Python
+"p": "\C-k \C-uclear && python -q\C-m"
+
+
+
+# M-u: Foreground
+# "u": "\C-k \C-uclear && clear && fg\C-m"

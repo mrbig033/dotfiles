@@ -1,0 +1,31 @@
+{
+    "filter": {
+        "isRecursive": false,
+        "regex": "google-chrome.Google-chrome"
+    },
+    "usageCount": 8,
+    "abbreviation": {
+        "triggerInside": false,
+        "backspace": true,
+        "immediate": true,
+        "ignoreCase": false,
+        "abbreviations": [
+            "rtmk."
+        ],
+        "wordChars": "[^ \\n]"
+    },
+    "matchCase": false,
+    "type": "phrase",
+    "prompt": false,
+    "sendMode": "kb",
+    "modes": [
+        1
+    ],
+    "description": "rtm keyboard shortcuts",
+    "omitTrigger": false,
+    "showInTrayMenu": false,
+    "hotkey": {
+        "hotKey": null,
+        "modifiers": []
+    }
+}

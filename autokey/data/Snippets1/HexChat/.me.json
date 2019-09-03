@@ -1,0 +1,31 @@
+{
+    "hotkey": {
+        "hotKey": null,
+        "modifiers": []
+    },
+    "description": "/me",
+    "type": "phrase",
+    "prompt": false,
+    "filter": {
+        "regex": "hexchat.Hexchat",
+        "isRecursive": false
+    },
+    "usageCount": 0,
+    "abbreviation": {
+        "immediate": true,
+        "wordChars": "[\\w]",
+        "triggerInside": false,
+        "backspace": true,
+        "abbreviations": [
+            "me."
+        ],
+        "ignoreCase": false
+    },
+    "matchCase": false,
+    "omitTrigger": false,
+    "modes": [
+        1
+    ],
+    "sendMode": "kb",
+    "showInTrayMenu": false
+}

@@ -1,0 +1,4 @@
+.backupdir/**
+.undodir/**
+plugin/**
+plugins/**

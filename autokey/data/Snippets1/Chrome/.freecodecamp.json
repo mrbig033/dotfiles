@@ -1,0 +1,31 @@
+{
+    "usageCount": 1,
+    "abbreviation": {
+        "abbreviations": [
+            "fcc"
+        ],
+        "triggerInside": false,
+        "backspace": true,
+        "immediate": false,
+        "ignoreCase": false,
+        "wordChars": "[\\w]"
+    },
+    "showInTrayMenu": false,
+    "modes": [
+        1
+    ],
+    "sendMode": "kb",
+    "type": "phrase",
+    "description": "freecodecamp",
+    "hotkey": {
+        "modifiers": [],
+        "hotKey": null
+    },
+    "filter": {
+        "regex": null,
+        "isRecursive": false
+    },
+    "prompt": false,
+    "omitTrigger": false,
+    "matchCase": false
+}

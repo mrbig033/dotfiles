@@ -1,0 +1,35 @@
+" clipboard
+set clipboard+=unnamed,unnamedplus
+
+" mark whole buffer
+nnoremap <c-x>h mZgg<s-v>G
+vnoremap <esc> <esc>`Z
+
+" kill line
+inoremap <c-k> <c-o>D
+
+" line motions
+nnoremap <c-a> g0
+nnoremap <c-e> g$
+inoremap <c-a> <c-o>g0
+inoremap <c-e> <c-o>g$a
+nnoremap <silent> ge g_
+nnoremap <silent> gr vg_
+inoremap <c-f> <esc>la
+inoremap <c-u> <c-o>d0<esc>i
+
+" line numbers
+set nu rnu
+
+nnoremap go o<esc>
+nnoremap gi O<esc>
+
+" case and search
+" set hlsearch
+set ignorecase
+set gdefault
+set incsearch
+
+" extensions
+set surround
+set multiple-cursors

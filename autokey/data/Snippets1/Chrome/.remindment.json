@@ -1,0 +1,31 @@
+{
+    "matchCase": false,
+    "omitTrigger": false,
+    "showInTrayMenu": false,
+    "modes": [
+        1
+    ],
+    "type": "phrase",
+    "sendMode": "kb",
+    "hotkey": {
+        "modifiers": [],
+        "hotKey": null
+    },
+    "abbreviation": {
+        "triggerInside": false,
+        "abbreviations": [
+            "remindme."
+        ],
+        "wordChars": "[\\w]",
+        "immediate": true,
+        "ignoreCase": false,
+        "backspace": true
+    },
+    "filter": {
+        "isRecursive": false,
+        "regex": "google-chrome.Google-chrome"
+    },
+    "prompt": false,
+    "usageCount": 0,
+    "description": "remindment"
+}

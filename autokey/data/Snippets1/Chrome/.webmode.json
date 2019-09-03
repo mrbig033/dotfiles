@@ -1,0 +1,31 @@
+{
+    "sendMode": "kb",
+    "hotkey": {
+        "hotKey": null,
+        "modifiers": []
+    },
+    "usageCount": 0,
+    "filter": {
+        "regex": null,
+        "isRecursive": false
+    },
+    "type": "phrase",
+    "omitTrigger": false,
+    "prompt": false,
+    "modes": [
+        1
+    ],
+    "showInTrayMenu": false,
+    "description": "webmode",
+    "matchCase": false,
+    "abbreviation": {
+        "immediate": false,
+        "abbreviations": [
+            "webmode"
+        ],
+        "triggerInside": false,
+        "wordChars": "[\\w]",
+        "ignoreCase": false,
+        "backspace": true
+    }
+}
