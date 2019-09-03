@@ -7,8 +7,8 @@
 # Preferences dialog.
 
 (import-raw-plug-in "${gimp_plug_in_dir}/plug-ins/file-raw-placeholder/file-raw-placeholder")
-(monitor-xresolution 112.000000)
-(monitor-yresolution 113.000000)
+(monitor-xresolution 70.000000)
+(monitor-yresolution 70.000000)
 (default-view
     (show-menubar yes)
     (show-statusbar yes)

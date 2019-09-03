@@ -4530,13 +4530,13 @@ key-nav-right=
 #global-key-subdelay-up=
 
 # Subtitle delay up (string)
-key-subdelay-up=
+key-subdelay-up=Ctrl+,
 
 # Subtitle delay down (string)
 #global-key-subdelay-down=
 
 # Subtitle delay down (string)
-key-subdelay-down=
+key-subdelay-down=Ctrl+.
 
 # Subtitle sync / bookmark audio timestamp (string)
 #global-key-subsync-markaudio=
@@ -4578,13 +4578,13 @@ key-subsync-apply=
 #global-key-audiodelay-up=
 
 # Audio delay up (string)
-key-audiodelay-up=
+key-audiodelay-up=Shift+Up
 
 # Audio delay down (string)
 #global-key-audiodelay-down=
 
 # Audio delay down (string)
-key-audiodelay-down=
+key-audiodelay-down=Shift+Down
 
 # Cycle audio track (string)
 #global-key-audio-track=

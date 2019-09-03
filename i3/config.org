@@ -185,6 +185,7 @@ bindsym $mod+Down focus Down
 bindsym $mod+l focus Right
 bindsym $mod+Right focus Right
 
+bindsym $mod+comma [class="Emacs"] focus
 bindsym $mod+space focus mode_toggle
 bindsym $mod+$alt+h focus output Left
 bindsym $mod+$alt+l focus output Right
@@ -197,7 +198,6 @@ bindsym $alt+Shift+p focus parent;exec notify-send 'parent focus'
 bindsym $mod+q kill
 
 # bindsym $mod+Shift+n [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "~/scripts/emacs_scripts/eclaunch-agenda"
-bindsym $mod+period [class="vlc" title="VLC media player"] focus
 bindsym $mod+Return exec st
 bindsym --release $mod+Shift+q exec xkill
 bindsym $mod+F5 exec --no-startup-id $Locker
@@ -207,7 +207,7 @@ bindsym $mod+d exec dmenu_run -i -l 5 -fn 'Input Mono-13'
 # bindsym $mod+d exec dmenu_run -i -l 5
 # bindsym $mod+d exec dmenu_run
 bindsym --release Print exec "xfce4-screenshooter --region"
-
+bindsym F9 exec "~/.emacs_anywhere/bin/run"
 # bindsym --release Print exec "~/scripts/cline_scripts/screenshotfull"
 bindsym $mod+Shift+F5 exec "i3-nagbar -t warning -m 'Exit i3?' -b 'Yes' 'i3-msg exit'"
 #+END_SRC
@@ -390,7 +390,7 @@ for_window [title="term-up"] border none
 for_window [title="term-up"] floating enable sticky enable
 for_window [title="term-up"] move scratchpad
 for_window [title="term-up"] resize set 1250 450; move to position 350 0
-bindsym $mod+u [title="term-ranger"] move scratchpad; ; [title="term-up"] scratchpad show; move to position 350 0; move to position 350 0
+bindsym $mod+u [title="term-ranger"] move scratchpad; [title="term-up"] scratchpad show; move to position 350 0; move to position 350 0
 #+END_SRC
 *** Term Ranger
 #+BEGIN_SRC i3

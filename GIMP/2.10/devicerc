@@ -3,11 +3,10 @@
 (GimpDeviceInfo "Core Pointer"
     (icon-name "gimp-cursor")
     (name "Core Pointer")
-    (tool-options "GimpCropOptions"
-        (aspect-denominator 649.000000)
-        (aspect-numerator 580.000000)
-        (tool "gimp-crop-tool"))
-    (use-fg-bg no)
+    (tool-options "GimpColorPickerOptions"
+        (tool "gimp-color-picker-tool")
+        (foreground (color-rgb 1.000000 1.000000 1.000000)))
+    (use-fg-bg yes)
     (use-brush no)
     (use-dynamics no)
     (use-mypaint-brush no)

@@ -1,0 +1,18 @@
+#!/bin/bash
+
+emacsclient --socket-name=gui-emacs --no-wait -e "(if (> (length (frame-list)) 1) 't)" | grep t
+if [ "$?" = "1" ]; then
+    if [ "$DISPLAY" = "" ]; then
+        emacsclient --socket-name=gui-emacs --create-frame --alternate-editor=""
+    else
+        emacsclient --socket-name=gui-emacs --create-frame --no-wait --alternate-editor=""
+    fi
+else
+    if [ "$DISPLAY" = "" ]; then
+        emacsclient--socket-name=gui-emacs --alternate-editor=""
+    else
+        emacsclient --socket-name=gui-emacs --no-wait --alternate-editor=""
+    fi
+fi
+
+i3-msg "[class=Emacs]" focus &>/dev/null

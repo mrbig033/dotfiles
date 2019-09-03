@@ -82,8 +82,6 @@ nnoremap <silent> <expr> k (v:count? 'k' : 'gk')
 " replace
 nnoremap <leader>su :%s/
 
-" paste from insert
-inoremap <c-v> <c-r>+
 " inoremap <c-x>v <c-v>
 
 " " remove blank lines
@@ -125,6 +123,8 @@ nnoremap <silent> <leader>k :silent bd!<cr>
 
 " add mapping to make if more like Emacs
 nnoremap <leader>f gf
+
+
 
 " mark whole buffer
 nnoremap <c-x>h mZgg<s-v>G

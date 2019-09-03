@@ -1,7 +1,8 @@
 # GIMP user context
 
-(tool "gimp-crop-tool")
+(tool "gimp-color-picker-tool")
 (paint-info "gimp-paintbrush")
+(foreground (color-rgb 1.000000 1.000000 1.000000))
 (brush "2. Hardness 050")
 (dynamics "Dynamics Off")
 (mybrush "Standard")
