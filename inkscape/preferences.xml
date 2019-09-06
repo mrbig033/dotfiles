@@ -132,8 +132,8 @@
          id="rect"
          style="fill:blue;"
          usecurrent="1"
-         width="0"
-         height="0"
+         width="509.117"
+         height="602.051"
          rx="0"
          ry="0" />
       <eventcontext
@@ -324,7 +324,7 @@
        id="lpetool"
        mode="drag"
        style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;"
-       unit="px"
+       unit="mm"
        show_bbox="1" />
     <eventcontext
        id="text"
@@ -335,8 +335,8 @@
        style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px"
        selcue="1">
       <group
-         display_unit="0"
-         id="lineheight" />
+         id="lineheight"
+         display_unit="0" />
     </eventcontext>
     <eventcontext
        id="nodes"
@@ -422,12 +422,12 @@
        offset="0"
        offsetunits="cm" />
     <group
-       unit="px"
-       offset="5"
-       scale="100"
-       precision="2"
+       id="measure"
        fontsize="10"
-       id="measure" />
+       precision="2"
+       scale="100"
+       offset="5"
+       unit="mm" />
   </group>
   <group
      id="palette">
@@ -572,14 +572,14 @@
        panel_mode="1"
        panel_wrap="0"
        panel_border="0"
-       page="0"
+       page="1"
        x="0"
        y="0"
-       w="300"
-       h="516"
-       visible="0"
+       w="352"
+       h="475"
+       visible="1"
        state="2"
-       placement="1" />
+       placement="5" />
     <group
        id="filtereffects" />
     <group
@@ -594,14 +594,14 @@
        panel_mode="1"
        panel_wrap="0"
        panel_border="0"
-       align-to="0"
+       align-to="4"
        x="0"
        y="0"
-       w="300"
-       h="516"
-       visible="0"
+       w="352"
+       h="475"
+       visible="1"
        state="2"
-       placement="1" />
+       placement="5" />
     <group
        id="xml" />
     <group
@@ -614,7 +614,18 @@
        ignorenumbers="1" />
     <group
        id="documentoptions"
-       state="1" />
+       state="1"
+       panel_size="1"
+       panel_ratio="100"
+       panel_mode="1"
+       panel_wrap="0"
+       panel_border="0"
+       x="1844"
+       y="1058"
+       w="1916"
+       h="982"
+       visible="0"
+       placement="1" />
     <group
        id="preferences"
        state="1"
@@ -644,16 +655,17 @@
        panel_border="0"
        x="0"
        y="0"
-       w="341"
-       h="477"
-       visible="0"
+       w="352"
+       h="475"
+       visible="1"
        state="2"
-       placement="1">
+       placement="5">
       <group
          id="exportarea"
          value="drawing" />
       <group
-         id="defaultxdpi" />
+         id="defaultxdpi"
+         value="96.03" />
     </group>
     <group
        id="save_as"
@@ -1022,8 +1034,8 @@
     <group
        id="rendering" />
     <group
-       id="kbshortcuts"
-       value="center" />
+       value="align"
+       id="kbshortcuts" />
   </group>
   <group
      id="extensions"
@@ -1032,15 +1044,15 @@
      org.inkscape.render.empty_video.height="1080" />
   <group
      id="desktop"
-     style="line-height:1.25;stroke-width:1.065;stroke-miterlimit:4;stroke-dasharray:none;stroke:#ff0000;stroke-opacity:1;fill:#ff6600">
+     style="line-height:1.25;stroke-width:1.065;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:0;fill:#ffffff;-inkscape-font-specification:Roboto;font-family:Roboto;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:133.33333333px">
     <group
-       width="956"
-       height="989"
-       x="960"
-       y="66"
+       width="1920"
+       height="1034"
+       x="0"
+       y="44"
        fullscreen="0"
        id="geometry"
-       maximized="1" />
+       maximized="0" />
     <group
        id="XYfront" />
     <group

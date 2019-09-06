@@ -218,3 +218,7 @@ if [ -n "$RANGER_LEVEL" ]; then export PS1="[RANGER]$PS1"; fi
 export PATH="/home/jerry/.pyenv/bin:$PATH"
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
+
+# Nodenv - transferir para bash_profile
+export PATH="$HOME/.nodenv/versions/12.9.0/bin:$PATH"
+export PATH="$HOME/.nodenv/bin:$PATH"

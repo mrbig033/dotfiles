@@ -81,7 +81,6 @@ nnoremap <silent> <expr> k (v:count? 'k' : 'gk')
 
 " replace
 nnoremap <leader>su :%s/
-
 " inoremap <c-x>v <c-v>
 
 " " remove blank lines

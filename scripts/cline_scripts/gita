@@ -6,7 +6,7 @@ clear &&
 echo ""
 
 echo "adding gitignore" &&
-git add .gitignore &&
+git add .gitignore -f &&
 
 echo "commiting" &&
 git commit -m "$message" &&

@@ -1,4 +1,5 @@
 # GIMP gimp-ellipse-select-tool options
 
+(operation subtract)
 
 # end of gimp-ellipse-select-tool options

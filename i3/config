@@ -124,18 +124,17 @@ exec --no-startup-id "xrandr --output DP-1 --off --output HDMI-1 --mode 1920x108
 exec --no-startup-id "sleep 10 && redshift &"
 exec --no-startup-id "sleep 10 && feh --recursive --randomize --bg-fill ~/Wallpaper/Zen/pedramolhada.png &"
 
-bindsym $mod+k focus Up
-bindsym $mod+Up focus Up
-bindsym $mod+Tab focus Up
-bindsym $mod+Escape focus Left
 
 bindsym $mod+h focus Left
-bindsym $mod+Left focus Left
-
-bindsym $mod+j focus Down
-bindsym $mod+Down focus Down
-
 bindsym $mod+l focus Right
+bindsym $mod+j focus Down
+bindsym $mod+k focus Up
+
+bindsym $mod+Up focus Up
+bindsym $mod+Tab focus Up
+bindsym $mod+Left focus Left
+bindsym $mod+Escape focus Left
+bindsym $mod+Down focus Down
 bindsym $mod+Right focus Right
 
 bindsym $mod+comma [class="Emacs"] focus
@@ -149,7 +148,7 @@ bindsym $alt+Shift+p focus parent;exec notify-send 'parent focus'
 bindsym $mod+q kill
 
 # bindsym $mod+Shift+n [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "~/scripts/emacs_scripts/eclaunch-agenda"
-bindsym $mod+Return exec st
+bindsym $mod+Return exec st3
 bindsym --release $mod+Shift+q exec xkill
 bindsym $mod+F5 exec --no-startup-id $Locker
 bindsym $mod+z exec --no-startup-id morc_menu
@@ -185,14 +184,12 @@ bindsym $mod+x layout toggle all
 bindsym $mod+v split v;exec notify-send --expire-time=1000 'tile vertically'
 bindsym $mod+Control+o split h;exec notify-send --expire-time=1000 'tile horizontally'
 
-# bindsym --release Menu mode "$launch"
 bindsym Menu mode "$launch"
 
 mode "$launch" {
 
-# bindsym t exec pcmanfm; mode default
-# bindsym 1 exec "~/scripts/i3_scripts/touchpad_off"; mode default
-# bindsym 2 exec "~/scripts/i3_scripts/touchpad_on"; mode default
+bindsym 1 exec "~/scripts/i3_scripts/touchpad_off"; mode default
+bindsym 2 exec "~/scripts/i3_scripts/touchpad_on"; mode default
 
 bindsym Shift+w exec feh --recursive --randomize --bg-fill ~/Wallpaper; mode default
 
@@ -214,7 +211,8 @@ mode "$tilling_small_steps" {
 
 bindsym $mod+h move Left
 bindsym $mod+j move Down
-bindsym $mod+k move Up bindsym $mod+l move Right
+bindsym $mod+k move Up 
+bindsym $mod+l move Right
 
 bindsym Left focus Left
 bindsym Down focus Down
@@ -233,93 +231,11 @@ bindsym k resize grow height         6 px or 6 ppt
 bindsym Shift+l resize shrink width  6 px or 6 ppt
 bindsym l resize grow width          6 px or 6 ppt
 
-# bindsym apostrophe mode "$float_mode"
-# bindsym $mod+apostrophe exec notify-send 'float small'; mode "$float_small_steps"
-
-bindsym apostrophe mode default; exec notify-send 'mode: default'
-bindsym $mod+apostrophe mode default; exec notify-send 'mode: default'
-
 bindsym Escape mode default; exec notify-send 'mode: default'
 }
 
-# mode "$float_small_steps" {
-
-# bindsym h resize shrink Right 80px or 80ppt
-# bindsym l resize grow   Right 80px or 80ppt
-# bindsym j resize grow   Down  80px or 80ppt
-# bindsym k resize shrink Down  80px or 80ppt
-
-# bindsym b move Left  100px
-# bindsym f move Right 100px
-# bindsym p move Up    100px
-# bindsym n move Down  100px
-
-# bindsym $mod+apostrophe mode default
-
-# bindsym Escape mode default
-# }
-
-# mode "$tilling_mode" {
-
-# bindsym $mod+h move Left
-# bindsym $mod+j move Down
-# bindsym $mod+k move Up
-# bindsym $mod+l move Right
-
-# bindsym Left focus Left
-# bindsym Down focus Down
-# bindsym Up focus Up
-# bindsym Right focus Right
-
-# bindsym Shift+h resize shrink Left   10 px or 10 ppt
-# bindsym h resize grow Left           10 px or 10 ppt
-
-# bindsym Shift+j resize shrink height 10 px or 10 ppt
-# bindsym j resize grow height         10 px or 10 ppt
-
-# bindsym Shift+k resize shrink height 10 px or 10 ppt
-# bindsym k resize grow height         10 px or 10 ppt
-
-# bindsym Shift+l resize shrink width  10 px or 10 ppt
-# bindsym l resize grow width          10 px or 10 ppt
-
-# bindsym $mod+apostrophe exec notify-send 'float'; mode "$float_mode"
-# bindsym Escape mode default
-# }
-
-# bindsym $mod+Control+space floating enable; mode "$float_mode"
-
 bindsym $mod+Shift+space floating toggle
 
-# mode "$float_mode" {
-
-# bindsym h resize shrink Right 100px or 100ppt
-# bindsym l resize grow   Right 100px or 100ppt
-# bindsym j resize grow   Down  100px or 100ppt
-# bindsym k resize shrink Down  100px or 100ppt
-
-# bindsym Control+h resize shrink Right 80px or 80ppt
-# bindsym Control+l resize grow   Right 80px or 80ppt
-# bindsym Control+j resize grow   Down  80px or 80ppt
-# bindsym Control+k resize shrink Down  80px or 80ppt
-
-# bindsym $alt+h move Left  250px
-# bindsym $alt+l move Right 250px
-# bindsym $alt+u move Up    250px
-# bindsym $alt+j move Down  250px
-
-# bindsym $alt+Shift+h move Left  100px
-# bindsym $alt+Shift+l move Right 100px
-# bindsym $alt+Shift+k move Up    100px
-# bindsym $alt+Shift+u move Down  100px
-
-# bindsym $mod+apostrophe exec notify-send 'tilling small'; mode "$tilling_small_steps"
-
-# bindsym $mod+q kill; mode default
-# bindsym Escape mode default
-# bindsym $mod+Control+space floating disable; mode default
-# bindsym $mod+Shift+space floating disable; mode default
-# }
 
 bindsym $mod+equal scratchpad show
 bindsym $mod+Shift+minus move scratchpad; mode default
@@ -418,7 +334,6 @@ bindsym $mod+Control+Shift+Left move workspace to output Left
 bindsym $mod+Shift+n focus output Right
 bindsym $mod+Shift+p focus output Left
 
-bindsym $mod+Ctrl+m exec pavucontrol
 bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioMute exec amixer -q set Master toggle
 bindsym XF86AudioRaiseVolume exec amixer set Master 10%+

@@ -1,4 +1,3 @@
-search neon
 md screenshots
 touch eva.irg
 rename eva.org
@@ -32,11 +31,9 @@ search feh
 md conv orig
 shell mkdir conv orig
 rename i3.back
-search i3
 open_with nvim
 touch without_config
 rename without_config.txt
-rename i3
 rename mpv.back
 search mpv
 rename mpv
@@ -66,7 +63,6 @@ search bash
 search ^.bash
 rename .bash_history
 open_with n
-search 
 search sh-
 shell sudo Desktop 
 search sc
@@ -98,3 +94,7 @@ search spe
 search spel
 rename eva.mkv
 rename e.mkv
+search 
+search conf
+search i3
+rename i3
