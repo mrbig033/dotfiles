@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-
-iso="$1"
-device="$2"
-
-sudo dd bs=4M if=./"$iso" of=/dev/sd"$device" status=progress oflag=sync

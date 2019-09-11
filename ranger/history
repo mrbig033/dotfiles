@@ -1,50 +1,5 @@
-md screenshots
-touch eva.irg
-rename eva.org
-md Eva
-rename 06_Navbar
-touch navbar.html
-rename videos
-rename 
-rename shots_ep1
-rename ep01
-open_with 0 f
-open_with 1 f
-rename eva01
-rename 00_06_31__00105.png
-find 003
-compress hydras.7z
-md mutable
-search log
-search hist
-search scr
-search vlc
-touch a1
-touch a2
-touch a3
-md dir1
-md dir2
-touch LLLLL
-rename em.back01
-md em.back03
-search feh
-md conv orig
-shell mkdir conv orig
-rename i3.back
-open_with nvim
-touch without_config
-rename without_config.txt
-rename mpv.back
-search mpv
-rename mpv
-find 
-search gtk
-search rofi
-search 280
-filter 
 rename 17m53s280ms_eva01.jpg_
 touch ~/eva/shots/sep/characters/ritsuko
-touch 
 touch 17m53s280ms_eva01
 rename 17m53s280ms_eva01.txt
 md orig
@@ -98,3 +53,48 @@ search
 search conf
 search i3
 rename i3
+search chro
+search met
+search metroid
+search fintal
+search fanta
+search vi
+search final fantasy vii
+search final fantasy
+search super mario world
+search turbo
+search kart
+search star
+search fox
+search seven
+rename 01_Legend of Zelda, The - A Link to the Past (U) [!].smc
+rename 02_Chrono Trigger (U) [!].smc
+rename 03_Super Metroid (JU) [!].smc
+rename 04_Final Fantasy VI.smc
+rename 05_Super Mario All-Stars + Super Mario World (U) [!].smc
+rename 06_Street Fighter II Turbo - Hyper Fighting (U) [!].smc
+rename 08_Super Mario Kart (U) [!].smc
+rename 07_Super Mario Kart (U) [!].smc
+rename 08_Star Fox (U) (V1.2) [!].smc
+rename 09_Super Mario RPG - Legend of the Seven Stars (U) [!].smc
+search zero
+rename 10_F-ZERO (U) [!].smc
+rename 07_Final Fantasy II(4).sfc
+search lufia
+rename 08_Lufia II - Rise of the Sinistrals (U).smc
+search evo
+search eden
+rename 09_E.V.O. Search for Eden (U).smc
+search breath
+rename 10_Breath of Fire (U) [!].smc
+md OTHERS
+md MINE
+md INSTALLER
+md FLASH_DRIVE
+search rpg
+rename projeto_original.org
+touch projeto.org
+rename a_hora_morta.org
+rename eclipse.org
+touch 
+rename .git

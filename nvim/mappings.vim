@@ -48,6 +48,10 @@ nnoremap <silent> <leader>L :botright vsplit<cr>
 
 " }}}
 " movement {{{
+
+nnoremap gf f
+nnoremap gF F
+
 nnoremap <leader>ts :let &scrolloff=999-&scrolloff<cr>:echo " Toggle Centered Cursor"<cr>
 nmap <leader>u <Plug>(easymotion-W)
 

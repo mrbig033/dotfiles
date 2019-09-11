@@ -1,7 +1,11 @@
 #!/bin/bash
 
-clear &&
-echo " killing emacs" &&
-# pkill -fi "^emacs --daemon=gui-emacs$" &&
-emacsclient --socket-name=gui-emacs --eval '(save-buffers-kill-emacs)' &&
-~/scripts/emacs_scripts/lii
+clear
+echo " "
+echo " killing emacs"
+echo " "
+emacsclient --socket-name=gui-emacs --eval '(save-buffers-kill-emacs)' &>/dev/null &&
+echo " "
+echo " starting server"
+echo " "
+"$HOME"/scripts/emacs_scripts/lif

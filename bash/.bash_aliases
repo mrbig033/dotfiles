@@ -160,3 +160,5 @@ alias db='i3-msg "[title=term-up]" move scratchpad && emacs --debug-init &>/dev/
 alias et='emacsclient --socket-name=term-emacs --create-frame -nw'
 alias fd='fdfind'
 alias no='clear && node'
+alias s='jmacs'
+alias sc='sc-im'
