@@ -33,6 +33,10 @@
 This file tangles to [[https://github.com/mrbig033/dotfiles/blob/master/i3/config][the actual configuration file]], which is loaded by i3 on startup.
 * Basic
 #+BEGIN_SRC i3
+set $up    k
+set $down  j
+set $left  h
+set $right l
 set $mod Mod4
 set $alt Mod1
 new_float normal
@@ -41,6 +45,7 @@ floating_modifier $mod
 hide_edge_borders yes
 focus_follows_mouse yes
 font xft:URWGothic-Book 11
+
 popup_during_fullscreen ignore
 focus_on_window_activation focus
 force_display_urgency_hint 150 ms
@@ -193,8 +198,8 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+$alt+h focus output Left
 bindsym $mod+$alt+l focus output Right
 
-bindsym $alt+Shift+c focus child;exec notify-send 'parent focus'
-bindsym $alt+Shift+p focus parent;exec notify-send 'parent focus'
+bindsym $alt+Shift+c focus child;exec notify-send --expire-time=250 'parent focus'
+bindsym $alt+Shift+p focus parent;exec notify-send --expire-time=250 'parent focus'
 #+END_SRC
 ** general
 #+BEGIN_SRC i3
@@ -236,10 +241,11 @@ workspace_layout stacking
 bindsym $mod+s layout toggle
 bindsym $mod+x layout toggle all
 
-bindsym $mod+v split v;exec notify-send --expire-time=1000 'tile vertically'
-bindsym $mod+Control+o split h;exec notify-send --expire-time=1000 'tile horizontally'
+bindsym $mod+v split v;exec notify-send --expire-time=250 --expire-time=1000 'tile vertically'
+bindsym $mod+Control+o split h;exec notify-send --expire-time=250 --expire-time=1000 'tile horizontally'
 #+END_SRC
 * Modes
+** Launch
 #+BEGIN_SRC i3
 bindsym Menu mode "$launch"
 
@@ -260,42 +266,66 @@ bindsym e [title="term-up"] move scratchpad; [title="term-ranger"] move scratchp
 bindsym Shift+u exec "st2 -t term-up -n term-up"; mode default
 bindsym Shift+r exec "st2 -t term-ranger -n term-ranger -e ranger"; mode default
 
-bindsym Escape mode default; exec notify-send 'mode: default'
+bindsym Escape mode default; exec notify-send --expire-time=250 'mode: default'
 
 }
+#+END_SRC
+** Tilling
+*** tilling tiled
+#+BEGIN_SRC i3
 
-bindsym $mod+apostrophe; mode "$tilling_small_steps"; exec notify-send 'tilling small'
+bindsym $mod+Shift+space floating toggle; mode "$floating"
+bindsym $mod+apostrophe; mode "$tilling"; exec notify-send --expire-time=250 'tilling'
 
-mode "$tilling_small_steps" {
+mode "$tilling" {
 
-bindsym $mod+h move Left
-bindsym $mod+j move Down
-bindsym $mod+k move Up
-bindsym $mod+l move Right
+        bindsym $right resize shrink width  10 px or 10 ppt
+        bindsym $down  resize grow   height 10 px or 10 ppt
+        bindsym $up    resize shrink height 10 px or 10 ppt
+        bindsym $left  resize grow   width  10 px or 10 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left   resize shrink width  10 px or 10 ppt
+        bindsym Down   resize grow   height 10 px or 10 ppt
+        bindsym Up     resize shrink height 10 px or 10 ppt
+        bindsym Right  resize grow   width  10 px or 10 ppt
+
+bindsym $mod+apostrophe; mode "$floating"; exec notify-send --expire-time=250 --expire-time=250 'floating'
+bindsym Escape mode default; exec notify-send --expire-time=250 'mode: default'
+}
+#+END_SRC
+*** tilling float
+#+BEGIN_SRC i3
+mode "$floating" {
+
+bindsym $mod+h move Left 80px
+bindsym $mod+j move Down 80px
+bindsym $mod+k move Up 80px
+bindsym $mod+l move Right 80px
 
 bindsym Left focus Left
 bindsym Down focus Down
 bindsym Up focus Up
 bindsym Right focus Right
 
-bindsym Shift+h resize shrink Left   6 px or 6 ppt
-bindsym h resize grow Left           6 px or 6 ppt
+bindsym Shift+h resize shrink Left   36 px or 36 ppt
+bindsym h resize grow Left           36 px or 36 ppt
 
-bindsym Shift+j resize shrink height 6 px or 6 ppt
-bindsym j resize grow height         6 px or 6 ppt
+bindsym Shift+j resize shrink height 36 px or 36 ppt
+bindsym j resize grow height         36 px or 36 ppt
 
-bindsym Shift+k resize shrink height 6 px or 6 ppt
-bindsym k resize grow height         6 px or 6 ppt
+bindsym Shift+k resize shrink height 36 px or 36 ppt
+bindsym k resize grow height         36 px or 36 ppt
 
-bindsym Shift+l resize shrink width  6 px or 6 ppt
-bindsym l resize grow width          6 px or 6 ppt
+bindsym Shift+l resize shrink width  36 px or 36 ppt
+bindsym l resize grow width          36 px or 36 ppt
 
-bindsym Escape mode default; exec notify-send 'mode: default'
+bindsym $mod+apostrophe mode default; exec notify-send --expire-time=250 'mode: default'
+bindsym $mod+Shift+space floating toggle; mode default; exec notify-send --expire-time=250 'mode: default'
+bindsym Escape mode default; exec notify-send --expire-time=250 'mode: default'
 }
-
-bindsym $mod+Shift+space floating toggle
-
 #+END_SRC
+
 * Scratchs
 ** Big
 # *** General
@@ -407,7 +437,7 @@ bindsym 3 exec "~/scripts/screen/mx-built-in-screen.sh"; mode default
 bindsym F1 exec "pactl set-card-profile 0 output:hdmi-stereo"; mode default
 bindsym F2 exec "pactl set-card-profile 0 output:analog-stereo"; mode default
 
-bindsym Escape; exec notify-send --expire-time=1000 "mode default"; mode default
+bindsym Escape; exec notify-send --expire-time=250 --expire-time=1000 "mode default"; mode default
 }
 
 bindsym $mod+p workspace prev_on_output
