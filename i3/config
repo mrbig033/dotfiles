@@ -108,7 +108,7 @@ client.background       #2B2C2B
 
 exec --no-startup-id "st2 -t term-up -n term-up &"
 exec --no-startup-id "st2 -t term-ranger -n term-ranger -e ranger &"
-exec --no-startup-id "iclipp &" --no-startup-id
+exec --no-startup-id "clipit"
 exec --no-startup-id "~/scripts/cline_scripts/sessions.sh &"
 
 # exec --no-startup-id "emacs --daemon=gui-emacs"
@@ -120,7 +120,7 @@ exec --no-startup-id "nm-applet &"
 exec --no-startup-id "pulseaudio &"
 exec --no-startup-id "xset s 0 0 -dpms &"
 exec --no-startup-id "xset mouse 14/5 0 &"
-exec --no-startup-id "xset r rate 200 60 &"
+exec --no-startup-id "xset r rate 180 60 &"
 exec --no-startup-id "compton -b --backend glx &"
 exec --no-startup-id "unclutter -display :0.0 -idle 0.5 &"
 exec --no-startup-id "xinput --disable 'ETPS/2 Elantech Touchpad' &"
@@ -394,6 +394,7 @@ for_window [title="MuseScore: Play Panel"] floating enable
 for_window [title="alsamixer"] floating enable border pixel 1
 for_window [title="i3_help"] floating enable sticky enable border normal
 for_window [title="term Preferences"] floating enable
+for_window [title="Atomic Chrome"] floating enable
 
 assign [class="Gnome-pomodoro"] $ws10
 for_window [class="Emacs"] border normal

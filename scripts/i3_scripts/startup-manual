@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+st2 -t term-up -n term-up
+st2 -t term-ranger -n term-ranger -e ranger
+"$HOME"/scripts/cline_scripts/sessions.sh
