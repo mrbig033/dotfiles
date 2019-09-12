@@ -151,8 +151,8 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+$alt+h focus output Left
 bindsym $mod+$alt+l focus output Right
 
-bindsym $alt+Shift+c focus child;exec notify-send --expire-time=500 'parent focus'
-bindsym $alt+Shift+p focus parent;exec notify-send --expire-time=500 'parent focus'
+bindsym $alt+Shift+c focus child;exec notify-send --expire-time=250 'parent focus'
+bindsym $alt+Shift+p focus parent;exec notify-send --expire-time=250 'parent focus'
 
 bindsym $mod+q kill
 
@@ -190,8 +190,8 @@ workspace_layout stacking
 bindsym $mod+s layout toggle
 bindsym $mod+x layout toggle all
 
-bindsym $mod+v split v;exec notify-send --expire-time=500 --expire-time=1000 'tile vertically'
-bindsym $mod+Control+o split h;exec notify-send --expire-time=500 --expire-time=1000 'tile horizontally'
+bindsym $mod+v split v;exec notify-send --expire-time=250 --expire-time=1000 'tile vertically'
+bindsym $mod+Control+o split h;exec notify-send --expire-time=250 --expire-time=1000 'tile horizontally'
 
 bindsym Menu mode "$launch"
 
@@ -212,37 +212,37 @@ bindsym e [title="term-up"] move scratchpad; [title="term-ranger"] move scratchp
 bindsym Shift+u exec "st2 -t term-up -n term-up"; mode default
 bindsym Shift+r exec "st2 -t term-ranger -n term-ranger -e ranger"; mode default
 
-bindsym Escape mode default; exec notify-send --expire-time=500 'mode: default'
+bindsym Escape mode default; exec notify-send --expire-time=250 'mode: default'
 
 }
 
 
 bindsym $mod+Shift+space floating toggle; mode "$floating"
-bindsym $mod+apostrophe; mode "$tilling"; exec notify-send --expire-time=500 'tilling'
+bindsym $mod+apostrophe; mode "$tilling"; exec notify-send --expire-time=250 'tilling'
 
 mode "$tilling" {
 
-        bindsym $right       resize shrink width 10 px or 10 ppt
-        bindsym $down       resize grow height 10 px or 10 ppt
-        bindsym $up         resize shrink height 10 px or 10 ppt
-        bindsym $left      resize grow width 10 px or 10 ppt
+bindsym $left  resize grow   width  10 px or 10 ppt
+bindsym $right resize shrink width  10 px or 10 ppt
+bindsym $up    resize shrink height 10 px or 10 ppt
+bindsym $down  resize grow   height 10 px or 10 ppt
 
-        # same bindings, but for the arrow keys
-        bindsym Left        resize shrink width 10 px or 10 ppt
-        bindsym Down        resize grow height 10 px or 10 ppt
-        bindsym Up          resize shrink height 10 px or 10 ppt
-        bindsym Right       resize grow width 10 px or 10 ppt
-
-bindsym $mod+apostrophe; mode "$floating"; exec notify-send --expire-time=500 --expire-time=500 'floating'
-bindsym Escape mode default; exec notify-send --expire-time=500 'mode: default'
+# same bindings, but for the arrow keys
+bindsym Left   resize shrink width  10 px or 10 ppt
+bindsym Down   resize grow   height 10 px or 10 ppt
+bindsym Up     resize shrink height 10 px or 10 ppt
+bindsym Right  resize grow   width  10 px or 10 ppt
+bindsym $mod+apostrophe; mode "$floating"; exec notify-send --expire-time=250 --expire-time=250 'floating'
+bindsym Escape mode default; exec notify-send --expire-time=250 'mode: default'
+bindsym $mod+q kill; mode default; exec notify-send --expire-time=250 'mode: default'
 }
 
 mode "$floating" {
 
-bindsym $mod+h move Left 80px
-bindsym $mod+j move Down 80px
-bindsym $mod+k move Up 80px
-bindsym $mod+l move Right 80px
+bindsym $mod+$left move Left 80px
+bindsym $mod+$right move Right 80px
+bindsym $mod+$up move Up 80px
+bindsym $mod+$down move Down 80px
 
 bindsym Left focus Left
 bindsym Down focus Down
@@ -261,9 +261,10 @@ bindsym k resize grow height         36 px or 36 ppt
 bindsym Shift+l resize shrink width  36 px or 36 ppt
 bindsym l resize grow width          36 px or 36 ppt
 
-bindsym $mod+apostrophe mode default; exec notify-send --expire-time=500 'mode: default'
-bindsym $mod+Shift+space floating toggle; mode default; exec notify-send --expire-time=500 'mode: default'
-bindsym Escape mode default; exec notify-send --expire-time=500 'mode: default'
+bindsym $mod+apostrophe floating disable; mode default; exec notify-send --expire-time=250 'mode: default'
+bindsym Escape floating disable; mode default; exec notify-send --expire-time=250 'mode: default'
+bindsym $mod+Shift+space floating disable; mode default; exec notify-send --expire-time=250 'mode: default'
+bindsym $mod+q kill; mode default; exec notify-send --expire-time=250 'mode: default'
 }
 
 bindsym $mod+equal scratchpad show
@@ -340,7 +341,7 @@ bindsym 3 exec "~/scripts/screen/mx-built-in-screen.sh"; mode default
 bindsym F1 exec "pactl set-card-profile 0 output:hdmi-stereo"; mode default
 bindsym F2 exec "pactl set-card-profile 0 output:analog-stereo"; mode default
 
-bindsym Escape; exec notify-send --expire-time=500 --expire-time=1000 "mode default"; mode default
+bindsym Escape; exec notify-send --expire-time=250 --expire-time=1000 "mode default"; mode default
 }
 
 bindsym $mod+p workspace prev_on_output

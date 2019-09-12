@@ -279,29 +279,29 @@ bindsym $mod+apostrophe; mode "$tilling"; exec notify-send --expire-time=250 'ti
 
 mode "$tilling" {
 
-        bindsym $right resize shrink width  10 px or 10 ppt
-        bindsym $down  resize grow   height 10 px or 10 ppt
-        bindsym $up    resize shrink height 10 px or 10 ppt
-        bindsym $left  resize grow   width  10 px or 10 ppt
+bindsym $left  resize grow   width  10 px or 10 ppt
+bindsym $right resize shrink width  10 px or 10 ppt
+bindsym $up    resize shrink height 10 px or 10 ppt
+bindsym $down  resize grow   height 10 px or 10 ppt
 
-        # same bindings, but for the arrow keys
-        bindsym Left   resize shrink width  10 px or 10 ppt
-        bindsym Down   resize grow   height 10 px or 10 ppt
-        bindsym Up     resize shrink height 10 px or 10 ppt
-        bindsym Right  resize grow   width  10 px or 10 ppt
-
+# same bindings, but for the arrow keys
+bindsym Left   resize shrink width  10 px or 10 ppt
+bindsym Down   resize grow   height 10 px or 10 ppt
+bindsym Up     resize shrink height 10 px or 10 ppt
+bindsym Right  resize grow   width  10 px or 10 ppt
 bindsym $mod+apostrophe; mode "$floating"; exec notify-send --expire-time=250 --expire-time=250 'floating'
 bindsym Escape mode default; exec notify-send --expire-time=250 'mode: default'
+bindsym $mod+q kill; mode default; exec notify-send --expire-time=250 'mode: default'
 }
 #+END_SRC
 *** tilling float
 #+BEGIN_SRC i3
 mode "$floating" {
 
-bindsym $mod+h move Left 80px
-bindsym $mod+j move Down 80px
-bindsym $mod+k move Up 80px
-bindsym $mod+l move Right 80px
+bindsym $mod+$left move Left 80px
+bindsym $mod+$right move Right 80px
+bindsym $mod+$up move Up 80px
+bindsym $mod+$down move Down 80px
 
 bindsym Left focus Left
 bindsym Down focus Down
@@ -320,9 +320,11 @@ bindsym k resize grow height         36 px or 36 ppt
 bindsym Shift+l resize shrink width  36 px or 36 ppt
 bindsym l resize grow width          36 px or 36 ppt
 
-bindsym $mod+apostrophe mode default; exec notify-send --expire-time=250 'mode: default'
-bindsym $mod+Shift+space floating toggle; mode default; exec notify-send --expire-time=250 'mode: default'
-bindsym Escape mode default; exec notify-send --expire-time=250 'mode: default'
+bindsym $mod+apostrophe floating disable; mode default; exec notify-send --expire-time=250 'mode: default'
+bindsym $mod+Shift+space floating disable; mode default; exec notify-send --expire-time=250 'mode: default'
+
+bindsym $mod+q kill; mode default; exec notify-send --expire-time=250 'mode: default'
+bindsym Escape kill; mode default; exec notify-send --expire-time=250 'mode: default'
 }
 #+END_SRC
 
