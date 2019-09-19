@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+clear
+i3-msg "[title=term-up]" move scratchpad
+emacs --debug-init --name=" DEBUG" --title=" DEBUG"

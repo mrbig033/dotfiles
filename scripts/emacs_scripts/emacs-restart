@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+nt ~/.emacs.d/init.org ~/.emacs.d/modules/** ~/.emacs.d/modules/packages/** &&
+emacsclient --socket=gui-emacs "(save-buffers-kill-emacs)" &&
+emacsclient --socket-name=gui-emacs --alternate-editor="" --no-wait --create-frame

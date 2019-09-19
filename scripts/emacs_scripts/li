@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+arg="$*"
+emacsclient --socket-name=term-emacs -nw --create-frame "$arg"

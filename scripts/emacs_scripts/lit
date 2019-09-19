@@ -1,0 +1,4 @@
+#!/bin/bash
+
+emacs --daemon=term-emacs &&
+emacsclient --socket-name=term-emacs -nw --create-frame
