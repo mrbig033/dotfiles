@@ -1,6 +1,6 @@
 #!/bin/bash
 
-commit="\"$*\""
+commit="$*"
 
 clear
 echo ""
