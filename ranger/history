@@ -1,8 +1,3 @@
-search spel
-rename eva.mkv
-rename e.mkv
-search conf
-search i3
 rename i3
 search chro
 search met
@@ -86,7 +81,6 @@ rename evas
 search  e
 search e
 rename desktops
-search 
 rename emacs_v1.7z
 rename emacs_v
 rename emacs_v1
@@ -98,3 +92,9 @@ search texpan
 rename texp
 find te
 search texp
+search emacs
+rename mini
+rename em
+touch mini.org
+search 
+search git
