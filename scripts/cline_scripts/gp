@@ -10,5 +10,6 @@ git add -A
 echo ""
 echo "#commiting and pushing"#
 echo ""
+echo "commit message:" $commit
 git commit -am "$commit" && git push
 echo ""
