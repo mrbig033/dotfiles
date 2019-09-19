@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env bash
 
-emacs --daemon=gui-emacs &&
-emacsclient --socket-name=gui-emacs --no-wait --create-frame
+emacsclient --socket-name=gui-emacs --alternate-editor="" --no-wait --create-frame
+

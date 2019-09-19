@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 
 clear
-i3-msg [title="term-up"] move scratchpad
+i3-msg [title="term-up"] move scratchpad &>/dev/null 
 xprop >| "$HOME"/Documents/Testing/xprop-tmp &&
-i3-msg [title="term-up"] scratchpad show
+i3-msg [title="term-up"] scratchpad show &>/dev/null 
 nvim "$HOME"/Documents/Testing/xprop-tmp

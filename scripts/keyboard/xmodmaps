@@ -10,6 +10,6 @@ keycode 23 = Alt_L
 ! disable del
 ! keycode 119 =
 ! {{{ F12 to altgr
-keycode 96 = Alt_R
-keycode 108 = F12
+! keycode 96 = Alt_R
+! keycode 108 = F12
 !}}}

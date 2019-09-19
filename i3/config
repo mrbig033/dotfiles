@@ -115,6 +115,7 @@ exec --no-startup-id "st2 -t term-up -n term-up &"
 exec --no-startup-id "st2 -t term-ranger -n term-ranger -e ranger &"
 exec --no-startup-id "clipit"
 exec --no-startup-id "~/scripts/cline_scripts/sessions.sh &"
+exec --no-startup-id "xfce4-power-manager"
 
 # exec --no-startup-id "emacs --daemon=gui-emacs"
 # exec --no-startup-id "sleep 10 && redshift &"
@@ -125,7 +126,7 @@ exec --no-startup-id "nm-applet &"
 exec --no-startup-id "pulseaudio &"
 exec --no-startup-id "xset s 0 0 -dpms &"
 exec --no-startup-id "xset mouse 14/5 0 &"
-exec --no-startup-id "xset r rate 180 60 &"
+exec --no-startup-id "xset r rate 200 60 &"
 exec --no-startup-id "compton -b --backend glx &"
 exec --no-startup-id "unclutter -display :0.0 -idle 0.5 &"
 exec --no-startup-id "xinput --disable 'ETPS/2 Elantech Touchpad' &"
@@ -199,6 +200,8 @@ mode "$launch" {
 
 bindsym 1 exec "~/scripts/i3_scripts/touchpad_off"; mode default
 bindsym 2 exec "~/scripts/i3_scripts/touchpad_on"; mode default
+bindsym Shift-q exec "i3-msg exit"; mode default
+
 
 bindsym s exec "~/scripts/i3_scripts/startup-manual"; mode default
 
@@ -262,9 +265,10 @@ bindsym Shift+l resize shrink width  36 px or 36 ppt
 bindsym l resize grow width          36 px or 36 ppt
 
 bindsym $mod+apostrophe floating disable; mode default; exec notify-send --expire-time=250 'mode: default'
-bindsym Escape floating disable; mode default; exec notify-send --expire-time=250 'mode: default'
 bindsym $mod+Shift+space floating disable; mode default; exec notify-send --expire-time=250 'mode: default'
+
 bindsym $mod+q kill; mode default; exec notify-send --expire-time=250 'mode: default'
+bindsym Escape kill; mode default; exec notify-send --expire-time=250 'mode: default'
 }
 
 bindsym $mod+equal scratchpad show

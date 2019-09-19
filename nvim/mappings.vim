@@ -127,7 +127,8 @@ nnoremap <silent> <leader>k :silent bd!<cr>
 " add mapping to make if more like Emacs
 nnoremap <leader>f gf
 
-
+" copy path to clipboard
+nnoremap <silent> <leader>cf :silent! let @+ = expand("%:p") <bar>:silent! !i3-msg move scratchpad &>/dev/null<cr>
 
 " mark whole buffer
 nnoremap <c-x>h mZgg<s-v>G

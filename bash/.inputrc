@@ -44,7 +44,8 @@ set completion-ignore-case on
 # "m": "\C-k \C-uclear && ~/scripts/cline_scripts/cm\n"
 
 # Ranger Cd
-"": "\C-k \C-uclear && ranger\C-m"
+"": "\C-k \C-uclear && ranger-cd\C-m"
+"o": "\C-k \C-uclear && ranger-cd\C-m"
 
 # Go To Ranger
 # "o": "\C-k \C-uclear && ~/scripts/cline_scripts/gotoranger\C-m"

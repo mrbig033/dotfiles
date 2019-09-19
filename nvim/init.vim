@@ -109,10 +109,16 @@ if v:version >= 700
 endif
 " }}}
 " {{{ autosave
-" augroup myAutoSave!
-"     autocmd!
-"      au FocusLost * :silent wall!
-" augroup END
+" Autosave only when there is something to save. Always saving makes build
+" watchers crazy
+function! SaveIfUnsaved()
+    if &modified
+        :silent! w
+    endif
+endfunction
+au FocusLost,BufLeave * :call SaveIfUnsaved()
+" Read the file on focus/buffer enter
+au FocusGained,BufEnter * :silent! !
 " }}}
 " {{{ goyo
 function! s:goyo_enter()
