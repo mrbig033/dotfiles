@@ -111,6 +111,7 @@ client.background       #2B2C2B
 # client.placeholder      #000000 #0c0c0c #ffffff #000000
 # client.background       #2B2C2B
 
+exec --no-startup-id "/home/files/dotfiles/scripts/emacs_scripts/licc"
 exec --no-startup-id "st2 -t term-up -n term-up &"
 exec --no-startup-id "st2 -t term-ranger -n term-ranger -e ranger &"
 exec --no-startup-id "clipit"
@@ -156,20 +157,15 @@ bindsym $alt+Shift+c focus child;exec notify-send --expire-time=250 'parent focu
 bindsym $alt+Shift+p focus parent;exec notify-send --expire-time=250 'parent focus'
 
 bindsym $mod+q kill
-
-# bindsym $mod+Shift+n [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "~/scripts/emacs_scripts/eclaunch-agenda"
 bindsym $mod+Return exec st3
 bindsym --release $mod+Shift+q exec xkill
+bindsym F9 exec "~/.emacs_anywhere/bin/run"
 bindsym $mod+F5 exec --no-startup-id $Locker
 bindsym $mod+z exec --no-startup-id morc_menu
-# bindsym --release $mod+d exec dmenu_run -i -l 5 -fn 'Input Mono-13'
 bindsym $mod+d exec dmenu_run -i -l 5 -fn 'Input Mono-13'
-# bindsym $mod+d exec dmenu_run -i -l 5
-# bindsym $mod+d exec dmenu_run
 bindsym --release Print exec "xfce4-screenshooter --region"
-bindsym F9 exec "~/.emacs_anywhere/bin/run"
-# bindsym --release Print exec "~/scripts/cline_scripts/screenshotfull"
 bindsym $mod+Shift+F5 exec "i3-nagbar -t warning -m 'Exit i3?' -b 'Yes' 'i3-msg exit'"
+bindsym $mod+F12 exec "i3-msg exit"
 
 bindsym $mod+Shift+k move Up
 bindsym $mod+Shift+j move Down
@@ -201,8 +197,7 @@ mode "$launch" {
 bindsym 1 exec "~/scripts/i3_scripts/touchpad_off"; mode default
 bindsym 2 exec "~/scripts/i3_scripts/touchpad_on"; mode default
 bindsym Shift-q exec "i3-msg exit"; mode default
-
-
+bindsym apostrophe exec "~/maps/texpander/texpander.sh"; mode default
 bindsym s exec "~/scripts/i3_scripts/startup-manual"; mode default
 
 bindsym Shift+w exec feh --recursive --randomize --bg-fill ~/Wallpaper; mode default
@@ -422,7 +417,7 @@ for_window [title="MuseScore: Play Panel"] floating enable
 for_window [title="alsamixer"] floating enable border pixel 1
 for_window [title="i3_help"] floating enable sticky enable border normal
 for_window [title="term Preferences"] floating enable
-for_window [title="Atomic Chrome"] floating enable
+for_window [title="Atomic Chrome"] floating enable move position 650 0
 
 assign [class="Gnome-pomodoro"] $ws10
 for_window [class="Emacs"] border normal

@@ -1,18 +1,14 @@
 #!/bin/bash
 
+commit="$*"
+
 clear
 echo ""
-echo " #adding all files#"
+echo "#adding all files#"
 echo ""
 git add -A
 echo ""
-echo " #commiting"#
+echo "#commiting and pushing"#
 echo ""
-git commit -am "Automatic commit"
-echo ""
-echo " #pushing#"
-echo ""
-git push
-echo ""
-echo " #finished#"
+git commit -am "$commit" && git push
 echo ""

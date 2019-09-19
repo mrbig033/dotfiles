@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+clear
+echo ""
+echo " # starting"
+echo ""
+echo " # updating repositories"
+echo ""
+sudo apt -y update
+echo ""
+echo " # dist-upgrading"
+echo ""
+sudo apt -y dist-upgrade
+echo ""
+echo " # autoremoving"
+echo ""
+sudo apt -y autoremove
+echo ""
+echo " # autoclaning"
+echo ""
+sudo apt -y autoclean
+echo ""
+echo " # full upgrade complete"
+echo ""

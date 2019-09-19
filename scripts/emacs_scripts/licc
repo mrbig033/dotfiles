@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 
 emacsclient --socket-name=gui-emacs --alternate-editor="" --no-wait --create-frame
-google-chrome &
-i3-msg "[title=term-up]" move scratchpad &>/dev/null
+google-chrome
