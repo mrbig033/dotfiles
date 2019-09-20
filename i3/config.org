@@ -529,6 +529,7 @@ for_window [class="Emacs"] border normal
 for_window [class="Gimp"] border normal
 for_window [class="Spotify"] move to workspace 10
 for_window [urgent=latest] focus
+for_window [class="Emacs" title=" EMACS DEBUG"] move workspace 2
 #+END_SRC
 * Final commands
 #+BEGIN_SRC i3
