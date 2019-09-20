@@ -5,12 +5,13 @@ set $right l
 set $mod Mod4
 set $alt Mod1
 new_float normal
-new_window normal
+# new_window normal
+new_window 1pixel
 floating_modifier $mod
 hide_edge_borders yes
 focus_follows_mouse yes
 font xft:URWGothic-Book 11
-
+# font pango:DejaVu Sans Mono 0
 popup_during_fullscreen ignore
 focus_on_window_activation focus
 force_display_urgency_hint 150 ms
@@ -155,6 +156,8 @@ bindsym $mod+$alt+l focus output Right
 bindsym $alt+Shift+c focus child;exec notify-send --expire-time=250 'parent focus'
 bindsym $alt+Shift+p focus parent;exec notify-send --expire-time=250 'parent focus'
 
+bindsym $mod+b border none
+bindsym $mod+o border normal
 bindsym $mod+q kill
 bindsym $mod+Return exec st3
 bindsym --release $mod+Shift+q exec xkill
@@ -192,7 +195,6 @@ bindsym $mod+Control+o split h;exec notify-send --expire-time=250 --expire-time=
 bindsym Menu mode "$launch"
 
 mode "$launch" {
-
 bindsym 1 exec "~/scripts/i3_scripts/touchpad_off"; mode default
 bindsym 2 exec "~/scripts/i3_scripts/touchpad_on"; mode default
 bindsym Shift-q exec "i3-msg exit"; mode default
@@ -416,7 +418,8 @@ for_window [title="MuseScore: Play Panel"] floating enable
 for_window [title="alsamixer"] floating enable border pixel 1
 for_window [title="i3_help"] floating enable sticky enable border normal
 for_window [title="term Preferences"] floating enable
-for_window [title="Atomic Chrome"] floating enable move position 650 0
+# for_window [title="Atomic Chrome"] floating enable move to position 0 0
+for_window [title="Atomic Chrome"] resize set 1367 192; move to position 0 0
 
 assign [class="Gnome-pomodoro"] $ws10
 for_window [class="Emacs"] border normal
