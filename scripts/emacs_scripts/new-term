@@ -1,3 +1,4 @@
 #!/bin/bash
 
+emacsclient --socket-name=term-emacs --no-wait -tty --create-frame
 emacsclient --socket-name=term-emacs --alternate-editor="" --tty --create-frame
