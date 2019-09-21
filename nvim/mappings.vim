@@ -82,6 +82,10 @@ nnoremap <silent> <expr> j (v:count? 'j' : 'gj')
 nnoremap <silent> <expr> k (v:count? 'k' : 'gk')
 " }}}
 " {{{ editing
+" clean word list
+nnoremap <leader>c1 :g/^\D\D\D$/d<cr>
+nnoremap <leader>c2 :g/^\D\D$/d<cr>
+nnoremap <leader>c3 :g/^\D$/d<cr>
 
 " replace
 nnoremap <leader>su :%s/

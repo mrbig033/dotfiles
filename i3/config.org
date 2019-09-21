@@ -156,6 +156,7 @@ client.background       #2B2C2B
 #+END_SRC
 * Startup
 #+BEGIN_SRC i3
+
 exec --no-startup-id "clipit"
 exec --no-startup-id "xfce4-power-manager"
 exec --no-startup-id "st2 -t term-up -n term-up &"

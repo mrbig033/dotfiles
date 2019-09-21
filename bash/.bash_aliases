@@ -30,6 +30,7 @@ alias bc="clear && nvim ~/.bash_aliases		\
 			~/.inputrc			\
 			~/.bash_profile			\
 			~/.env_variables.sh		\
+                        ~/.profile
 			~/.tmux.conf			"
 
 alias nc="clear && nvim ~/.config/nvim/mappings.vim	\
@@ -81,7 +82,6 @@ alias g='grep -i'
 alias fl='flatpak'
 alias tv='tvnamer'
 alias wh='whereis'
-alias ko='kill -9'
 alias sym='ln -rsf'
 alias pk='pkill -fi'
 alias tp='trash-put'
@@ -98,7 +98,8 @@ alias chowne-root='chown --recursive --changes $USER'
 alias free='clear && free --human'
 alias rfonts='fc-cache -f -v'
 alias empty='sudo trash-empty'
-alias k='clear && xbindkeys -k'
+alias kk='clear && xbindkeys -k'
+alias k='kill -9'
 alias xreload='xbindkeys --poll-rc'
 alias gg='clear && exec "$BASH"'
 alias cc='clear && ls -A --color'

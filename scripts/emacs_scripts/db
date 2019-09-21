@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
 clear
-i3-msg "[title=term-up]" move scratchpad
+i3-msg "[title=term-up]" move scratchpad &>/dev/null 
 emacs --debug-init --name=" EMACS DEBUG" --title=" EMACS DEBUG" &

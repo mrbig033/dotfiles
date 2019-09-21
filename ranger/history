@@ -1,17 +1,3 @@
-rename i3
-search chro
-search met
-search metroid
-search fintal
-search fanta
-search vi
-search final fantasy vii
-search final fantasy
-search super mario world
-search turbo
-search kart
-search star
-search fox
 search seven
 rename 01_Legend of Zelda, The - A Link to the Past (U) [!].smc
 rename 02_Chrono Trigger (U) [!].smc
@@ -49,7 +35,6 @@ rename pt_br_trim
 rename pt_br_no_three_chars
 rename pt_three_max
 search abb
-open_with 
 search ab
 open_with hjjj f
 open_with kekeke f
@@ -98,3 +83,18 @@ rename em
 touch mini.org
 search 
 search git
+search prof
+search bahs
+md words
+touch 1000.txt
+md 1000_words
+md 100.000_words
+md en
+md pt
+touch 5000_palavras.txt
+rename 
+touch nota
+open_with 
+rename nota.txt
+rename words
+rename eclipse_en.org

@@ -1,3 +1,4 @@
 #!/usr/bin/env bash
 
+clear
 emacsclient --socket-name=gui-emacs --alternate-editor="" --no-wait --create-frame

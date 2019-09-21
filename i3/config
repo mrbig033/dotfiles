@@ -112,6 +112,7 @@ client.background       #2B2C2B
 # client.placeholder      #000000 #0c0c0c #ffffff #000000
 # client.background       #2B2C2B
 
+
 exec --no-startup-id "clipit"
 exec --no-startup-id "xfce4-power-manager"
 exec --no-startup-id "st2 -t term-up -n term-up &"
