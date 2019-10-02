@@ -157,12 +157,15 @@ client.background       #2B2C2B
 * Startup
 #+BEGIN_SRC i3
 
-exec --no-startup-id "clipit"
-exec --no-startup-id "xfce4-power-manager"
-exec --no-startup-id "st2 -t term-up -n term-up &"
-exec --no-startup-id "~/scripts/cline_scripts/sessions.sh &"
-exec --no-startup-id "st2 -t term-ranger -n term-ranger -e ranger &"
-exec --no-startup-id "/home/files/dotfiles/scripts/emacs_scripts/licc"
+# exec --no-startup-id "clipit"
+# exec --no-startup-id "xfce4-power-manager"
+# exec --no-startup-id "st2 -t term-up -n term-up &"
+exec --no-startup-id "xfce4-terminal --working-directory=~ --title=term-up --hold &"
+exec --no-startup-id "xfce4-terminal --command=ranger --working-directory=~ --title=term-ranger --hold &"
+
+# exec --no-startup-id "~/scripts/cline_scripts/sessions.sh &"
+# exec --no-startup-id "st2 -t term-ranger -n term-ranger -e ranger &"
+# exec --no-startup-id "/home/files/dotfiles/scripts/emacs_scripts/licc"
 
 
 exec --no-startup-id "xbindkeys"
@@ -209,7 +212,7 @@ bindsym $alt+Shift+p focus parent;exec notify-send --expire-time=250 'parent foc
 bindsym $mod+b border none
 bindsym $mod+o border normal
 bindsym $mod+q kill
-bindsym $mod+Return exec st3
+bindsym $mod+Return exec xfce4-terminal
 bindsym --release $mod+Shift+q exec xkill
 bindsym F9 exec "~/.emacs_anywhere/bin/run"
 bindsym $mod+F5 exec --no-startup-id $Locker
@@ -257,14 +260,14 @@ bindsym apostrophe exec "~/maps/texpander/texpander.sh"; mode default
 bindsym s exec "~/scripts/i3_scripts/startup-manual"; mode default
 
 bindsym Shift+w exec feh --recursive --randomize --bg-fill ~/Wallpaper; mode default
-
+bindsym Shift+r exec "/home/jerry/dotfiles/scripts/cline_scripts/restart_terminals"; mode default
 bindsym Menu exec "rofi -show run"; mode default
 bindsym z exec "google-chrome-stable"; mode default
 bindsym q exec "qbittorrent"; mode default
 bindsym e [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "emacsclient --socket-name=gui-emacs --no-wait --create-frame"; mode default
 
-bindsym Shift+u exec "st2 -t term-up -n term-up"; mode default
-bindsym Shift+r exec "st2 -t term-ranger -n term-ranger -e ranger"; mode default
+# bindsym Shift+u exec "st2 -t term-up -n term-up"; mode default
+# bindsym Shift+r exec "st2 -t term-ranger -n term-ranger -e ranger"; mode default
 
 bindsym Escape mode default; exec notify-send --expire-time=250 'mode: default'
 
@@ -330,36 +333,12 @@ bindsym Escape kill; mode default; exec notify-send --expire-time=250 'mode: def
 
 * Scratchs
 ** Big
-# *** General
-# #+BEGIN_SRC i3
-# bindsym $mod+equal scratchpad show
-# bindsym $mod+Shift+minus move scratchpad; mode default
-# bindsym $mod+Shift+s [title="term-up"] kill; exec "xfce4-terminal -T term-up"
-# bindsym $mod+Shift+r [title="term-up"] move scratchpad; [title="term-ranger"] kill; exec "xfce4-terminal -T term-ranger --execute ~/.pyenv/shims/ranger"
-# for_window [class="Autokey-gtk" title="AutoKey"] move scratchpad
-# #+END_SRC
-# *** Term Up
-# #+BEGIN_SRC i3
-# for_window [title="term-up"] border none
-# for_window [title="term-up"] floating enable sticky enable
-# for_window [title="term-up"] move scratchpad
-# for_window [title="term-up"] resize set 1250 450; move to position 350 0
-# bindsym $mod+u [title="term-ranger"] move scratchpad; [title="term-up"] scratchpad show; move to position 350 0; move to position 350 0
-# #+END_SRC
-# *** Term Ranger
-# #+BEGIN_SRC i3
-# for_window [title="term-ranger"] border none
-# for_window [title="term-ranger"] floating enable sticky enable
-# for_window [title="term-ranger"] move scratchpad
-# for_window [title="term-ranger"] resize set 1250 450; move to position 350 0
-# bindsym $mod+i [title="term-up"] move scratchpad; [title="term-ranger"] scratchpad show; move to position 350 0
-# #+END_SRC
-** Small
 *** General
 #+BEGIN_SRC i3
 bindsym $mod+equal scratchpad show
 bindsym $mod+Shift+minus move scratchpad; mode default
-bindsym $mod+Shift+r [title="term-up"] kill; [title="term-ranger"] kill; exec "st2 -t term-up -n term-up &"; exec st2 -t term-ranger -n term-ranger -e ranger &
+bindsym $mod+Shift+s [title="term-up"] kill; exec "xfce4-terminal -T term-up"
+bindsym $mod+Shift+r [title="term-up"] move scratchpad; [title="term-ranger"] kill; exec "xfce4-terminal -T term-ranger --execute ~/.pyenv/shims/ranger"
 for_window [class="Autokey-gtk" title="AutoKey"] move scratchpad
 #+END_SRC
 *** Term Up
@@ -367,17 +346,41 @@ for_window [class="Autokey-gtk" title="AutoKey"] move scratchpad
 for_window [title="term-up"] border none
 for_window [title="term-up"] floating enable sticky enable
 for_window [title="term-up"] move scratchpad
-for_window [title="term-up"] resize set 1367 384; move to position 0 0
-bindsym $mod+u [title="term-ranger"] move scratchpad; [title="term-up"] scratchpad show; move to position 0 0 ; move to position 0 0
+for_window [title="term-up"] resize set 1250 450; move to position 350 0
+bindsym $mod+u [title="term-ranger"] move scratchpad; [title="term-up"] scratchpad show; move to position 350 0; move to position 350 0
 #+END_SRC
 *** Term Ranger
 #+BEGIN_SRC i3
 for_window [title="term-ranger"] border none
 for_window [title="term-ranger"] floating enable sticky enable
 for_window [title="term-ranger"] move scratchpad
-for_window [title="term-ranger"] resize set 1367 384; move to position 0 0
-bindsym $mod+i [title="term-up"] move scratchpad; [title="term-ranger"] scratchpad show; move to position 0 0
+for_window [title="term-ranger"] resize set 1250 450; move to position 350 0
+bindsym $mod+i [title="term-up"] move scratchpad; [title="term-ranger"] scratchpad show; move to position 350 0
 #+END_SRC
+** Small
+# *** General
+# #+BEGIN_SRC i3
+# bindsym $mod+equal scratchpad show
+# bindsym $mod+Shift+minus move scratchpad; mode default
+# bindsym $mod+Shift+r [title="term-up"] kill; [title="term-ranger"] kill; exec "st2 -t term-up -n term-up &"; exec st2 -t term-ranger -n term-ranger -e ranger &
+# for_window [class="Autokey-gtk" title="AutoKey"] move scratchpad
+# #+END_SRC
+# *** Term Up
+# #+BEGIN_SRC i3
+# for_window [title="term-up"] border none
+# for_window [title="term-up"] floating enable sticky enable
+# for_window [title="term-up"] move scratchpad
+# for_window [title="term-up"] resize set 1367 384; move to position 0 0
+# bindsym $mod+u [title="term-ranger"] move scratchpad; [title="term-up"] scratchpad show; move to position 0 0 ; move to position 0 0
+# #+END_SRC
+# *** Term Ranger
+# #+BEGIN_SRC i3
+# for_window [title="term-ranger"] border none
+# for_window [title="term-ranger"] floating enable sticky enable
+# for_window [title="term-ranger"] move scratchpad
+# for_window [title="term-ranger"] resize set 1367 384; move to position 0 0
+# bindsym $mod+i [title="term-up"] move scratchpad; [title="term-ranger"] scratchpad show; move to position 0 0
+# #+END_SRC
 * Workspaces
 #+BEGIN_SRC i3
 set $ws1 "1"

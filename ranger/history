@@ -1,17 +1,3 @@
-search seven
-rename 01_Legend of Zelda, The - A Link to the Past (U) [!].smc
-rename 02_Chrono Trigger (U) [!].smc
-rename 03_Super Metroid (JU) [!].smc
-rename 04_Final Fantasy VI.smc
-rename 05_Super Mario All-Stars + Super Mario World (U) [!].smc
-rename 06_Street Fighter II Turbo - Hyper Fighting (U) [!].smc
-rename 08_Super Mario Kart (U) [!].smc
-rename 07_Super Mario Kart (U) [!].smc
-rename 08_Star Fox (U) (V1.2) [!].smc
-rename 09_Super Mario RPG - Legend of the Seven Stars (U) [!].smc
-search zero
-rename 10_F-ZERO (U) [!].smc
-rename 07_Final Fantasy II(4).sfc
 search lufia
 rename 08_Lufia II - Rise of the Sinistrals (U).smc
 search evo
@@ -94,7 +80,21 @@ md pt
 touch 5000_palavras.txt
 rename 
 touch nota
-open_with 
 rename nota.txt
 rename words
 rename eclipse_en.org
+open_with rrrrrr f
+touch eclipse_1_export.org
+rename eclipse_export_1.org
+rename textoj
+filter zh
+shell mkdir c
+open_with 1 f
+open_with 0 f
+rename backi
+search tmux
+rename .tmux
+search block
+touch config
+search bloc
+open_with 

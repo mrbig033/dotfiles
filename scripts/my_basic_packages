@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+# basic packages
+
+clear
+sudo apt -y update && sudo apt -y dist-upgrade &&
+sudo apt -y install i3 i3status rofi neovim lxappearance calibre zathura zathura-pdf-poppler xclip dmenu unclutter trash-cli arandr xbindkeys font-manager silversearcher-ag xsel xdotool lxde-settings-daemon wget curl cmus keepassxc

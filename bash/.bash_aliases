@@ -24,13 +24,13 @@ alias 8='clear && tmux attach -t 8 &>/dev/null || tmux switch-client -t 8 &>/dev
 alias 9='clear && tmux attach -t 9 &>/dev/null || tmux switch-client -t 9 &>/dev/null'
 
 # alias bc='clear && tmux attach -t bc &>/dev/null || tmux switch-client -t bc &>/dev/null'
-alias bc="clear && nvim ~/.bash_aliases		\
+alias bc="clear && nvim ~/.bash_aliases		        \
 			~/.bashrc			\
 			~/.bash_completion.sh           \
 			~/.inputrc			\
 			~/.bash_profile			\
 			~/.env_variables.sh		\
-                        ~/.profile
+                        ~/.profile                      \
 			~/.tmux.conf			"
 
 alias nc="clear && nvim ~/.config/nvim/mappings.vim	\
@@ -124,7 +124,7 @@ alias p='clear && python -q'
 alias pii='pip install --user'
 alias wall='feh --bg-fill'
 alias ir='clear && irssi'
-alias ir3='i3-msg restart'
+alias i3r='i3-msg restart && clear'
 alias suspend='pm-suspend'
 alias tep='cd ~/.texpander && clear && ls --color'
 alias sa='source ~/.bash_aliases'

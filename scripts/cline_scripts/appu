@@ -16,7 +16,7 @@ echo " # autoremoving"
 echo ""
 sudo apt -y autoremove
 echo ""
-echo " # autoclaning"
+echo " # autocleaning"
 echo ""
 sudo apt -y autoclean
 echo ""
