@@ -1,5 +1,6 @@
 #!/bin/bash
 
+tmux kill-server
 source "$HOME"/.bash_aliases &&
 tmux new-session -ds 1
 tmux new-session -ds 2

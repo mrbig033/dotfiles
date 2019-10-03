@@ -1,5 +1,6 @@
 #!/usr/bin/env bash
 
 pkill -fi ^xfce4-terminal
+/home/jerry/dotfiles/scripts/cline_scripts/sessions.sh
 xfce4-terminal --working-directory=~ --title=term-up --hold --command="tmux attach" &>/dev/null &
 xfce4-terminal --command=ranger --working-directory=~ --title=term-ranger --hold &>/dev/null &
