@@ -157,31 +157,31 @@ client.background       #2B2C2B
 * Startup
 #+BEGIN_SRC i3
 
-# exec --no-startup-id "clipit"
-# exec --no-startup-id "xfce4-power-manager"
-# exec --no-startup-id "st2 -t term-up -n term-up &"
-exec --no-startup-id "xfce4-terminal --working-directory=~ --title=term-up --hold &"
+exec --no-startup-id "~/scripts/cline_scripts/sessions.sh &"
+exec --no-startup-id "xfce4-terminal --working-directory=~ --title=term-up --command=tmux attach --hold &"
 exec --no-startup-id "xfce4-terminal --command=ranger --working-directory=~ --title=term-ranger --hold &"
 exec --no-startup-id "google-chrome"
 exec --no-startup-id "/home/jerry/dotfiles/scripts/emacs_scripts/liff"
-exec --no-startup-id "~/scripts/cline_scripts/sessions.sh &"
+# exec --no-startup-id "xfce4-power-manager"
+# exec --no-startup-id "st2 -t term-up -n term-up &"
 # exec --no-startup-id "st2 -t term-ranger -n term-ranger -e ranger &"
 # exec --no-startup-id "/home/files/dotfiles/scripts/emacs_scripts/licc"
 
 
 # exec --no-startup-id "xbindkeys"
+exec --no-startup-id "sleep 120; redshift &"
+exec --no-startup-id "sleep 30; clipit"
+exec --no-startup-id "sleep 10 && feh --bg-fill ~/Wallpaper/Zen/pedramolhada.png &"
 exec --no-startup-id "nm-applet &"
 exec --no-startup-id "pulseaudio &"
 exec --no-startup-id "xset s 0 0 -dpms &"
 exec --no-startup-id "xset mouse 14/5 0 &"
 exec --no-startup-id "xset r rate 200 60 &"
-exec --no-startup-id "sleep 10 && redshift &"
 exec --no-startup-id "compton -b --backend glx &"
 exec --no-startup-id "~/scripts/keyboard/init_keys.sh &"
 exec --no-startup-id "unclutter -display :0.0 -idle 0.5 &"
 exec --no-startup-id "xinput --disable 'ETPS/2 Elantech Touchpad' &"
 exec --no-startup-id "synclient TapButton1=1 TouchpadOff=0 PalmDetect=1 &"
-exec --no-startup-id "sleep 10 && feh --bg-fill ~/Wallpaper/Zen/pedramolhada.png &"
 exec --no-startup-id "xrandr --output DP-1 --off --output HDMI-1 --mode 1920x1080 --pos 0x0 --rotate normal --output eDP-1 --off --output HDMI-2 --off &"
 #+END_SRC
 * Keys
