@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-export NNN_BMS='h:/home/jerry;1:/media/jerry/h1;2:/media/jerry/h2;C:/home/jerry/.config;V:/home/jerry/Videos;p:/home/jerry/Pictures;e:/home/jerry/.emacs.d;n:/home/jerry/Downloads;.:/home/jerry/org/Agenda;d:/home/jerry/dotfiles;s:/home/jerry/scripts;D:/home/jerry/Documents;w:/home/jerry/Studying/Prog/WebDev;V:/home/jerry/Studying/Prog/WebDev/04videos;m:/home/jerry/maps;k:/home/jerry/Ebooks'
+export NNN_BMS='h:/home/jerry;1:/media/jerry/h1;2:/media/jerry/h2;c:/home/jerry/.config;v:/home/jerry/Videos;p:/home/jerry/Pictures;e:/home/jerry/.emacs.d;n:/home/jerry/Downloads;.:/home/jerry/org/Agenda;d:/home/jerry/dotfiles;s:/home/jerry/scripts;d:/home/jerry/Documents;w:/home/jerry/Studying/Prog/WebDev;i:/home/jerry/Studying/Prog/WebDev/04videos;m:/home/jerry/maps;k:/home/jerry/Ebooks'
 
 
 export NNN_USE_EDITOR=1
