@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 clear
-play --no-show-progress /home/files/Sounds/apple.mp3
+play --no-show-progress /home/jerry/Sounds/apple.mp3

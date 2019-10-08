@@ -214,9 +214,7 @@ if [ -n "$RANGER_LEVEL" ]; then export PS1="[RANGER]$PS1"; fi
 
 # Load pyenv automatically by adding
 # the following to ~/.bashrc:
-
 export PATH="/home/jerry/.pyenv/bin:$PATH"
-
 # Faster equivalent to:
 # eval "$(pyenv init -)"
 export PYENV_SHELL=bash

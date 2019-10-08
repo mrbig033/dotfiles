@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+sudo apt install -y python-all python-pip python3-pip python-wheel python3-wheel python-setuptools python3-setuptools libffi-dev
