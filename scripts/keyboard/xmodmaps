@@ -12,4 +12,9 @@ keycode 23 = Alt_L
 ! {{{ F12 to altgr
 ! keycode 96 = Alt_R
 ! keycode 108 = F12
+! }}}
+! {{{ scroll lock to altgr
+keycode 78 = Alt_R
+keycode 127 = Pause
+! }}}
 !}}}
