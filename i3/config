@@ -191,6 +191,8 @@ bindsym $mod+Control+o split h;exec notify-send --expire-time=250 --expire-time=
 bindsym Menu mode "$launch"
 
 mode "$launch" {
+
+bindsym F10 exec "~/maps/texpander/texpander.sh"; mode default
 bindsym 1 exec "~/scripts/i3_scripts/touchpad_off"; mode default
 bindsym 2 exec "~/scripts/i3_scripts/touchpad_on"; mode default
 bindsym Shift-q exec "i3-msg exit"; mode default
