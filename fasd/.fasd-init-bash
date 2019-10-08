@@ -1,4 +1,4 @@
-!# function to execute built-in cd
+# function to execute built-in cd
 
 fasd_e() {
   if [ $# -le 1 ]; then

@@ -96,17 +96,25 @@ source ~/.bash_aliases
 source ~/.env_variables.sh
 source ~/.bash_completion.sh
 source ~/maps/ranger/examples/bash_automatic_cd.sh
-eval "$(fasd --init auto)"
 
 #### DEFAULT EDITOR ####
 
 export VISUAL=nvim
 export EDITOR=nvim
 
+# export VISUAL="emacsclient --socket-name=term-emacs --alternate-editor='' --create-frame -nw"
+# export EDITOR="emacsclient --socket-name=term-emacs --alternate-editor='' --create-frame -nw"
+
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 
+eval "$(fasd --init posix-alias bash-hook)"
+source ~/.fasd-init-bash
+
+[ -z "${PATH##*/sbin*}" ] || PATH=$PATH:/sbin:/usr/sbin
 export PATH="${PATH}:usr/bin:~/Desktop:/opt:/opt/google:/~/Desktop:/home/$USER/.local/bin:"
-export PATH="$PATH$"/.local/bin:$PATH
+
+export PATH=~/.local/bin:$PATH
+
 export PATH=$PATH$( find -L ~/scripts -type d -printf ":%p" )
 
 # some keyboard configuration
@@ -203,11 +211,6 @@ fi
 ### RANGER PROMPT ###
 # from: https://github.com/ranger/ranger/issues/1374
 if [ -n "$RANGER_LEVEL" ]; then export PS1="[RANGER]$PS1"; fi
-
-# Nodenv - transferir para bash_profile
-# export PATH="$HOME/.nodenv/versions/12.9.0/bin:$PATH"
-# export PATH="$HOME/.nodenv/bin:$PATH"
-# eval "$(nodenv init -)"
 
 # Load pyenv automatically by adding
 # the following to ~/.bashrc:

@@ -118,23 +118,16 @@ exec --no-startup-id "google-chrome"
 exec --no-startup-id "~/scripts/cline_scripts/sessions.sh &"
 exec --no-startup-id "xfce4-terminal --working-directory=~ --title=term-up --hold --command=\"tmux attach\" &"
 exec --no-startup-id "xfce4-terminal --command=ranger --working-directory=~ --title=term-ranger --hold &"
-exec --no-startup-id "feh --bg-fill ~/Wallpaper/Zen/pedramolhada.png &"
 
-exec --no-startup-id "sleep 120; clipit"
-exec --no-startup-id "sleep 120; redshift &"
-exec --no-startup-id "sleep 120; xfce4-power-manager"
-
-exec --no-startup-id "nm-applet &"
-exec --no-startup-id "pulseaudio &"
 exec --no-startup-id "xset s 0 0 -dpms &"
 exec --no-startup-id "xset mouse 14/5 0 &"
 exec --no-startup-id "xset r rate 200 60 &"
 exec --no-startup-id "compton -b --backend glx &"
 exec --no-startup-id "~/scripts/keyboard/init_keys.sh &"
-exec --no-startup-id "unclutter -display :0.0 -idle 0.5 &"
-exec --no-startup-id "xinput --disable 'ETPS/2 Elantech Touchpad' &"
-exec --no-startup-id "synclient TapButton1=1 TouchpadOff=0 PalmDetect=1 &"
 exec --no-startup-id "xrandr --output DP-1 --off --output HDMI-1 --mode 1920x1080 --pos 0x0 --rotate normal --output eDP-1 --off --output HDMI-2 --off &"
+exec --no-startup-id "~/scripts/i3_scripts/delayed_init"
+# exec --no-startup-id "xinput --disable 'ETPS/2 Elantech Touchpad' &"
+# exec --no-startup-id "synclient TapButton1=1 TouchpadOff=0 PalmDetect=1 &"
 
 
 bindsym $mod+h focus Left
