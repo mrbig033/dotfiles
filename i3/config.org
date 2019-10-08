@@ -254,6 +254,7 @@ bindsym 2 exec "~/scripts/i3_scripts/touchpad_on"; mode default
 bindsym Shift-q exec "i3-msg exit"; mode default
 bindsym apostrophe exec "~/maps/texpander/texpander.sh"; mode default
 bindsym t [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "thunar"; mode default
+bindsym Shift+t [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "sudo thunar"; mode default
 bindsym 3 [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "~/scripts/cline_scripts/open-i3-config"; mode default
 bindsym s exec "~/scripts/i3_scripts/startup-manual"; mode default
 bindsym Shift+p [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "sudo poweroff"; mode default
