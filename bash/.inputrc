@@ -17,12 +17,8 @@ set show-all-if-ambiguous on
 # ignore case
 set completion-ignore-case on
 
-# M-u: Task
-# "u": "\C-k \C-uclear && ttasks\C-m"
-
-# FZF to M-u
-# https://github.com/junegunn/fzf/issues/1531#issuecomment-475153669
-"u": " \C-e\C-u`__fzf_cd__`\e\C-e\er\C-m"
+# M-u: nnn
+"u": "\C-k \C-uclear && nnn_cd_on_quit\C-m"
 
 # M-u: Taskwarrior
 # "u": "\C-k \C-uclear && clear && task\C-m"

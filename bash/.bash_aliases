@@ -57,7 +57,7 @@ alias pe='source ~/scripts/cline_scripts/initialize-pyenv'
 # alias te='python ~/maps/t/t.py --task-dir ~/org/Info/Config/ttasks --list tasks -e'
 
 alias install_emacs='./configure && make && sudo make install'
-alias nnn='emacs -nw'
+# alias nnn='emacs -nw'
 alias a='cd ~/.emacs.d/ && clear && ls --color'
 
 alias gitrmca='git rm -r --cached'

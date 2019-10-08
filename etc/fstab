@@ -1,0 +1,6 @@
+# Pluggable devices are handled by uDev, they are not in fstab
+UUID=1c72fbcb-4bff-4351-a077-1fabd10c5736 / ext4 defaults,noatime 1 1
+UUID=ACFB-AA9E /boot/efi vfat defaults,noatime,dmask=0002,fmask=0113 0 0
+UUID=93d29d39-82e9-4b6b-8804-f38cbd2b88d8 swap swap defaults 0 0
+UUID=51e5a1f4-ad13-4973-aeed-641df6c801a2 /media/jerry/h1 ext4 defaults,nofail 0 2
+UUID=24a9b9e1-8968-4c61-a225-b79e0ee8da5d /media/jerry/h2 ext4 defaults,nofail 0 2

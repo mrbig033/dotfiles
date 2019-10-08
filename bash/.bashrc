@@ -218,3 +218,17 @@ if [ -n "$RANGER_LEVEL" ]; then export PS1="[RANGER]$PS1"; fi
 # export PATH="/home/jerry/.pyenv/bin:$PATH"
 # eval "$(pyenv init -)"
 # eval "$(pyenv virtualenv-init -)"
+
+# nnn cd on quit
+
+nnn_cd_on_quit()
+{
+    export NNN_TMPFILE=${XDG_CONFIG_HOME:-$HOME/.config}/nnn/.lastd
+
+    nnn "$@"
+
+    if [ -f $NNN_TMPFILE ]; then
+            . $NNN_TMPFILE
+            rm -f $NNN_TMPFILE > /dev/null
+    fi
+}

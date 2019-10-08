@@ -1,5 +1,11 @@
 #!/usr/bin/env bash
 
+export NNN_BMS='h:/home/jerry;1:/media/jerry/h1;2:/media/jerry/h2;C:/home/jerry/.config;V:/home/jerry/Videos;p:/home/jerry/Pictures;e:/home/jerry/.emacs.d;n:/home/jerry/Downloads;.:/home/jerry/org/Agenda;d:/home/jerry/dotfiles;s:/home/jerry/scripts;D:/home/jerry/Documents;w:/home/jerry/Studying/Prog/WebDev;V:/home/jerry/Studying/Prog/WebDev/04videos;m:/home/jerry/maps;k:/home/jerry/Ebooks'
+
+
+export NNN_USE_EDITOR=1
+export NNN_COPIER=xclip
+export NNN_TRASH=1
 export s=/usr/share
 export PROMPT_DIRTRIM=2
 # export EA_EDITOR='emacsclient --socket-name=gui-emacs --alternate-editor="" --create-frame'
@@ -18,7 +24,7 @@ FZF_DEFAULT_COMMAND="ppd=$(pwd) && fd -H -L -d 3 . $ppd"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 export FZF_ALT_C
-export FZF_ALT_C_COMMAND="ppd=$(pwd) && fdfind --hidden --follow --max-depth 3 . $ppd \
+export FZF_ALT_C_COMMAND="ppd=$(pwd) && fd --hidden --follow --max-depth 3 . $ppd \
 -E *\.[Pp]y[Cc]harm* \
 -E \.cache \
 -E \.git \

@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+arg="$*"
+sudo updatedb && locate "$arg*"

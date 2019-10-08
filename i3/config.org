@@ -264,6 +264,7 @@ bindsym e [title="term-up"] move scratchpad; [title="term-ranger"] move scratchp
 # bindsym Shift+r exec "st2 -t term-ranger -n term-ranger -e ranger"; mode default
 
 bindsym Escape mode default; exec notify-send --expire-time=250 'mode: default'
+bindsym $mod+g mode default; exec notify-send --expire-time=250 'mode: default'
 
 }
 #+END_SRC
@@ -289,6 +290,7 @@ bindsym Right  resize grow   width  10 px or 10 ppt
 bindsym $mod+apostrophe; mode "$floating"; exec notify-send --expire-time=250 --expire-time=250 'floating'
 bindsym Escape mode default; exec notify-send --expire-time=250 'mode: default'
 bindsym $mod+q kill; mode default; exec notify-send --expire-time=250 'mode: default'
+bindsym $mod+g mode default; exec notify-send --expire-time=250 'mode: default'
 }
 #+END_SRC
 ** tilling float
@@ -322,6 +324,8 @@ bindsym $mod+Shift+space floating disable; mode default; exec notify-send --expi
 
 bindsym $mod+q kill; mode default; exec notify-send --expire-time=250 'mode: default'
 bindsym Escape kill; mode default; exec notify-send --expire-time=250 'mode: default'
+
+bindsym $mod+g mode default; exec notify-send --expire-time=250 'mode: default'
 }
 #+END_SRC
 

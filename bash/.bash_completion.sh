@@ -353,3 +353,4 @@ complete -F _complete_alias alias
 complete -F _complete_alias cm
 complete -F _complete_alias fd
 complete -F _complete_alias j
+complete -F _complete_alias nn
