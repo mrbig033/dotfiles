@@ -7,14 +7,7 @@ add control = Control_L Control_R
 ! {{{ tab to alt
 keycode 64 = Tab
 keycode 23 = Alt_L
-! disable del
-! keycode 119 =
-! {{{ F12 to altgr
-! keycode 96 = Alt_R
-! keycode 108 = F12
-! }}}
-! {{{ scroll lock to altgr
-keycode 78 = Alt_R
-keycode 127 = Pause
-! }}}
+! {{{ F10 to altgr
+keycode 96 = Alt_R
+keycode 108 = F10
 !}}}
