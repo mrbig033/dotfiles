@@ -169,7 +169,7 @@
 ! "Delete entry from history" Set from: Default
 ! rofi.kb-delete-entry:                Shift+Delete
 ! "Switch to the next mode." Set from: Default
-rofi.kb-mode-next:                   Menu
+rofi.kb-mode-next:                   apostrophe
 ! "Switch to the previous mode." Set from: Default
 ! rofi.kb-mode-previous:               Shift+Left,Control+ISO_Left_Tab
 ! "Go to the previous column" Set from: Default
