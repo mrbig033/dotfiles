@@ -113,11 +113,11 @@ client.background       #2B2C2B
 # client.background       #2B2C2B
 
 
+exec --no-startup-id "/home/jerry/dotfiles/scripts/emacs_scripts/lif"
 exec --no-startup-id "google-chrome"
 exec --no-startup-id "~/scripts/cline_scripts/sessions.sh &"
 exec --no-startup-id "xfce4-terminal --working-directory=~ --title=term-up --hold --command=\"tmux attach\" &"
 exec --no-startup-id "xfce4-terminal --command=ranger --working-directory=~ --title=term-ranger --hold &"
-exec --no-startup-id "/home/jerry/dotfiles/scripts/emacs_scripts/lif"
 exec --no-startup-id "feh --bg-fill ~/Wallpaper/Zen/pedramolhada.png &"
 
 exec --no-startup-id "sleep 120; clipit"
@@ -200,6 +200,8 @@ bindsym 1 exec "~/scripts/i3_scripts/touchpad_off"; mode default
 bindsym 2 exec "~/scripts/i3_scripts/touchpad_on"; mode default
 bindsym Shift-q exec "i3-msg exit"; mode default
 bindsym apostrophe exec "~/maps/texpander/texpander.sh"; mode default
+bindsym t [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "thunar"; mode default
+
 bindsym s exec "~/scripts/i3_scripts/startup-manual"; mode default
 
 bindsym Shift+w exec feh --recursive --randomize --bg-fill ~/Wallpaper; mode default
