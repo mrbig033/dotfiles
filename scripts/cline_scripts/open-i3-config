@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+clear
+~/scripts/emacs_scripts/eclauncher --eval "(my/find-i3-config)" &>/dev/null
+i3-msg "[class=Emacs]" focus &>/dev/null
