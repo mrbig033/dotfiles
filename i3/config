@@ -203,6 +203,7 @@ bindsym apostrophe exec "~/maps/texpander/texpander.sh"; mode default
 bindsym t [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "thunar"; mode default
 bindsym 3 [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "~/scripts/cline_scripts/open-i3-config"; mode default
 bindsym s exec "~/scripts/i3_scripts/startup-manual"; mode default
+bindsym Shift+p [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "sudo poweroff"; mode default
 
 bindsym Shift+w exec feh --recursive --randomize --bg-fill ~/Wallpaper; mode default
 bindsym Shift+r exec "/home/jerry/dotfiles/scripts/cline_scripts/restart_terminals"; mode default

@@ -244,8 +244,7 @@ bindsym $mod+x layout toggle all
 bindsym $mod+v split v;exec notify-send --expire-time=250 --expire-time=1000 'tile vertically'
 bindsym $mod+Control+o split h;exec notify-send --expire-time=250 --expire-time=1000 'tile horizontally'
 #+END_SRC
-* Modes
-** Launch
+* Launch Mode
 #+BEGIN_SRC i3
 bindsym Menu mode "$launch"
 
@@ -257,6 +256,7 @@ bindsym apostrophe exec "~/maps/texpander/texpander.sh"; mode default
 bindsym t [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "thunar"; mode default
 bindsym 3 [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "~/scripts/cline_scripts/open-i3-config"; mode default
 bindsym s exec "~/scripts/i3_scripts/startup-manual"; mode default
+bindsym Shift+p [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "sudo poweroff"; mode default
 
 bindsym Shift+w exec feh --recursive --randomize --bg-fill ~/Wallpaper; mode default
 bindsym Shift+r exec "/home/jerry/dotfiles/scripts/cline_scripts/restart_terminals"; mode default
@@ -272,8 +272,8 @@ bindsym Escape mode default; exec notify-send --expire-time=250 'mode: default'
 
 }
 #+END_SRC
-** Tilling
-*** tilling tiled
+* Tilling Modes
+** tilling tiled
 #+BEGIN_SRC i3
 
 bindsym $mod+Shift+space floating toggle; mode "$floating"
@@ -296,7 +296,7 @@ bindsym Escape mode default; exec notify-send --expire-time=250 'mode: default'
 bindsym $mod+q kill; mode default; exec notify-send --expire-time=250 'mode: default'
 }
 #+END_SRC
-*** tilling float
+** tilling float
 #+BEGIN_SRC i3
 mode "$floating" {
 
