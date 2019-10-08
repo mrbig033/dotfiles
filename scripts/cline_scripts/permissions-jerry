@@ -1,0 +1,9 @@
+#!/bin/bash
+
+clear
+echo "" && read -p "   WARNING: this could REALLY fuck up your system. Press enter if you dare " 
+echo "" 
+sudo chmod a+x ./* 
+sudo chown -Rhc "jerry" $PWD 
+sudo chmod -Rc 755 $PWD 
+sudo chmod -R g+s $PWD
