@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+sleep 120 && ls
+clipit
+redshift
+xfce4-power-manager
+nm-applet
+pulseaudio
+unclutter -display :0.0 -idle 0.5
+feh --bg-fill /home/jerry/Pictures/Wallpaper/
