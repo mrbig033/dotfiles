@@ -7,4 +7,4 @@ xfce4-power-manager
 nm-applet
 pulseaudio
 unclutter -display :0.0 -idle 0.5
-feh --bg-fill /home/jerry/Pictures/Wallpaper/
+feh --bg-fill /home/jerro/Pictures/Wallpaper/

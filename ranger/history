@@ -1,9 +1,3 @@
-rename 08_Lufia II - Rise of the Sinistrals (U).smc
-search evo
-search eden
-rename 09_E.V.O. Search for Eden (U).smc
-search breath
-rename 10_Breath of Fire (U) [!].smc
 md OTHERS
 md MINE
 md INSTALLER
@@ -66,7 +60,6 @@ search emacs
 rename mini
 rename em
 touch mini.org
-search 
 search git
 search prof
 search bahs
@@ -98,3 +91,10 @@ touch config
 search bloc
 open_with 
 search fasd
+md 
+md etc
+search fst
+open_with  f
+search etc
+search 
+search lif

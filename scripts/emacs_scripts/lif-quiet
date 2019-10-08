@@ -1,4 +1,0 @@
-#!/bin/bash
-
-emacsclient --socket-name=gui-emacs --alternate-editor="" --no-wait --create-frame
-
