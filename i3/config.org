@@ -159,7 +159,6 @@ client.background       #2B2C2B
 
 exec --no-startup-id "xfce4-terminal --working-directory=~ --title=term-up --hold --command=\"tmux attach\" &"
 exec --no-startup-id "xfce4-terminal --command=ranger --working-directory=~ --title=term-ranger --hold &"
-
 exec --no-startup-id "xset s 0 0 -dpms &"
 exec --no-startup-id "xset mouse 14/5 0 &"
 exec --no-startup-id "xset r rate 200 60 &"
@@ -200,6 +199,9 @@ bindsym $alt+Shift+p focus parent;exec notify-send --expire-time=250 'parent foc
 #+END_SRC
 ** general
 #+BEGIN_SRC i3
+bindsym $mod+Shift+u [title="term-up"] kill; exec "~/scripts/i3_scripts/term-up"
+bindsym $mod+Shift+r [title="term-ranger"] kill; exec "~/scripts/i3_scripts/term-ranger"
+
 bindsym F10 exec "~/maps/texpander/texpander.sh"; mode default
 bindsym $mod+b border none
 bindsym $mod+o border normal
@@ -339,8 +341,6 @@ bindsym $mod+g mode default; exec notify-send --expire-time=250 'mode: default'
 #+BEGIN_SRC i3
 bindsym $mod+equal scratchpad show
 bindsym $mod+Shift+minus move scratchpad; mode default
-bindsym $mod+Shift+s [title="term-up"] kill; exec "xfce4-terminal -T term-up"
-bindsym $mod+Shift+r [title="term-up"] move scratchpad; [title="term-ranger"] kill; exec "xfce4-terminal -T term-ranger --execute ~/.pyenv/shims/ranger"
 for_window [class="Autokey-gtk" title="AutoKey"] move scratchpad
 #+END_SRC
 *** Term Up
