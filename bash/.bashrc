@@ -95,7 +95,7 @@ shopt -s cdable_vars
 source ~/.bash_aliases
 source ~/.env_variables.sh
 source ~/.bash_completion.sh
-source ~/maps/ranger/examples/bash_automatic_cd.sh
+source ~/.pyenv/versions/3.7.4/share/doc/ranger/examples/bash_automatic_cd.sh
 
 #### DEFAULT EDITOR ####
 
@@ -214,7 +214,8 @@ if [ -n "$RANGER_LEVEL" ]; then export PS1="[RANGER]$PS1"; fi
 
 # Load pyenv automatically by adding
 # the following to ~/.bashrc:
-export PATH="/home/jerry/.pyenv/bin:$PATH"
+export PATH="/home/jerry/.pyenv/bin:/home/jerry/.pyenv/shims/ranger:$PATH"
+
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
 
