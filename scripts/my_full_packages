@@ -12,8 +12,8 @@ sudo apt -y update && apt -y dist-upgrade &&
         python-setuptools python3-setuptools wget curl cmus                   \
         libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev llvm  \
         libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev           \
-        liblzma-dev python-openssl git keepassxc gnome-disk-utility zenity libffi-dev wordnet &&
-
+        liblzma-dev python-openssl git keepassxc gnome-disk-utility zenity    \
+        libffi-dev wordnet simplescreenrecorder &&
 
     sudo apt -y build-dep emacs25 && sudo apt -y autoremove && sudo apt -y autoclean &&
     curl https://pyenv.run | bash
