@@ -155,8 +155,8 @@ bindsym $mod+Shift+u [title="term-up"] kill; exec "~/scripts/i3_scripts/term-up"
 bindsym $mod+Shift+r [title="term-ranger"] kill; exec "~/scripts/i3_scripts/term-ranger"
 
 bindsym F10 exec "~/maps/texpander/texpander.sh"; mode default
-bindsym $mod+b border none
-bindsym $mod+o border normal
+# bindsym $mod+b border none
+# bindsym $mod+o border normal
 bindsym $mod+q kill
 bindsym $mod+Return exec "~/maps/suckless/st_bin3/bin/st"
 bindsym --release $mod+Shift+q exec xkill
@@ -292,6 +292,12 @@ for_window [title="term-ranger"] floating enable sticky enable
 for_window [title="term-ranger"] move scratchpad
 for_window [title="term-ranger"] resize set 1250 450; move to position 350 0
 bindsym $mod+i [title="term-up"] move scratchpad; [title="term-ranger"] scratchpad show; move to position 350 0
+
+for_window [class="Hexchat" title="mrblack"] border none
+for_window [class="Hexchat" title="mrblack"] floating enable sticky enable
+for_window [class="Hexchat" title="mrblack"] move scratchpad
+for_window [class="Hexchat" title="mrblack"] resize set 1250 450; move to position 350 0
+bindsym $mod+o [title="term-up"] move scratchpad; [title="mrblack"] scratchpad show; move to position 350 0
 
 set $ws1 "1"
 set $ws2 "2"
