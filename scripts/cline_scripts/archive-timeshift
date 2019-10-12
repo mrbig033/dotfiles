@@ -3,4 +3,4 @@
 source="/media/jerry/h2/timeshift/"
 destination="/media/jerry/TERA/timeshift/"
 
-sudo rsync --archive --verbose --delete "$source" "$destination"
+sudo rsync --human-readable --archive --verbose --delete "$source" "$destination"

@@ -1,23 +1,3 @@
-md MINE
-md INSTALLER
-md FLASH_DRIVE
-search rpg
-rename projeto_original.org
-touch projeto.org
-rename a_hora_morta.org
-rename eclipse.org
-touch 
-rename .git
-rename pt_br
-rename pt_br_trim
-rename pt_br_no_three_chars
-rename pt_three_max
-search abb
-search ab
-open_with hjjj f
-open_with kekeke f
-search sim
-search buil
 s
 search bui
 search save
@@ -31,7 +11,6 @@ search tem
 touch scratch.untracked
 touch s.unt
 touch asd.asd
-touch asd
 touch asdasdsd
 ççççççççççççççççççtouch 
 touch aaaaaaaaaaaaaaasd
@@ -98,3 +77,24 @@ search etc
 search 
 search lif
 touch tildes_sugestions.md
+md Python_Videos
+md 01_Introduction
+md 02_Basics
+rename 02_Basics_01
+rename 02_Basics_I
+md 03_Basics_II
+md 04_Functions
+md 05_Advanced_I
+rename 06_OOP_I
+md 06_Advanced_II
+rename 07_Advanced_II
+md 08_Web_Scraping
+md 09_Advanced_III
+search sol
+rename videos
+touch asd
+rename AAA
+rename BBB
+rename CCC
+rename br_full.back.txt
+rename ptb

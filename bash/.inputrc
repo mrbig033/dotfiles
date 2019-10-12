@@ -47,8 +47,8 @@ set completion-ignore-case on
 # "o": "\C-k \C-uclear && ~/scripts/cline_scripts/gotoranger\C-m"
 
 # Python
-"p": "\C-k \C-uclear && python -q\C-m"
-
+# "p": "\C-k \C-uclear && python -q\C-m"
+"p": "\C-k \C-uclear && python /home/jerry/Studying/Prog/Python/code/scratch.py\C-m"
 
 
 # M-u: Foreground

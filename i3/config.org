@@ -40,10 +40,10 @@ set $right l
 set $mod Mod4
 set $alt Mod1
 new_float normal
-# new_window normal
-new_window 1pixel
+new_window normal
+# new_window 1pixel
 floating_modifier $mod
-hide_edge_borders yes
+hide_edge_borders smart
 focus_follows_mouse yes
 font xft:URWGothic-Book 11
 # font pango:DejaVu Sans Mono 0
@@ -157,6 +157,10 @@ client.background       #2B2C2B
 * Startup
 #+BEGIN_SRC i3
 
+exec --no-startup-id "google-chrome"
+exec --no-startup-id "/home/jerry/dotfiles/scripts/emacs_scripts/lif"
+exec --no-startup-id "~/scripts/cline_scripts/sessions.sh &"
+
 exec --no-startup-id "xfce4-terminal --working-directory=~ --title=term-up --hold --command=\"tmux attach\" &"
 exec --no-startup-id "xfce4-terminal --command=ranger --working-directory=~ --title=term-ranger --hold &"
 exec --no-startup-id "xset s 0 0 -dpms &"
@@ -167,9 +171,6 @@ exec --no-startup-id "~/scripts/keyboard/init_keys.sh &"
 exec --no-startup-id "xrandr --output DP-1 --off --output HDMI-1 --mode 1920x1080 --pos 0x0 --rotate normal --output eDP-1 --off --output HDMI-2 --off &"
 exec --no-startup-id "~/scripts/i3_scripts/delayed_init"
 
-# exec --no-startup-id "google-chrome"
-# exec --no-startup-id "/home/jerry/dotfiles/scripts/emacs_scripts/lif"
-# exec --no-startup-id "~/scripts/cline_scripts/sessions.sh &"
 # exec --no-startup-id "xinput --disable 'ETPS/2 Elantech Touchpad' &"
 # exec --no-startup-id "synclient TapButton1=1 TouchpadOff=0 PalmDetect=1 &"
 #+END_SRC
@@ -206,7 +207,7 @@ bindsym F10 exec "~/maps/texpander/texpander.sh"; mode default
 bindsym $mod+b border none
 bindsym $mod+o border normal
 bindsym $mod+q kill
-bindsym $mod+Return exec xfce4-terminal
+bindsym $mod+Return exec "~/maps/suckless/st_bin3/bin/st"
 bindsym --release $mod+Shift+q exec xkill
 bindsym F9 exec "~/.emacs_anywhere/bin/run"
 bindsym $mod+F5 exec --no-startup-id $Locker
