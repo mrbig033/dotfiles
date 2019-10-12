@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+xfce4-terminal --working-directory=~ --title=term-ranger --hold --command="/home/jerry/.pyenv/shims/ranger"

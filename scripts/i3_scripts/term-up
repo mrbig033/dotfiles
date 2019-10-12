@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+xfce4-terminal --working-directory=~ --title=term-up --hold --command="tmux attach" &

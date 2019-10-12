@@ -1,0 +1,14 @@
+#!/usr/bin/env bash
+
+destination="/media/jerry/TERA/home"
+
+rsync --human-readable --dry-run --archive --verbose --delete \
+      /home/jerry/Desktop                                     \
+      /home/jerry/dotfiles                                    \
+      /home/jerry/Documents                                   \
+      /home/jerry/Downloads                                   \
+      /home/jerry/maps                                        \
+      /home/jerry/Pictures                                    \
+      /home/jerry/Sounds                                      \
+      /home/jerry/Studying                                    \
+      "$destination"
