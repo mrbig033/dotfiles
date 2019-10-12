@@ -285,19 +285,19 @@ for_window [title="term-up"] border none
 for_window [title="term-up"] floating enable sticky enable
 for_window [title="term-up"] move scratchpad
 for_window [title="term-up"] resize set 1250 450; move to position 350 0
-bindsym $mod+u [title="term-ranger"] move scratchpad; [title="term-up"] scratchpad show; move to position 350 0; move to position 350 0
+bindsym $mod+u [title="mrblack"] move scratchpad; [title="term-ranger"] move scratchpad; [title="term-up"] scratchpad show; move to position 350 0; move to position 350 0
 
 for_window [title="term-ranger"] border none
 for_window [title="term-ranger"] floating enable sticky enable
 for_window [title="term-ranger"] move scratchpad
 for_window [title="term-ranger"] resize set 1250 450; move to position 350 0
-bindsym $mod+i [title="term-up"] move scratchpad; [title="term-ranger"] scratchpad show; move to position 350 0
+bindsym $mod+i [title="mrblack"] move scratchpad; [title="term-up"] move scratchpad; [title="term-ranger"] scratchpad show; move to position 350 0
 
 for_window [class="Hexchat" title="mrblack"] border none
 for_window [class="Hexchat" title="mrblack"] floating enable sticky enable
 for_window [class="Hexchat" title="mrblack"] move scratchpad
 for_window [class="Hexchat" title="mrblack"] resize set 1250 450; move to position 350 0
-bindsym $mod+o [title="term-up"] move scratchpad; [title="mrblack"] scratchpad show; move to position 350 0
+bindsym $mod+o [title="term-ranger"] move scratchpad; [title="term-up"] move scratchpad; [title="mrblack"] scratchpad show; move to position 350 0
 
 set $ws1 "1"
 set $ws2 "2"
