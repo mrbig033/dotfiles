@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+new_expansion="$*"
+
+if [ $# -gt 0 ]
+then
+    source "$HOME"/scripts/cline_scripts/text_expander_cd
+    nvim -c 'startinsert' "$new_expansion"
+    "$HOME"/maps/texpander/texpander.sh &>/dev/null
+fi
+clear

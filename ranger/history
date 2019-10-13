@@ -1,9 +1,3 @@
-s
-search bui
-search save
-search temmp
-search temp
-touch tempkkkkkkkkkkkkkkkk
 search back
 md temp
 search var
@@ -29,7 +23,6 @@ rename emacs_v1
 compress e
 compress e.7z
 rename e
-search tex
 search texpan
 rename texp
 find te
@@ -98,3 +91,10 @@ rename BBB
 rename CCC
 rename br_full.back.txt
 rename ptb
+search vlc
+md rps
+touch rps_notes.org
+md versao1
+touch rps1.py
+search tex
+rename te

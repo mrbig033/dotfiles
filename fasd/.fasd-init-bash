@@ -21,6 +21,7 @@ fasd_cd() {
 }
 
 alias j='fasd_e -d'
+alias a='cd ~/.emacs.d/ && clear && ls --color'
 # alias z='fasd_cd -d'
 # alias zz='fasd_cd -d -i'
 
