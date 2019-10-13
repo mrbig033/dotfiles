@@ -18,7 +18,12 @@ set show-all-if-ambiguous on
 set completion-ignore-case on
 
 # M-u: nnn
-"u": "\C-k \C-uclear && nnn_cd_on_quit\C-m"
+"u": "\C-k \C-uclear && /home/jerry/Studying/Prog/Python/code/basics/01_rps/versao2/pa.py\C-m"
+# "u": "\C-k \C-uclear && nnn_cd_on_quit\C-m"
+
+
+
+
 
 # M-u: Taskwarrior
 # "u": "\C-k \C-uclear && clear && task\C-m"

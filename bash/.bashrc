@@ -124,7 +124,8 @@ shopt -s checkwinsize
 
 # prompt
 # https://unix.stackexchange.com/a/3762
-PS1="\033[?17;0;127c\[\e[38;241m[\]\[\e[38;88m\A\]\[\e[38;241m]\]\[\e[38;241m[\]\[\e[38;88m\u\]\[\e[38;241m]\]\n\[\e[38;241m[\e[38;88m\w\e[38;241m]\e[38;241m\]\n\$ \[\e[0m\]"
+
+PS1="\033[?17;0;127c\[\e[38;241m[\]\[\e[38;88m\d][\e[38;88m\A\[\e[38;241m]\]\n\[\e[38;241m[\e[38;88m\w\e[38;241m]\e[38;241m\]\n\$ \[\e[0m\]"
 
 # completion
 if [ -f /etc/bash_completion ]; then
