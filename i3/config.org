@@ -249,7 +249,7 @@ bindsym Menu mode "$launch"
 mode "$launch" {
 
 bindsym F10 exec "~/maps/texpander/texpander.sh"; mode default
-
+bindsym w exec "st -e ~/.pyenv/shims/bpython --quiet"; mode default
 bindsym 1 exec "~/scripts/i3_scripts/touchpad_off"; mode default
 bindsym 2 exec "~/scripts/i3_scripts/touchpad_on"; mode default
 bindsym 3 [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "~/scripts/cline_scripts/open-i3-config"; mode default

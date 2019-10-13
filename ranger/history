@@ -1,4 +1,3 @@
-search back
 md temp
 search var
 search tem
@@ -98,3 +97,4 @@ md versao1
 touch rps1.py
 search tex
 rename te
+md versao2
