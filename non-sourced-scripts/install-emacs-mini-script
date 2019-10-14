@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+clear
+function install-emacs-mini {
+    git clone git://git.savannah.gnu.org/emacs.git "$HOME"/maps/emacs_mini_source
+    cd "$HOME"/maps/emacs_mini_source || exit
+    ./autogen.sh
+    ./configure                          \
+        --without-all                    \
+        --without-x                      \
+        --prefix="$HOME"/maps/emacs_mini \
+    CFLAGS='-Os -m32'
+    make
+    make install
+}

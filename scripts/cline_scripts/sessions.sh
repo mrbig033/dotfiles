@@ -1,8 +1,8 @@
 #!/bin/bash
 
-tmux kill-server
-source "$HOME"/.bash_aliases &&
-tmux new-session -ds 1
+tmux kill-server &&
+    source "$HOME"/.bash_aliases &&
+    tmux new-session -ds 1
 tmux new-session -ds 2
 tmux new-session -ds 3
 tmux new-session -ds 4
@@ -13,5 +13,5 @@ tmux new-session -ds 8
 tmux new-session -ds 9
 tmux new-session -ds 0
 tmux attach -t 0 &>/dev/null || tmux switch-client -t 0
-
+xfce4-terminal --working-directory=~ --title=term-up --hold --command="tmux attach" &
 # vim: ft=tmux nowrap

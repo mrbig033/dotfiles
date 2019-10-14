@@ -158,11 +158,9 @@ client.background       #2B2C2B
 #+BEGIN_SRC i3
 
 exec --no-startup-id "google-chrome"
-exec --no-startup-id "/home/jerry/dotfiles/scripts/emacs_scripts/lif"
+# exec --no-startup-id "/home/jerry/dotfiles/scripts/emacs_scripts/lif"
 exec --no-startup-id "~/scripts/cline_scripts/sessions.sh &"
-
-exec --no-startup-id "xfce4-terminal --working-directory=~ --title=term-up --hold --command=\"tmux attach\" &"
-exec --no-startup-id "xfce4-terminal --command=ranger --working-directory=~ --title=term-ranger --hold &"
+exec --no-startup-id "xfce4-terminal --command=~/.pyenv/shims/ranger --working-directory=~ --title=term-ranger --hold &"
 exec --no-startup-id "xset s 0 0 -dpms &"
 exec --no-startup-id "xset mouse 14/5 0 &"
 exec --no-startup-id "xset r rate 200 60 &"
@@ -200,7 +198,8 @@ bindsym $alt+Shift+p focus parent;exec notify-send --expire-time=250 'parent foc
 #+END_SRC
 ** general
 #+BEGIN_SRC i3
-bindsym $mod+Shift+u [title="term-up"] kill; exec "~/scripts/i3_scripts/term-up"
+bindsym $mod+Shift+u [title="term-up"] kill; exec "~/scripts/cline_scripts/sessions.sh &>/dev/null &"
+
 bindsym $mod+Shift+r [title="term-ranger"] kill; exec "~/scripts/i3_scripts/term-ranger"
 
 bindsym F10 exec "~/maps/texpander/texpander.sh"; mode default

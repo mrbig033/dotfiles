@@ -1,0 +1,37 @@
+# give color
+set colored-stats on
+# Append char to indicate type
+set visible-stats on
+# Mark symlinked directories
+set mark-symlinked-directories on
+# Color the common prefix
+set colored-completion-prefix on
+# Color the common prefix in menu-complete
+set menu-complete-display-prefix On
+# disable ctrl echoe
+set echo-control-characters off
+# fix del key
+set enable-keypad On
+# show completions early
+set show-all-if-ambiguous on
+# ignore case
+set completion-ignore-case on
+
+## Keybindings
+
+# Bpython
+"y": "\C-k \C-uclear && clear && bpython --quiet\C-m"
+
+# Python
+# "p": "\C-k \C-uclear && python -q\C-m"
+"p": "\C-k \C-uclear && "$HOME"/Studying/Prog/Python/code/scratch.py\C-m"
+
+# M-u: nnn
+"u": "\C-k \C-uclear && nnn_cd_on_quit\C-m"
+
+# M-i: Edit command in Vim
+"i": ""
+
+# Ranger Cd
+"": "\C-k \C-uclear && ranger-cd\C-m"
+

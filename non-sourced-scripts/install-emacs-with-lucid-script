@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+clear
+function install-emacs-lucid {
+    git clone git://git.savannah.gnu.org/emacs.git
+    cd emacs || exit
+    ./autogen.sh
+    ./configure --with-x-toolkit=lucid
+    make
+    sudo make install
+}
