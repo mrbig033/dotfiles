@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+clear
+function install-emacs {
+    git clone git://git.savannah.gnu.org/emacs.git
+    cd emacs || exit
+    ./autogen.sh
+    ./configure
+    make
+    sudo make clean install
+}

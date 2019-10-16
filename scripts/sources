@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+ 
+source "$HOME"/dotfiles/non-sourced-scripts/install-emacs-mini-script
+source "$HOME"/dotfiles/non-sourced-scripts/install-emacs-script
+source "$HOME"/dotfiles/non-sourced-scripts/install-emacs-with-lucid-script

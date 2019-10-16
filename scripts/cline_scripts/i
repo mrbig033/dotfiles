@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+clear
+script="$*"
+nvim "$(whereis "$script" | cut -d' ' -f 2)"
