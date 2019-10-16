@@ -5,7 +5,6 @@ Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
 Plug 'tpope/vim-eunuch'
 Plug 'junegunn/goyo.vim'
-Plug 'tpope/vim-fugitive'
 Plug 'justinmk/vim-sneak'
 Plug 'godlygeek/tabular'
 Plug 'tpope/vim-repeat'
@@ -55,8 +54,8 @@ sunmap e
 sunmap ge
 " }}}
 " {{{ autopairs
-let g:AutoPairsShortcutToggle = '<c-c>p'
-let g:AutoPairsShortcutJump = '<c-x><c-x>'
+let g:AutoPairsShortcutToggle = ''
+let g:AutoPairsShortcutJump = ''
 " }}}
 " {{{ vertigo
 " nnoremap <silent> , :<C-U>VertigoDown n<CR>

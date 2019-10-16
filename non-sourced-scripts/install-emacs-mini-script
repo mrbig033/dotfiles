@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
 
 clear
+source_dir="$HOME/maps/emacs_mini_source"
 function install-emacs-mini {
-    git clone git://git.savannah.gnu.org/emacs.git "$HOME"/maps/emacs_mini_source
-    cd "$HOME"/maps/emacs_mini_source || exit
-    ./autogen.sh
-    ./configure                          \
+    git clone git://git.savannah.gnu.org/emacs.git $source_dir
+    cd "$source_dir"/maps/emacs_mini_source || exit
+    $source_dir/autogen.sh
+    $source_dir/configure                    
         --without-all                    \
         --without-x                      \
         --prefix="$HOME"/maps/emacs_mini \

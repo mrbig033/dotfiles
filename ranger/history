@@ -1,21 +1,4 @@
-touch asdsad
-rename Eclipse.fadein
-rename back
-rename evas
-search  e
-search e
-rename desktops
-rename emacs_v1.7z
-rename emacs_v
-rename emacs_v1
-compress e
-compress e.7z
-rename e
-search texpan
-rename texp
-find te
 search texp
-search emacs
 rename mini
 rename em
 touch mini.org
@@ -48,9 +31,7 @@ rename .tmux
 search block
 touch config
 search bloc
-open_with 
 search fasd
-md 
 md etc
 search fst
 open_with  f
@@ -98,3 +79,22 @@ search scr
 search nono
 rename install-emacs-mini-script
 rename install-emacs-with-lucid-script
+rename .emacs.d.back
+rename .emacs.d
+search insta
+rename INSTALL
+md emacs_backup
+search emacs
+touch .emacs.d
+md .emacs.d
+search emac
+touch init.el
+md emacs
+search ins
+search sour
+search bui
+md 
+md settings
+open_with 
+touch settings.org
+search cd

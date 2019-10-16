@@ -114,10 +114,9 @@ client.background       #2B2C2B
 
 
 exec --no-startup-id "google-chrome"
-# exec --no-startup-id "/home/jerry/dotfiles/scripts/emacs_scripts/lif"
-exec --no-startup-id "~/scripts/cline_scripts/sessions.sh &"
-
-exec --no-startup-id "xfce4-terminal --command=~/.pyenv/shims/ranger --working-directory=~ --title=term-ranger --hold &"
+exec --no-startup-id "/home/jerry/dotfiles/scripts/emacs_scripts/lif"
+exec --no-startup-id "~/scripts/cline_scripts/sessions.sh && xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up --hold &"
+exec --no-startup-id "xfce4-terminal --command=/home/jerry/.pyenv/shims/ranger --working-directory=~ --title=term-ranger --hold &"
 exec --no-startup-id "xset s 0 0 -dpms &"
 exec --no-startup-id "xset mouse 14/5 0 &"
 exec --no-startup-id "xset r rate 200 60 &"

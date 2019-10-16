@@ -118,8 +118,10 @@ vnoremap <leader>ce :! awk '{ print length(), $0 \| "sort -n \| cut -d\\  -f2-" 
 " nnoremap <c-x>s :SyntasticToggleMode<cr>
 " nnoremap <c-x>y :setlocal foldmethod=syntax<cr>
 "
+nnoremap <buffer> <c-x><c-x> :exec '!python' shellescape(@%, 1)<cr>
+nnoremap <buffer> <c-x>x :exec '!python' shellescape(@%, 1)<cr>
 nnoremap <silent> <leader>e :silent !eclauncher % &>/dev/null <cr>
-nnoremap <silent> <leader>mg :Goyo<cr>:echo ""<cr>
+nnoremap <silent> <leader>mg :Goyo<cr>:echo "<cr>
 nnoremap <silent> <leader>mt :set showtabline=0<cr>:echo ""<cr>
 nnoremap ; :
 " nnoremap <c-z> <nop>

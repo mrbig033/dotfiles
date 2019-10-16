@@ -20,7 +20,7 @@ set completion-ignore-case on
 ## Keybindings
 
 # Bpython
-"y": "\C-k \C-uclear && clear && bpython --quiet\C-m"
+# "y": "\C-k \C-uclear && clear && bpython --quiet\C-m"
 
 # Python
 # "p": "\C-k \C-uclear && python -q\C-m"
