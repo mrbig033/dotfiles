@@ -168,7 +168,9 @@ exec --no-startup-id "compton -b --backend glx &"
 exec --no-startup-id "~/scripts/keyboard/init_keys.sh &"
 exec --no-startup-id "xrandr --output DP-1 --off --output HDMI-1 --mode 1920x1080 --pos 0x0 --rotate normal --output eDP-1 --off --output HDMI-2 --off &"
 exec --no-startup-id "~/scripts/i3_scripts/delayed_init"
-
+exec --no-startup-id redshift
+exec --no-startup-id xfce4-power-manager
+exec --no-startup-id nm-applet
 # exec --no-startup-id "xinput --disable 'ETPS/2 Elantech Touchpad' &"
 # exec --no-startup-id "synclient TapButton1=1 TouchpadOff=0 PalmDetect=1 &"
 #+END_SRC
