@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+function gopath() {
+    directory="$(xclip -out -selection clipboard)"
+    cd || "($directory)"
+}

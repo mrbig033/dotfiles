@@ -1,9 +1,3 @@
-search texp
-rename mini
-rename em
-touch mini.org
-search git
-search prof
 search bahs
 md words
 touch 1000.txt
@@ -98,3 +92,9 @@ md settings
 open_with 
 touch settings.org
 search cd
+md dict
+touch dict1.py
+md lcomp
+md Projects
+md docs
+rename cls

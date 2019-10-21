@@ -2,4 +2,5 @@
 
 clear
 script="$*"
-nvim "$(whereis "$script" | cut -d' ' -f 2)"
+# source: https://old.reddit.com/r/bash/comments/dio03b/how_can_i_make_whereis_automatically_open_the/f3xx7kd/
+eclauncher "$(which "$script")"

@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+google-chrome ~/.emacs.d/etc/docs/snippet-development.html
