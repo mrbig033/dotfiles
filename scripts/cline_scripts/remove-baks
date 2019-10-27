@@ -1,7 +1,8 @@
 #!/bin/bash
 
 clear
-printf "\n   All permissions in this folder will be given to you." &&
+extension="$*"
+printf "\n   " &&
     printf "\n   This could REALLY fuck up your system.\n\n" &&
     read -rp "   PRESS ENTER TO CONTINUE" &&
     read -rp "   ARE YOU SURE? " &&
@@ -11,3 +12,5 @@ printf "\n   All permissions in this folder will be given to you." &&
 sudo chown -Rhc "$USER" "$PWD"
 sudo chmod -Rc 755 "$PWD"
 sudo chmod -R g+s "$PWD"
+
+rm -rfv ./*."$extension"

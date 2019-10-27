@@ -1,7 +1,6 @@
 # -*- mode: sh -*-
 
-alias aas='clear && aptitude search'
-alias ass='clear && aptitude search'
+# alias ass='clear && aptitude search'
 alias ins='clear && apt list --installed -a'
 alias all='clear && apt list -a'
 alias ai='sudo aptitude install'
@@ -177,4 +176,7 @@ alias bp='clear && bpython --quiet'
 alias tee='cd ~/.texpander && nvim ./*'
 alias o='cd /home/jerry/Python/code/basics/loops && cc'
 alias ps='~/Studying/Prog/Python/code/scratch.py'
-alias comma='cd "$(xclip -o)" && clear && ls --color==always'
+# alias ga='cd "$(xclip -o)" && clear && ls --color==always'
+alias t='~/maps/t/t.py --task-dir ~/org/Data/.t_tasks --list tasks'
+
+

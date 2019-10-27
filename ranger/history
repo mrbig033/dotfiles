@@ -1,11 +1,3 @@
-search bahs
-md words
-touch 1000.txt
-md 1000_words
-md 100.000_words
-md en
-md pt
-touch 5000_palavras.txt
 rename 
 touch nota
 rename nota.txt
@@ -98,3 +90,11 @@ md lcomp
 md Projects
 md docs
 rename cls
+open_with an f
+search ses
+rename 01_Witness_for_the_Prosecutionh
+md comprehension
+touch dic_comp.py
+md Comedy
+touch comedy.org
+md Comedy_79-99

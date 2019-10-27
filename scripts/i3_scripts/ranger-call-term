@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
-i3-msg "[title=term-ranger]" move scratchpad
-i3-msg "[title=term-up]" scratchpad show
+i3-msg "[title=term-ranger]" move scratchpad &&
+i3-msg "[title=term-up]" scratchpad show &&

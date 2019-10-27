@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+commit="$*"
+clear
+git fetch --all &&
+git reset --hard $commit
+git reset --hard 6646e618586c2548c29e885aab3384ff202b256e
+

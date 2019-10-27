@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+# from http://bit.ly/2phj9Ed 
+gopath () {
+    dir="$(xclip -o)"
+    local 
+
+    #make sure $dir at least has a value in it
+    [[ "$dir" ]] || return 1
+    #try to cd, leave if you can't
+    cd "$dir" || return $?
+    #assuming we've made it this far, do the other things
+    clear
+    ls --color=always
+}

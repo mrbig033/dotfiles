@@ -25,14 +25,17 @@ set completion-ignore-case on
 # "y": "\C-k \C-uclear && clear && bpython --quiet\C-m"
 
 # Cd to path
-"y": "\C-k \C-uclear && clear && cd $(xclip -o)\C-m"
+"y": "\C-k \C-uclear && clear && gopath\C-m"
 
 # Python
 # "p": "\C-k \C-uclear && python -q\C-m"
 "p": "\C-k \C-uclear && "$HOME"/Studying/Prog/Python/code/scratch.py\C-m"
 
 # M-u: nnn
-"u": "\C-k \C-uclear && nnn_cd_on_quit\C-m"
+# "u": "\C-k \C-uclear && nnn_cd_on_quit\C-m"
+
+# M-u: t task manager
+"u": "\C-k \C-uclear && ~/maps/t/t.py --task-dir ~/org/Data/.t_tasks --list tasks\C-m"
 
 # M-i: Edit command in Vim
 "i": ""
