@@ -4,7 +4,7 @@
 alias ins='clear && apt list --installed -a'
 alias all='clear && apt list -a'
 alias ai='sudo aptitude install'
-alias aii='sudo aptitude -y install'
+alias aii='sudo aptitude --assume-yes install'
 alias install='sudo gdebi'
 alias update='clear && sudo aptitude -y update && sudo apt -y autoremove && sudo apt -y autoclean'
 
@@ -92,7 +92,7 @@ alias time='/usr/bin/time'
 alias setblank='xset dpms'
 alias ls='ls --color=always'
 alias chmode='chmod -Rc 755'
-alias chmodax='chmod a+x'
+alias cax='chmod a+x'
 alias chowne='chown --recursive --changes $USER'
 alias chowne-root='chown --recursive --changes $USER'
 alias free='clear && free --human'
@@ -177,6 +177,8 @@ alias tee='cd ~/.texpander && nvim ./*'
 alias o='cd /home/jerry/Python/code/basics/loops && cc'
 alias ps='~/Studying/Prog/Python/code/scratch.py'
 # alias ga='cd "$(xclip -o)" && clear && ls --color==always'
+
+### Steve Losh Task Manager ####
 alias t='~/maps/t/t.py --task-dir ~/org/Data/.t_tasks --list tasks'
 
-
+alias io='emacs ~/.emacs.d/init.org &'

@@ -115,6 +115,10 @@ vnoremap <leader>ce :! awk '{ print length(), $0 \| "sort -n \| cut -d\\  -f2-" 
 
 " }}}
 " {{{ commands
+" completion
+inoremap <m-i> <c-x><c-o>
+"
+"
 " nnoremap <c-x>s :SyntasticToggleMode<cr>
 " nnoremap <c-x>y :setlocal foldmethod=syntax<cr>
 "
@@ -145,7 +149,7 @@ vnoremap <c-s-a> <c-a>
 nnoremap <c-s-x> <c-x>
 vnoremap <c-s-x> <c-x>
 " kill line
-inoremap <c-k> <c-o>D
+inoremap <c-k> <c-o>x
 
 " " undo
 " " undo
@@ -202,4 +206,9 @@ nnoremap <c-s> /
 " {{{ narrow
 xmap <leader>n <Plug>NrrwrgnDo
 " }}}
+" {{{ others
+nnoremap <c-x>u :(use-package<space>
+nnoremap <c-x>o :e ~/.emacs.d/init.org<cr>:echo ""<cr>
+nnoremap <c-x>e :e ~/.emacs.d/init.el<cr>:echo ""<cr>
+    " }}}
 " vim: nowrap

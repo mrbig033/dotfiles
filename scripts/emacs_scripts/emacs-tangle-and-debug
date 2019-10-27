@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+"$HOME"/maps/ntangle/ntangle "$HOME"/.emacs.d/init.org &&
+    emacs --debug-init

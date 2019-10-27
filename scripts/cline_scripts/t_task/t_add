@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+task="$*"
+~/maps/t/t.py --task-dir ~/org/Data/.t_tasks --list tasks "$task"
+printf "\n  "
+~/maps/t/t.py --task-dir ~/org/Data/.t_tasks --list tasks
