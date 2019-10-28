@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 "$HOME"/maps/ntangle/ntangle ~/.emacs.d/init.org
-
+emacs

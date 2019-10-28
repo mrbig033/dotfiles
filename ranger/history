@@ -1,26 +1,4 @@
-rename nota.txt
-rename words
-rename eclipse_en.org
-open_with rrrrrr f
-touch eclipse_1_export.org
-rename eclipse_export_1.org
-rename textoj
-filter zh
-shell mkdir c
-open_with 1 f
-open_with 0 f
-rename backi
-search tmux
-rename .tmux
-search block
-touch config
-search bloc
-search fasd
-md etc
-search fst
-open_with  f
 search etc
-search 
 search lif
 touch tildes_sugestions.md
 md Python_Videos
@@ -71,12 +49,10 @@ md emacs_backup
 search emacs
 touch .emacs.d
 md .emacs.d
-search emac
 touch init.el
 md emacs
 search ins
 search sour
-search bui
 md 
 md settings
 touch settings.org
@@ -96,5 +72,29 @@ md Comedy
 touch comedy.org
 md Comedy_79-99
 rename hy.org
+find ta
+search tan
+search ta
+rename tangle.el
+md lisp
+rename settings
+search 
+rename packages
+search bu[
+search uti
+search hy
+shell e
+rename in.org
+search mis
+search bui
+search mac
 open_with 
 open_with nvim
+search u
+md backup
+search mov
+shell ;
+rename init.org
+search bu
+search emac
+rename 28-10-07:16

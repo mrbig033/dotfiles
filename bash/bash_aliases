@@ -181,3 +181,4 @@ alias ps='~/Studying/Prog/Python/code/scratch.py'
 ### Steve Losh Task Manager ####
 alias t='~/maps/t/t.py --task-dir ~/org/Data/.t_tasks --list tasks'
 alias ei='nvim ~/.emacs.d/init.el ~/.emacs.d/init.org ~/.emacs.d/init_temp.el'
+alias eb='cd ~/dotfiles/emacs_backup/27-10-19_13:55/.emacs.d/modules && cc'

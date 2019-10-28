@@ -1,7 +1,8 @@
 #!/bin/bash
 
 clear
-printf "\n   All permissions in this folder will be given to you." &&
+ear-history
+rintf "\n   All permissions in this folder will be given to you." &&
     printf "\n   This could REALLY fuck up your system.\n\n" &&
     read -rp "   PRESS ENTER TO CONTINUE" &&
     read -rp "   ARE YOU SURE? " &&
