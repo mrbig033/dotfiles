@@ -207,7 +207,7 @@ nnoremap <c-s> /
 xmap <leader>n <Plug>NrrwrgnDo
 " }}}
 " {{{ others
-nnoremap <c-x>u :(use-package<space>
+nnoremap <c-x>u /(use-package<space>
 nnoremap <c-x>o :e ~/.emacs.d/init.org<cr>:echo ""<cr>
 nnoremap <c-x>e :e ~/.emacs.d/init.el<cr>:echo ""<cr>
     " }}}

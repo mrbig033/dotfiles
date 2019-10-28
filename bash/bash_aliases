@@ -105,7 +105,7 @@ alias gg='clear && exec "$BASH"'
 alias cc='clear && ls -A --color'
 # alias cc='clear && ls --color=always'
 alias sm='sudo make clean install'
-alias restore='sudo restore-trash'
+alias restore='clear && sudo restore-trash'
 alias lo='sudo updatedb && locate'
 alias smki='sudo make clean install'
 alias gig='clear && nvim .gitignore'
@@ -180,5 +180,4 @@ alias ps='~/Studying/Prog/Python/code/scratch.py'
 
 ### Steve Losh Task Manager ####
 alias t='~/maps/t/t.py --task-dir ~/org/Data/.t_tasks --list tasks'
-
-alias io='emacs ~/.emacs.d/init.org &'
+alias ei='nvim ~/.emacs.d/init.el ~/.emacs.d/init.org ~/.emacs.d/init_temp.el'
