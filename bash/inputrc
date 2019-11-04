@@ -29,7 +29,12 @@ set completion-ignore-case on
 
 # Python
 # "p": "\C-k \C-uclear && python -q\C-m"
-"p": "\C-k \C-uclear && "$HOME"/Studying/Prog/Python/code/scratch.py\C-m"
+# "p": "\C-k \C-uclear && "$HOME"/Studying/Prog/Python/code/scratch.py\C-m"
+
+# Nvim Py
+# "p": "\C-k \C-uclear && python -q\C-m"
+"p": "\C-k \C-uclear && nvim *.py\C-m"
+
 
 # M-u: nnn
 # "u": "\C-k \C-uclear && nnn_cd_on_quit\C-m"

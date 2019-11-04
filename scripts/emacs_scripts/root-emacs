@@ -1,10 +1,4 @@
 #!/usr/bin/env bash
 
-clear
-printf "\n   This will PREVENT you from changing your Emacs configuration files."
-printf "\n   Dou you really wanna do that?\n\n"
-read -rp "   PRESS ENTER TO CONTINUE"
-read -rp "   ARE YOU SURE?"
-read -rp "   LAST CHANCE... "
-printf "\n   RESULTS:"
-printf "\n   Emacs configurations are now read-only.\n\n"
+sudo chown --recursive --changes root /home/jerry/.emacs.d/init.org
+sudo chown --recursive --changes root /home/jerry/.emacs.d/init.el

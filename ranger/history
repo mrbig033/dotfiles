@@ -1,11 +1,3 @@
-search tex
-rename te
-md versao2
-findin
-md non-sourced
-md non-source-scripts
-rename non-sourced-scripts
-search non
 search sc
 search scr
 search nono
@@ -88,7 +80,6 @@ rename .emacs.d_
 rename .emacs.d
 search bui
 open_with nvim
-search user
 compress 
 filter_stack add name 
 search meuy
@@ -98,3 +89,12 @@ search tl
 touch br
 search br
 rename brorse
+touch py-em-root.py
+search root
+search user
+rename r.py
+search roo
+open_with k
+rename t
+rename lock-emacs
+rename unlock-emacs
