@@ -18,8 +18,9 @@ sudo apt -y update && apt -y dist-upgrade &&
     mercurial ninja-build gettext libtool libtool-bin autoconf automake   \
     cmake g++ pkg-config unzip &&
 
+    pip install --upgrade pip &&
     sudo apt -y build-dep emacs25 && sudo apt -y autoremove && sudo apt -y autoclean &&
-    curl https://pyenv.run | bash
+        curl https://pyenv.run | bash
 
     # nvim
     mkdir --parents "$HOME"/maps && git clone https://github.com/neovim/neovim.git "$HOME"/maps/neovim

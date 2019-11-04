@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+clear
+answer="$*"
+
+while [ $answer != ]
+printf "\n   This will ALLOW you from changing your Emacs configuration files."
+printf "\n   Dou you really wanna do that?\n\n"
+read -rp "   PRESS ENTER TO CONTINUE"
+read -rp "   ARE YOU SURE?"
+read -rp "   You really shouldn't do that, you now..."
+read -rp "   ARE YOU 100% FUCKING SURE?"
+read -rp "   REALLY?"
+read -rp "   REALLY REALLY?"
+read -rp "   LAST CHANCE..."
+read -rp "   Okay, then... I did my bit!"
+printf "\n   RESULTS:"
+printf "\n   Emacs configurations are now available to be altered.\n\n"
+

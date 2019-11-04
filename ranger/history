@@ -1,13 +1,3 @@
-rename AAA
-rename BBB
-rename CCC
-rename br_full.back.txt
-rename ptb
-search vlc
-md rps
-touch rps_notes.org
-md versao1
-touch rps1.py
 search tex
 rename te
 md versao2
@@ -98,3 +88,13 @@ rename .emacs.d_
 rename .emacs.d
 search bui
 open_with nvim
+search user
+compress 
+filter_stack add name 
+search meuy
+search meu
+rename tl
+search tl
+touch br
+search br
+rename brorse

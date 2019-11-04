@@ -124,7 +124,6 @@ inoremap <m-i> <c-x><c-o>
 "
 nnoremap <buffer> <c-x><c-x> :exec '!python' shellescape(@%, 1)<cr>
 nnoremap <buffer> <c-x>x :exec '!python' shellescape(@%, 1)<cr>
-nnoremap <silent> <leader>e :silent !eclauncher % &>/dev/null <cr>
 nnoremap <silent> <leader>mg :Goyo<cr>:echo "<cr>
 nnoremap <silent> <leader>mt :set showtabline=0<cr>:echo ""<cr>
 nnoremap ; :
@@ -135,7 +134,8 @@ nnoremap <silent> <leader>k :silent bd!<cr>
 "{{{ emacs like
 
 " add mapping to make if more like Emacs
-nnoremap <leader>f gf
+nnoremap <leader>F gf
+nnoremap <silent> <leader>f :silent !eclauncher % &>/dev/null <cr>
 
 " copy path to clipboard
 nnoremap <silent> <leader>cf :silent! let @+ = expand("%:p") <bar>:silent! !i3-msg move scratchpad &>/dev/null<cr>

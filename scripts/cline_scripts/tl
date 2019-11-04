@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+clear
+term="$*"
+result=$(tldr "$term")
+echo "$result" | bat

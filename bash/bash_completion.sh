@@ -355,3 +355,5 @@ complete -F _complete_alias fd
 complete -F _complete_alias j
 complete -F _complete_alias nn
 complete -F _complete_alias i
+complete -F _complete_alias br
+complete -F _complete_alias tl
