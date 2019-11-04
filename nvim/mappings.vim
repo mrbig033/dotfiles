@@ -149,7 +149,7 @@ vnoremap <c-s-a> <c-a>
 nnoremap <c-s-x> <c-x>
 vnoremap <c-s-x> <c-x>
 " kill line
-inoremap <c-k> <c-o>x
+" inoremap <c-k> <c-o>x
 
 " " undo
 " " undo
@@ -182,7 +182,7 @@ nnoremap <c-m-i> <c-a>
 nnoremap <c-m-i> ggVGp:wqa!<cr>
 " nnoremap <c-x><cr> :silent ! m %<cr>
 
-nnoremap <silent> <tab> :silent execute "normal! za"<cr>
+ nnoremap <silent> <tab> :silent execute "normal! za"<cr>
 
 nnoremap <silent> <c-M-p> :silent bprev<cr><c-\><c-n>:echo ""<cr>
 nnoremap <silent> <c-M-n> :silent bnext<cr><c-\><c-n>:echo ""<cr>
@@ -193,7 +193,7 @@ nmap gT <Plug>TitlecaseLine
 
 nnoremap <c-m-j> ddjP
 nnoremap <c-m-k> ddkP
-nnoremap <c-k> K:only<cr>
+" nnoremap <c-k> K:only<cr>
 " }}}
 " {{{ terminal
 nnoremap <m-2> @
@@ -210,5 +210,5 @@ xmap <leader>n <Plug>NrrwrgnDo
 nnoremap <c-x>u /(use-package<space>
 nnoremap <c-x>o :e ~/.emacs.d/init.org<cr>:echo ""<cr>
 nnoremap <c-x>e :e ~/.emacs.d/init.el<cr>:echo ""<cr>
-    " }}}
+" }}}
 " vim: nowrap

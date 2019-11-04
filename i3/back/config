@@ -6,11 +6,12 @@ set $mod Mod4
 set $alt Mod1
 new_float normal
 new_window normal
+# new_window 1pixel
 floating_modifier $mod
-hide_edge_borders yes
+hide_edge_borders smart
 focus_follows_mouse yes
 font xft:URWGothic-Book 11
-
+# font pango:DejaVu Sans Mono 0
 popup_during_fullscreen ignore
 focus_on_window_activation focus
 force_display_urgency_hint 150 ms
@@ -111,28 +112,24 @@ client.background       #2B2C2B
 # client.placeholder      #000000 #0c0c0c #ffffff #000000
 # client.background       #2B2C2B
 
-exec --no-startup-id "st2 -t term-up -n term-up &"
-exec --no-startup-id "st2 -t term-ranger -n term-ranger -e ranger &"
-exec --no-startup-id "clipit"
-exec --no-startup-id "~/scripts/cline_scripts/sessions.sh &"
-
-# exec --no-startup-id "emacs --daemon=gui-emacs"
-# exec --no-startup-id "sleep 10 && redshift &"
-# exec --no-startup-id "sleep 10 && feh --recursive --randomize --bg-fill ~/Wallpaper/Zen/pedramolhada.png &"
-
-exec --no-startup-id "xbindkeys"
-exec --no-startup-id "nm-applet &"
-exec --no-startup-id "pulseaudio &"
+exec --no-startup-id "google-chrome"
+exec --no-startup-id "/home/jerry/dotfiles/scripts/emacs_scripts/lif"
+exec --no-startup-id "~/scripts/cline_scripts/sessions.sh"
+exec --no-startup-id "xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up --hold &"
+exec --no-startup-id "xfce4-terminal --command=/home/jerry/.pyenv/shims/ranger --working-directory=~ --title=term-ranger --hold &"
 exec --no-startup-id "xset s 0 0 -dpms &"
+# exec --no-startup-id "xset s 5400 5400 &"
 exec --no-startup-id "xset mouse 14/5 0 &"
 exec --no-startup-id "xset r rate 200 60 &"
 exec --no-startup-id "compton -b --backend glx &"
-exec --no-startup-id "unclutter -display :0.0 -idle 0.5 &"
-exec --no-startup-id "xinput --disable 'ETPS/2 Elantech Touchpad' &"
 exec --no-startup-id "~/scripts/keyboard/init_keys.sh &"
-exec --no-startup-id "synclient TapButton1=1 TouchpadOff=0 PalmDetect=1 &"
 exec --no-startup-id "xrandr --output DP-1 --off --output HDMI-1 --mode 1920x1080 --pos 0x0 --rotate normal --output eDP-1 --off --output HDMI-2 --off &"
-
+exec --no-startup-id "~/scripts/i3_scripts/delayed_init"
+exec --no-startup-id redshift
+exec --no-startup-id xfce4-power-manager
+exec --no-startup-id nm-applet
+# exec --no-startup-id "xinput --disable 'ETPS/2 Elantech Touchpad' &"
+# exec --no-startup-id "synclient TapButton1=1 TouchpadOff=0 PalmDetect=1 &"
 
 bindsym $mod+h focus Left
 bindsym $mod+l focus Right
@@ -154,21 +151,23 @@ bindsym $mod+$alt+l focus output Right
 bindsym $alt+Shift+c focus child;exec notify-send --expire-time=250 'parent focus'
 bindsym $alt+Shift+p focus parent;exec notify-send --expire-time=250 'parent focus'
 
-bindsym $mod+q kill
+bindsym $mod+Shift+u [title="term-up"] kill; exec "xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up --hold &"
 
-# bindsym $mod+Shift+n [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "~/scripts/emacs_scripts/eclaunch-agenda"
-bindsym $mod+Return exec st3
+bindsym $mod+Shift+r [title="term-ranger"] kill; exec "~/scripts/i3_scripts/term-ranger"
+
+bindsym F10 exec "~/maps/texpander/texpander.sh"; mode default
+# bindsym $mod+b border none
+# bindsym $mod+o border normal
+bindsym $mod+q kill
+bindsym $mod+Return exec "~/maps/suckless/st_bin3/bin/st"
 bindsym --release $mod+Shift+q exec xkill
+bindsym F9 exec "~/.emacs_anywhere/bin/run"
 bindsym $mod+F5 exec --no-startup-id $Locker
 bindsym $mod+z exec --no-startup-id morc_menu
-# bindsym --release $mod+d exec dmenu_run -i -l 5 -fn 'Input Mono-13'
 bindsym $mod+d exec dmenu_run -i -l 5 -fn 'Input Mono-13'
-# bindsym $mod+d exec dmenu_run -i -l 5
-# bindsym $mod+d exec dmenu_run
 bindsym --release Print exec "xfce4-screenshooter --region"
-bindsym F9 exec "~/.emacs_anywhere/bin/run"
-# bindsym --release Print exec "~/scripts/cline_scripts/screenshotfull"
 bindsym $mod+Shift+F5 exec "i3-nagbar -t warning -m 'Exit i3?' -b 'Yes' 'i3-msg exit'"
+bindsym $mod+F12 exec "i3-msg exit"
 
 bindsym $mod+Shift+k move Up
 bindsym $mod+Shift+j move Down
@@ -197,25 +196,32 @@ bindsym Menu mode "$launch"
 
 mode "$launch" {
 
+bindsym F10 exec "~/maps/texpander/texpander.sh"; mode default
 bindsym 1 exec "~/scripts/i3_scripts/touchpad_off"; mode default
 bindsym 2 exec "~/scripts/i3_scripts/touchpad_on"; mode default
-
-bindsym s exec "~/scripts/i3_scripts/startup-manual"; mode default
-
-bindsym Shift+w exec feh --recursive --randomize --bg-fill ~/Wallpaper; mode default
-
+bindsym 3 [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "~/scripts/cline_scripts/open-i3-config"; mode default
+bindsym Shift+e exec "i3-msg exit"; mode default
 bindsym Menu exec "rofi -show run"; mode default
+bindsym w exec "rofi -show window"; mode default
+bindsym t [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "thunar"; mode default
+bindsym Shift+t [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "sudo thunar"; mode default
+bindsym s exec "~/scripts/i3_scripts/startup-manual"; mode default
+bindsym Shift+p [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "sudo poweroff"; mode default
+bindsym k exec "/home/jerry/dotfiles/scripts/keyboard/keyboard-default/init_keys.sh &"; mode default
+bindsym Shift+k exec "/home/jerry/dotfiles/scripts/keyboard/ik &"; mode default
+bindsym Shift+w exec feh --recursive --randomize --bg-fill ~/Wallpaper; mode default
+bindsym Shift+r exec "/home/jerry/dotfiles/scripts/cline_scripts/restart_terminals"; mode default
 bindsym z exec "google-chrome-stable"; mode default
 bindsym q exec "qbittorrent"; mode default
 bindsym e [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "emacsclient --socket-name=gui-emacs --no-wait --create-frame"; mode default
 
-bindsym Shift+u exec "st2 -t term-up -n term-up"; mode default
-bindsym Shift+r exec "st2 -t term-ranger -n term-ranger -e ranger"; mode default
+# bindsym Shift+u exec "st2 -t term-up -n term-up"; mode default
+# bindsym Shift+r exec "st2 -t term-ranger -n term-ranger -e ranger"; mode default
 
 bindsym Escape mode default; exec notify-send --expire-time=250 'mode: default'
+bindsym $mod+g mode default; exec notify-send --expire-time=250 'mode: default'
 
 }
-
 
 bindsym $mod+Shift+space floating toggle; mode "$floating"
 bindsym $mod+apostrophe; mode "$tilling"; exec notify-send --expire-time=250 'tilling'
@@ -235,6 +241,7 @@ bindsym Right  resize grow   width  10 px or 10 ppt
 bindsym $mod+apostrophe; mode "$floating"; exec notify-send --expire-time=250 --expire-time=250 'floating'
 bindsym Escape mode default; exec notify-send --expire-time=250 'mode: default'
 bindsym $mod+q kill; mode default; exec notify-send --expire-time=250 'mode: default'
+bindsym $mod+g mode default; exec notify-send --expire-time=250 'mode: default'
 }
 
 mode "$floating" {
@@ -266,24 +273,31 @@ bindsym $mod+Shift+space floating disable; mode default; exec notify-send --expi
 
 bindsym $mod+q kill; mode default; exec notify-send --expire-time=250 'mode: default'
 bindsym Escape kill; mode default; exec notify-send --expire-time=250 'mode: default'
+
+bindsym $mod+g mode default; exec notify-send --expire-time=250 'mode: default'
 }
 
 bindsym $mod+equal scratchpad show
 bindsym $mod+Shift+minus move scratchpad; mode default
-bindsym $mod+Shift+r [title="term-up"] kill; [title="term-ranger"] kill; exec "st2 -t term-up -n term-up &"; exec st2 -t term-ranger -n term-ranger -e ranger &
 for_window [class="Autokey-gtk" title="AutoKey"] move scratchpad
 
 for_window [title="term-up"] border none
 for_window [title="term-up"] floating enable sticky enable
 for_window [title="term-up"] move scratchpad
-for_window [title="term-up"] resize set 1367 384; move to position 0 0
-bindsym $mod+u [title="term-ranger"] move scratchpad; [title="term-up"] scratchpad show; move to position 0 0 ; move to position 0 0
+for_window [title="term-up"] resize set 1250 450; move to position 350 0
+bindsym $mod+u [title="mrblack"] move scratchpad; [title="term-ranger"] move scratchpad; [title="term-up"] scratchpad show; move to position 350 0; move to position 350 0
 
 for_window [title="term-ranger"] border none
 for_window [title="term-ranger"] floating enable sticky enable
 for_window [title="term-ranger"] move scratchpad
-for_window [title="term-ranger"] resize set 1367 384; move to position 0 0
-bindsym $mod+i [title="term-up"] move scratchpad; [title="term-ranger"] scratchpad show; move to position 0 0
+for_window [title="term-ranger"] resize set 1250 450; move to position 350 0
+bindsym $mod+i [title="mrblack"] move scratchpad; [title="term-up"] move scratchpad; [title="term-ranger"] scratchpad show; move to position 350 0
+
+for_window [class="Hexchat" title="mrblack"] border none
+for_window [class="Hexchat" title="mrblack"] floating enable sticky enable
+for_window [class="Hexchat" title="mrblack"] move scratchpad
+for_window [class="Hexchat" title="mrblack"] resize set 1250 450; move to position 350 0
+bindsym $mod+o [title="term-ranger"] move scratchpad; [title="term-up"] move scratchpad; [title="mrblack"] scratchpad show; move to position 350 0
 
 set $ws1 "1"
 set $ws2 "2"
@@ -419,12 +433,13 @@ for_window [title="MuseScore: Play Panel"] floating enable
 for_window [title="alsamixer"] floating enable border pixel 1
 for_window [title="i3_help"] floating enable sticky enable border normal
 for_window [title="term Preferences"] floating enable
-for_window [title="Atomic Chrome"] floating enable
+for_window [title="Atomic Chrome"] resize set 1367 384; move to position 0 0
 
 assign [class="Gnome-pomodoro"] $ws10
 for_window [class="Emacs"] border normal
 for_window [class="Gimp"] border normal
 for_window [class="Spotify"] move to workspace 10
 for_window [urgent=latest] focus
+for_window [class="Emacs" title=" EMACS DEBUG"] move workspace 2
 
 exec --no-startup-id i3-msg workspace $ws1

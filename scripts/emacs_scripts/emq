@@ -1,0 +1,5 @@
+#!/bin/bash
+
+clear
+file="$*"
+emacs --quick --no-site-lisp --no-window-system --no-blinking-cursor "$file"

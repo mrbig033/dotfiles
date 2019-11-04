@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+ 
+command="$*"
+clear
+printf "\n"
+ag --numbers --skip-vcs-ignores --literal --elisp --nogroup --smart-case --max-count 1 --nomultiline --silent --files-with-matches "(use-package $command"
+printf "\n"

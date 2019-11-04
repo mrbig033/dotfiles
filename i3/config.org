@@ -1,6 +1,6 @@
 #+OPTIONS: ^:nil
+#+PROPERTY: header-args :tangle config :no results
 #+STARTUP: overview
-#+PROPERTY: header-args :tangle config
 
 * i3 Configurations                                                       :toc:
 - [[#about][About]]
@@ -53,6 +53,8 @@ force_display_urgency_hint 150 ms
 workspace_auto_back_and_forth yes
 set $Locker i3lock --show-failed-attempts --color=#000000 && sleep 1
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
+# exit i3 (logs you out of your X session)
+bindsym Mod1+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 #+END_SRC
 * Appearance
 ** i3status
@@ -156,13 +158,13 @@ client.background       #2B2C2B
 #+END_SRC
 * Startup
 #+BEGIN_SRC i3
-
-exec --no-startup-id "google-chrome"
-exec --no-startup-id "/home/jerry/dotfiles/scripts/emacs_scripts/lif"
-exec --no-startup-id "~/scripts/cline_scripts/sessions.sh && xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up --hold &"
+# exec --no-startup-id "google-chrome"
+# exec --no-startup-id "/home/jerry/dotfiles/scripts/emacs_scripts/lif"
+exec --no-startup-id "~/scripts/cline_scripts/sessions.sh"
+exec --no-startup-id "xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up --hold &"
 exec --no-startup-id "xfce4-terminal --command=/home/jerry/.pyenv/shims/ranger --working-directory=~ --title=term-ranger --hold &"
-# exec --no-startup-id "xset s 0 0 -dpms &"
-exec --no-startup-id "xset s 5400 5400 &"
+exec --no-startup-id "xset s 0 0 -dpms &"
+# exec --no-startup-id "xset s 5400 5400 &"
 exec --no-startup-id "xset mouse 14/5 0 &"
 exec --no-startup-id "xset r rate 200 60 &"
 exec --no-startup-id "compton -b --backend glx &"
@@ -267,7 +269,7 @@ bindsym Shift+w exec feh --recursive --randomize --bg-fill ~/Wallpaper; mode def
 bindsym Shift+r exec "/home/jerry/dotfiles/scripts/cline_scripts/restart_terminals"; mode default
 bindsym z exec "google-chrome-stable"; mode default
 bindsym q exec "qbittorrent"; mode default
-bindsym e [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "emacsclient --socket-name=gui-emacs --no-wait --create-frame"; mode default
+bindsym e [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "emacsclient --socket-name=emacs-gui --no-wait --create-frame"; mode default
 
 # bindsym Shift+u exec "st2 -t term-up -n term-up"; mode default
 # bindsym Shift+r exec "st2 -t term-ranger -n term-ranger -e ranger"; mode default
@@ -341,7 +343,7 @@ bindsym $mod+g mode default; exec notify-send --expire-time=250 'mode: default'
 * Scratchs
 ** Big
 *** General
-#+BEGIN_SRC i3
+#+BEGIN_SRC i3wm
 bindsym $mod+equal scratchpad show
 bindsym $mod+Shift+minus move scratchpad; mode default
 for_window [class="Autokey-gtk" title="AutoKey"] move scratchpad

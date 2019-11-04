@@ -18,8 +18,6 @@ force_display_urgency_hint 150 ms
 workspace_auto_back_and_forth yes
 set $Locker i3lock --show-failed-attempts --color=#000000 && sleep 1
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
-# exit i3 (logs you out of your X session)
-bindsym Mod1+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
 
 # bar {
 # i3bar_command i3bar
@@ -114,8 +112,9 @@ client.background       #2B2C2B
 # client.placeholder      #000000 #0c0c0c #ffffff #000000
 # client.background       #2B2C2B
 
-# exec --no-startup-id "google-chrome"
-# exec --no-startup-id "/home/jerry/dotfiles/scripts/emacs_scripts/lif"
+
+exec --no-startup-id "google-chrome"
+exec --no-startup-id "/home/jerry/dotfiles/scripts/emacs_scripts/lif"
 exec --no-startup-id "~/scripts/cline_scripts/sessions.sh"
 exec --no-startup-id "xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up --hold &"
 exec --no-startup-id "xfce4-terminal --command=/home/jerry/.pyenv/shims/ranger --working-directory=~ --title=term-ranger --hold &"
@@ -216,7 +215,7 @@ bindsym Shift+w exec feh --recursive --randomize --bg-fill ~/Wallpaper; mode def
 bindsym Shift+r exec "/home/jerry/dotfiles/scripts/cline_scripts/restart_terminals"; mode default
 bindsym z exec "google-chrome-stable"; mode default
 bindsym q exec "qbittorrent"; mode default
-bindsym e [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "emacsclient --socket-name=emacs-gui --no-wait --create-frame"; mode default
+bindsym e [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "emacsclient --socket-name=gui-emacs --no-wait --create-frame"; mode default
 
 # bindsym Shift+u exec "st2 -t term-up -n term-up"; mode default
 # bindsym Shift+r exec "st2 -t term-ranger -n term-ranger -e ranger"; mode default

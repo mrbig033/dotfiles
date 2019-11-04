@@ -1,6 +1,6 @@
 #!/bin/bash
 
 clear
-pkill -fi "emacs --daemon=gui-emacs" &&
+pkill -i "emacs --daemon=gui-emacs" &&
 ps ax | pgrep -v grep | egrep -i 'emacs --daemon=gui-emacs'
 

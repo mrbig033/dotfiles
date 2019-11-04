@@ -1,8 +1,8 @@
 #!/bin/bash
 
 clear
-ear-history
-rintf "\n   All permissions in this folder will be given to you." &&
+cear-history
+printf "\n   All permissions in this folder will be given to you." &&
     printf "\n   This could REALLY fuck up your system.\n\n" &&
     read -rp "   PRESS ENTER TO CONTINUE" &&
     read -rp "   ARE YOU SURE? " &&

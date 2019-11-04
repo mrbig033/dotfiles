@@ -1,5 +1,7 @@
 " {{{ plug
 call plug#begin('~/.config/nvim/plugins/plugged')
+Plug 'jceb/vim-orgmode'
+Plug 'chrisbra/NrrwRgn'
 Plug 'neomake/neomake'
 Plug 'itchyny/lightline.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
@@ -57,14 +59,6 @@ sunmap ge
 " {{{ autopairs
 let g:AutoPairsShortcutToggle = ''
 let g:AutoPairsShortcutJump = ''
-" }}}
-" {{{ vertigo
-" nnoremap <silent> , :<C-U>VertigoDown n<CR>
-" vnoremap <silent> , :<C-U>VertigoDown v<CR>
-" onoremap <silent> , :<C-U>VertigoDown o<CR>
-
-let g:Vertigo_homerow = 'asdfghjklo'
-let g:Vertigo_onedigit_method = 'smart4'
 " }}}
 " {{{ sneak
 map f <Plug>Sneak_s

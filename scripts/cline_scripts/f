@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+ 
+func="$*"
+clear
+printf "\n"
+string=$(ag --numbers --skip-vcs-ignores --literal --elisp --smart-case --max-count 1 --nomultiline --silent --files-with-matches "(defun $func")
+printf "%s" "$string"

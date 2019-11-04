@@ -1,5 +1,0 @@
-#!/bin/bash
-
-clear
-emacs &>/dev/null &
-~/scripts/i3_scripts/hide/hide_all &>/dev/null

@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
- 
-commit="$*"
-git fetch --all &&
-git reset --hard $(commit)

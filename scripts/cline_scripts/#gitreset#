@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+git fetch --all &&
+git reset --hard origin/master
+# git reset --hard 4a5db12012626863d524760b58c1366c6fc6624c
+
+

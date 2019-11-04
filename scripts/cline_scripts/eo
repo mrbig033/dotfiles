@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+i3-msg "[title=term-up]" move scratchpad &>/dev/null
+i3-msg "[class=Emacs]" focus &>/dev/null
+emacs ~/.emacs.d/init.org &>/dev/null &

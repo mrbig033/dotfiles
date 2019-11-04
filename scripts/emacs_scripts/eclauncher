@@ -1,17 +1,17 @@
 #!/bin/bash
 
-emacsclient --socket-name=gui-emacs --no-wait -e "(if (> (length (frame-list)) 1) 't)" | grep t
+emacsclient --socket-name=emacs-gui --no-wait -e "(if (> (length (frame-list)) 1) 't)" | grep t
 if [ "$?" = "1" ]; then
     if [ "$DISPLAY" = "" ]; then
-        emacsclient --socket-name=gui-emacs --create-frame --alternate-editor="" "$@"
+        emacsclient --socket-name=emacs-gui --create-frame --alternate-editor="" "$@"
     else
-        emacsclient --socket-name=gui-emacs --create-frame --no-wait --alternate-editor="" "$@"
+        emacsclient --socket-name=emacs-gui --create-frame --no-wait --alternate-editor="" "$@"
     fi
 else
     if [ "$DISPLAY" = "" ]; then
-        emacsclient--socket-name=gui-emacs --alternate-editor="" "$@"
+        emacsclient--socket-name=emacs-gui --alternate-editor="" "$@"
     else
-        emacsclient --socket-name=gui-emacs --no-wait --alternate-editor="" "$@"
+        emacsclient --socket-name=emacs-gui --no-wait --alternate-editor="" "$@"
     fi
 fi
 i3-msg "[title=term-ranger]" move scratchpad &>/dev/null
