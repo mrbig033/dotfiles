@@ -206,7 +206,6 @@ bindsym $alt+Shift+p focus parent;exec notify-send --expire-time=250 'parent foc
 bindsym $mod+Shift+u [title="term-up"] kill; exec "xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up --hold &"
 
 bindsym $mod+Shift+r [title="term-ranger"] kill; exec "~/scripts/i3_scripts/term-ranger"
-
 bindsym F10 exec "~/maps/texpander/texpander.sh"; mode default
 # bindsym $mod+b border none
 # bindsym $mod+o border normal

@@ -1,5 +1,10 @@
 #!/usr/bin/env bash
 
-command="$1"
-
-"$command" | mpv /home/files/Sounds/apple.mp3
+command="play --no-show-progress"
+file_path="/home/jerry/Sounds/apple.mp3"
+time="$*"
+time_min=
+clear
+printf "\n The alert will sound in %s second(s)\n " "$time"
+printf "\n Please do not close this program, otherwise the alert will fail\n\n "
+sleep "$time" && $command "$file_path"
