@@ -1,6 +1,3 @@
-search scr
-search nono
-rename install-emacs-mini-script
 rename install-emacs-with-lucid-script
 search insta
 rename INSTALL
@@ -98,3 +95,6 @@ rename t
 rename lock-emacs
 rename unlock-emacs
 search soun
+search py
+touch map.py
+search ma
