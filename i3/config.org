@@ -198,21 +198,24 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+$alt+h focus output Left
 bindsym $mod+$alt+l focus output Right
 
-bindsym $alt+Shift+c focus child;exec notify-send --expire-time=250 'parent focus'
-bindsym $alt+Shift+p focus parent;exec notify-send --expire-time=250 'parent focus'
+bindsym $alt+Shift+c focus child;exec "notify-send --expire-time=250 'parent focus'"
+bindsym $alt+Shift+p focus parent;exec "notify-send --expire-time=250 'parent focus'"
 #+END_SRC
 ** general
 #+BEGIN_SRC i3
-bindsym $mod+Shift+u [title="term-up"] kill; exec "xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up --hold &"
+bindsym F9 [title="term-up"] kill; exec "/home/jerry/dotfiles/scripts/cline_scripts/sessions.sh"; exec "sleep 2"; exec "xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up --hold &"
+# bindsym $mod+Shift+u [title="term-up"] kill; [title="term-up"] scratchpad show
+
+exec "xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up --hold &"
 
 bindsym $mod+Shift+r [title="term-ranger"] kill; exec "~/scripts/i3_scripts/term-ranger"
+
 bindsym F10 exec "~/maps/texpander/texpander.sh"; mode default
 # bindsym $mod+b border none
 # bindsym $mod+o border normal
 bindsym $mod+q kill
 bindsym $mod+Return exec "~/maps/suckless/st_bin3/bin/st"
 bindsym --release $mod+Shift+q exec xkill
-bindsym F9 exec "~/.emacs_anywhere/bin/run"
 bindsym $mod+F5 exec --no-startup-id $Locker
 bindsym $mod+z exec --no-startup-id morc_menu
 bindsym $mod+d exec dmenu_run -i -l 5 -fn 'Input Mono-13'
@@ -242,8 +245,8 @@ workspace_layout stacking
 bindsym $mod+s layout toggle
 bindsym $mod+x layout toggle all
 
-bindsym $mod+v split v;exec notify-send --expire-time=250 --expire-time=1000 'tile vertically'
-bindsym $mod+Control+o split h;exec notify-send --expire-time=250 --expire-time=1000 'tile horizontally'
+bindsym $mod+v split v;exec "notify-send --expire-time=250 'tile vertically'"
+bindsym $mod+Control+o split h;exec "notify-send --expire-time=250 'tile horizontally'"
 #+END_SRC
 * Launch Mode
 #+BEGIN_SRC i3
@@ -273,9 +276,8 @@ bindsym e [title="term-up"] move scratchpad; [title="term-ranger"] move scratchp
 # bindsym Shift+u exec "st2 -t term-up -n term-up"; mode default
 # bindsym Shift+r exec "st2 -t term-ranger -n term-ranger -e ranger"; mode default
 
-bindsym Escape mode default; exec notify-send --expire-time=250 'mode: default'
-bindsym $mod+g mode default; exec notify-send --expire-time=250 'mode: default'
-
+bindsym Escape mode default; exec "notify-send --expire-time=250 'mode: default'"
+bindsym $mod+g mode default; exec "notify-send --expire-time=250 'mode: default'"
 }
 #+END_SRC
 * Tilling Modes
@@ -283,7 +285,7 @@ bindsym $mod+g mode default; exec notify-send --expire-time=250 'mode: default'
 #+BEGIN_SRC i3
 
 bindsym $mod+Shift+space floating toggle; mode "$floating"
-bindsym $mod+apostrophe; mode "$tilling"; exec notify-send --expire-time=250 'tilling'
+bindsym $mod+apostrophe; mode "$tilling"; exec "notify-send --expire-time=250 'tilling'"
 
 mode "$tilling" {
 
@@ -297,10 +299,10 @@ bindsym Left   resize shrink width  10 px or 10 ppt
 bindsym Down   resize grow   height 10 px or 10 ppt
 bindsym Up     resize shrink height 10 px or 10 ppt
 bindsym Right  resize grow   width  10 px or 10 ppt
-bindsym $mod+apostrophe; mode "$floating"; exec notify-send --expire-time=250 --expire-time=250 'floating'
-bindsym Escape mode default; exec notify-send --expire-time=250 'mode: default'
-bindsym $mod+q kill; mode default; exec notify-send --expire-time=250 'mode: default'
-bindsym $mod+g mode default; exec notify-send --expire-time=250 'mode: default'
+bindsym $mod+apostrophe; mode "$floating"; exec "notify-send --expire-time=250 --expire-time=250 'floating'"
+bindsym Escape mode default; exec "notify-send --expire-time=250 'mode: default'"
+bindsym $mod+q kill; mode default; exec "notify-send --expire-time=250 'mode: default'"
+bindsym $mod+g mode default; exec "notify-send --expire-time=250 'mode: default'"
 }
 #+END_SRC
 ** tilling float
@@ -329,13 +331,13 @@ bindsym k resize grow height         36 px or 36 ppt
 bindsym Shift+l resize shrink width  36 px or 36 ppt
 bindsym l resize grow width          36 px or 36 ppt
 
-bindsym $mod+apostrophe floating disable; mode default; exec notify-send --expire-time=250 'mode: default'
-bindsym $mod+Shift+space floating disable; mode default; exec notify-send --expire-time=250 'mode: default'
+bindsym $mod+apostrophe floating disable; mode default; exec "notify-send --expire-time=250 'mode: default'"
+bindsym $mod+Shift+space floating disable; mode default; exec "notify-send --expire-time=250 'mode: default'"
 
-bindsym $mod+q kill; mode default; exec notify-send --expire-time=250 'mode: default'
+bindsym $mod+q kill; mode default; exec "notify-send --expire-time=250 'mode: default'"
 bindsym Escape kill; mode default; exec notify-send --expire-time=250 'mode: default'
 
-bindsym $mod+g mode default; exec notify-send --expire-time=250 'mode: default'
+bindsym $mod+g mode default; exec "notify-send --expire-time=250 'mode: default'"
 }
 #+END_SRC
 

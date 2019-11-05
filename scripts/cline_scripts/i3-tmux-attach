@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up --hold || "$HOME"/scripts/cline_scripts/sessions_plus_terminal

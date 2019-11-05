@@ -1,5 +1,3 @@
-rename install-emacs-with-lucid-script
-search insta
 rename INSTALL
 md emacs_backup
 search emacs
@@ -98,3 +96,5 @@ search soun
 search py
 touch map.py
 search ma
+rename org_extras.org
+search tm

@@ -23,7 +23,7 @@ bindsym Mod1+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 
 # bar {
 # i3bar_command i3bar
-# status_command i3status
+qq# status_command i3status
 # position bottom
 # mode dock
 # modifier none
@@ -154,9 +154,11 @@ bindsym $mod+$alt+l focus output Right
 bindsym $alt+Shift+c focus child;exec "notify-send --expire-time=250 'parent focus'"
 bindsym $alt+Shift+p focus parent;exec "notify-send --expire-time=250 'parent focus'"
 
-bindsym F9 [title="term-up"] kill; exec "/home/jerry/dotfiles/scripts/cline_scripts/sessions.sh"; exec "sleep 2"; exec "xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up --hold &"; [title="term-up"] scratchpad show
-bindsym $mod+Shift+u [title="term-up"] kill; [title="term-up"] scratchpad show
-
+bindsym $mod+Shift+u [title="term-up"] kill; exec "xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up --hold &"
+set $tuk "[title="term-up"] kill"
+set $tses "~/scripts/cline_scripts/sessions.sh"
+set $nr "notify-send --expire-time=500 'tmux reloaded'"
+bindsym F9 $tuk; exec $tses; exec $nr
 exec "xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up --hold &"
 
 bindsym $mod+Shift+r [title="term-ranger"] kill; exec "~/scripts/i3_scripts/term-ranger"

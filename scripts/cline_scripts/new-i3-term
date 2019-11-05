@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+"$HOME"/scripts/cline_scripts/sessions_plus_terminal
