@@ -73,15 +73,25 @@ autocmd FileType cfg setlocal commentstring=#\ %s
 " }}}
 " {{{ neomake
 " https://github.com/neomake/neomake#setup
+
+" When writing a buffer, 1 second delay
+call neomake#configure#automake('w', 1000)
+
 " When writing a buffer (no delay).
 " call neomake#configure#automake('w')
+
 " When writing a buffer (no delay), and on normal mode changes (after 750ms).
 " call neomake#configure#automake('nw', 750)
+
 " When reading a buffer (after 1s), and when writing (no delay).
 " call neomake#configure#automake('rw', 1000)
+
 " Full config: when writing or reading a buffer, and on changes in insert and
 " normal mode (after 1s; no delay when writing).
-call neomake#configure#automake('nrwi', 500)
+" call neomake#configure#automake('nrwi', 500)
+
+" Show only error
+let g:neomake_verbose = 0
 "}}}
 "
 " }}}

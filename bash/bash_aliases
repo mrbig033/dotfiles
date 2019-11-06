@@ -182,3 +182,8 @@ alias re='/home/jerry/Documents/Testing/py/r.py'
 alias rw='/home/jerry/Documents/Testing/py/w.py'
 alias lk='/home/jerry/dotfiles/scripts/python/lock-emacs.py'
 alias ul='/home/jerry/dotfiles/scripts/python/unlock-emacs.py'
+
+# WILL
+alias dog='/home/jerry/will/dog/dog.py'
+alias d='/home/jerry/will/dog/dog.py'
+alias wi='clear && source /home/jerry/will/env/bashrc && cd /home/jerry/will/dog && clear && ls --color=always'

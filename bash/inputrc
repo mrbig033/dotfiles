@@ -28,12 +28,10 @@ set completion-ignore-case on
 "y": "\C-k \C-uclear && clear && gopath\C-m"
 
 # Python
-# "p": "\C-k \C-uclear && python -q\C-m"
-# "p": "\C-k \C-uclear && "$HOME"/Studying/Prog/Python/code/scratch.py\C-m"
+"p": "\C-k \C-uclear && bpython --quiet\C-m"
 
 # Nvim Py
-# "p": "\C-k \C-uclear && python -q\C-m"
-"p": "\C-k \C-uclear && nvim *.py\C-m"
+# "p": "\C-k \C-uclear && nvim *.py\C-m"
 
 
 # M-u: nnn

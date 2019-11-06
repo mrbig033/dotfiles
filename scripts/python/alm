@@ -1,0 +1,18 @@
+#!/usr/bin/env python3
+
+import os
+import sys
+
+os.system("clear")
+sys.tracebacklimit = 0
+
+command = "play --no-show-progress"
+alert_sound = '"$HOME"/Sounds/apple.mp3'
+time_minutes = float(
+    input("\n 1. Please type in minutes time desired to be alerted:\n ")
+)
+time_seconds = time_minutes * 60
+
+print(f"\n 2. You will be alerted in {time_seconds} seconds\n ")
+os.system(f"sleep {time_seconds} && {command} {alert_sound}")
+print(f" 3. You have been alerted. Goodbye!\n ")
