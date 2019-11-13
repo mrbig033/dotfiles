@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+for i in *.py
+do
+    printf "#!/usr/bin/env python3\n\nimport os\nimport sys\n\nos.system(\"clear\")\nsys.tracebacklimit = 0\n" >> "$i"
+done
+

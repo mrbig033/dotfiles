@@ -2,7 +2,7 @@
 call plug#begin('~/.config/nvim/plugins/plugged')
 Plug 'jceb/vim-orgmode'
 Plug 'chrisbra/NrrwRgn'
-Plug 'neomake/neomake'
+" Plug 'neomake/neomake'
 Plug 'itchyny/lightline.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -75,7 +75,7 @@ autocmd FileType cfg setlocal commentstring=#\ %s
 " https://github.com/neomake/neomake#setup
 
 " When writing a buffer, 1 second delay
-call neomake#configure#automake('w', 1000)
+" call neomake#configure#automake('w', 1000)
 
 " When writing a buffer (no delay).
 " call neomake#configure#automake('w')
@@ -91,7 +91,7 @@ call neomake#configure#automake('w', 1000)
 " call neomake#configure#automake('nrwi', 500)
 
 " Show only error
-let g:neomake_verbose = 0
+" let g:neomake_verbose = 0
 "}}}
 "
 " }}}

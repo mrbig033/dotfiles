@@ -15,8 +15,13 @@ ANSWER = ""
 
 PASSWORD = "os pais trocaram algumas palavras acerbas"
 
+counter = 0
+
 while ANSWER != PASSWORD:
-    ANSWER = getpass.getpass("\n Please type the correct password:\n ")
+    ANSWER = getpass.getpass(
+        f"\n [{counter}] Please type the correct password:\n "
+    )
+    counter += 1
     os.system("clear")
 
 os.system("sudo chmod 775 ~/e/init.el")

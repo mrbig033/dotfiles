@@ -118,7 +118,8 @@ client.background       #2B2C2B
 # exec --no-startup-id "/home/jerry/dotfiles/scripts/emacs_scripts/lif"
 exec --no-startup-id "~/scripts/cline_scripts/sessions.sh"
 exec --no-startup-id "xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up --hold &"
-exec --no-startup-id "xfce4-terminal --command=/home/jerry/.pyenv/shims/ranger --working-directory=~ --title=term-ranger --hold &"
+exec --no-startup-id "xfce4-terminal --working-directory=/home/jerry/Python/code --title=term-bpython --hold &"
+# exec --no-startup-id "xfce4-terminal --command=/home/jerry/.pyenv/shims/ranger --working-directory=~ --title=term-ranger --hold &"
 exec --no-startup-id "xset s 0 0 -dpms &"
 # exec --no-startup-id "xset s 5400 5400 &"
 exec --no-startup-id "xset mouse 14/5 0 &"
@@ -154,12 +155,11 @@ bindsym $mod+$alt+l focus output Right
 bindsym $alt+Shift+c focus child;exec "notify-send --expire-time=250 'parent focus'"
 bindsym $alt+Shift+p focus parent;exec "notify-send --expire-time=250 'parent focus'"
 
-bindsym F9 [title="term-up"] kill; exec "/home/jerry/dotfiles/scripts/cline_scripts/sessions.sh"; exec "sleep 2"; exec "xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up --hold &"; [title="term-up"] scratchpad show
-bindsym $mod+Shift+u [title="term-up"] kill; [title="term-up"] scratchpad show
+bindsym F9 [title="term-up"] kill; exec "/home/jerry/dotfiles/scripts/cline_scripts/sessions.sh"; exec "sleep 2"; exec "xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up --hold &"
+# bindsym $mod+Shift+u [title="term-up"] kill; [title="term-up"] scratchpad show
 
-exec "xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up --hold &"
-
-bindsym $mod+Shift+r [title="term-ranger"] kill; exec "~/scripts/i3_scripts/term-ranger"
+bindsym $mod+Shift+p exec "xfce4-terminal --working-directory=/home/jerry/Python/code --title=term-bpython --hold &"
+bindsym $mod+Shift+r [title="term-ranger"] kill; exec "/home/jerry/scripts/i3_scripts/term-ranger"
 
 bindsym F10 exec "~/maps/texpander/texpander.sh"; mode default
 # bindsym $mod+b border none
@@ -290,19 +290,25 @@ for_window [title="term-up"] border none
 for_window [title="term-up"] floating enable sticky enable
 for_window [title="term-up"] move scratchpad
 for_window [title="term-up"] resize set 1250 450; move to position 350 0
-bindsym $mod+u [title="mrblack"] move scratchpad; [title="term-ranger"] move scratchpad; [title="term-up"] scratchpad show; move to position 350 0; move to position 350 0
+bindsym $mod+u [title="mrblack"] move scratchpad; [title="term-ranger"] move scratchpad; [title="term-bpython"] move scratchpad; [title="term-up"] scratchpad show; move to position 350 0; move to position 350 0
 
-for_window [title="term-ranger"] border none
-for_window [title="term-ranger"] floating enable sticky enable
-for_window [title="term-ranger"] move scratchpad
-for_window [title="term-ranger"] resize set 1250 450; move to position 350 0
-bindsym $mod+i [title="mrblack"] move scratchpad; [title="term-up"] move scratchpad; [title="term-ranger"] scratchpad show; move to position 350 0
+for_window [title="term-bpython"] border none
+for_window [title="term-bpython"] floating enable sticky enable
+for_window [title="term-bpython"] move scratchpad
+for_window [title="term-bpython"] resize set 1250 450; move to position 350 0
+bindsym $mod+y [title="mrblack"] move scratchpad; [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; [title="term-bpython"] scratchpad show; move to position 350 0; move to position 350 0
+
+for_window [class="Xfce4-terminal" title="term-ranger"] border none
+for_window [class="Xfce4-terminal" title="term-ranger"] floating enable sticky enable
+for_window [class="Xfce4-terminal" title="term-ranger"] move scratchpad
+for_window [class="Xfce4-terminal" title="term-ranger"] resize set 1250 450; move to position 350 0
+bindsym $mod+i [title="mrblack"] move scratchpad; [title="term-up"] move scratchpad; [title="term-bpython"] move scratchpad; [title="term-ranger"] scratchpad show; move to position 350 0
 
 for_window [class="Hexchat" title="mrblack"] border none
 for_window [class="Hexchat" title="mrblack"] floating enable sticky enable
 for_window [class="Hexchat" title="mrblack"] move scratchpad
 for_window [class="Hexchat" title="mrblack"] resize set 1250 450; move to position 350 0
-bindsym $mod+o [title="term-ranger"] move scratchpad; [title="term-up"] move scratchpad; [title="mrblack"] scratchpad show; move to position 350 0
+bindsym $mod+o [title="term-ranger"] move scratchpad; [title="term-up"] move scratchpad; [title="term-bpython"] move scratchpad; [title="mrblack"] scratchpad show; move to position 350 0
 
 set $ws1 "1"
 set $ws2 "2"
@@ -380,8 +386,8 @@ bindsym $mod+Control+Shift+l move workspace to output Right
 bindsym $mod+Control+Shift+Left move workspace to output Left
 # bindsym $mod+Control+Shift+Right move workspace to output Right
 
-bindsym $mod+Shift+n focus output Right
-bindsym $mod+Shift+p focus output Left
+# bindsym $mod+Shift+n focus output Right
+# bindsym $mod+Shift+p focus output Left
 
 bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioMute exec amixer -q set Master toggle

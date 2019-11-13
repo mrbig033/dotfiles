@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+arg="$*"
+
+clear 
+
+i3-msg "[title=term-up]" move scratchpad
+emacs &

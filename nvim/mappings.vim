@@ -3,6 +3,7 @@ let mapleader ="\<space>"
 
 nnoremap ! :qa!<cr>
 nnoremap Q :wqa!<cr>
+nnoremap <m-i> :wqa!<cr>
 nnoremap gQ Q
 nnoremap <leader>q :bunload<cr>
 nnoremap <leader>x :bd!<cr>
@@ -65,7 +66,7 @@ nnoremap <silent> <c-M-o> :silent e#<cr>
 nnoremap <silent> <M-s> :silent b#<cr>:echo ""<cr>
 vnoremap <silent> <M-s> <esc>:silent b#<cr>:echo ""<cr>
 
-nnoremap <M-i> <c-i>
+" nnoremap <M-i> <c-i>
 nnoremap <leader>r :Ranger<cr><c-\><c-n>:set nonu nornu<cr>:echo ""<cr>i
 nnoremap j mzj`z
 nnoremap g, g,zz
