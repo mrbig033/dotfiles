@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+input="$1"
+output="$2"
+start="$3"
+end="$4"
+
+ffmpeg -i "$input" -ss "$start" -to "$end" -c copy "$2"
+# ffmpeg -i "$input" -ss 00:10:00 -to 00:12:00 -c copy "$2"

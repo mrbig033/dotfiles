@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-
-sudo chown --recursive --changes root /home/jerry/.emacs.d/init.org
-sudo chown --recursive --changes root /home/jerry/.emacs.d/init.el

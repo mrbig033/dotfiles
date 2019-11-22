@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+ 
+function_name="$*"
+string=$(ag "$options" "(defun $function_name")
+options="--numbers --skip-vcs-ignores --literal --elisp --ignore-case --max-count 0 --multiline"
+
+clear
+printf "\n"
+printf "%s" "$string"

@@ -4,7 +4,8 @@ clear
 echo " "
 echo " killing emacs"
 echo " "
-emacsclient --socket-name=gui-emacs --eval '(save-buffers-kill-emacs)' &>/dev/null &&
+# emacsclient --socket-name=gui-emacs --eval '(save-buffers-kill-emacs)' &>/dev/null &&
+pkill -fi emacs && gr
 echo " "
 echo " starting server"
 echo " "

@@ -1,4 +1,6 @@
 #!/usr/bin/env bash
 
-xfce4-terminal --working-directory=~ --title=term-ranger --hold --command="tmux -L ranger attach"
+# xfce4-terminal --title=term-ranger --command="\"$HOME\"/scripts/i3_scripts/tmux-ranger"
+xfce4-terminal --title=term-ranger --command='ranger'
+
 

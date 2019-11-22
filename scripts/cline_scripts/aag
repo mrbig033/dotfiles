@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
- 
-package="$*"
-clear
-printf "\n"
-string=$(ag --numbers --skip-vcs-ignores --literal --elisp --smart-case --max-count 1 --nomultiline --silent --files-with-matches "(defun $package")
-printf "%s" "$string"

@@ -220,7 +220,6 @@ export PATH="/home/jerry/.pyenv/bin:/home/jerry/.pyenv/shims/ranger:$PATH"
 
 eval "$(pyenv init -)"
 eval "$(pyenv virtualenv-init -)"
-
 # nnn cd on quit
 
 nnn_cd_on_quit()
@@ -249,3 +248,5 @@ gopath () {
     clear
     ls -l --color=always
 }
+
+# . /home/jerry/.nix-profile/etc/profile.d/nix.sh

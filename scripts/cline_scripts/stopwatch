@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+message="$1"
+
+clear
+termdown --no-figlet -T "$message" 

@@ -324,7 +324,7 @@
        id="lpetool"
        mode="drag"
        style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;"
-       unit="mm"
+       unit="px"
        show_bbox="1" />
     <eventcontext
        id="text"
@@ -335,8 +335,8 @@
        style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px"
        selcue="1">
       <group
-         id="lineheight"
-         display_unit="0" />
+         display_unit="0"
+         id="lineheight" />
     </eventcontext>
     <eventcontext
        id="nodes"
@@ -422,12 +422,12 @@
        offset="0"
        offsetunits="cm" />
     <group
-       id="measure"
-       fontsize="10"
-       precision="2"
-       scale="100"
+       unit="px"
        offset="5"
-       unit="mm" />
+       scale="100"
+       precision="2"
+       fontsize="10"
+       id="measure" />
   </group>
   <group
      id="palette">
@@ -572,11 +572,11 @@
        panel_mode="1"
        panel_wrap="0"
        panel_border="0"
-       page="1"
+       page="0"
        x="0"
        y="0"
        w="352"
-       h="475"
+       h="520"
        visible="1"
        state="2"
        placement="5" />
@@ -598,7 +598,7 @@
        x="0"
        y="0"
        w="352"
-       h="475"
+       h="520"
        visible="1"
        state="2"
        placement="5" />
@@ -656,7 +656,7 @@
        x="0"
        y="0"
        w="352"
-       h="475"
+       h="520"
        visible="1"
        state="2"
        placement="5">
@@ -1034,8 +1034,8 @@
     <group
        id="rendering" />
     <group
-       value="align"
-       id="kbshortcuts" />
+       id="kbshortcuts"
+       value="align" />
   </group>
   <group
      id="extensions"
@@ -1047,9 +1047,9 @@
      style="line-height:1.25;stroke-width:1.065;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:0;fill:#ffffff;-inkscape-font-specification:Roboto;font-family:Roboto;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:133.33333333px">
     <group
        width="1920"
-       height="1034"
+       height="990"
        x="0"
-       y="44"
+       y="66"
        fullscreen="0"
        id="geometry"
        maximized="0" />

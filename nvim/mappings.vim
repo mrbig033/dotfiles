@@ -3,10 +3,13 @@ let mapleader ="\<space>"
 
 nnoremap ! :qa!<cr>
 nnoremap Q :wqa!<cr>
+" nnoremap <m-y> :wqa!<cr>
 nnoremap <m-i> :wqa!<cr>
 nnoremap gQ Q
 nnoremap <leader>q :bunload<cr>
 nnoremap <leader>x :bd!<cr>
+nnoremap <leader>ss :Obsess ~/.obsession.vim<cr>
+nnoremap <leader>so :source ~/.obsession.vim<cr>
 
 nnoremap <silent> ç <c-w>w
 nnoremap <silent> <m-9> :only<cr>
@@ -208,7 +211,7 @@ nnoremap <c-s> /\v
 xmap <leader>n <Plug>NrrwrgnDo
 " }}}
 " {{{ others
-nnoremap <c-x>u /(use-package<space>
+nnoremap <c-c>p /(use-package<space>
 nnoremap <c-x>o :e ~/.emacs.d/init.org<cr>:echo ""<cr>
 nnoremap <c-x>e :e ~/.emacs.d/init.el<cr>:echo ""<cr>
 " }}}

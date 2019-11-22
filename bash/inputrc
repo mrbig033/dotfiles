@@ -21,24 +21,24 @@ set completion-ignore-case on
 
 ## Keybindings
 
-# Bpython
-# "y": "\C-k \C-uclear && clear && bpython --quiet\C-m"
+# bc
+# "y": "\C-k \C-uclear && clear && bc\C-m"
 
-# Cd to path
-"y": "\C-k \C-uclear && clear && gopath\C-m"
-
-# Python
+# BPython
 "p": "\C-k \C-uclear && bpython --quiet\C-m"
 
 # Nvim Py
 # "p": "\C-k \C-uclear && nvim *.py\C-m"
 
-
 # M-u: nnn
 # "u": "\C-k \C-uclear && nnn_cd_on_quit\C-m"
 
 # M-u: t task manager
-"u": "\C-k \C-uclear && ~/maps/t/t.py --task-dir ~/org/Data/.t_tasks --list tasks\C-m"
+# "u": "\C-k \C-uclear && ~/maps/t/t.py --task-dir ~/org/Data/.t_tasks --list tasks\C-m"
+
+# M-u: t task manager
+# "u": "\C-k \C-uclear && /home/jerry/Studying/Prog/Python/code/scratch.py\C-m"
+
 
 # M-i: Edit command in Vim
 "i": ""

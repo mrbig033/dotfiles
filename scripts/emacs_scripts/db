@@ -2,4 +2,4 @@
 
 clear
 i3-msg "[title=term-up]" move scratchpad &>/dev/null 
-emacs --debug-init
+emacs --debug-init &

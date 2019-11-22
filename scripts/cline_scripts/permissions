@@ -10,3 +10,5 @@ printf "\n   All permissions in this folder will be given to you." &&
 sudo chown -Rhc "$USER" "$PWD"
 sudo chmod -Rc 755 "$PWD"
 sudo chmod -R g+s "$PWD"
+clear
+ls --color=always

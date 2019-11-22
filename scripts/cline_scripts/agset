@@ -1,7 +1,0 @@
-#!/usr/bin/env bash
- 
-setq="$*"
-clear
-printf "\n"
-ag --numbers --skip-vcs-ignores --literal "(setq $setq"
-printf "\n"

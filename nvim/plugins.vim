@@ -2,7 +2,7 @@
 call plug#begin('~/.config/nvim/plugins/plugged')
 Plug 'jceb/vim-orgmode'
 Plug 'chrisbra/NrrwRgn'
-" Plug 'neomake/neomake'
+Plug 'tpope/vim-obsession'
 Plug 'itchyny/lightline.vim'
 Plug 'junegunn/fzf', { 'dir': '~/.fzf', 'do': './install --all' }
 Plug 'junegunn/fzf.vim'
@@ -93,7 +93,6 @@ autocmd FileType cfg setlocal commentstring=#\ %s
 " Show only error
 " let g:neomake_verbose = 0
 "}}}
-"
 " }}}
 
 "vim: set filetype=vim:

@@ -1,3 +1,38 @@
+#+OPTIONS: ^:nil
+#+PROPERTY: header-args :tangle config :no results
+#+STARTUP: overview
+
+* i3 Configurations                                                       :toc:
+- [[#about][About]]
+- [[#basic][Basic]]
+- [[#appearance][Appearance]]
+  - [[#i3bar][i3bar]]
+  - [[#colors][Colors]]
+- [[#startup][Startup]]
+- [[#keys][Keys]]
+  - [[#focus][focus]]
+  - [[#general][general]]
+- [[#movement][movement]]
+- [[#modes][Modes]]
+- [[#scratchs][Scratchs]]
+  - [[#big][Big]]
+    - [[#general-1][General]]
+    - [[#term-up][Term Up]]
+    - [[#pomodoro][Pomodoro]]
+    - [[#term-irssi][Term Irssi]]
+    - [[#term-right][Term Right]]
+    - [[#term-ranger][Term Ranger]]
+  - [[#small][Small]]
+- [[#workspaces][Workspaces]]
+- [[#output][Output]]
+- [[#media-keys][Media Keys]]
+- [[#windows][Windows]]
+- [[#final-commands][Final commands]]
+
+* About
+This file tangles to [[https://github.com/mrbig033/dotfiles/blob/master/i3/config][the actual configuration file]], which is loaded by i3 on startup.
+* Basic
+#+BEGIN_SRC i3
 set $up    k
 set $down  j
 set $left  h
@@ -20,7 +55,10 @@ set $Locker i3lock --show-failed-attempts --color=#000000 && sleep 1
 set $mode_system System (l) lock, (e) logout, (s) suspend, (h) hibernate, (r) reboot, (Shift+s) shutdown
 # exit i3 (logs you out of your X session)
 bindsym Mod1+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -b 'Yes, exit i3' 'i3-msg exit'"
-
+#+END_SRC
+* Appearance
+** i3status
+#+BEGIN_SRC i3
 # bar {
 # i3bar_command i3bar
 # status_command i3status
@@ -46,7 +84,9 @@ bindsym Mod1+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 # }
 # }
 # bindsym $mod+m bar mode toggle
-
+#+END_SRC
+** i3blocks
+#+BEGIN_SRC i3
 bar {
 
 i3bar_command i3bar
@@ -73,7 +113,9 @@ urgent_workspace   #16a085 #FDF6E3 #E5201D
 }
 }
 bindsym $mod+m bar mode toggle
-
+#+END_SRC
+** Colors
+#+BEGIN_SRC i3
 # Color for the terminal ( ~/.Xresources file )
 set_from_resource $term_background background
 set_from_resource $term_foreground foreground
@@ -113,12 +155,14 @@ client.background       #2B2C2B
 # client.urgent           #CB4B16 #FDF6E3 #1ABC9C #268BD2
 # client.placeholder      #000000 #0c0c0c #ffffff #000000
 # client.background       #2B2C2B
-
+#+END_SRC
+* Startup
+#+BEGIN_SRC i3
 # exec --no-startup-id "google-chrome"
 # exec --no-startup-id "/home/jerry/dotfiles/scripts/emacs_scripts/lif"
 exec --no-startup-id "~/scripts/cline_scripts/sessions.sh"
-exec --no-startup-id "xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up &"
-# exec --no-startup-id "xfce4-terminal --working-directory=/home/jerry/Python/code --title=term-bpython --hold &"
+exec --no-startup-id "xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up --hold &"
+exec --no-startup-id "xfce4-terminal --working-directory=/home/jerry/Python/code --title=term-bpython --hold &"
 # exec --no-startup-id "xfce4-terminal --command=/home/jerry/.pyenv/shims/ranger --working-directory=~ --title=term-ranger --hold &"
 exec --no-startup-id "xset s 0 0 -dpms &"
 # exec --no-startup-id "xset s 5400 5400 &"
@@ -131,10 +175,12 @@ exec --no-startup-id "~/scripts/i3_scripts/delayed_init"
 exec --no-startup-id redshift
 exec --no-startup-id xfce4-power-manager
 exec --no-startup-id nm-applet
-exec --no-startup-id i3-msg workspace $ws1
 # exec --no-startup-id "xinput --disable 'ETPS/2 Elantech Touchpad' &"
 # exec --no-startup-id "synclient TapButton1=1 TouchpadOff=0 PalmDetect=1 &"
-
+#+END_SRC
+* Keys
+** focus
+#+BEGIN_SRC i3
 
 bindsym $mod+h focus Left
 bindsym $mod+l focus Right
@@ -155,13 +201,18 @@ bindsym $mod+$alt+l focus output Right
 
 bindsym $alt+Shift+c focus child;exec "notify-send --expire-time=250 'parent focus'"
 bindsym $alt+Shift+p focus parent;exec "notify-send --expire-time=250 'parent focus'"
+#+END_SRC
+** general
+#+BEGIN_SRC i3
+bindsym F9 [title="term-up"] kill; exec "/home/jerry/dotfiles/scripts/cline_scripts/sessions.sh"; exec "sleep 2"; exec "xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up --hold &"
+# bindsym $mod+Shift+u [title="term-up"] kill; [title="term-up"] scratchpad show
 
-bindsym F9 exec "xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up --hold &"
-# bindsym F10 exec "xfce4-terminal --title=term-ranger --command='ranger'"
-bindsym F10 exec "st -T term-ranger"
-# bindsym F10 exec "~/maps/texpander/texpander.sh"; mode default
 bindsym $mod+Shift+p exec "xfce4-terminal --working-directory=/home/jerry/Python/code --title=term-bpython --hold &"
+bindsym $mod+Shift+r [title="term-ranger"] kill; exec "/home/jerry/scripts/i3_scripts/term-ranger"
 
+bindsym F10 exec "~/maps/texpander/texpander.sh"; mode default
+# bindsym $mod+b border none
+# bindsym $mod+o border normal
 bindsym $mod+q kill
 bindsym $mod+Return exec "~/maps/suckless/st_bin3/bin/st"
 bindsym --release $mod+Shift+q exec xkill
@@ -171,7 +222,9 @@ bindsym $mod+d exec dmenu_run -i -l 5 -fn 'Input Mono-13'
 bindsym --release Print exec "xfce4-screenshooter --region"
 bindsym $mod+Shift+F5 exec "i3-nagbar -t warning -m 'Exit i3?' -b 'Yes' 'i3-msg exit'"
 bindsym $mod+F12 exec "i3-msg exit"
-
+#+END_SRC
+* movement
+#+BEGIN_SRC i3
 bindsym $mod+Shift+k move Up
 bindsym $mod+Shift+j move Down
 
@@ -194,7 +247,9 @@ bindsym $mod+x layout toggle all
 
 bindsym $mod+v split v;exec "notify-send --expire-time=250 'tile vertically'"
 bindsym $mod+Control+o split h;exec "notify-send --expire-time=250 'tile horizontally'"
-
+#+END_SRC
+* Launch Mode
+#+BEGIN_SRC i3
 bindsym Menu mode "$launch"
 
 mode "$launch" {
@@ -224,7 +279,10 @@ bindsym e [title="term-up"] move scratchpad; [title="term-ranger"] move scratchp
 bindsym Escape mode default; exec "notify-send --expire-time=250 'mode: default'"
 bindsym $mod+g mode default; exec "notify-send --expire-time=250 'mode: default'"
 }
-
+#+END_SRC
+* Tilling Modes
+** tilling tiled
+#+BEGIN_SRC i3
 
 bindsym $mod+Shift+space floating toggle; mode "$floating"
 bindsym $mod+apostrophe; mode "$tilling"; exec "notify-send --expire-time=250 'tilling'"
@@ -246,7 +304,9 @@ bindsym Escape mode default; exec "notify-send --expire-time=250 'mode: default'
 bindsym $mod+q kill; mode default; exec "notify-send --expire-time=250 'mode: default'"
 bindsym $mod+g mode default; exec "notify-send --expire-time=250 'mode: default'"
 }
-
+#+END_SRC
+** tilling float
+#+BEGIN_SRC i3
 mode "$floating" {
 
 bindsym $mod+$left move Left 80px
@@ -279,36 +339,75 @@ bindsym Escape kill; mode default; exec notify-send --expire-time=250 'mode: def
 
 bindsym $mod+g mode default; exec "notify-send --expire-time=250 'mode: default'"
 }
+#+END_SRC
 
+* Scratchs
+** Big
+*** General
+#+BEGIN_SRC i3wm
 bindsym $mod+equal scratchpad show
 bindsym $mod+Shift+minus move scratchpad; mode default
 for_window [class="Autokey-gtk" title="AutoKey"] move scratchpad
-
+#+END_SRC
+*** Term Up
+#+BEGIN_SRC i3
 for_window [title="term-up"] border none
 for_window [title="term-up"] floating enable sticky enable
 for_window [title="term-up"] move scratchpad
 for_window [title="term-up"] resize set 1250 450; move to position 350 0
 bindsym $mod+u [title="mrblack"] move scratchpad; [title="term-ranger"] move scratchpad; [title="term-bpython"] move scratchpad; [title="term-up"] scratchpad show; move to position 350 0; move to position 350 0
-
+#+END_SRC
+*** Term Bpython
+#+BEGIN_SRC i3
 for_window [title="term-bpython"] border none
 for_window [title="term-bpython"] floating enable sticky enable
 for_window [title="term-bpython"] move scratchpad
 for_window [title="term-bpython"] resize set 1250 450; move to position 350 0
 bindsym $mod+y [title="mrblack"] move scratchpad; [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; [title="term-bpython"] scratchpad show; move to position 350 0; move to position 350 0
 bindsym $mod+comma [title="mrblack"] move scratchpad; [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; [title="term-bpython"] scratchpad show; move to position 350 0; move to position 350 0
-
-for_window [class="st" title="term-ranger"] border none
-for_window [class="st" title="term-ranger"] floating enable sticky enable
-for_window [class="st" title="term-ranger"] move scratchpad
-for_window [class="st" title="term-ranger"] resize set 1250 450; move to position 350 0
+#+END_SRC
+*** Term Ranger
+#+BEGIN_SRC i3
+for_window [class="Xfce4-terminal" title="term-ranger"] border none
+for_window [class="Xfce4-terminal" title="term-ranger"] floating enable sticky enable
+for_window [class="Xfce4-terminal" title="term-ranger"] move scratchpad
+for_window [class="Xfce4-terminal" title="term-ranger"] resize set 1250 450; move to position 350 0
 bindsym $mod+i [title="mrblack"] move scratchpad; [title="term-up"] move scratchpad; [title="term-bpython"] move scratchpad; [title="term-ranger"] scratchpad show; move to position 350 0
-
+#+END_SRC
+*** Term Hexchat
+#+BEGIN_SRC i3
 for_window [class="Hexchat" title="mrblack"] border none
 for_window [class="Hexchat" title="mrblack"] floating enable sticky enable
 for_window [class="Hexchat" title="mrblack"] move scratchpad
 for_window [class="Hexchat" title="mrblack"] resize set 1250 450; move to position 350 0
 bindsym $mod+o [title="term-ranger"] move scratchpad; [title="term-up"] move scratchpad; [title="term-bpython"] move scratchpad; [title="mrblack"] scratchpad show; move to position 350 0
-
+#+END_SRC
+** Small
+# *** General
+# #+BEGIN_SRC i3
+# bindsym $mod+equal scratchpad show
+# bindsym $mod+Shift+minus move scratchpad; mode default
+# bindsym $mod+Shift+r [title="term-up"] kill; [title="term-ranger"] kill; exec "st2 -t term-up -n term-up &"; exec st2 -t term-ranger -n term-ranger -e ranger &
+# for_window [class="Autokey-gtk" title="AutoKey"] move scratchpad
+# #+END_SRC
+# *** Term Up
+# #+BEGIN_SRC i3
+# for_window [title="term-up"] border none
+# for_window [title="term-up"] floating enable sticky enable
+# for_window [title="term-up"] move scratchpad
+# for_window [title="term-up"] resize set 1367 384; move to position 0 0
+# bindsym $mod+u [title="term-ranger"] move scratchpad; [title="term-up"] scratchpad show; move to position 0 0 ; move to position 0 0
+# #+END_SRC
+# *** Term Ranger
+# #+BEGIN_SRC i3
+# for_window [title="term-ranger"] border none
+# for_window [title="term-ranger"] floating enable sticky enable
+# for_window [title="term-ranger"] move scratchpad
+# for_window [title="term-ranger"] resize set 1367 384; move to position 0 0
+# bindsym $mod+i [title="term-up"] move scratchpad; [title="term-ranger"] scratchpad show; move to position 0 0
+# #+END_SRC
+* Workspaces
+#+BEGIN_SRC i3
 set $ws1 "1"
 set $ws2 "2"
 set $ws3 "3"
@@ -352,7 +451,9 @@ bindsym $mod+7 workspace $ws7
 bindsym $mod+8 workspace $ws8
 bindsym $mod+9 workspace $ws9
 bindsym $mod+0 workspace $ws10
-
+#+END_SRC
+* Output
+#+BEGIN_SRC i3
 bindsym $mod+F10 mode "$output"
 
 mode "$output" {
@@ -387,7 +488,9 @@ bindsym $mod+Control+Shift+Left move workspace to output Left
 
 # bindsym $mod+Shift+n focus output Right
 # bindsym $mod+Shift+p focus output Left
-
+#+END_SRC
+* Media Keys
+#+BEGIN_SRC i3
 bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioMute exec amixer -q set Master toggle
 bindsym XF86AudioRaiseVolume exec amixer set Master 10%+
@@ -395,7 +498,10 @@ bindsym XF86AudioLowerVolume exec amixer set Master 10%-
 bindsym $mod+XF86AudioRaiseVolume exec amixer set Master 200%+
 bindsym $mod+$alt+XF86AudioRaiseVolume exec amixer set Master 5%+
 bindsym $mod+$alt+XF86AudioLowerVolume exec amixer set Master 5%-
-
+#+END_SRC
+* Widows
+** Floating Disable
+#+BEGIN_SRC i3
 for_window [class="GParted"] floating disable border normal
 for_window [class="Gnome-pomodoro"] floating disable
 for_window [class="Inkscape" title="Document Properties"]  floating disable resize set 720 400  move position 650
@@ -412,7 +518,9 @@ for_window [class="vlc" title="Advanced Preferences"] floating disable
 for_window [class="vlc" title="Simple Preferences"] floating disable
 for_window [title="Welcome to IntelliJ IDEA"] floating disable
 for_window [title="Welcome to PyCharm"] floating disable
-
+#+END_SRC
+** Floating Enable
+#+BEGIN_SRC i3
 for_window [class="(?i)System-config-printer.py"] floating enable border normal
 for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="Clipgrab"] floating enable
@@ -444,10 +552,17 @@ for_window [title="alsamixer"] floating enable border pixel 1
 for_window [title="i3_help"] floating enable sticky enable border normal
 for_window [title="term Preferences"] floating enable
 for_window [title="Atomic Chrome"] resize set 1367 384; move to position 0 0
-
+#+END_SRC
+** Others
+#+BEGIN_SRC i3
 assign [class="Gnome-pomodoro"] $ws10
 for_window [class="Emacs"] border normal
 for_window [class="Gimp"] border normal
 for_window [class="Spotify"] move to workspace 10
 for_window [urgent=latest] focus
 for_window [class="Emacs" title=" EMACS DEBUG"] move workspace 2
+#+END_SRC
+* Final commands
+#+BEGIN_SRC i3
+exec --no-startup-id i3-msg workspace $ws1
+#+END_SRC

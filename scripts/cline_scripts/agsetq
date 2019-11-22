@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+ 
+setq="$*"
+command=$(ag "$options" "(setq $setq")
+options="--numbers --skip-vcs-ignores --literal --elisp --ignore-case --max-count 0 --multiline"
+
+clear
+printf "\n"
+printf "%s" "$command"

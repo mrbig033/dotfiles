@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+
+# Don't this directly.
+
+git clone git://git.savannah.gnu.org/emacs.git &&
+cd emacs && 
+git pull &&
+./autogen.sh && 
+./configure && 
+make && 
+sudo make install
