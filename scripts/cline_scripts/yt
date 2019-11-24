@@ -2,4 +2,4 @@
 
 urls="$*"
 clear
-youtube-dl --format mp4 --sub-lang en,pt,pt-br --audio-quality 0 "$urls"
+youtube-dl --sub-lang en,pt,pt-br --audio-quality 0 "$urls"

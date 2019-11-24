@@ -114,14 +114,11 @@ client.background       #2B2C2B
 # client.placeholder      #000000 #0c0c0c #ffffff #000000
 # client.background       #2B2C2B
 
-# exec --no-startup-id "google-chrome"
-# exec --no-startup-id "/home/jerry/dotfiles/scripts/emacs_scripts/lif"
+exec --no-startup-id "xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up --hold &"
+exec --no-startup-id "xfce4-terminal --title=term-ranger --command='ranger'"
 exec --no-startup-id "~/scripts/cline_scripts/sessions.sh"
 exec --no-startup-id "xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up &"
-# exec --no-startup-id "xfce4-terminal --working-directory=/home/jerry/Python/code --title=term-bpython --hold &"
-# exec --no-startup-id "xfce4-terminal --command=/home/jerry/.pyenv/shims/ranger --working-directory=~ --title=term-ranger --hold &"
-exec --no-startup-id "xset s 0 0 -dpms &"
-# exec --no-startup-id "xset s 5400 5400 &"
+exec --no-startup-id "xset s 600"
 exec --no-startup-id "xset mouse 14/5 0 &"
 exec --no-startup-id "xset r rate 200 60 &"
 exec --no-startup-id "compton -b --backend glx &"
@@ -157,11 +154,9 @@ bindsym $alt+Shift+c focus child;exec "notify-send --expire-time=250 'parent foc
 bindsym $alt+Shift+p focus parent;exec "notify-send --expire-time=250 'parent focus'"
 
 bindsym F9 exec "xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up --hold &"
-# bindsym F10 exec "xfce4-terminal --title=term-ranger --command='ranger'"
-bindsym F10 exec "st -T term-ranger"
-# bindsym F10 exec "~/maps/texpander/texpander.sh"; mode default
+bindsym F10 exec "xfce4-terminal --working-directory=~ --title=term-ranger --hold &"
+# bindsym F10 exec "st -T term-ranger"
 bindsym $mod+Shift+p exec "xfce4-terminal --working-directory=/home/jerry/Python/code --title=term-bpython --hold &"
-
 bindsym $mod+q kill
 bindsym $mod+Return exec "~/maps/suckless/st_bin3/bin/st"
 bindsym --release $mod+Shift+q exec xkill
@@ -199,7 +194,7 @@ bindsym Menu mode "$launch"
 
 mode "$launch" {
 
-bindsym F10 exec "~/maps/texpander/texpander.sh"; mode default
+# bindsym F10 exec "~/maps/texpander/texpander.sh"; mode default
 bindsym 1 exec "~/scripts/i3_scripts/touchpad_off"; mode default
 bindsym 2 exec "~/scripts/i3_scripts/touchpad_on"; mode default
 bindsym 3 [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "~/scripts/cline_scripts/open-i3-config"; mode default
@@ -297,10 +292,14 @@ for_window [title="term-bpython"] resize set 1250 450; move to position 350 0
 bindsym $mod+y [title="mrblack"] move scratchpad; [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; [title="term-bpython"] scratchpad show; move to position 350 0; move to position 350 0
 bindsym $mod+comma [title="mrblack"] move scratchpad; [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; [title="term-bpython"] scratchpad show; move to position 350 0; move to position 350 0
 
-for_window [class="st" title="term-ranger"] border none
-for_window [class="st" title="term-ranger"] floating enable sticky enable
-for_window [class="st" title="term-ranger"] move scratchpad
-for_window [class="st" title="term-ranger"] resize set 1250 450; move to position 350 0
+# for_window [class="st" title="term-ranger"] border none
+# for_window [class="st" title="term-ranger"] floating enable sticky enable
+# for_window [class="st" title="term-ranger"] move scratchpad
+# for_window [class="st" title="term-ranger"] resize set 1250 450; move to position 350 0
+for_window [class="Xfce4-terminal" title="term-ranger"] border none
+for_window [class="Xfce4-terminal" title="term-ranger"] floating enable sticky enable
+for_window [class="Xfce4-terminal" title="term-ranger"] move scratchpad
+for_window [class="Xfce4-terminal" title="term-ranger"] resize set 1250 450; move to position 350 0
 bindsym $mod+i [title="mrblack"] move scratchpad; [title="term-up"] move scratchpad; [title="term-bpython"] move scratchpad; [title="term-ranger"] scratchpad show; move to position 350 0
 
 for_window [class="Hexchat" title="mrblack"] border none

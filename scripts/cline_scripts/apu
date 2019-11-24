@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+clear
+sudo apt -y update
+sudo apt -y autoremove
+sudo apt -y autoclean

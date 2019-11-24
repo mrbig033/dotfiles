@@ -3,7 +3,6 @@ let mapleader ="\<space>"
 
 nnoremap ! :qa!<cr>
 nnoremap Q :wqa!<cr>
-" nnoremap <m-y> :wqa!<cr>
 nnoremap <m-i> :wqa!<cr>
 nnoremap gQ Q
 nnoremap <leader>q :bunload<cr>
@@ -136,7 +135,11 @@ nnoremap <silent> <leader>k :silent bd!<cr>
 
 " }}}
 "{{{ emacs like
-
+" goto mark
+nnoremap ' `
+nnoremap ` '
+" duplicate line
+nnoremap <leader>d mZyyp`Zj
 " add mapping to make if more like Emacs
 nnoremap <leader>F gf
 nnoremap <silent> <leader>f :silent !eclauncher % &>/dev/null <cr>
