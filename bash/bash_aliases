@@ -102,7 +102,7 @@ alias smci='sudo make clean checkinstall'
 alias grc='ps ax | grep -v grep | egrep -i "chrome"'
 alias ge='clear && ls -Al --color | grep -i'
 alias sp='export PS1="\e[38;5;196m$ \[\e[0m\]"'
-alias alternatives='sudo update-alternatives --config'
+alias alternatives='sudo ucenterpdate-alternatives --config'
 alias qt='qbittorrent & ~/scripts/i3_scripts/hide/hide_only_terms'
 alias alternatives_editor='sudo update-alternatives --config editor'
 alias pwx="clear && dirs +0 | \\tr -d '\n' | xclip -selection clipboard"

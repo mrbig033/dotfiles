@@ -204,8 +204,8 @@ bindsym $alt+Shift+p focus parent;exec "notify-send --expire-time=250 'parent fo
 #+END_SRC
 ** general
 #+BEGIN_SRC i3
-bindsym F9 exec "xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up --hold &"
-bindsym F10 exec "xfce4-terminal --working-directory=~ --title=term-ranger --hold &"
+bindsym $mod+F9 exec "xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up --hold &"
+bindsym $mod+F10 exec "xfce4-terminal --working-directory=~ --title=term-ranger --hold &"
 # bindsym F10 exec "st -T term-ranger"
 bindsym $mod+Shift+p exec "xfce4-terminal --working-directory=/home/jerry/Python/code --title=term-bpython --hold &"
 bindsym $mod+q kill
@@ -249,7 +249,6 @@ bindsym Menu mode "$launch"
 
 mode "$launch" {
 
-# bindsym F10 exec "~/maps/texpander/texpander.sh"; mode default
 bindsym 1 exec "~/scripts/i3_scripts/touchpad_off"; mode default
 bindsym 2 exec "~/scripts/i3_scripts/touchpad_on"; mode default
 bindsym 3 [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "~/scripts/cline_scripts/open-i3-config"; mode default
@@ -284,21 +283,26 @@ bindsym $mod+apostrophe; mode "$tilling"; exec "notify-send --expire-time=250 't
 
 mode "$tilling" {
 
-bindsym $left  resize grow   width  10 px or 10 ppt
-bindsym $right resize shrink width  10 px or 10 ppt
-bindsym $up    resize shrink height 10 px or 10 ppt
-bindsym $down  resize grow   height 10 px or 10 ppt
+bindsym h  resize shrink width  10 px or 10 ppt
+bindsym Shift+h  resize grow   width 10 px or 10 ppt
 
-# same bindings, but for the arrow keys
-bindsym Left   resize shrink width  10 px or 10 ppt
-bindsym Down   resize grow   height 10 px or 10 ppt
-bindsym Up     resize shrink height 10 px or 10 ppt
-bindsym Right  resize grow   width  10 px or 10 ppt
+bindsym $right resize grow   width  10 px or 10 ppt
+bindsym Shift+l  resize shrink width  10 px or 10 ppt
+
+bindsym $down  resize grow   height 10 px or 10 ppt
+bindsym $up    resize shrink height 10 px or 10 ppt
+
+bindsym Left  resize shrink width  10 px or 10 ppt
+bindsym Down  resize grow   height 10 px or 10 ppt
+bindsym Up    resize shrink height 10 px or 10 ppt
+bindsym Right resize grow   width  10 px or 10 ppt
+
 bindsym $mod+apostrophe; mode "$floating"; exec "notify-send --expire-time=250 --expire-time=250 'floating'"
 bindsym Escape mode default; exec "notify-send --expire-time=250 'mode: default'"
 bindsym $mod+q kill; mode default; exec "notify-send --expire-time=250 'mode: default'"
 bindsym $mod+g mode default; exec "notify-send --expire-time=250 'mode: default'"
 }
+
 #+END_SRC
 *** tilling float
 #+BEGIN_SRC i3
@@ -429,7 +433,7 @@ bindsym $mod+0 workspace $ws10
 #+END_SRC
 ** Output
 #+BEGIN_SRC i3
-bindsym $mod+F10 mode "$output"
+bindsym $mod+Shift+F10 mode "$output"
 
 mode "$output" {
 

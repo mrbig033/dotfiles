@@ -1,9 +1,8 @@
-delay=1
+delay=0
 region=3
 action=1
 show_mouse=0
-screenshot_dir=file:/home/mrpink/org/studynotes/PrivateStudy
-timestamp=false
+screenshot_dir=file:/home/jerry/Documents/Bahia_com_H/site/imgs
 app=nomacs
 last_user=
 

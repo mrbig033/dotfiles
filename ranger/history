@@ -1,18 +1,3 @@
-md builtins
-touch gen1.py
-touch gen
-touch sorted.py
-touch maxmin.py
-touch reversed1.py
-md Ha
-md Haloween
-search roo
-touch len.py
-touch abs1.py
-rename abs.py
-touch sum.py
-touch round.py
-md my
 touch head.py
 search len
 md ex
@@ -50,7 +35,6 @@ rename say_hi.py
 touch say_sup.py
 md 4
 open_with 9 f
-open_with 0 f
 search avi
 touch py-ses.py
 rename emacs_savanah
@@ -96,5 +80,21 @@ touch site.org
 search ranger
 search input
 open_with 
-open_with nvim
 search sh
+rename AI
+rename Projeto
+md Eclipse
+rename Roteiros
+open_with 0 f
+rename menino_exp.org
+rename menino.org
+rename Valeria2149
+rename Valeria_2149
+rename Roteiro
+md Projeto
+rename Pai
+rename template
+rename eclipse_script.fountain
+search Pi
+touch .gitignore
+open_with nvim

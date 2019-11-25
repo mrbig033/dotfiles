@@ -4827,7 +4827,7 @@ key-loop=
 #key-zoom-double=Alt+4
 
 # Very short jump length (integer)
-#extrashort-jump-size=3
+extrashort-jump-size=5
 
 # Short jump length (integer)
 short-jump-size=8

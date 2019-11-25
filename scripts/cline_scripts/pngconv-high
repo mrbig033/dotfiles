@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+clear
+pngquant --quality=50-100 --verbose --ext "-png.conv" *.png

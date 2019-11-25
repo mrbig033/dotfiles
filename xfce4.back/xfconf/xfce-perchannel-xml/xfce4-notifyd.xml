@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<channel name="xfce4-notifyd" version="1.0">
+  <property name="notify-location" type="uint" value="2"/>
+  <property name="expire-timeout" type="int" value="3"/>
+  <property name="theme" type="string" value="Greybird-mx17"/>
+  <property name="applications" type="empty">
+    <property name="known_applications" type="array">
+      <value type="string" value="calibre"/>
+      <value type="string" value="chromium"/>
+      <value type="string" value="Discord"/>
+      <value type="string" value="Dropbox"/>
+      <value type="string" value="Electron"/>
+      <value type="string" value="Firefox"/>
+      <value type="string" value="gnome-tweak-tool"/>
+      <value type="string" value="google-chrome"/>
+      <value type="string" value="hexchat"/>
+      <value type="string" value="MEGAsync"/>
+      <value type="string" value="Nightly"/>
+      <value type="string" value="nm-applet"/>
+      <value type="string" value="notify-send"/>
+      <value type="string" value="org.gnome.Pomodoro"/>
+      <value type="string" value="qBittorrent"/>
+      <value type="string" value="Signal"/>
+      <value type="string" value="Spotify"/>
+      <value type="string" value="Thunar"/>
+      <value type="string" value="thunar-volman"/>
+      <value type="string" value="uGet"/>
+      <value type="string" value="xfce4-power-manager"/>
+    </property>
+  </property>
+</channel>
