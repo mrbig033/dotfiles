@@ -1,0 +1,8 @@
+#!/bin/bash
+
+dir="$HOME/.emacs.d"
+commit="auto commit"
+
+git -C "$dir" add -A
+git -C "$dir" commit -am "$commit"
+git -C "$dir" push

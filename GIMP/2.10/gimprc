@@ -43,6 +43,7 @@
     (padding-color (color-rgb 1.000000 1.000000 1.000000)))
 (can-change-accels yes)
 (theme "171186-CinzaVSAzul")
+(user-manual-online yes)
 (image-convert-indexed-palette-type web)
 (layer-resize-fill-type pattern)
 (fill-options
