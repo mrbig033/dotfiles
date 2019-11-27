@@ -161,7 +161,8 @@ client.background       #2B2C2B
 ** Startup
 #+BEGIN_SRC i3
 exec --no-startup-id "xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up --hold &"
-exec --no-startup-id "xfce4-terminal --title=term-ranger --command='ranger'"
+exec --no-startup-id "xfce4-terminal --working-directory=~ --title=term-ranger --hold &"
+exec --no-startup-id "~/scripts/cline_scripts/sessions.sh"
 exec --no-startup-id "~/scripts/cline_scripts/sessions.sh"
 exec --no-startup-id "xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up &"
 exec --no-startup-id "xset s 600"
@@ -297,12 +298,11 @@ bindsym Down  resize grow   height 10 px or 10 ppt
 bindsym Up    resize shrink height 10 px or 10 ppt
 bindsym Right resize grow   width  10 px or 10 ppt
 
-bindsym $mod+apostrophe; mode "$floating"; exec "notify-send --expire-time=250 --expire-time=250 'floating'"
+bindsym q mode default; exec "notify-send --expire-time=250 'mode: default'"
+bindsym Return mode default; exec "notify-send --expire-time=250 'mode: default'"
 bindsym Escape mode default; exec "notify-send --expire-time=250 'mode: default'"
-bindsym $mod+q kill; mode default; exec "notify-send --expire-time=250 'mode: default'"
-bindsym $mod+g mode default; exec "notify-send --expire-time=250 'mode: default'"
+bindsym $mod+apostrophe; mode "$floating"; exec "notify-send --expire-time=250 --expire-time=250 'floating'"
 }
-
 #+END_SRC
 *** tilling float
 #+BEGIN_SRC i3
