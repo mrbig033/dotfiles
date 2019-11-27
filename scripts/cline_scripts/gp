@@ -1,7 +1,7 @@
 #!/bin/bash
 
 commit="$*:-auto commit"
-VAR=${1:-DEFAULTVALUE}
+# VAR=${1:-DEFAULTVALUE}
 
 clear
 echo ""
