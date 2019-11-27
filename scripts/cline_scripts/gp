@@ -1,6 +1,7 @@
 #!/bin/bash
 
 commit="$*"
+VAR=${1:-DEFAULTVALUE}
 
 clear
 echo ""
