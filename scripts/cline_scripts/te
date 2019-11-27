@@ -2,11 +2,7 @@
 
 new_expansion="$*"
 
-if [ $# -gt 0 ]
-then
+if [ $# -gt 0 ]; then
     source "$HOME"/scripts/cline_scripts/text_expander_cd
-    nvim -c 'startinsert' "$new_expansion"
-    clear
-    # i3-msg "[title=term-up]" move scratchpad &>/dev/null
-    # "$HOME"/maps/texpander/texpander.sh &>/dev/null
+    nvim +startinsert "$new_expansion"
 fi
