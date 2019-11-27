@@ -1,15 +1,16 @@
-#!/usr/bin/env bash
+#!/bin/bash
 
-# from http://bit.ly/2phj9Ed 
-gopath () {
-    dir="$(xclip -o)"
-    local 
+commit="auto-commit"
 
-    #make sure $dir at least has a value in it
-    [[ "$dir" ]] || return 1
-    #try to cd, leave if you can't
-    cd "$dir" || return $?
-    #assuming we've made it this far, do the other things
-    clear
-    ls --color=always
-}
+clear
+echo ""
+echo "#adding all files#"
+echo ""
+git add -A
+echo ""
+echo "#commiting and pushing"#
+echo ""
+echo "#commit message:" "$commit"
+echo ""
+git commit -am "$commit" && git push
+echo ""
