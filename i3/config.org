@@ -163,6 +163,7 @@ client.background       #2B2C2B
 exec --no-startup-id "xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up --hold &"
 exec --no-startup-id "xfce4-terminal --working-directory=~ --title=term-ranger --hold &"
 exec --no-startup-id "~/scripts/cline_scripts/sessions.sh"
+exec --no-startup-id "~/scripts/cline_scripts/sessions.sh"
 exec --no-startup-id "xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up &"
 exec --no-startup-id "xset s 600"
 exec --no-startup-id "xset mouse 14/5 0 &"
