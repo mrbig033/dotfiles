@@ -95,7 +95,7 @@ shopt -s cdable_vars
 source ~/.bash_aliases
 source ~/.env_variables.sh
 source ~/.bash_completion.sh
-source ~/.pyenv/versions/3.7.4/share/doc/ranger/examples/bash_automatic_cd.sh
+source ~/.pyenv/versions/3.8.0/share/doc/ranger/examples/bash_automatic_cd.sh
 # source ~/scripts/cline_scripts/gitr
 
 #### DEFAULT EDITOR ####
