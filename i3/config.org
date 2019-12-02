@@ -363,7 +363,6 @@ for_window [title="term-bpython"] border none
 for_window [title="term-bpython"] floating enable sticky enable
 for_window [title="term-bpython"] move scratchpad
 for_window [title="term-bpython"] resize set 1250 450; move to position 350 0
-bindsym $mod+y [title="mrblack"] move scratchpad; [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; [title="term-bpython"] scratchpad show; move to position 350 0; move to position 350 0
 bindsym $mod+comma [title="mrblack"] move scratchpad; [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; [title="term-bpython"] scratchpad show; move to position 350 0; move to position 350 0
 #+END_SRC
 **** Term Ranger
