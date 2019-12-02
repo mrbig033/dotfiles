@@ -212,7 +212,7 @@ bindsym $mod+F11 exec "xfce4-terminal --title=term-bpython"
 
 bindsym $mod+q kill
 bindsym $mod+Return exec "~/maps/suckless/st_bin3/bin/st"
-bindsym $mod++Return exec "xfce4-terminal"
+bindsym $mod+Control+Return exec "xfce4-terminal"
 bindsym --release $mod+Shift+q exec xkill
 bindsym $mod+F5 exec --no-startup-id $Locker
 bindsym $mod+z exec --no-startup-id morc_menu
