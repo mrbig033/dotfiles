@@ -209,17 +209,17 @@ bindsym $mod+Shift+F9 exec "xfce4-terminal --working-directory=~ --title=term-ra
 bindsym $mod+Shift+F10 exec "~/maps/suckless/st_bin3/bin/st -t term-ranger2 -n term-ranger2 -e ranger"
 bindsym $mod+Shift+F11 exec "xfce4-terminal --title=term-bpython"
 
-bindsym F10 exec "~/maps/texpander/texpander.sh"
 bindsym $mod+q kill
-bindsym $mod+Return exec "~/maps/suckless/st_bin3/bin/st"
-bindsym $mod+Control+Return exec "xfce4-terminal"
+bindsym $mod+F12 exec "i3-msg exit"
 bindsym --release $mod+Shift+q exec xkill
 bindsym $mod+F5 exec --no-startup-id $Locker
 bindsym $mod+z exec --no-startup-id morc_menu
+bindsym F10 exec "~/maps/texpander/texpander.sh"
+bindsym $mod+Control+Return exec "xfce4-terminal"
+bindsym $mod+Return exec "~/maps/suckless/st_bin3/bin/st"
 bindsym $mod+d exec dmenu_run -i -l 5 -fn 'Input Mono-13'
 bindsym --release Print exec "xfce4-screenshooter --region"
 bindsym $mod+Shift+F5 exec "i3-nagbar -t warning -m 'Exit i3?' -b 'Yes' 'i3-msg exit'"
-bindsym $mod+F12 exec "i3-msg exit"
 #+END_SRC
 ** Movement
 #+BEGIN_SRC i3
