@@ -204,8 +204,8 @@ bindsym $alt+Shift+p focus parent;exec "notify-send --expire-time=250 'parent fo
 #+END_SRC
 ** general
 #+BEGIN_SRC i3
-bindsym $mod+F9 exec "xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up --hold"
 bindsym F10 exec "~/maps/texpander/texpander.sh"
+bindsym $mod+F9 exec "xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up --hold"
 bindsym $mod+F10 exec "xfce4-terminal --working-directory=~ --title=term-ranger --hold"
 bindsym $mod+F12 exec "st -t term-ranger2 -n term-ranger2"
 bindsym $mod+F11 exec "xfce4-terminal --title=term-bpython"
