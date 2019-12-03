@@ -208,7 +208,7 @@ bindsym F10 exec "~/maps/texpander/texpander.sh"
 bindsym $mod+F9 exec "xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up --hold"
 bindsym $mod+F10 exec "xfce4-terminal --working-directory=~ --title=term-ranger --hold"
 bindsym $mod+F11 exec "xfce4-terminal --title=term-bpython"
-bindsym $mod+Shift+F12 exec "~/maps/suckless/st_bin3/bin/st"
+bindsym $mod+Shift+F10 exec "~/maps/suckless/st_bin3/bin/st"
 # bindsym $mod+F12 exec "~/maps/suckless/st_bin3/bin/st -t term-ranger2 -n term-ranger2"
 
 # bindsym $mod+F11 exec "~/maps/suckless/st_bin2/bin/st -t term-bpython -n term-bpython -f 'Liberation Mono:pixelsize=18'"
