@@ -206,7 +206,7 @@ bindsym $alt+Shift+p focus parent;exec "notify-send --expire-time=250 'parent fo
 #+BEGIN_SRC i3
 bindsym $mod+F9 exec "xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up --hold"
 bindsym $mod+F10 exec "xfce4-terminal --working-directory=~ --title=term-ranger --hold"
-bindsym $mod+F10 exec ""~/maps/suckless/st_bin2/bin/st -t term-bpython -n term-bpython -f 'Liberation Mono:pixelsize=18'""
+bindsym $mod+F10 exec "~/maps/suckless/st_bin2/bin/st -t term-bpython -n term-bpython -f 'Liberation Mono:pixelsize=18'"
 bindsym F10 exec "~/maps/texpander/texpander.sh"
 bindsym $mod+F11 exec "xfce4-terminal --title=term-bpython"
 # bindsym $mod+F11 exec "~/maps/suckless/st_bin2/bin/st -t term-bpython -n term-bpython -f 'Liberation Mono:pixelsize=18'"
