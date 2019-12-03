@@ -380,10 +380,10 @@ bindsym $mod+i [title="mrblack"] move scratchpad; [title="term-up"] move scratch
 #+END_SRC
 **** Term Ranger2
 #+BEGIN_SRC i3
-for_window [class="Xfce4-terminal" title="term-ranger2"] border none
-for_window [class="Xfce4-terminal" title="term-ranger2"] floating enable sticky enable
-for_window [class="Xfce4-terminal" title="term-ranger2"] move scratchpad
-for_window [class="Xfce4-terminal" title="term-ranger2"] resize set 1250 450; move to position 350 0
+for_window [class="st-256color" title="term-ranger2"] border none
+for_window [class="" title="term-ranger2"] floating enable sticky enable
+for_window [class="" title="term-ranger2"] move scratchpad
+for_window [class="" title="term-ranger2"] resize set 1250 450; move to position 350 0
 bindsym $mod+i [title="mrblack"] move scratchpad; [title="term-up"] move scratchpad; [title="term-bpython"] move scratchpad; [title="term-ranger"] scratchpad show; move to position 350 0
 #+END_SRC
 **** Term Hexchat
