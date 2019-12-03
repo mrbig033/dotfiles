@@ -220,7 +220,6 @@ bindsym $mod+z exec --no-startup-id morc_menu
 bindsym $mod+d exec dmenu_run -i -l 5 -fn 'Input Mono-13'
 bindsym --release Print exec "xfce4-screenshooter --region"
 bindsym $mod+Shift+F5 exec "i3-nagbar -t warning -m 'Exit i3?' -b 'Yes' 'i3-msg exit'"
-bindsym $mod+ShitfF12 exec "i3-msg exit"
 #+END_SRC
 ** Movement
 #+BEGIN_SRC i3
