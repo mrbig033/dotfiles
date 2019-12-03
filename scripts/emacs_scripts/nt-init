@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 
-
-"$HOME"/maps/ntangle/ntangle ~/.emacs.d/init.org 
+"$HOME"/maps/ntangle/ntangle "$HOME"/.emacs.d/init.org
 "$HOME"/.e/git-commit-emacs
