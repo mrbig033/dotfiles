@@ -210,7 +210,7 @@ bindsym $mod+Shift+F9 exec "xfce4-terminal --working-directory=~ --title=term-ra
 bindsym $mod+Shift+F10 exec "~/maps/suckless/st_bin3/bin/st -t term-ranger2 -n term-ranger2 -e ranger"
 bindsym $mod+Shift+F11 exec "xfce4-terminal --title=term-bpython"
 set $st_ret exec "~/maps/suckless/st_bin3/bin/st"
-bindsym 
+bindsym $mod+Return exec $st_ret
 # bindsym $mod+Return exec "~/maps/suckless/st_bin3/bin/st"
 
 bindsym $mod+q kill
