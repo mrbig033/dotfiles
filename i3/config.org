@@ -210,7 +210,6 @@ bindsym $mod+Shift+F10 exec "~/maps/suckless/st_bin3/bin/st -t term-ranger2 -n t
 bindsym $mod+Shift+F11 exec "xfce4-terminal --title=term-bpython"
 
 bindsym F10 exec "~/maps/texpander/texpander.sh"
-
 bindsym $mod+q kill
 bindsym $mod+Return exec "~/maps/suckless/st_bin3/bin/st"
 bindsym $mod+Control+Return exec "xfce4-terminal"
