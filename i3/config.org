@@ -439,7 +439,7 @@ bindsym $mod+0 workspace $ws10
 #+END_SRC
 ** Output
 #+BEGIN_SRC i3
-bindsym $mod++F10 mode "$output"
+bindsym $mod+Control+F10 mode "$output"
 
 mode "$output" {
 
