@@ -378,7 +378,7 @@ for_window [class="Xfce4-terminal" title="term-ranger"] move scratchpad
 for_window [class="Xfce4-terminal" title="term-ranger"] resize set 1250 450; move to position 350 0
 bindsym $mod+i [title="mrblack"] move scratchpad; [title="term-up"] move scratchpad; [title="term-bpython"] move scratchpad; [title="term-ranger"] scratchpad show; move to position 350 0
 #+END_SRC
-**** Term Ranger
+**** Term Ranger2
 #+BEGIN_SRC i3
 # for_window [class="st" title="term-ranger"] border none
 # for_window [class="st" title="term-ranger"] floating enable sticky enable
