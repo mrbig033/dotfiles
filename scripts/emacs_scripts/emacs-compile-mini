@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+./autogen.sh &&
+./configure --prefix="$HOME"/maps/emacs_mini --without-all --without-x CFLAGS='-Os -m32'
