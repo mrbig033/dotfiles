@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+file="${1:-foo}"
+
+"$HOME"/maps/emacs_mini/bin/emacs -q -l ~/.emacs.mini/init.el "$file"
