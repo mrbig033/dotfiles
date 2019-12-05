@@ -165,7 +165,7 @@ exec --no-startup-id "xfce4-terminal --working-directory=~ --title=term-ranger -
 exec --no-startup-id "~/scripts/cline_scripts/sessions.sh"
 exec --no-startup-id "xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up &"
 exec --no-startup-id "xset s 600"
-exec --no-startup-id "xset mouse 14/5 0 &"
+exec --no-startup-id "xset mouse 10/5 0 &"
 exec --no-startup-id "xset r rate 200 60 &"
 exec --no-startup-id "compton -b --backend glx &"
 exec --no-startup-id "~/scripts/keyboard/init_keys.sh &"
@@ -381,6 +381,14 @@ for_window [title="term-ranger2"] floating enable sticky enable
 for_window [title="term-ranger2"] move scratchpad
 for_window [title="term-ranger2"] resize set 1250 450; move to position 350 0
 bindsym $mod+period [title="mrblack"] move scratchpad; [title="term-up"] move scratchpad; [title="term-bpython"] move scratchpad; [title="term-ranger2"] scratchpad show; move to position 350 0
+#+END_SRC
+**** Slack
+#+BEGIN_SRC i3
+for_window [class="Slack"] border none
+for_window [class="Slack"] floating enable sticky enable
+for_window [class="Slack"] move scratchpad
+for_window [class="Slack"] resize set 1250 450; move to position 350 0
+bindsym $mod+semicolon [title="mrblack"] move scratchpad; [title="term-up"] move scratchpad; [title="term-bpython"] move scratchpad; [class="Slack"] scratchpad show; move to position 350 0
 #+END_SRC
 **** Term Hexchat
 #+BEGIN_SRC i3
