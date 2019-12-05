@@ -355,7 +355,7 @@ for_window [title="term-up"] border none
 for_window [title="term-up"] floating enable sticky enable
 for_window [title="term-up"] move scratchpad
 for_window [title="term-up"] resize set 1250 450; move to position 350 0
-bindsym $mod+u [title="mrblack"] move scratchpad; [title="term-ranger"] move scratchpad; [title="term-bpython"] move scratchpad; [title="term-up"] scratchpad show; move to position 350 0; move to position 350 0
+bindsym $mod+u [class="Slack"] move scratchpad; [title="mrblack"] move scratchpad; [title="term-ranger"] move scratchpad; [title="term-bpython"] move scratchpad; [title="term-up"] scratchpad show; move to position 350 0; move to position 350 0
 #+END_SRC
 **** Term Bpython
 #+BEGIN_SRC i3
@@ -363,7 +363,7 @@ for_window [title="term-bpython"] border none
 for_window [title="term-bpython"] floating enable sticky enable
 for_window [title="term-bpython"] move scratchpad
 for_window [title="term-bpython"] resize set 1250 450; move to position 350 0
-bindsym $mod+comma [title="mrblack"] move scratchpad; [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; [title="term-bpython"] scratchpad show; move to position 350 0; move to position 350 0
+bindsym $mod+comma [class="Slack"] move scratchpad; [title="mrblack"] move scratchpad; [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; [title="term-bpython"] scratchpad show; move to position 350 0; move to position 350 0
 #+END_SRC
 **** Term Ranger
 #+BEGIN_SRC i3
@@ -371,7 +371,7 @@ for_window [class="Xfce4-terminal" title="term-ranger"] border none
 for_window [class="Xfce4-terminal" title="term-ranger"] floating enable sticky enable
 for_window [class="Xfce4-terminal" title="term-ranger"] move scratchpad
 for_window [class="Xfce4-terminal" title="term-ranger"] resize set 1250 450; move to position 350 0
-bindsym $mod+i [title="mrblack"] move scratchpad; [title="term-up"] move scratchpad; [title="term-bpython"] move scratchpad; [title="term-ranger"] scratchpad show; move to position 350 0
+bindsym $mod+i [class="Slack"] move scratchpad; [title="mrblack"] move scratchpad; [title="term-up"] move scratchpad; [title="term-bpython"] move scratchpad; [title="term-ranger"] scratchpad show; move to position 350 0
 #+END_SRC
 **** Term Ranger2
 #+BEGIN_SRC i3
@@ -379,7 +379,7 @@ for_window [title="term-ranger2"] border none
 for_window [title="term-ranger2"] floating enable sticky enable
 for_window [title="term-ranger2"] move scratchpad
 for_window [title="term-ranger2"] resize set 1250 450; move to position 350 0
-bindsym $mod+period [title="mrblack"] move scratchpad; [title="term-up"] move scratchpad; [title="term-bpython"] move scratchpad; [title="term-ranger2"] scratchpad show; move to position 350 0
+bindsym $mod+period [class="Slack"] move scratchpad; [title="mrblack"] move scratchpad; [title="term-up"] move scratchpad; [title="term-bpython"] move scratchpad; [title="term-ranger2"] scratchpad show; move to position 350 0
 #+END_SRC
 **** Slack
 #+BEGIN_SRC i3
@@ -395,7 +395,7 @@ for_window [class="Hexchat" title="mrblack"] border none
 for_window [class="Hexchat" title="mrblack"] floating enable sticky enable
 for_window [class="Hexchat" title="mrblack"] move scratchpad
 for_window [class="Hexchat" title="mrblack"] resize set 1250 450; move to position 350 0
-bindsym $mod+o [title="term-ranger"] move scratchpad; [title="term-up"] move scratchpad; [title="term-bpython"] move scratchpad; [title="mrblack"] scratchpad show; move to position 350 0
+bindsym $mod+o [class="Slack"] move scratchpad; [title="term-ranger"] move scratchpad; [title="term-up"] move scratchpad; [title="term-bpython"] move scratchpad; [title="mrblack"] scratchpad show; move to position 350 0
 #+END_SRC
 ** Workspaces
 #+BEGIN_SRC i3
