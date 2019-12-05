@@ -387,7 +387,7 @@ for_window [class="Slack"] border none
 for_window [class="Slack"] floating enable sticky enable
 for_window [class="Slack"] move scratchpad
 for_window [class="Slack"] resize set 1250 450; move to position 350 0
-bindsym $mod+semicolon [title="mrblack"] move scratchpad; [title="term-up"] move scratchpad; [title="term-bpython"] move scratchpad; [class="Slack"] scratchpad show; move to position 350 0
+bindsym $mod+semicolon [title="term-ranger"] move scratchpad; [title="term-ranger2"] move scratchpad;  [title="mrblack"] move scratchpad; [title="term-up"] move scratchpad; [title="term-bpython"] move scratchpad; [class="Slack"] scratchpad show; move to position 350 0
 #+END_SRC
 **** Term Hexchat
 #+BEGIN_SRC i3
