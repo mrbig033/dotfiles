@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
 
-# Don't this directly.
+# This file is for copy/paste in the shell. "cd" doesn't work directly .
 
 git clone git://git.savannah.gnu.org/emacs.git &&
-cd emacs && 
+# cd emacs manually
+sudo apt -y build-dep emacs25 &&
 git pull &&
-./autogen.sh && 
-./configure && 
-make && 
+./autogen.sh &&
+./configure &&
+make &&
 sudo make install
