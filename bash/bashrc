@@ -100,11 +100,11 @@ source ~/.pyenv/versions/3.8.0/share/doc/ranger/examples/bash_automatic_cd.sh
 
 #### DEFAULT EDITOR ####
 
-export VISUAL=nvim
-export EDITOR=nvim
+export VISUAL=/home/jerry/dotfiles/scripts/cline_scripts/mi
+export EDITOR=/home/jerry/dotfiles/scripts/cline_scripts/mi
 
-# export VISUAL="emacsclient --socket-name=term-emacs --alternate-editor='' --create-frame -nw"
-# export EDITOR="emacsclient --socket-name=term-emacs --alternate-editor='' --create-frame -nw"
+# export VISUAL=nvim
+# export EDITOR=nvim
 
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 

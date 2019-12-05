@@ -1,4 +1,5 @@
 #!/usr/bin/env bash
 
 clear
-emacsclient --socket-name=emacs-gui --alternate-editor="" --no-wait --create-frame && i3-msg "[title=term-up]" move scratchpad &>/dev/null
+i3-msg "[title=term-up]" move scratchpad &>/dev/null
+emacsclient --socket-name=emacs-gui --alternate-editor="" --no-wait --create-frame

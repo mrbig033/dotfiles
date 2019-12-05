@@ -16,7 +16,9 @@
       <value type="string" value="Volume Icon"/>
       <value type="string" value="google-chrome"/>
       <value type="string" value="qBittorrent"/>
+      <value type="string" value="Slack"/>
       <value type="string" value="Spotify"/>
+      <value type="string" value="uGet"/>
     </property>
   </property>
 </channel>

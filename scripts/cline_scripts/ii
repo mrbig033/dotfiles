@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+clear
+script="$*"
+# source:
+# https://old.reddit.com/r/bash/comments/dio03b/how_can_i_make_whereis_automatically_open_the/f3xx7kd/
+nvim "$(which "$script")"

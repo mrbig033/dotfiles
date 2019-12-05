@@ -119,7 +119,7 @@ exec --no-startup-id "xfce4-terminal --working-directory=~ --title=term-ranger -
 exec --no-startup-id "~/scripts/cline_scripts/sessions.sh"
 exec --no-startup-id "xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up &"
 exec --no-startup-id "xset s 600"
-exec --no-startup-id "xset mouse 14/5 0 &"
+exec --no-startup-id "xset mouse 10/5 0 &"
 exec --no-startup-id "xset r rate 200 60 &"
 exec --no-startup-id "compton -b --backend glx &"
 exec --no-startup-id "~/scripts/keyboard/init_keys.sh &"
@@ -153,20 +153,21 @@ bindsym $mod+$alt+l focus output Right
 bindsym $alt+Shift+c focus child;exec "notify-send --expire-time=250 'parent focus'"
 bindsym $alt+Shift+p focus parent;exec "notify-send --expire-time=250 'parent focus'"
 
-bindsym $mod+F9 exec "xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up --hold &"
-bindsym $mod+F10 exec "xfce4-terminal --working-directory=~ --title=term-ranger --hold &"
-bindsym F10 exec "~/maps/texpander/texpander.sh"
-bindsym $mod+F11 exec "~/maps/suckless/st_bin2/bin/st -t term-bpython -n term-bpython -f 'Liberation Mono:pixelsize=18'"
-
+bindsym $mod+Shift+F5 exec "i3-nagbar -t warning -m 'Exit i3?' -b 'Yes' 'i3-msg exit'"
+bindsym $mod+Shift+F8 exec "xfce4-terminal --title=term-up --hold"
+bindsym $mod+Shift+F9 exec "xfce4-terminal --working-directory=~ --title=term-ranger --hold"
+bindsym $mod+Shift+F10 exec "~/maps/suckless/st_bin3/bin/st -t term-ranger2 -n term-ranger2 -e ranger"
+bindsym $mod+Shift+F11 exec "xfce4-terminal --title=term-bpython"
+bindsym $mod+Return [title="term-up"] move scratchpad; exec "~/.i3s/st3"
 bindsym $mod+q kill
-bindsym $mod+Return exec "~/maps/suckless/st_bin3/bin/st"
+bindsym $mod+F12 exec "i3-msg exit"
 bindsym --release $mod+Shift+q exec xkill
 bindsym $mod+F5 exec --no-startup-id $Locker
 bindsym $mod+z exec --no-startup-id morc_menu
+bindsym F10 exec "~/maps/texpander/texpander.sh"
+bindsym $mod+Control+Return exec "xfce4-terminal"
 bindsym $mod+d exec dmenu_run -i -l 5 -fn 'Input Mono-13'
 bindsym --release Print exec "xfce4-screenshooter --region"
-bindsym $mod+Shift+F5 exec "i3-nagbar -t warning -m 'Exit i3?' -b 'Yes' 'i3-msg exit'"
-bindsym $mod+F12 exec "i3-msg exit"
 
 bindsym $mod+Shift+k move Up
 bindsym $mod+Shift+j move Down
@@ -293,18 +294,25 @@ for_window [title="term-bpython"] border none
 for_window [title="term-bpython"] floating enable sticky enable
 for_window [title="term-bpython"] move scratchpad
 for_window [title="term-bpython"] resize set 1250 450; move to position 350 0
-bindsym $mod+y [title="mrblack"] move scratchpad; [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; [title="term-bpython"] scratchpad show; move to position 350 0; move to position 350 0
 bindsym $mod+comma [title="mrblack"] move scratchpad; [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; [title="term-bpython"] scratchpad show; move to position 350 0; move to position 350 0
 
-# for_window [class="st" title="term-ranger"] border none
-# for_window [class="st" title="term-ranger"] floating enable sticky enable
-# for_window [class="st" title="term-ranger"] move scratchpad
-# for_window [class="st" title="term-ranger"] resize set 1250 450; move to position 350 0
 for_window [class="Xfce4-terminal" title="term-ranger"] border none
 for_window [class="Xfce4-terminal" title="term-ranger"] floating enable sticky enable
 for_window [class="Xfce4-terminal" title="term-ranger"] move scratchpad
 for_window [class="Xfce4-terminal" title="term-ranger"] resize set 1250 450; move to position 350 0
 bindsym $mod+i [title="mrblack"] move scratchpad; [title="term-up"] move scratchpad; [title="term-bpython"] move scratchpad; [title="term-ranger"] scratchpad show; move to position 350 0
+
+for_window [title="term-ranger2"] border none
+for_window [title="term-ranger2"] floating enable sticky enable
+for_window [title="term-ranger2"] move scratchpad
+for_window [title="term-ranger2"] resize set 1250 450; move to position 350 0
+bindsym $mod+period [title="mrblack"] move scratchpad; [title="term-up"] move scratchpad; [title="term-bpython"] move scratchpad; [title="term-ranger2"] scratchpad show; move to position 350 0
+
+for_window [class="Slack"] border none
+for_window [class="Slack"] floating enable sticky enable
+for_window [class="Slack"] move scratchpad
+for_window [class="Slack"] resize set 1250 450; move to position 350 0
+bindsym $mod+semicolon [title="mrblack"] move scratchpad; [title="term-up"] move scratchpad; [title="term-bpython"] move scratchpad; [class="Slack"] scratchpad show; move to position 350 0
 
 for_window [class="Hexchat" title="mrblack"] border none
 for_window [class="Hexchat" title="mrblack"] floating enable sticky enable
@@ -356,7 +364,7 @@ bindsym $mod+8 workspace $ws8
 bindsym $mod+9 workspace $ws9
 bindsym $mod+0 workspace $ws10
 
-bindsym $mod+Shift+F10 mode "$output"
+bindsym $mod+Control+F10 mode "$output"
 
 mode "$output" {
 

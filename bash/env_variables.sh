@@ -23,30 +23,30 @@ export FZF_DEFAULT_COMMAND
 FZF_DEFAULT_COMMAND="ppd=$(pwd) && fd -H -L -d 3 . $ppd"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
-export FZF_ALT_C
-export FZF_ALT_C_COMMAND="ppd=$(pwd) && fd --hidden --follow --max-depth 3 . $ppd \
--E *\.[Pp]y[Cc]harm* \
--E \.cache \
--E \.git \
--E \.back \
--E \.IdeaIC2018.3 \
--E \.conky \
--E \.dbus \
--E \.gem \
--E \.gnome \
--E \.gnupg \
--E \.kde \
--E \.java \
--E \.nmp \
--E \.thunderbird \
--E \.tmp \
--E \.ssh \
--E \.ssr \
--E \.pki \
--E \.mozilla \
--E \.m2 \
--E \.mplayer \
--E \.texlive \
--E \.thumbnails \
--E \.tooling \
--E \.android . $ppc"
+# export FZF_ALT_C
+# export FZF_ALT_C_COMMAND="ppd=$(pwd) && fd --hidden --follow --max-depth 3 . $ppd \
+# -E *\.[Pp]y[Cc]harm* \
+# -E \.cache \
+# -E \.git \
+# -E \.back \
+# -E \.IdeaIC2018.3 \
+# -E \.conky \
+# -E \.dbus \
+# -E \.gem \
+# -E \.gnome \
+# -E \.gnupg \
+# -E \.kde \
+# -E \.java \
+# -E \.nmp \
+# -E \.thunderbird \
+# -E \.tmp \
+# -E \.ssh \
+# -E \.ssr \
+# -E \.pki \
+# -E \.mozilla \
+# -E \.m2 \
+# -E \.mplayer \
+# -E \.texlive \
+# -E \.thumbnails \
+# -E \.tooling \
+# -E \.android . $ppc"

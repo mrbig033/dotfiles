@@ -3,4 +3,4 @@
 source="$1"
 destination="$2"
 
-rsync --archive --verbose "$source" "$destination"
+rsync --archive --verbose --human-readable "$source" "$destination"

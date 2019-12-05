@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+thing="$*"
+
+clear
+specificity "$thing"

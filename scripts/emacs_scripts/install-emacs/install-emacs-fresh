@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+sudo apt -y build-dep emacs25 &&
+git clone git://git.savannah.gnu.org/emacs.git &&
+source ./cd-emacs &&
+./autogen.sh &&
+./configure &&
+make &&
+sudo make install
