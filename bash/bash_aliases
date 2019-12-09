@@ -21,7 +21,7 @@ alias 5='clear && tmux attach -t 6 &>/dev/null || tmux switch-client -t 6 &>/dev
 alias 7='clear && tmux attach -t 7 &>/dev/null || tmux switch-client -t 7 &>/dev/null'
 alias 8='clear && tmux attach -t 8 &>/dev/null || tmux switch-client -t 8 &>/dev/null'
 alias 9='clear && tmux attach -t 9 &>/dev/null || tmux switch-client -t 9 &>/dev/null'
-alias new='tmux new-session -ds 9'
+alias new='tmux -L'
 
 # alias bc='clear && tmux attach -t bc &>/dev/null || tmux switch-client -t bc &>/dev/null'
 alias bc="clear && nvim ~/.bash_aliases		        \
