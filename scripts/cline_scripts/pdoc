@@ -1,5 +1,5 @@
 #!/usr/bin/env bash
 
-output="$2"
 input="$1"
+output="$2"
 pandoc -o "$output" "$input"
