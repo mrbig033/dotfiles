@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+file1="index.html"
+file2="style.css"
+
+touch "$file1" "$file2"
+clear
+ls "$file1" "$file2"

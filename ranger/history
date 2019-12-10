@@ -1,29 +1,3 @@
-search sco
-search dir
-md vi
-md video
-md tutos
-touch todoList.html
-md selectors
-::
-
-md example01
-rename todoList.html
-rename todos.css
-md example02
-touch selectors.css
-touch demo.html
-search sele
-rename selectors.zip
-rename 01_css
-rename 02_inheritance
-md 02_selectors
-rename 03_inheritance
-search spe
-search inh
-search yas
-search css
-find co
 search color
 rename notes.org
 touch notes.org
@@ -46,17 +20,14 @@ search table
 md solution
 md 05_img_gallery
 touch images.html
-touch 
 rename imgs.html
 touch imgs_style.css
 rename photoGrid.html
 rename photos.css
 open_with  f
-open_with 0 f
 open_with 2 f
 rename imageLinks.txt
 rename imageLinks.md
-rename imgs
 md 06_blog
 touch blog.html
 touch style.css
@@ -83,10 +54,13 @@ rename mini-default.min_def.css
 rename bulma.css
 search it
 open_with 1 f
+search ema
 rename 27.0.50
 rename 27.0.50.back
 search ins
+search mini
 search 
+search emac
 md .emacs.mini
 search mi
 delete
@@ -95,6 +69,32 @@ search range
 md CHOCOLATE
 rename slack.pdf
 search drop
-search emac
-search mini
-search ema
+find map
+search fre
+md install-emacs
+touch cd-emacs
+touch 03_flexbox
+touch 
+md 03_flexbox
+touch mdn01
+md mdn01
+touch mdn01.html
+touch mdn01.css
+md materiais
+rename imgs
+rename insts
+rename Anime
+open_with 0 f
+rename videos
+md 04
+md grumpy_dict
+touch dict.py
+rename Mastering_Object-Oriented_Python.pdf
+touch methods_train
+md methods_train
+touch train.py
+rename 2019_12_08
+rename bh_
+search node
+md css
+rename use-package

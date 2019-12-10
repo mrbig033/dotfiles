@@ -50,7 +50,7 @@
                 (aux-info
                     (show-button-bar "true"))))
         (book
-            (position 349)
+            (position 350)
             (current-page 0)
             (dockable "gimp-brush-grid"
                 (tab-style automatic)
@@ -88,8 +88,8 @@
     (size 743 624))
 (session-info "toplevel"
     (factory-entry "gimp-file-export-dialog")
-    (position 498 66)
-    (size 780 677))
+    (position 476 66)
+    (size 780 722))
 
 (hide-docks no)
 (single-window-mode yes)

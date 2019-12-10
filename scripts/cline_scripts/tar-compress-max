@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+filename="$1"
+dir_path="$2"
+env GZIP=-9 tar cvzf "$filename".tar.gz "$dir_path"

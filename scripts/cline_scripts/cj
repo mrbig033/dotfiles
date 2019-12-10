@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+input="$1"
+output=${input::-4}
+convert "$input" -quality 25 "$output"v2

@@ -18,12 +18,12 @@ liblzma-dev python-openssl git keepassxc gnome-disk-utility zenity    \
 libffi-dev wordnet simplescreenrecorder okular okular-extra-backends  \
 mercurial ninja-build gettext libtool libtool-bin autoconf automake   \
 cmake g++ pkg-config unzip gcc-multilib g++-multilib                  \
-libncurses-dev:i386 build-essential:i386 baobab xorg-dev xcape
-rubygems mpv feh
+libncurses-dev:i386 build-essential:i386 baobab xorg-dev xcape        \
+rubygems mpv feh scrot python3-tk python3-dev 
 
-pip install --upgrade pip
 sudo apt -y autoremove
 sudo apt -y autoclean
+pip install --upgrade pip
 curl https://pyenv.run | bash
 
 # nvim

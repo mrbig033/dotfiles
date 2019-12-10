@@ -4,9 +4,9 @@ clear
 echo " "
 echo " killing emacs"
 echo " "
-pkill -fi emacs
+pkill -fi emacs-gui
 echo " "
 echo " starting server"
 echo " "
-emacsclient --socket-name=emacs-gui --alternate-editor="" --no-wait --create-frame && 
+emacsclient --socket-name=emacs-gui --alternate-editor="" --no-wait --create-frame &&
     i3-msg "[title=term-up]" move scratchpad &>/dev/null

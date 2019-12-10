@@ -153,6 +153,7 @@ bindsym $mod+$alt+l focus output Right
 bindsym $alt+Shift+c focus child;exec "notify-send --expire-time=250 'parent focus'"
 bindsym $alt+Shift+p focus parent;exec "notify-send --expire-time=250 'parent focus'"
 
+bindsym $mod+Shift+b border toggle
 bindsym $mod+Shift+F5 exec "i3-nagbar -t warning -m 'Exit i3?' -b 'Yes' 'i3-msg exit'"
 bindsym $mod+Shift+F8 exec "xfce4-terminal --title=term-up --hold"
 bindsym $mod+Shift+F9 exec "xfce4-terminal --working-directory=~ --title=term-ranger --hold"
@@ -164,7 +165,7 @@ bindsym $mod+F12 exec "i3-msg exit"
 bindsym --release $mod+Shift+q exec xkill
 bindsym $mod+F5 exec --no-startup-id $Locker
 bindsym $mod+z exec --no-startup-id morc_menu
-bindsym F10 exec "~/maps/texpander/texpander.sh"
+bindsym F10 [class="Slack"] move scratchpad; [title="term-ranger"] move scratchpad; [title="term-up"] move scratchpad; [title="term-bpython"] move scratchpad; exec "~/maps/texpander/texpander.sh"
 bindsym $mod+Control+Return exec "xfce4-terminal"
 bindsym $mod+d exec dmenu_run -i -l 5 -fn 'Input Mono-13'
 bindsym --release Print exec "xfce4-screenshooter --region"
@@ -274,8 +275,7 @@ bindsym l resize grow width          36 px or 36 ppt
 bindsym $mod+apostrophe floating disable; mode default; exec "notify-send --expire-time=250 'mode: default'"
 bindsym $mod+Shift+space floating disable; mode default; exec "notify-send --expire-time=250 'mode: default'"
 
-bindsym $mod+q kill; mode default; exec "notify-send --expire-time=250 'mode: default'"
-bindsym Escape kill; mode default; exec notify-send --expire-time=250 'mode: default'
+bindsym Escape mode default; exec notify-send --expire-time=250 'mode: default'
 
 bindsym $mod+g mode default; exec "notify-send --expire-time=250 'mode: default'"
 }

@@ -231,7 +231,7 @@ freetype-monofont=DejaVu Sans Mono
 #freetype-fontsize=0
 
 # Relative font size (integer)
-freetype-rel-fontsize=16
+freetype-rel-fontsize=18
 
 # Text opacity (integer)
 #freetype-opacity=255

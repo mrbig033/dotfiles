@@ -33,7 +33,7 @@ alias bc="clear && nvim ~/.bash_aliases		        \
                         ~/.profile                      \
 			~/.tmux.conf			"
 
-alias nc="clear && nvim ~/.config/nvim/mappings.vim	\
+alias nv="clear && nvim ~/.config/nvim/mappings.vim	\
 			~/.config/nvim/plugins.vim	\
 			~/.config/nvim/abbrevs.vim	\
 			~/.config/nvim/mappings.vim	\
@@ -158,8 +158,8 @@ alias jj='fasd -f'
 alias disks='gnome-disks'
 alias sr='sudo reboot'
 alias na='nvim *'
-alias h1='e /media/jerry/h1'
-alias h2='e /media/jerry/h2'
+alias g1='e /media/jerry/h1'
+alias g2='e /media/jerry/h2'
 alias bp='clear && bpython --quiet'
 alias tee='cd ~/.texpander && nvim ./*'
 alias ps='~/Studying/Prog/Python/code/scratch.py'
@@ -194,4 +194,5 @@ alias npm-list='npm list -g --depth 0'
 alias gz='tar -zcvf'
 alias gzip='gzip --keep'
 alias mini='~/maps/emacs_mini/bin/emacs -q -l ~/.emacs.mini/init.el'
+alias nc='ncdu'
 # alias sp='export PS1="\e[38;5;196m$ \[\e[0m\]"'
