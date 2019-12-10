@@ -217,7 +217,7 @@ bindsym --release $mod+Shift+q exec xkill
 bindsym $mod+F5 exec --no-startup-id $Locker
 bindsym $mod+z exec --no-startup-id morc_menu
 bindsym F10 exec "~/maps/texpander/texpander.sh"
-[class="Slack"] move scratchpad; [title="term-ranger"] move scratchpad; [title="term-up"] move scratchpad; [title="term-bpython"] move scratchpad;
+
 bindsym $mod+Control+Return exec "xfce4-terminal"
 bindsym $mod+d exec dmenu_run -i -l 5 -fn 'Input Mono-13'
 bindsym --release Print exec "xfce4-screenshooter --region"
