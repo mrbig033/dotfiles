@@ -216,7 +216,8 @@ bindsym $mod+F12 exec "i3-msg exit"
 bindsym --release $mod+Shift+q exec xkill
 bindsym $mod+F5 exec --no-startup-id $Locker
 bindsym $mod+z exec --no-startup-id morc_menu
-bindsym F10 exec "~/maps/texpander/texpander.sh"
+bindsym F10 [class="Slack"] move scratchpad; [title="term-ranger"] move scratchpad; [title="term-up"] move scratchpad; [title="term-bpython"] move scratchpad;
+exec "~/maps/texpander/texpander.sh"
 
 bindsym $mod+Control+Return exec "xfce4-terminal"
 bindsym $mod+d exec dmenu_run -i -l 5 -fn 'Input Mono-13'
