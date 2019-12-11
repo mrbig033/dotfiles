@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+name="$1"
+tmux -L "$name" -s "$name"
