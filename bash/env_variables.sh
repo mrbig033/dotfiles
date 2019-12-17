@@ -9,6 +9,7 @@ export NNN_TRASH=1
 export s=/usr/share
 export PROMPT_DIRTRIM=2
 # export EA_EDITOR='emacsclient --socket-name=gui-emacs --alternate-editor="" --create-frame'
+export PYTHONHOME='PYTHONHOME'
 export EA_EDITOR='/home/files/dotfiles/scripts/emacs_scripts/eclauncher'
 export NVIM_GTK_NO_HEADERBAR=0
 export NVIM_GTK_NO_HEADERBAR=1
@@ -20,7 +21,7 @@ export MANPAGER="nvim -c 'set ft=man' -c 'set nowrap' -"
 export man="/home/dave/.local/share/man/man1"
 
 export FZF_DEFAULT_COMMAND
-FZF_DEFAULT_COMMAND="ppd=$(pwd) && fd -H -L -d 3 . $ppd"
+FZF_DEFAULT_COMMAND="ppd=$(pwd) && fdfind -H -L -d 3 . $ppd"
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 
 # export FZF_ALT_C

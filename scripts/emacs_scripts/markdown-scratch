@@ -1,0 +1,5 @@
+#!/bin/bash
+
+clear
+"$HOME"/scripts/emacs_scripts/eclauncher --eval "(my/goto-scratch-markdown)" &>/dev/null
+i3-msg "[class=Emacs]" focus &>/dev/null

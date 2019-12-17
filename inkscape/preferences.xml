@@ -335,8 +335,8 @@
        style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px"
        selcue="1">
       <group
-         display_unit="0"
-         id="lineheight" />
+         id="lineheight"
+         display_unit="0" />
     </eventcontext>
     <eventcontext
        id="nodes"
@@ -422,12 +422,12 @@
        offset="0"
        offsetunits="cm" />
     <group
-       unit="px"
-       offset="5"
-       scale="100"
-       precision="2"
+       id="measure"
        fontsize="10"
-       id="measure" />
+       precision="2"
+       scale="100"
+       offset="5"
+       unit="px" />
   </group>
   <group
      id="palette">
@@ -576,7 +576,7 @@
        x="0"
        y="0"
        w="352"
-       h="520"
+       h="475"
        visible="1"
        state="2"
        placement="5" />
@@ -598,7 +598,7 @@
        x="0"
        y="0"
        w="352"
-       h="520"
+       h="475"
        visible="1"
        state="2"
        placement="5" />
@@ -656,7 +656,7 @@
        x="0"
        y="0"
        w="352"
-       h="520"
+       h="475"
        visible="1"
        state="2"
        placement="5">
@@ -1034,8 +1034,8 @@
     <group
        id="rendering" />
     <group
-       id="kbshortcuts"
-       value="align" />
+       value="ungroup"
+       id="kbshortcuts" />
   </group>
   <group
      id="extensions"
@@ -1046,10 +1046,10 @@
      id="desktop"
      style="line-height:1.25;stroke-width:1.065;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:0;fill:#ffffff;-inkscape-font-specification:Roboto;font-family:Roboto;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:133.33333333px">
     <group
-       width="1920"
-       height="990"
-       x="0"
-       y="66"
+       width="956"
+       height="1010"
+       x="960"
+       y="44"
        fullscreen="0"
        id="geometry"
        maximized="0" />

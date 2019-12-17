@@ -4,7 +4,7 @@
 (dynamics "Dynamics Off")
 (gradient "FG to BG (RGB)")
 (palette "Color History")
-(brush-size 51.000000)
+(brush-size 6.560000)
 (brush-hardness 0.500000)
 
 # end of gimp-airbrush-tool options

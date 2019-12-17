@@ -1,6 +1,5 @@
 # -*- mode: sh -*-
 
 if [ -f ~/.bashrc ]; then
-   source ~/.bashrc
+    source ~/.bashrc
 fi
-if [ -e /home/jerry/.nix-profile/etc/profile.d/nix.sh ]; then . /home/jerry/.nix-profile/etc/profile.d/nix.sh; fi # added by Nix installer

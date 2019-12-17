@@ -1,0 +1,17 @@
+#!/usr/bin/env bash
+
+sudo apt -y install i3 i3status i3lock i3blocks rofi neovim           \
+lxappearance calibre zathura zathura-pdf-poppler qbittorrent uget     \
+xclip dmenu unclutter trash-cli arandr xbindkeys font-manager atool   \
+silversearcher-ag clang aspell-pt-br pandoc markdown xsel xdotool     \
+zenity lxde-settings-daemon w3m-img gcc-multilib make build-essential \
+python-all python-pip python3-pip  python-wheel python3-wheel         \
+python-setuptools python3-setuptools wget curl cmus                   \
+libssl-dev zlib1g-dev libbz2-dev libreadline-dev libsqlite3-dev llvm  \
+libncurses5-dev libncursesw5-dev xz-utils tk-dev libffi-dev           \
+liblzma-dev python-openssl git keepassxc gnome-disk-utility zenity    \
+libffi-dev wordnet simplescreenrecorder okular okular-extra-backends  \
+mercurial ninja-build gettext libtool libtool-bin autoconf automake   \
+cmake g++ pkg-config unzip gcc-multilib g++-multilib                  \
+libncurses-dev:i386 baobab xorg-dev xcape        \
+rubygems mpv feh

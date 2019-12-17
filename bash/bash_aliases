@@ -22,6 +22,7 @@ alias 7='clear && tmux attach -t 7 &>/dev/null || tmux switch-client -t 7 &>/dev
 alias 8='clear && tmux attach -t 8 &>/dev/null || tmux switch-client -t 8 &>/dev/null'
 alias 9='clear && tmux attach -t 9 &>/dev/null || tmux switch-client -t 9 &>/dev/null'
 alias new='tmux -L'
+alias rename='tmux rename-session'
 
 # alias bc='clear && tmux attach -t bc &>/dev/null || tmux switch-client -t bc &>/dev/null'
 alias bc="clear && nvim ~/.bash_aliases		        \
@@ -66,7 +67,7 @@ alias c='clear'
 alias md='mkdir'
 alias ll='ls -l'
 alias lt='ls -l --time-style=+"%a %H:%M:%S"'
-# alias g='grep -i'
+alias g='grep -i'
 alias fl='flatpak'
 alias tv='tvnamer'
 alias wh='whereis'

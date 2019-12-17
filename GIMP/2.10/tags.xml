@@ -10,10 +10,10 @@
     <tag>round</tag>
   </resource>
 
-  <resource identifier="gimp-brush-clipboard-image" checksum="157dcef48665ab465439cfaf10d6feeb">
+  <resource identifier="gimp-brush-clipboard-image" checksum="b2bd4307d0ff7c745a2e92ab7ef16ca1">
   </resource>
 
-  <resource identifier="gimp-brush-clipboard-mask" checksum="157dcef48665ab465439cfaf10d6feeb">
+  <resource identifier="gimp-brush-clipboard-mask" checksum="9843e6f916d6cc44ebddcd9efb292558">
   </resource>
 
   <resource identifier="${gimp_data_dir}/brushes/Basic/1-pixel.vbr" checksum="b22c1fec1056f979b1d17e4cc80e9112">
@@ -241,7 +241,7 @@
   <resource identifier="${gimp_data_dir}/dynamics/Velocity-Tapering.gdyn" checksum="(null)">
   </resource>
 
-  <resource identifier="gimp-pattern-clipboard-image" checksum="eff9598f9f61c1dc78d842f1798c2ab8">
+  <resource identifier="gimp-pattern-clipboard-image" checksum="90508e7e4ff5587c6c125fcc8804abe9">
   </resource>
 
   <resource identifier="${gimp_data_dir}/patterns/Legacy/3dgreen.pat" checksum="00052731f14a5bc614daece969b368bc">

@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+commit="automatic commit"
+
+clear
+echo ""
+echo "#adding all files#"
+git add -A
+echo ""
+echo "#commiting and pushing"#
+echo ""
+echo "#commit message:" "$commit"
+echo ""
+git commit -am "$commit" && git push
+echo ""

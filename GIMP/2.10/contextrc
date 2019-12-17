@@ -1,7 +1,7 @@
 # GIMP user context
 
-(tool "gimp-airbrush-tool")
-(paint-info "gimp-airbrush")
+(tool "gimp-fuzzy-select-tool")
+(paint-info "gimp-paintbrush")
 (brush "2. Hardness 050")
 (dynamics "Dynamics Off")
 (mybrush "Standard")
