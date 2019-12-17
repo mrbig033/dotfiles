@@ -2,9 +2,11 @@
 
 clear
 
+# system upgrade
 sudo apt -y update
 apt -y dist-upgrade
 
+# system packages
 sudo apt -y install i3 i3status i3lock i3blocks rofi neovim           \
 lxappearance calibre zathura zathura-pdf-poppler qbittorrent uget     \
 xclip dmenu unclutter trash-cli arandr xbindkeys font-manager atool   \
@@ -18,15 +20,17 @@ liblzma-dev python-openssl git keepassxc gnome-disk-utility zenity    \
 libffi-dev wordnet simplescreenrecorder okular okular-extra-backends  \
 mercurial ninja-build gettext libtool libtool-bin autoconf automake   \
 cmake g++ pkg-config unzip gcc-multilib g++-multilib                  \
-libncurses-dev:i386 build-essential:i386 baobab xorg-dev xcape        \
-rubygems mpv feh
+baobab xorg-dev xcape fasd rubygems mpv feh                           \
 
-sudo apt -y autoremove
-sudo apt -y autoclean
+# pyenv dependencies
+sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev  \
+libreadline-dev libsqlite3-dev wget curl llvm libncurses5-dev libncursesw5-dev \
+xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
+
+# pyenv install
 pip install --upgrade pip
 curl https://pyenv.run | bash
 
-# nvim
-mkdir --parents "$HOME"/maps && git clone https://github.com/neovim/neovim.git "$HOME"/maps/neovim
-make --directory="$HOME"/maps/neovim CMAKE_BUILD_TYPE=RelWithDebInfo
-sudo --directory="$HOME"/maps/neovim make install
+# clean
+sudo apt -y autoremove
+sudo apt -y autoclean

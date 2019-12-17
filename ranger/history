@@ -1,15 +1,3 @@
-md docs
-md misc
-md old
-compress mat_bh.7z
-touch convert-jpg.py
-md testing
-rename 15_pimentasv2.jpg
-touch cj
-rename img-hero
-rename bh-top-png
-rename bh-topv2.png
-rename bh-top-sm.png
 md css
 md img
 rename colt_bootstrap
@@ -49,9 +37,6 @@ touch .gitignore
 compress bulma.gz
 search dick
 search new
-search emacs
-search em
-rename .e
 search init
 search sou
 rename alert.mp3
@@ -60,7 +45,6 @@ rename elpa.b
 search gnu
 rename elpa
 search conf
-search 
 open_with 
 search vlc
 rename vlc.back
@@ -98,3 +82,19 @@ search pye
 rename .pyenv.b
 rename .pyenv
 search jedi
+find tm
+find 
+rename .emacs.d
+search em
+search emac
+search emacs
+rename emacs
+search 
+rename .e
+search org
+search cra
+search cre
+rename creative
+rename Creative
+rename .tmux
+search tmux

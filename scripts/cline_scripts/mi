@@ -2,4 +2,4 @@
 
 file="${1:-foo}"
 
-"$HOME"/maps/emacs_mini/bin/emacs -q -l ~/.emacs.mini/init.el "$file"
+emacs -q -nw --load "/home/jerry/.emacs.d/mini/init.el" "$file"
