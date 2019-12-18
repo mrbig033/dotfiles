@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+emacsclient --socket-name=term-emacs --alternate-editor="" --nw --create-frame --eval \(my/doom-Iosvkem\) --eval \(my/doom-modeline-settings\)

@@ -576,7 +576,7 @@
        x="0"
        y="0"
        w="352"
-       h="475"
+       h="520"
        visible="1"
        state="2"
        placement="5" />
@@ -598,7 +598,7 @@
        x="0"
        y="0"
        w="352"
-       h="475"
+       h="520"
        visible="1"
        state="2"
        placement="5" />
@@ -620,10 +620,10 @@
        panel_mode="1"
        panel_wrap="0"
        panel_border="0"
-       x="1844"
-       y="1058"
+       x="960"
+       y="540"
        w="1916"
-       h="982"
+       h="938"
        visible="0"
        placement="1" />
     <group
@@ -656,23 +656,23 @@
        x="0"
        y="0"
        w="352"
-       h="475"
+       h="520"
        visible="1"
        state="2"
        placement="5">
       <group
          id="exportarea"
-         value="drawing" />
+         value="page" />
       <group
          id="defaultxdpi"
          value="96.03" />
     </group>
     <group
        id="save_as"
-       default="org.inkscape.output.svg.inkscape"
+       default="org.inkscape.output.svg.plain"
        append_extension="1"
        enable_preview="1"
-       path=""
+       path="/home/jerry/Desktop"
        use_current_dir="1" />
     <group
        id="save_copy"
@@ -1046,10 +1046,10 @@
      id="desktop"
      style="line-height:1.25;stroke-width:1.065;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:0;fill:#ffffff;-inkscape-font-specification:Roboto;font-family:Roboto;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:133.33333333px">
     <group
-       width="956"
-       height="1010"
-       x="960"
-       y="44"
+       width="1920"
+       height="968"
+       x="0"
+       y="88"
        fullscreen="0"
        id="geometry"
        maximized="0" />

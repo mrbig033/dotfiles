@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+
+file=${1:-new}
+emacsclient --socket-name=term-emacs --alternate-editor="" --nw --create-frame "$file"

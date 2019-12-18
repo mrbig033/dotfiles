@@ -165,7 +165,7 @@ bindsym $mod+F12 exec "i3-msg exit"
 bindsym --release $mod+Shift+q exec xkill
 bindsym $mod+F5 exec --no-startup-id $Locker
 bindsym $mod+z exec --no-startup-id morc_menu
-bindsym F10 [class="Slack"] move scratchpad; [title="term-ranger"] move scratchpad; [title="term-up"] move scratchpad; [title="term-bpython"] move scratchpad; exec "~/maps/texpander/texpander.sh"
+# bindsym F10 [class="Slack"] move scratchpad; [title="term-ranger"] move scratchpad; [title="term-up"] move scratchpad; [title="term-bpython"] move scratchpad; exec "~/maps/texpander/texpander.sh"
 bindsym $mod+Control+Return exec "xfce4-terminal"
 bindsym $mod+d exec dmenu_run -i -l 5 -fn 'Input Mono-13'
 bindsym --release Print exec "xfce4-screenshooter --region"
@@ -207,7 +207,8 @@ bindsym s exec "~/scripts/i3_scripts/startup-manual"; mode default
 bindsym Shift+p [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "sudo poweroff"; mode default
 bindsym k exec "/home/jerry/dotfiles/scripts/keyboard/keyboard-default/init_keys.sh &"; mode default
 bindsym Shift+k exec "/home/jerry/dotfiles/scripts/keyboard/ik &"; mode default
-bindsym Shift+w exec feh --recursive --randomize --bg-fill ~/Wallpaper; mode default
+bindsym Shift+w exec feh --recursive --randomize --bg-fill ~/Desktop/black.png; mode default
+
 bindsym Shift+r exec "/home/jerry/dotfiles/scripts/cline_scripts/restart_terminals"; mode default
 bindsym z exec "google-chrome-stable"; mode default
 bindsym q exec "qbittorrent"; mode default
@@ -398,12 +399,9 @@ bindsym $mod+Control+Shift+Left move workspace to output Left
 # bindsym $mod+Shift+p focus output Left
 
 bindsym XF86AudioPlay exec playerctl play-pause
-bindsym XF86AudioMute exec amixer -q set Master toggle
-bindsym XF86AudioRaiseVolume exec amixer set Master 10%+
-bindsym XF86AudioLowerVolume exec amixer set Master 10%-
-bindsym $mod+XF86AudioRaiseVolume exec amixer set Master 200%+
-bindsym $mod+$alt+XF86AudioRaiseVolume exec amixer set Master 5%+
-bindsym $mod+$alt+XF86AudioLowerVolume exec amixer set Master 5%-
+bindsym XF86AudioMute exec "pactl set-sink-mute 0 toggle"
+bindsym XF86AudioRaiseVolume exec "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 +20%"
+bindsym XF86AudioLowerVolume exec "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 -20%"
 
 for_window [class="GParted"] floating disable border normal
 for_window [class="Gnome-pomodoro"] floating disable

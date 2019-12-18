@@ -1,3 +1,0 @@
-#!/usr/bin/env bash
-
-emacsclient --socket-name=term-emacs --alternate-editor="" --nw --create-frame 

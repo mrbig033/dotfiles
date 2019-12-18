@@ -8,6 +8,10 @@ add control = Control_L Control_R
 keycode 64 = Tab
 keycode 23 = Alt_L
 ! {{{ F10 to altgr
-keycode 96 = Alt_R
-keycode 108 = F10
+! keycode 96 = Alt_R
+! keycode 108 = F10
+!}}}
+! {{{ F10 to Space
+! keycode 96 = Alt_R
+keycode 108 = space
 !}}}

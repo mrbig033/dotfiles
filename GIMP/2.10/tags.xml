@@ -10,37 +10,37 @@
     <tag>round</tag>
   </resource>
 
-  <resource identifier="gimp-brush-clipboard-image" checksum="b2bd4307d0ff7c745a2e92ab7ef16ca1">
+  <resource identifier="gimp-brush-clipboard-image" checksum="157dcef48665ab465439cfaf10d6feeb">
   </resource>
 
-  <resource identifier="gimp-brush-clipboard-mask" checksum="9843e6f916d6cc44ebddcd9efb292558">
+  <resource identifier="gimp-brush-clipboard-mask" checksum="157dcef48665ab465439cfaf10d6feeb">
   </resource>
 
-  <resource identifier="${gimp_data_dir}/brushes/Basic/1-pixel.vbr" checksum="b22c1fec1056f979b1d17e4cc80e9112">
+  <resource identifier="${gimp_data_dir}/brushes/Basic/1-pixel.vbr" checksum="c84494b4a904a7c1a3548e564b073ca3">
   </resource>
 
-  <resource identifier="${gimp_data_dir}/brushes/Basic/Block-01.vbr" checksum="0c11d7446cf257c986434b8037b53c10">
+  <resource identifier="${gimp_data_dir}/brushes/Basic/Block-01.vbr" checksum="11dc53930c1fb124f5502d3e2dba4c8e">
   </resource>
 
-  <resource identifier="${gimp_data_dir}/brushes/Basic/Block-02.vbr" checksum="a6ab0bd0159ddcde4405e9cf0d3a07fc">
+  <resource identifier="${gimp_data_dir}/brushes/Basic/Block-02.vbr" checksum="23b547a4b3ac156c4efba20bbb91a662">
   </resource>
 
-  <resource identifier="${gimp_data_dir}/brushes/Basic/Block-03.vbr" checksum="496ee7e87ff7fa78888717784a4fc6b0">
+  <resource identifier="${gimp_data_dir}/brushes/Basic/Block-03.vbr" checksum="678860176ea362c2d3db787b8b0710fa">
   </resource>
 
-  <resource identifier="${gimp_data_dir}/brushes/Basic/Hardness-025.vbr" checksum="0e82572c8b71c4155e7364d66bc0ffce">
+  <resource identifier="${gimp_data_dir}/brushes/Basic/Hardness-025.vbr" checksum="24f599a94c72395b1733a8cf64bf4527">
   </resource>
 
-  <resource identifier="${gimp_data_dir}/brushes/Basic/Hardness-050.vbr" checksum="1203f10747c787a9345529a4b5150a5e">
+  <resource identifier="${gimp_data_dir}/brushes/Basic/Hardness-050.vbr" checksum="22550538bb856626930902cb0c398f74">
   </resource>
 
-  <resource identifier="${gimp_data_dir}/brushes/Basic/Hardness-075.vbr" checksum="eaf8d3adf6df55c97dd30aee0a1bba22">
+  <resource identifier="${gimp_data_dir}/brushes/Basic/Hardness-075.vbr" checksum="c196ef1b139d8f2744e6519c7a220cf1">
   </resource>
 
-  <resource identifier="${gimp_data_dir}/brushes/Basic/Hardness-100.vbr" checksum="c67eef177816d6ef25cc790cb54ab9e3">
+  <resource identifier="${gimp_data_dir}/brushes/Basic/Hardness-100.vbr" checksum="22b8f688f7cd7d6139c56dfc33b14bfd">
   </resource>
 
-  <resource identifier="${gimp_data_dir}/brushes/Basic/Star.vbr" checksum="9f799f34788daa90ffb9cf981226a120">
+  <resource identifier="${gimp_data_dir}/brushes/Basic/Star.vbr" checksum="fdd1163d5fdf7371df2dd7896e79231a">
   </resource>
 
   <resource identifier="${gimp_data_dir}/brushes/Media/Acrylic-01.gih" checksum="9ec0779f4c84fb3d0844bcdb069c8e0a">
@@ -59,6 +59,9 @@
   </resource>
 
   <resource identifier="${gimp_data_dir}/brushes/Legacy/confetti.gih" checksum="d136b60fdd9cf41693a485a329b32e95">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/brushes/bird.gbr" checksum="4d8fafedd5e7eb332f35354cc4618935">
   </resource>
 
   <resource identifier="${gimp_data_dir}/brushes/Media/Bristles-01.gbr" checksum="fdb59dabc3b9fc9716bd87cfe225ba3b">
@@ -94,19 +97,58 @@
   <resource identifier="${gimp_data_dir}/brushes/Sketch/Charcoal-03.gih" checksum="2be01e62b00a1c1fdc13aa92a7a91a6a">
   </resource>
 
+  <resource identifier="${gimp_data_dir}/brushes/bigcircle4.gbr" checksum="05a6a929c3b830a8d846c1e3b9d38c40">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/brushes/cloth.gbr" checksum="6d9cb51073a70f42301cd65a155d87cc">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/brushes/50x50cone.gbr" checksum="ba645e81eb7f044f6086c83b8ee2bca6">
+  </resource>
+
   <resource identifier="${gimp_data_dir}/brushes/Legacy/confetti.gbr" checksum="ba5a4759cb321b81e232bba3f33dce76">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/brushes/gecko.gbr" checksum="3385de4ead939312bafbc45479579d7e">
   </resource>
 
   <resource identifier="${gimp_data_dir}/brushes/Fun/GEGL-goat.gih" checksum="7a80114d08663b04b3825b92db7e98c4">
   </resource>
 
+  <resource identifier="${gimp_data_dir}/brushes/bigcircle.gbr" checksum="ce0accff4a1e2e587fa0d03ce3462dac">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/brushes/bigcircle3.gbr" checksum="0a3abe8ca105feae0a36da53a9aeba27">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/brushes/bigcircle2.gbr" checksum="4d0eda864664e31b9287a194d44d8e61">
+  </resource>
+
   <resource identifier="${gimp_data_dir}/brushes/Texture/Grass.gih" checksum="81d3c86640806e7ad40f5e0c93d941ef">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/brushes/grid.gbr" checksum="070422f8bfc6e4726a1d23e21fe1c6f6">
   </resource>
 
   <resource identifier="${gimp_data_dir}/brushes/Splatters/Grunge-01.gih" checksum="c9997d3cd91fccddfac507856b7dc17b">
   </resource>
 
+  <resource identifier="${gimp_data_dir}/brushes/guitar.gbr" checksum="c348bdfaa24aab42881ab754008e494f">
+  </resource>
+
   <resource identifier="${gimp_data_dir}/brushes/Texture/Hatch-Pen-01.gbr" checksum="97bc16ea1390946dc8f2c626294af921">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/brushes/grid2.gbr" checksum="7739bdcbe8c5097ba8579000c64da77d">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/brushes/flower.gbr" checksum="f8beec753aed3e7bdc86573ff1044a0a">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/brushes/flower_large.gbr" checksum="2e6581e0ab3e65de18038245d01faa9e">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/brushes/nova.gbr" checksum="083d1a8923d05af661491970f6e2eca5">
   </resource>
 
   <resource identifier="${gimp_data_dir}/brushes/Media/Oils-01.gbr" checksum="31ae0d62365e54402dcfe80784c6d691">
@@ -133,10 +175,31 @@
   <resource identifier="${gimp_data_dir}/brushes/Basic/pixel.gbr" checksum="ce0705096e61dc0645b2c13a122d8e8f">
   </resource>
 
+  <resource identifier="${gimp_data_dir}/brushes/qbert2.gbr" checksum="2e222616b061ef3cec2065568dd70074">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/brushes/qbert3Blur.gbr" checksum="d78c21542bcfc2e41157dc6b7614ce61">
+  </resource>
+
   <resource identifier="${gimp_data_dir}/brushes/Texture/Smoke.gbr" checksum="eb1577def9f3a209b3457a9c99333dd9">
   </resource>
 
   <resource identifier="${gimp_data_dir}/brushes/Splatters/Sparks-Hose.gih" checksum="50faf43769ea9c6986fa38839e348b77">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/brushes/sphere29.gbr" checksum="9ba9013fe55effbb9d3a5b8b0c5c4714">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/brushes/sphere36.gbr" checksum="26c0ea43ee858383f6bc73694ecdb247">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/brushes/sphere47.gbr" checksum="d27827965ea53483324684fe8c9e9f89">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/brushes/sphere55.gbr" checksum="74eabc417c91cf44eb854a119b67688e">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/brushes/sphere79.gbr" checksum="14ffd1b9fdd01be3221cfb558bc47c22">
   </resource>
 
   <resource identifier="${gimp_data_dir}/brushes/Splatters/Splats-01.gih" checksum="5ce135cbb844ce745db15150c15acde9">
@@ -151,13 +214,46 @@
   <resource identifier="${gimp_data_dir}/brushes/Splatters/Sponge-02.gbr" checksum="4c0798a6621eef155dc86a79fe5df810">
   </resource>
 
+  <resource identifier="${gimp_data_dir}/brushes/50x50squareBlur.gbr" checksum="45bdcd6486b4bc09db2fa067bd9aebc5">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/brushes/50x50squareBlur2.gbr" checksum="d06c437ab15a0d3eadf3878a0336c286">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/brushes/50x50square.gbr" checksum="0126118323f02346b9a8cec9cd799fa9">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/brushes/star5.gbr" checksum="27ae3fd3f777d2ad010fda9ba8e9cd23">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/brushes/star2.gbr" checksum="397d9dc8324455beba5b8aaaf53590d1">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/brushes/star1.gbr" checksum="ef1d1bea79f3c715e6e2421346f33768">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/brushes/star3.gbr" checksum="e182d3f073fa62fef4a09e06dcc39786">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/brushes/star4.gbr" checksum="2ac33b6af6cb381f76969576ef54cb75">
+  </resource>
+
   <resource identifier="${gimp_data_dir}/brushes/Texture/Stone-Work-01.gih" checksum="8f1a964051f81e166def5b00fce15e27">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/brushes/swirl.gbr" checksum="8164c11257d4742985288c170895facf">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/brushes/swirl2.gbr" checksum="ff093edb8562860cc79db327593fc68b">
   </resource>
 
   <resource identifier="${gimp_data_dir}/brushes/Texture/Texture-01.gbr" checksum="6c41a55e3cfaf5dc03988f05be6106f8">
   </resource>
 
   <resource identifier="${gimp_data_dir}/brushes/Texture/Texture-02.gbr" checksum="a2459f434c81d8eefeb063c005db9d80">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/brushes/text4.gbr" checksum="9b6505545017542316cf122d285a9e40">
   </resource>
 
   <resource identifier="${gimp_data_dir}/brushes/Texture/Texture-Hose-01.gih" checksum="c36845a56879e601fbfeada31f5b414b">
@@ -169,6 +265,18 @@
   <resource identifier="${gimp_data_dir}/brushes/Texture/Texture-Hose-03.gih" checksum="d2818e2a9346edf7c76aeea5a215f5ca">
   </resource>
 
+  <resource identifier="${gimp_data_dir}/brushes/text1.gbr" checksum="0ac20e8908fc4a9d739bfdf79bd54419">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/brushes/text3.gbr" checksum="60da953596c920fad4219f89af0625ca">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/brushes/text2.gbr" checksum="6e78ba4783bfc68bc34476d415cbcefe">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/brushes/tulip.gbr" checksum="46be039588417a2782ca003860639bdb">
+  </resource>
+
   <resource identifier="${gimp_data_dir}/brushes/Texture/Vegetation-01.gbr" checksum="5f180b3d17ee11a9367489f2a597a451">
   </resource>
 
@@ -176,6 +284,9 @@
   </resource>
 
   <resource identifier="${gimp_data_dir}/brushes/Legacy/vine.gih" checksum="3963e1de9cf5ead1f8cb6332b9351c6f">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/brushes/wave.gbr" checksum="a2b5c4f0475457170d07ecb0a45a988e">
   </resource>
 
   <resource identifier="${gimp_data_dir}/brushes/Fun/Wilber.gih" checksum="1525d51a45fc9c0fea1cc1a0bf4d5b2a">
@@ -241,10 +352,22 @@
   <resource identifier="${gimp_data_dir}/dynamics/Velocity-Tapering.gdyn" checksum="(null)">
   </resource>
 
-  <resource identifier="gimp-pattern-clipboard-image" checksum="90508e7e4ff5587c6c125fcc8804abe9">
+  <resource identifier="gimp-pattern-clipboard-image" checksum="eff9598f9f61c1dc78d842f1798c2ab8">
   </resource>
 
   <resource identifier="${gimp_data_dir}/patterns/Legacy/3dgreen.pat" checksum="00052731f14a5bc614daece969b368bc">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/3dweave.pat" checksum="2c8e448771f2d379d52f0e0941d3c320">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/startile.pat" checksum="a5abbd6a3e5a21ed39ae03c68794873f">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/abstract_flowers.pat" checksum="242d257de336e3d739bd9557aeaffa3f">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/dunemaze.pat" checksum="29b4306b195c942db12b610b93c5d3fb">
   </resource>
 
   <resource identifier="${gimp_data_dir}/patterns/Stone/amethyst.pat" checksum="ac004a0215ba837c01964226611635c0">
@@ -253,7 +376,40 @@
   <resource identifier="${gimp_data_dir}/patterns/Legacy/blue.pat" checksum="9505c5e2df62d486dfd110eb08d9c022">
   </resource>
 
+  <resource identifier="${gimp_data_dir}/patterns/bwcubes.pat" checksum="4bdf917586b9b76010ff81f9e2409f16">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/blackwhitefloor.pat" checksum="f96cf8207e41089b3f92ff18c33d9cc8">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/blackoil.pat" checksum="075ad42609b414eb354752d802f69a7e">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/blob1.pat" checksum="2ead083b8a6506bc7e1bc140f03bdd15">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/blob2.pat" checksum="3b7e2a920fde1daae90222f84b465ae1">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/bluebar.pat" checksum="f0dce887c6acc0f828842ee1ff36134c">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/bluecanyons.pat" checksum="6341a240d484c6791d90b06070c562b0">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/bluemars.pat" checksum="e8dc5b46dafc7cc4545fa6140d1d9c35">
+  </resource>
+
   <resource identifier="${gimp_data_dir}/patterns/Legacy/bluegrid.pat" checksum="3ae3c2b4b499381174ccf8a49b8c205f">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/bluemetal.pat" checksum="832ab48415fddb091248e47a3c59848e">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/electric-blue-ribbons.pat" checksum="fedf257f838a36228e6a1fdfaabb3a6e">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/bluespikes.pat" checksum="58e0f25947394201a49ead8615702042">
   </resource>
 
   <resource identifier="${gimp_data_dir}/patterns/Legacy/bluesquares.pat" checksum="6ae618f4f9833a1030fbf58c149c7241">
@@ -265,13 +421,49 @@
   <resource identifier="${gimp_data_dir}/patterns/Stone/brick.pat" checksum="1f241d71810da697b596525c50054ee7">
   </resource>
 
+  <resource identifier="${gimp_data_dir}/patterns/brownie.pat" checksum="a7c86fd8b7d11cf168ca5777cb0b2c8c">
+  </resource>
+
   <resource identifier="${gimp_data_dir}/patterns/Fabric/burlap.pat" checksum="6046ce5617773e56cbc602842cd55124">
   </resource>
 
   <resource identifier="${gimp_data_dir}/patterns/Wood/burlwood.pat" checksum="3362a830595ec24c532d25fca6e82841">
   </resource>
 
+  <resource identifier="${gimp_data_dir}/patterns/canyons2.pat" checksum="5a5e2f291a53fcd2551b7cee56a9e777">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/cashew.pat" checksum="1063526ff0586d8a913fb89a6ab01d7f">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/chains.pat" checksum="3f9a65792d0b441a350ff34d7b5349a0">
+  </resource>
+
   <resource identifier="${gimp_data_dir}/patterns/Food/choc_swirl.pat" checksum="8f00b531d09279a0f7aa0c3208e26206">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/chroma.pat" checksum="20814cffea675909ff2cc9dfa7450d05">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/clouds.pat" checksum="c387cff3e4c2fb5897b08f217ab561e7">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/clovers.pat" checksum="13bacf8eb0532281bcdbd7be2e3fbfba">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/coins.pat" checksum="746c13658b01f02708999ecf681bf97d">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/colored_rock.pat" checksum="7a21899c82c6ed1febce3c05e1b6ff44">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/colorwhirl.pat" checksum="5c5a8999334e70255b196d083f652189">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/connestoga.pat" checksum="eb21061cf107180ac6b84234e1b6c603">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/contrawhirl.pat" checksum="cb669179518d440157e81ce7af9c2940">
   </resource>
 
   <resource identifier="${gimp_data_dir}/patterns/Wood/corkboard.pat" checksum="e0e344790d5425d5afe695b9b67b9a51">
@@ -280,37 +472,169 @@
   <resource identifier="${gimp_data_dir}/patterns/Stone/cracked.pat" checksum="31e59d7417cb4ef2dddd53cf2e136b2d">
   </resource>
 
+  <resource identifier="${gimp_data_dir}/patterns/crash1.pat" checksum="293b96cd88fb30c7e14a7155d9d4f1e4">
+  </resource>
+
   <resource identifier="${gimp_data_dir}/patterns/Stone/Craters.pat" checksum="6286edd005a095e1d20209bd8c63c130">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/crazytile.pat" checksum="0a8f82c39699befc2402d183022ef7b8">
   </resource>
 
   <resource identifier="${gimp_data_dir}/patterns/Paper/crinklepaper.pat" checksum="b53d9e73d9c352e6cc4c94be921ba4d2">
   </resource>
 
+  <resource identifier="${gimp_data_dir}/patterns/crystals.pat" checksum="d37931606cc5b1c4f767a93d01526742">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/curvedledge.pat" checksum="b01ab13ddec57be8eb2c84689df9157f">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/redrings.pat" checksum="579a6c74ac3f5bfd599572ce7ab42870">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/deepswirl.pat" checksum="332995f8fb5a8aed798ec284763a1a95">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/diffpat.pat" checksum="57957b46218da334aab1888cee6ea702">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/dirt.pat" checksum="ef66825c8c291eee9593f2d4fd8dc71e">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/disco.pat" checksum="9c2f5af672d1941b265c7537b0321b77">
+  </resource>
+
   <resource identifier="${gimp_data_dir}/patterns/Stone/ground1.pat" checksum="00f690561e89d65d4b1257f0823b9977">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/dunes.pat" checksum="8201fd8a3668ba39bedb8755932a9bf0">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/eggcarton.pat" checksum="4a475c91d20e470ca1069268b85d5a1f">
   </resource>
 
   <resource identifier="${gimp_data_dir}/patterns/Water/electric.pat" checksum="c81aa3894d24289215497524598da855">
   </resource>
 
+  <resource identifier="${gimp_data_dir}/patterns/paint-explosion.pat" checksum="17fe2aa7b2b036e9fb6c33055194aff7">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/etbf.pat" checksum="bbb69748e46e17a392cf041059696d41">
+  </resource>
+
   <resource identifier="${gimp_data_dir}/patterns/Legacy/fibers.pat" checksum="2830a6fc5f66e85493efedb4d4c6a84c">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/land1.pat" checksum="17d325785be9b28a20547664a89ee1aa">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/floor_tile.pat" checksum="a9539755f01aca51e16a6f4bb671e7e7">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/funnyblobs.pat" checksum="b6d67357921e8e489c1846ddd1e7d374">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/funnymess.pat" checksum="7824c45265464eb95cb6d9ef8ec7155a">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/funnymess2.pat" checksum="ce9c2a399937ed187b5d2592222cc31c">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/purple_glow.pat" checksum="be73a89e5fca0b92fc6a520b624473a6">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/fuzzy-colors.pat" checksum="11762cfaf3c7b8232744d997e77bddfe">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/send1.pat" checksum="6ec6d8fbd5dbe9ac7ec777ae3d081dc8">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/swirl2.pat" checksum="5a8ab11893cf28b6b66ba8a5844caefa">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/cow.pat" checksum="93789f509ef7c63bc13108c5d8469ebe">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/gold.pat" checksum="125aa3b650db891bf5bf979dd12f39fb">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/goldcloth.pat" checksum="0f978270e138cb1435dcab26bb1a2122">
   </resource>
 
   <resource identifier="${gimp_data_dir}/patterns/Stone/granite1.pat" checksum="c6220b4ee84951282053d96da7c0df91">
   </resource>
 
+  <resource identifier="${gimp_data_dir}/patterns/granite2.pat" checksum="36ecb60c88c6829d8919863d11542ee8">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/green_curtains.pat" checksum="43576b715b057fcfd802313c69ed92c3">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/green_eek.pat" checksum="17059a0ad15894079f10a2aa384f5cec">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/waves.pat" checksum="96184eb75720b7e49632cdf4d0f0cf07">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/greyweave.pat" checksum="a37aa1f18a382eccca1045dfb5363d42">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/greyweave2.pat" checksum="bec1aa114d76791a2e4eb7278b43ea88">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/grid.pat" checksum="e1533aa2ce8422a93f3b6de88447aa00">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/gridwhirltile.pat" checksum="8307ba7c20efc1d665925cdded1735a7">
+  </resource>
+
   <resource identifier="${gimp_data_dir}/patterns/Water/ice.pat" checksum="3248a69c033c15e46356a9ecb996c652">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/ice2.pat" checksum="3e6c7f8507bb4c04c40b15483c8637f5">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/icechex.pat" checksum="1d50a9ce07b1296d1183a4a4f5ac13a3">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/headache.pat" checksum="cb5c9e1b3d6b21a4b70b95a5b87198fb">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/inlay.pat" checksum="2be89b5a80fbd680f8a01e47d19a8c17">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/circuit.pat" checksum="c6b8faa735ad4a262cb34b1382900a23">
   </resource>
 
   <resource identifier="${gimp_data_dir}/patterns/Food/java.pat" checksum="e66740db4790b501508b84b780a4158b">
   </resource>
 
+  <resource identifier="${gimp_data_dir}/patterns/krinkle.pat" checksum="5ef0c2a58e6a12cba66e3a875e6f7b58">
+  </resource>
+
   <resource identifier="${gimp_data_dir}/patterns/Animal/leather.pat" checksum="18fae1b0cb726162fda4c8a850ce6665">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/leaves3.pat" checksum="18a0420efcf990081e76b1acdaba4437">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/leaves4.pat" checksum="d8043f19526cd9d3d9c9edfabd622816">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/leaves6.pat" checksum="247c1bacb72ae0c2183d35bd421bb54c">
   </resource>
 
   <resource identifier="${gimp_data_dir}/patterns/Animal/leopard.pat" checksum="e8518a613d2df2bfa1ce16c6f19380c0">
   </resource>
 
   <resource identifier="${gimp_data_dir}/patterns/Sky/lightning.pat" checksum="e53b923bdeccd742866cc836127b53cb">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/lumps.pat" checksum="3a9ab4f4f8b07b204e85683729dbfd4e">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/pj.pat" checksum="3fa9fd5d7b973e1e86785344690d9d93">
   </resource>
 
   <resource identifier="${gimp_data_dir}/patterns/Plant/leaves.pat" checksum="991d0263a630f7d9379f3181cc5cf4dd">
@@ -325,10 +649,55 @@
   <resource identifier="${gimp_data_dir}/patterns/Stone/marble3.pat" checksum="188e4483a8ad8d7adad18cb7475f2d4c">
   </resource>
 
+  <resource identifier="${gimp_data_dir}/patterns/meltedcolors.pat" checksum="26205a6f0a8832442c634840dd2dd8a1">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/worn_metal_chex.pat" checksum="dc469f951643470ade56358ed16bfde2">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/metallica.pat" checksum="f75e8a7babefc0edf039fa591f44637f">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/metalpaths.pat" checksum="8a8325c9abbb655230fd242dab5466a5">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/money.pat" checksum="33ba1a1922bd369e78fb307d9b2839ac">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/drymud.pat" checksum="f1920d93b035784e3eed0112049da860">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/spectbar.pat" checksum="8c4214d57f349098e8ef572757bd987a">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/colorblob.pat" checksum="bcfc9194d527c8f0fab790d6ae79a386">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/mhuerock.pat" checksum="82f6d74906f3918677763c2e159d7481">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/neurons.pat" checksum="5698086ed9dc58afcb03552030fa1766">
+  </resource>
+
   <resource identifier="${gimp_data_dir}/patterns/Legacy/nops.pat" checksum="8e398be1aaa1b1ac6392ebb5a8dd5831">
   </resource>
 
+  <resource identifier="${gimp_data_dir}/patterns/novaugh.pat" checksum="37b5a6b99a178d958b4d6b3e61cbb54b">
+  </resource>
+
   <resource identifier="${gimp_data_dir}/patterns/Stone/Moonfoot.pat" checksum="690271aaafee910dfc7b3fe2888c65cd">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/oooh.pat" checksum="94a989da3749881e262c76a59645da3f">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/orange_eek.pat" checksum="bc68364643ddd7cbd9ff71a7dd681309">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/orangebrown.pat" checksum="3a150cbbcf988f4d46f39e09574a8e47">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/orangecheese.pat" checksum="ceda2790b5313afde1bdea51920acf20">
   </resource>
 
   <resource identifier="${gimp_data_dir}/patterns/Paper/paper.pat" checksum="460447543ed49484ecf388d14d123eb8">
@@ -343,7 +712,13 @@
   <resource identifier="${gimp_data_dir}/patterns/Wood/parque3.pat" checksum="a99fdcc9bc2814e7d51e05faeb07ec85">
   </resource>
 
+  <resource identifier="${gimp_data_dir}/patterns/pastel2.pat" checksum="2780f46bee2e2850d55ec7f9b62e7530">
+  </resource>
+
   <resource identifier="${gimp_data_dir}/patterns/Legacy/pastel.pat" checksum="9173341213573b8c87467733c34078ba">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/pebbles.pat" checksum="a9054832fc20dc331223b0adc4ab20e6">
   </resource>
 
   <resource identifier="${gimp_data_dir}/patterns/Wood/pine.pat" checksum="52fc540af9e485c532b96f3b2724ad74">
@@ -355,7 +730,19 @@
   <resource identifier="${gimp_data_dir}/patterns/Stone/pink_marble.pat" checksum="51a9ca43d2baf5243cb79d8a2f4db20f">
   </resource>
 
+  <resource identifier="${gimp_data_dir}/patterns/pixeled1.pat" checksum="1e697cf2a753f15a4d572d346a3c8c16">
+  </resource>
+
   <resource identifier="${gimp_data_dir}/patterns/Water/pool.pat" checksum="b4f48469ab59632276d2b4d9af9dbde8">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/psycho1.pat" checksum="b32552712c5f4e74b66faf4be8d4df32">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/purple.pat" checksum="f59e057849eb18eeaf600717e3e6fb44">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/purple-ribbons.pat" checksum="3b2f8c434896fd5ef941267ae1ca18dd">
   </resource>
 
   <resource identifier="${gimp_data_dir}/patterns/Legacy/qube1.pat" checksum="3b96b82e490bea730e17dd752ffb7bc9">
@@ -364,19 +751,40 @@
   <resource identifier="${gimp_data_dir}/patterns/Water/rain.pat" checksum="8babfb520276b39f918aa059ca1594be">
   </resource>
 
+  <resource identifier="${gimp_data_dir}/patterns/oooh3.pat" checksum="6a223bdc96ac0aff23fc99598a71b01a">
+  </resource>
+
   <resource identifier="${gimp_data_dir}/patterns/Legacy/recessed.pat" checksum="2743a836d39c547e0d83de27bffb45c1">
   </resource>
 
   <resource identifier="${gimp_data_dir}/patterns/Legacy/redcube.pat" checksum="f64dee0efbc2fa301d7b4f3903a68308">
   </resource>
 
+  <resource identifier="${gimp_data_dir}/patterns/redishstuff.pat" checksum="624b68257fa33ddf43d92459900d79e3">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/redmess.pat" checksum="bf958d8b1b22067789f1925d46d70803">
+  </resource>
+
   <resource identifier="${gimp_data_dir}/patterns/Stone/rock.pat" checksum="93bc028e503811f0908f4de70681b733">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/rust.pat" checksum="d0cf107b43a4f9a5223e67c9ffb5ce7a">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/sandytext.pat" checksum="ab8d9487edd5252f3f7df9c75b105f4a">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/silver.pat" checksum="d946f7ab97af7a4d2ec7914399e719a6">
   </resource>
 
   <resource identifier="${gimp_data_dir}/patterns/Sky/sky.pat" checksum="78ffe7ed45f4cd89859a653debebc84c">
   </resource>
 
   <resource identifier="${gimp_data_dir}/patterns/Stone/slate.pat" checksum="fb10d3127362b61330e77ced0edddd7e">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/slice1.pat" checksum="19eb626dbdf4e297d31f0cbba436050d">
   </resource>
 
   <resource identifier="${gimp_data_dir}/patterns/Legacy/sm_squares.pat" checksum="4ba7d3135d74ec48bca8ee42c9645866">
@@ -394,16 +802,46 @@
   <resource identifier="${gimp_data_dir}/patterns/Legacy/Stripes1px.pat" checksum="7343d6b31434a2e736de3c5ab5197424">
   </resource>
 
+  <resource identifier="${gimp_data_dir}/patterns/swirl.pat" checksum="25020ebda456f25bfb8ced8e5900c9fa">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/lathe.pat" checksum="75b6a52e03714768956eef531f1294c8">
+  </resource>
+
   <resource identifier="${gimp_data_dir}/patterns/Stone/terra.pat" checksum="45c52055d10cc53a7a280777e6b76382">
   </resource>
 
+  <resource identifier="${gimp_data_dir}/patterns/land2.pat" checksum="79bfe2416ef01ccfa1a4b5bf6a44b94a">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/torrents.pat" checksum="f1f83d1e5e5b105687165ddb6cd7cfc6">
+  </resource>
+
   <resource identifier="${gimp_data_dir}/patterns/Wood/bark.pat" checksum="3d9dffc8833fe742b90c1a1f2f87e76c">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/tube.pat" checksum="dc080cba57715369a33da85700e120ff">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/unsharpswirl.pat" checksum="d49828143d04da3daa62cc1c7a30e54d">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/whirledstuff.pat" checksum="92bd3aad60a6b80d826b79ad86aa7b3b">
   </resource>
 
   <resource identifier="${gimp_data_dir}/patterns/Wood/walnut.pat" checksum="56b154ad68b400a4b62c62f314e278d4">
   </resource>
 
   <resource identifier="${gimp_data_dir}/patterns/Legacy/warning.pat" checksum="bacf4a9e22fb7e97d705739ebf1aa205">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/water3.pat" checksum="4d92ba7c423b71eff5cf7bd7bb336dee">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/wax.pat" checksum="5c9c6491596981124e5f6f6b93ccb824">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/weird2.pat" checksum="a60ec366c2cc06997f2fe082912c34e3">
   </resource>
 
   <resource identifier="${gimp_data_dir}/patterns/Wood/wood5.pat" checksum="9a3b13cfc2d4a3b18bd7754506fe9ac6">
@@ -413,6 +851,9 @@
   </resource>
 
   <resource identifier="${gimp_data_dir}/patterns/Wood/wood4.pat" checksum="2040255fdf70572e7d79395a7b191dd6">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/patterns/woodblind.pat" checksum="e7f93c93fb678ca6d881a6b66eff394a">
   </resource>
 
   <resource identifier="${gimp_data_dir}/patterns/Wood/wood1.pat" checksum="0c055f250ddbccc1b32d05f8c0ad7012">
@@ -676,6 +1117,9 @@
   <resource identifier="${gimp_data_dir}/palettes/Coldfire.gpl" checksum="1ed0c4895cf5473479ae25e798008094">
   </resource>
 
+  <resource identifier="${gimp_data_dir}/palettes/Commodore64.gpl" checksum="28029f7d6baf59d4abb1b1c2086b2843">
+  </resource>
+
   <resource identifier="${gimp_data_dir}/palettes/Cool_Colors.gpl" checksum="8fc00f172559e702a5ab9680013b0554">
   </resource>
 
@@ -686,6 +1130,9 @@
   </resource>
 
   <resource identifier="${gimp_data_dir}/palettes/Default.gpl" checksum="b8d8754cf636809b474b501e4c540788">
+  </resource>
+
+  <resource identifier="${gimp_data_dir}/palettes/DTV.gpl" checksum="276ebf0753153aecae84fdaa0aa5740e">
   </resource>
 
   <resource identifier="${gimp_data_dir}/palettes/Ega.gpl" checksum="a8842755eb6e9534d89bc4dfa360ea91">
@@ -769,58 +1216,7 @@
   <resource identifier="${gimp_data_dir}/palettes/Web.gpl" checksum="f02e8dfa23d01d6acfbab7f895c2dd16">
   </resource>
 
-  <resource identifier="Accanthis ADF Std" checksum="(null)">
-  </resource>
-
-  <resource identifier="Accanthis ADF Std Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Accanthis ADF Std Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Accanthis ADF Std Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Accanthis ADF Std No2" checksum="(null)">
-  </resource>
-
-  <resource identifier="Accanthis ADF Std No2 Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Accanthis ADF Std No2 Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Accanthis ADF Std No2 Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Accanthis ADF Std No3" checksum="(null)">
-  </resource>
-
-  <resource identifier="Accanthis ADF Std No3 Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Accanthis ADF Std No3 Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Accanthis ADF Std No3 Italic" checksum="(null)">
-  </resource>
-
   <resource identifier="all-the-icons" checksum="(null)">
-  </resource>
-
-  <resource identifier="Amiri" checksum="(null)">
-  </resource>
-
-  <resource identifier="Amiri Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Amiri Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Amiri Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Amiri Quran" checksum="(null)">
   </resource>
 
   <resource identifier="Andale Mono" checksum="(null)">
@@ -839,45 +1235,6 @@
   </resource>
 
   <resource identifier="Arial Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Arimo" checksum="(null)">
-  </resource>
-
-  <resource identifier="Arimo Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Arimo Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Arimo Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="AR PL KaitiM Big5" checksum="(null)">
-  </resource>
-
-  <resource identifier="AR PL KaitiM GB" checksum="(null)">
-  </resource>
-
-  <resource identifier="AR PL Mingti2L Big5" checksum="(null)">
-  </resource>
-
-  <resource identifier="AR PL SungtiL GB" checksum="(null)">
-  </resource>
-
-  <resource identifier="Asana Math" checksum="(null)">
-  </resource>
-
-  <resource identifier="Baekmuk Batang" checksum="(null)">
-  </resource>
-
-  <resource identifier="Baekmuk Dotum" checksum="(null)">
-  </resource>
-
-  <resource identifier="Baekmuk Gulim" checksum="(null)">
-  </resource>
-
-  <resource identifier="Baekmuk Headline" checksum="(null)">
   </resource>
 
   <resource identifier="Bitstream Charter" checksum="(null)">
@@ -931,30 +1288,6 @@
   <resource identifier="Bookman Uralic Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="Cabin" checksum="(null)">
-  </resource>
-
-  <resource identifier="Cabin Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Cabin Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Cabin Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Cabin Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="Cabin Medium Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Cabin Semi-Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Cabin Semi-Bold Italic" checksum="(null)">
-  </resource>
-
   <resource identifier="Caladea" checksum="(null)">
   </resource>
 
@@ -1006,22 +1339,10 @@
   <resource identifier="cmsy10" checksum="(null)">
   </resource>
 
-  <resource identifier="Comfortaa" checksum="(null)">
-  </resource>
-
-  <resource identifier="Comfortaa Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Comfortaa Light" checksum="(null)">
-  </resource>
-
   <resource identifier="Comic Sans MS" checksum="(null)">
   </resource>
 
   <resource identifier="Comic Sans MS Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Courier" checksum="(null)">
   </resource>
 
   <resource identifier="Courier 10 Pitch" checksum="(null)">
@@ -1036,15 +1357,6 @@
   <resource identifier="Courier 10 Pitch Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="Courier Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Courier Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Courier Italic" checksum="(null)">
-  </resource>
-
   <resource identifier="Courier New" checksum="(null)">
   </resource>
 
@@ -1055,18 +1367,6 @@
   </resource>
 
   <resource identifier="Courier New Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Cousine" checksum="(null)">
-  </resource>
-
-  <resource identifier="Cousine Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Cousine Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Cousine Italic" checksum="(null)">
   </resource>
 
   <resource identifier="DejaVu Math TeX Gyre" checksum="(null)">
@@ -1141,36 +1441,6 @@
   <resource identifier="Droid Sans Fallback" checksum="(null)">
   </resource>
 
-  <resource identifier="EB Garamond" checksum="(null)">
-  </resource>
-
-  <resource identifier="EB Garamond" checksum="(null)">
-  </resource>
-
-  <resource identifier="EB Garamond 12 All SC" checksum="(null)">
-  </resource>
-
-  <resource identifier="EB Garamond Initials" checksum="(null)">
-  </resource>
-
-  <resource identifier="EB Garamond Initials Fill1" checksum="(null)">
-  </resource>
-
-  <resource identifier="EB Garamond Initials Fill2" checksum="(null)">
-  </resource>
-
-  <resource identifier="EB Garamond Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="EB Garamond Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="EB Garamond SC" checksum="(null)">
-  </resource>
-
-  <resource identifier="EB Garamond SC" checksum="(null)">
-  </resource>
-
   <resource identifier="esint10" checksum="(null)">
   </resource>
 
@@ -1198,22 +1468,22 @@
   <resource identifier="FreeMono Bold" checksum="(null)">
   </resource>
 
-  <resource identifier="FreeMono Bold Oblique" checksum="(null)">
+  <resource identifier="FreeMono Bold Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="FreeMono Oblique" checksum="(null)">
+  <resource identifier="FreeMono Italic" checksum="(null)">
   </resource>
 
   <resource identifier="FreeSans" checksum="(null)">
   </resource>
 
-  <resource identifier="FreeSans Oblique" checksum="(null)">
+  <resource identifier="FreeSans Italic" checksum="(null)">
   </resource>
 
   <resource identifier="FreeSans Semi-Bold" checksum="(null)">
   </resource>
 
-  <resource identifier="FreeSans Semi-Bold Oblique" checksum="(null)">
+  <resource identifier="FreeSans Semi-Bold Italic" checksum="(null)">
   </resource>
 
   <resource identifier="FreeSerif" checksum="(null)">
@@ -1228,54 +1498,6 @@
   <resource identifier="FreeSerif Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="Gentium" checksum="(null)">
-  </resource>
-
-  <resource identifier="GentiumAlt" checksum="(null)">
-  </resource>
-
-  <resource identifier="GentiumAlt Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Gentium Basic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Gentium Basic Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Gentium Basic Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Gentium Basic Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Gentium Book Basic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Gentium Book Basic Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Gentium Book Basic Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Gentium Book Basic Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Gentium Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Gentium Plus" checksum="(null)">
-  </resource>
-
-  <resource identifier="Gentium Plus Compact" checksum="(null)">
-  </resource>
-
-  <resource identifier="Gentium Plus Compact Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Gentium Plus Italic" checksum="(null)">
-  </resource>
-
   <resource identifier="Georgia" checksum="(null)">
   </resource>
 
@@ -1286,105 +1508,6 @@
   </resource>
 
   <resource identifier="Georgia Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="GFS Artemisia" checksum="(null)">
-  </resource>
-
-  <resource identifier="GFS Artemisia Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="GFS Artemisia Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="GFS Artemisia Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="GFS Baskerville" checksum="(null)">
-  </resource>
-
-  <resource identifier="GFS Complutum" checksum="(null)">
-  </resource>
-
-  <resource identifier="GFS Didot" checksum="(null)">
-  </resource>
-
-  <resource identifier="GFS Didot Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="GFS Didot Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="GFS Didot Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="GFS Neohellenic" checksum="(null)">
-  </resource>
-
-  <resource identifier="GFS Neohellenic Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="GFS Neohellenic Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="GFS Neohellenic Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="GFS Olga" checksum="(null)">
-  </resource>
-
-  <resource identifier="GFS Porson" checksum="(null)">
-  </resource>
-
-  <resource identifier="GFS Solomos" checksum="(null)">
-  </resource>
-
-  <resource identifier="Gillius ADF" checksum="(null)">
-  </resource>
-
-  <resource identifier="Gillius ADF Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Gillius ADF Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Gillius ADF Cd Bold Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="Gillius ADF Cd Bold Italic Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="Gillius ADF Cd Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="Gillius ADF Cd Italic Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="Gillius ADF Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Gillius ADF No2" checksum="(null)">
-  </resource>
-
-  <resource identifier="Gillius ADF No2 Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Gillius ADF No2 Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Gillius ADF No2 Cd Bold Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="Gillius ADF No2 Cd Bold Italic Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="Gillius ADF No2 Cd Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="Gillius ADF No2 Cd Italic Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="Gillius ADF No2 Italic" checksum="(null)">
   </resource>
 
   <resource identifier="github-octicons" checksum="(null)">
@@ -1420,9 +1543,6 @@
   <resource identifier="Input Mono Compressed Light Italic Extra-Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="Input Mono Compressed Light Italic Extra-Condensed" checksum="(null)">
-  </resource>
-
   <resource identifier="Input Mono Compressed Medium Extra-Condensed" checksum="(null)">
   </resource>
 
@@ -1435,7 +1555,10 @@
   <resource identifier="Input Mono Compressed Ultra-Bold Italic Extra-Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="Input Mono Compressed Ultra-Light Extra-Condensed" checksum="(null)">
+  <resource identifier="Input Mono Compressed weight=255 Extra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Input Mono Compressed weight=280 Italic Extra-Condensed" checksum="(null)">
   </resource>
 
   <resource identifier="Input Mono Condensed, Bold Condensed" checksum="(null)">
@@ -1462,19 +1585,13 @@
   <resource identifier="Input Mono Condensed, Ultra-Bold Italic Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="Input Mono Condensed, Ultra-Light Condensed" checksum="(null)">
+  <resource identifier="Input Mono Condensed, weight=255 Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="Input Mono Condensed, Ultra-Light Italic Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="Input Mono Light" checksum="(null)">
+  <resource identifier="Input Mono Condensed, weight=255 Italic Condensed" checksum="(null)">
   </resource>
 
   <resource identifier="Input Mono Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="Input Mono Light Italic" checksum="(null)">
   </resource>
 
   <resource identifier="Input Mono Light Italic" checksum="(null)">
@@ -1522,7 +1639,13 @@
   <resource identifier="Input Mono Ultra-Bold Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="Input Mono Ultra-Light" checksum="(null)">
+  <resource identifier="Input Mono weight=255" checksum="(null)">
+  </resource>
+
+  <resource identifier="Input Mono weight=280" checksum="(null)">
+  </resource>
+
+  <resource identifier="Input Mono weight=280 Italic" checksum="(null)">
   </resource>
 
   <resource identifier="Input Sans" checksum="(null)">
@@ -1543,12 +1666,6 @@
   <resource identifier="Input Sans Compressed Light Extra-Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="Input Sans Compressed Light Extra-Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="Input Sans Compressed Light Italic Extra-Condensed" checksum="(null)">
-  </resource>
-
   <resource identifier="Input Sans Compressed Light Italic Extra-Condensed" checksum="(null)">
   </resource>
 
@@ -1562,6 +1679,12 @@
   </resource>
 
   <resource identifier="Input Sans Compressed Ultra-Bold Italic Extra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Input Sans Compressed weight=280 Extra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Input Sans Compressed weight=280 Italic Extra-Condensed" checksum="(null)">
   </resource>
 
   <resource identifier="Input Sans Condensed, Bold Condensed" checksum="(null)">
@@ -1588,16 +1711,13 @@
   <resource identifier="Input Sans Condensed, Ultra-Bold Italic Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="Input Sans Condensed, Ultra-Light Condensed" checksum="(null)">
+  <resource identifier="Input Sans Condensed, weight=255 Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="Input Sans Condensed, Ultra-Light Italic Condensed" checksum="(null)">
+  <resource identifier="Input Sans Condensed, weight=255 Italic Condensed" checksum="(null)">
   </resource>
 
   <resource identifier="Input Sans Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Input Sans Light" checksum="(null)">
   </resource>
 
   <resource identifier="Input Sans Light" checksum="(null)">
@@ -1639,7 +1759,7 @@
   <resource identifier="Input Sans Narrow Ultra-Bold Semi-Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="Input Sans Narrow Ultra-Light Semi-Condensed" checksum="(null)">
+  <resource identifier="Input Sans Narrow weight=255 Semi-Condensed" checksum="(null)">
   </resource>
 
   <resource identifier="Input Sans Ultra-Bold" checksum="(null)">
@@ -1648,7 +1768,10 @@
   <resource identifier="Input Sans Ultra-Bold Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="Input Sans Ultra-Light" checksum="(null)">
+  <resource identifier="Input Sans weight=255" checksum="(null)">
+  </resource>
+
+  <resource identifier="Input Sans weight=280" checksum="(null)">
   </resource>
 
   <resource identifier="Input Serif" checksum="(null)">
@@ -1672,9 +1795,6 @@
   <resource identifier="Input Serif Compressed Light Extra-Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="Input Serif Compressed Light Extra-Condensed" checksum="(null)">
-  </resource>
-
   <resource identifier="Input Serif Compressed Light Italic Extra-Condensed" checksum="(null)">
   </resource>
 
@@ -1688,6 +1808,9 @@
   </resource>
 
   <resource identifier="Input Serif Compressed Ultra-Bold Italic Extra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Input Serif Compressed weight=280 Extra-Condensed" checksum="(null)">
   </resource>
 
   <resource identifier="Input Serif Condensed, Bold Condensed" checksum="(null)">
@@ -1723,12 +1846,6 @@
   <resource identifier="Input Serif Light" checksum="(null)">
   </resource>
 
-  <resource identifier="Input Serif Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="Input Serif Light Italic" checksum="(null)">
-  </resource>
-
   <resource identifier="Input Serif Light Italic" checksum="(null)">
   </resource>
 
@@ -1750,9 +1867,6 @@
   <resource identifier="Input Serif Narrow Light Semi-Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="Input Serif Narrow Light Semi-Condensed" checksum="(null)">
-  </resource>
-
   <resource identifier="Input Serif Narrow Medium Italic Semi-Condensed" checksum="(null)">
   </resource>
 
@@ -1765,7 +1879,10 @@
   <resource identifier="Input Serif Narrow Ultra-Bold Semi-Condensed" checksum="(null)">
   </resource>
 
-  <resource identifier="Input Serif Narrow Ultra-Light Italic Semi-Condensed" checksum="(null)">
+  <resource identifier="Input Serif Narrow weight=255 Italic Semi-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Input Serif Narrow weight=280 Semi-Condensed" checksum="(null)">
   </resource>
 
   <resource identifier="Input Serif Ultra-Bold" checksum="(null)">
@@ -1774,310 +1891,13 @@
   <resource identifier="Input Serif Ultra-Bold Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="Input Serif Ultra-Light" checksum="(null)">
+  <resource identifier="Input Serif weight=255" checksum="(null)">
   </resource>
 
-  <resource identifier="IPAexGothic" checksum="(null)">
+  <resource identifier="Input Serif weight=280" checksum="(null)">
   </resource>
 
-  <resource identifier="IPAexMincho" checksum="(null)">
-  </resource>
-
-  <resource identifier="IPAGothic" checksum="(null)">
-  </resource>
-
-  <resource identifier="IPAMincho" checksum="(null)">
-  </resource>
-
-  <resource identifier="IPAPGothic" checksum="(null)">
-  </resource>
-
-  <resource identifier="IPAPMincho" checksum="(null)">
-  </resource>
-
-  <resource identifier="Junicode" checksum="(null)">
-  </resource>
-
-  <resource identifier="Junicode Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Junicode Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Junicode Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Math" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Mono" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Mono" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Mono" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Mono" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Mono Caps" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Mono Caps Oblique" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Mono Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Mono Light," checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Mono Light, Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Mono Light, Bold Oblique" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Mono Light Cond" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Mono Light Cond Oblique" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Mono Light, Oblique" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Mono Prop" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Mono Prop Light," checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Mono Prop Light, Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Mono Prop Light, Bold Oblique" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Mono Prop Light, Oblique" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Mono Prop Oblique" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Mono Slanted" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Roman," checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Roman," checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Roman," checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Roman," checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Roman," checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Roman," checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Roman," checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Roman," checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Roman, Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Roman, Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Roman, Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Roman, Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Roman, Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Roman, Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Roman, Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Roman, Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Roman Caps" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Roman Caps Oblique" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Roman Demi Semi-Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Roman Demi Semi-Bold Oblique" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Roman Dunhill" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Roman Dunhill Oblique" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Roman, Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Roman, Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Roman, Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Roman, Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Roman, Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Roman Slanted" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Roman Slanted" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Roman Slanted" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Roman Slanted" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Roman Slanted" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Roman Slanted Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Roman Unslanted" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Sans" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Sans" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Sans" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Sans" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Sans" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Sans Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Sans Bold Oblique" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Sans Demi Cond Semi-Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Sans Demi Cond Semi-Bold Oblique" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Sans Oblique" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Sans Oblique" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Sans Oblique" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Sans Oblique" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Sans Oblique" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Sans Quotation" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Sans Quotation Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Sans Quotation Bold Oblique" checksum="(null)">
-  </resource>
-
-  <resource identifier="Latin Modern Sans Quotation Oblique" checksum="(null)">
-  </resource>
-
-  <resource identifier="Lato" checksum="(null)">
-  </resource>
-
-  <resource identifier="Lato Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Lato Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Lato Heavy" checksum="(null)">
-  </resource>
-
-  <resource identifier="Lato Heavy Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Lato Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Lato Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="Lato Light Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Lato Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="Lato Medium Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Lato Semi-Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Lato Semi-Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Lato Thin" checksum="(null)">
-  </resource>
-
-  <resource identifier="Lato Thin Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Lato Ultra-Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Lato Ultra-Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Lato Ultra-Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="Lato Ultra-Light Italic" checksum="(null)">
+  <resource identifier="Input Serif weight=280 Italic" checksum="(null)">
   </resource>
 
   <resource identifier="Liberation Mono" checksum="(null)">
@@ -2126,57 +1946,6 @@
   </resource>
 
   <resource identifier="Liberation Serif Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Linux Biolinum Keyboard O Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Linux Biolinum O" checksum="(null)">
-  </resource>
-
-  <resource identifier="Linux Biolinum O Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Linux Biolinum O Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Linux Libertine Display O" checksum="(null)">
-  </resource>
-
-  <resource identifier="Linux Libertine Initials O" checksum="(null)">
-  </resource>
-
-  <resource identifier="Linux Libertine Mono O" checksum="(null)">
-  </resource>
-
-  <resource identifier="Linux Libertine O" checksum="(null)">
-  </resource>
-
-  <resource identifier="Linux Libertine O Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Linux Libertine O Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Linux Libertine O Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Linux Libertine O Semi-Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Linux Libertine O Semi-Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Lobster Two" checksum="(null)">
-  </resource>
-
-  <resource identifier="Lobster Two Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Lobster Two Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Lobster Two Italic" checksum="(null)">
   </resource>
 
   <resource identifier="Material Icons" checksum="(null)">
@@ -2240,6 +2009,12 @@
   </resource>
 
   <resource identifier="MathJax_Typewriter" checksum="(null)">
+  </resource>
+
+  <resource identifier="MathJax_Vector-Bold Medium" checksum="(null)">
+  </resource>
+
+  <resource identifier="MathJax_Vector Medium" checksum="(null)">
   </resource>
 
   <resource identifier="MathJax_WinChrome" checksum="(null)">
@@ -2323,7 +2098,7 @@
   <resource identifier="Noto Kufi Arabic Bold" checksum="(null)">
   </resource>
 
-  <resource identifier="Noto Mono" checksum="(null)">
+  <resource identifier="Noto Music" checksum="(null)">
   </resource>
 
   <resource identifier="Noto Naskh Arabic" checksum="(null)">
@@ -2332,13 +2107,28 @@
   <resource identifier="Noto Naskh Arabic Bold" checksum="(null)">
   </resource>
 
-  <resource identifier="Noto Naskh Arabic UI" checksum="(null)">
+  <resource identifier="Noto Nastaliq Urdu" checksum="(null)">
   </resource>
 
-  <resource identifier="Noto Naskh Arabic UI Bold" checksum="(null)">
+  <resource identifier="Noto Nastaliq Urdu" checksum="(null)">
   </resource>
 
   <resource identifier="Noto Sans" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Adlam" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Adlam Unjoined" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Anatolian Hieroglyphs" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Arabic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Arabic Bold" checksum="(null)">
   </resource>
 
   <resource identifier="Noto Sans Armenian" checksum="(null)">
@@ -2347,16 +2137,25 @@
   <resource identifier="Noto Sans Armenian Bold" checksum="(null)">
   </resource>
 
+  <resource identifier="Noto Sans Avestan" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Bamum" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Bassa Vah" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Batak" checksum="(null)">
+  </resource>
+
   <resource identifier="Noto Sans Bengali" checksum="(null)">
   </resource>
 
   <resource identifier="Noto Sans Bengali Bold" checksum="(null)">
   </resource>
 
-  <resource identifier="Noto Sans Bengali UI" checksum="(null)">
-  </resource>
-
-  <resource identifier="Noto Sans Bengali UI Bold" checksum="(null)">
+  <resource identifier="Noto Sans Bhaiksuki" checksum="(null)">
   </resource>
 
   <resource identifier="Noto Sans Bold" checksum="(null)">
@@ -2365,10 +2164,52 @@
   <resource identifier="Noto Sans Bold Italic" checksum="(null)">
   </resource>
 
+  <resource identifier="Noto Sans Brahmi" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Buginese" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Buhid" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Canadian Aboriginal" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Canadian Aboriginal Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Carian" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Caucasian Albanian" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Chakma" checksum="(null)">
+  </resource>
+
   <resource identifier="Noto Sans Cham" checksum="(null)">
   </resource>
 
   <resource identifier="Noto Sans Cham Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Cherokee" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Cherokee Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Coptic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Cuneiform" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Cypriot" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Deseret" checksum="(null)">
   </resource>
 
   <resource identifier="Noto Sans Devanagari" checksum="(null)">
@@ -2377,10 +2218,25 @@
   <resource identifier="Noto Sans Devanagari Bold" checksum="(null)">
   </resource>
 
-  <resource identifier="Noto Sans Devanagari UI" checksum="(null)">
+  <resource identifier="Noto Sans Display" checksum="(null)">
   </resource>
 
-  <resource identifier="Noto Sans Devanagari UI Bold" checksum="(null)">
+  <resource identifier="Noto Sans Display Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Display Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Display Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Duployan" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Egyptian Hieroglyphs" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Elbasan" checksum="(null)">
   </resource>
 
   <resource identifier="Noto Sans Ethiopic" checksum="(null)">
@@ -2395,16 +2251,19 @@
   <resource identifier="Noto Sans Georgian Bold" checksum="(null)">
   </resource>
 
+  <resource identifier="Noto Sans Glagolitic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Gothic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Grantha" checksum="(null)">
+  </resource>
+
   <resource identifier="Noto Sans Gujarati" checksum="(null)">
   </resource>
 
   <resource identifier="Noto Sans Gujarati Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Noto Sans Gujarati UI" checksum="(null)">
-  </resource>
-
-  <resource identifier="Noto Sans Gujarati UI Bold" checksum="(null)">
   </resource>
 
   <resource identifier="Noto Sans Gurmukhi" checksum="(null)">
@@ -2413,10 +2272,10 @@
   <resource identifier="Noto Sans Gurmukhi Bold" checksum="(null)">
   </resource>
 
-  <resource identifier="Noto Sans Gurmukhi UI" checksum="(null)">
+  <resource identifier="Noto Sans Hanunoo" checksum="(null)">
   </resource>
 
-  <resource identifier="Noto Sans Gurmukhi UI Bold" checksum="(null)">
+  <resource identifier="Noto Sans Hatran" checksum="(null)">
   </resource>
 
   <resource identifier="Noto Sans Hebrew" checksum="(null)">
@@ -2425,7 +2284,22 @@
   <resource identifier="Noto Sans Hebrew Bold" checksum="(null)">
   </resource>
 
+  <resource identifier="Noto Sans Imperial Aramaic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Inscriptional Pahlavi" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Inscriptional Parthian" checksum="(null)">
+  </resource>
+
   <resource identifier="Noto Sans Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Javanese" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Kaithi" checksum="(null)">
   </resource>
 
   <resource identifier="Noto Sans Kannada" checksum="(null)">
@@ -2434,10 +2308,10 @@
   <resource identifier="Noto Sans Kannada Bold" checksum="(null)">
   </resource>
 
-  <resource identifier="Noto Sans Kannada UI" checksum="(null)">
+  <resource identifier="Noto Sans Kayah Li" checksum="(null)">
   </resource>
 
-  <resource identifier="Noto Sans Kannada UI Bold" checksum="(null)">
+  <resource identifier="Noto Sans Kharoshthi" checksum="(null)">
   </resource>
 
   <resource identifier="Noto Sans Khmer" checksum="(null)">
@@ -2446,10 +2320,7 @@
   <resource identifier="Noto Sans Khmer Bold" checksum="(null)">
   </resource>
 
-  <resource identifier="Noto Sans Khmer UI" checksum="(null)">
-  </resource>
-
-  <resource identifier="Noto Sans Khmer UI Bold" checksum="(null)">
+  <resource identifier="Noto Sans Khudawadi" checksum="(null)">
   </resource>
 
   <resource identifier="Noto Sans Lao" checksum="(null)">
@@ -2458,10 +2329,28 @@
   <resource identifier="Noto Sans Lao Bold" checksum="(null)">
   </resource>
 
-  <resource identifier="Noto Sans Lao UI" checksum="(null)">
+  <resource identifier="Noto Sans Lepcha" checksum="(null)">
   </resource>
 
-  <resource identifier="Noto Sans Lao UI Bold" checksum="(null)">
+  <resource identifier="Noto Sans Limbu" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Linear A" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Linear B" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Lisu" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Lycian" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Lydian" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Mahajani" checksum="(null)">
   </resource>
 
   <resource identifier="Noto Sans Malayalam" checksum="(null)">
@@ -2470,10 +2359,43 @@
   <resource identifier="Noto Sans Malayalam Bold" checksum="(null)">
   </resource>
 
-  <resource identifier="Noto Sans Malayalam UI" checksum="(null)">
+  <resource identifier="Noto Sans Mandaic" checksum="(null)">
   </resource>
 
-  <resource identifier="Noto Sans Malayalam UI Bold" checksum="(null)">
+  <resource identifier="Noto Sans Manichaean" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Marchen" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Meetei Mayek" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Mende Kikakui" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Meroitic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Miao" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Modi" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Mongolian" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Mono" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Mono Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Mro" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Multani" checksum="(null)">
   </resource>
 
   <resource identifier="Noto Sans Myanmar" checksum="(null)">
@@ -2482,10 +2404,43 @@
   <resource identifier="Noto Sans Myanmar Bold" checksum="(null)">
   </resource>
 
-  <resource identifier="Noto Sans Myanmar UI" checksum="(null)">
+  <resource identifier="Noto Sans Nabataean" checksum="(null)">
   </resource>
 
-  <resource identifier="Noto Sans Myanmar UI Bold" checksum="(null)">
+  <resource identifier="Noto Sans Newa" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans New Tai Lue" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans NKo" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Ogham" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Ol Chiki" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Old Hungarian" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Old Italic," checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Old North Arabian" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Old Permic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Old Persian" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Old South Arabian" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Old Turkic" checksum="(null)">
   </resource>
 
   <resource identifier="Noto Sans Oriya" checksum="(null)">
@@ -2494,10 +2449,46 @@
   <resource identifier="Noto Sans Oriya Bold" checksum="(null)">
   </resource>
 
-  <resource identifier="Noto Sans Oriya UI" checksum="(null)">
+  <resource identifier="Noto Sans Osage" checksum="(null)">
   </resource>
 
-  <resource identifier="Noto Sans Oriya UI Bold" checksum="(null)">
+  <resource identifier="Noto Sans Osmanya" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Pahawh Hmong" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Palmyrene" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Pau Cin Hau" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans PhagsPa" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Phoenician" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Psalter Pahlavi" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Rejang" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Runic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Samaritan" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Saurashtra" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Sharada" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Shavian" checksum="(null)">
   </resource>
 
   <resource identifier="Noto Sans Sinhala" checksum="(null)">
@@ -2506,28 +2497,64 @@
   <resource identifier="Noto Sans Sinhala Bold" checksum="(null)">
   </resource>
 
+  <resource identifier="Noto Sans Sora Sompeng" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Sundanese" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Syloti Nagri" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Symbols" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Symbols2 Ultra-Condensed" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Symbols Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Syriac" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Syriac Eastern" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Syriac Estrangela" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Syriac Western" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Tagalog" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Tagbanwa" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Tai Le" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Tai Tham" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Tai Viet" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Takri" checksum="(null)">
+  </resource>
+
   <resource identifier="Noto Sans Tamil" checksum="(null)">
   </resource>
 
   <resource identifier="Noto Sans Tamil Bold" checksum="(null)">
   </resource>
 
-  <resource identifier="Noto Sans Tamil UI" checksum="(null)">
-  </resource>
-
-  <resource identifier="Noto Sans Tamil UI Bold" checksum="(null)">
-  </resource>
-
   <resource identifier="Noto Sans Telugu" checksum="(null)">
   </resource>
 
   <resource identifier="Noto Sans Telugu Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Noto Sans Telugu UI" checksum="(null)">
-  </resource>
-
-  <resource identifier="Noto Sans Telugu UI Bold" checksum="(null)">
   </resource>
 
   <resource identifier="Noto Sans Thaana" checksum="(null)">
@@ -2542,37 +2569,43 @@
   <resource identifier="Noto Sans Thai Bold" checksum="(null)">
   </resource>
 
-  <resource identifier="Noto Sans Thai UI" checksum="(null)">
-  </resource>
-
-  <resource identifier="Noto Sans Thai UI Bold" checksum="(null)">
-  </resource>
-
   <resource identifier="Noto Sans Tibetan" checksum="(null)">
   </resource>
 
   <resource identifier="Noto Sans Tibetan Bold" checksum="(null)">
   </resource>
 
-  <resource identifier="Noto Sans UI" checksum="(null)">
+  <resource identifier="Noto Sans Tifinagh" checksum="(null)">
   </resource>
 
-  <resource identifier="Noto Sans UI Bold" checksum="(null)">
+  <resource identifier="Noto Sans Tirhuta" checksum="(null)">
   </resource>
 
-  <resource identifier="Noto Sans UI Bold Italic" checksum="(null)">
+  <resource identifier="Noto Sans Ugaritic" checksum="(null)">
   </resource>
 
-  <resource identifier="Noto Sans UI Italic" checksum="(null)">
+  <resource identifier="Noto Sans Vai" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Warang Citi" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Sans Yi" checksum="(null)">
   </resource>
 
   <resource identifier="Noto Serif" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Serif Ahom" checksum="(null)">
   </resource>
 
   <resource identifier="Noto Serif Armenian" checksum="(null)">
   </resource>
 
   <resource identifier="Noto Serif Armenian Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Serif Balinese" checksum="(null)">
   </resource>
 
   <resource identifier="Noto Serif Bengali" checksum="(null)">
@@ -2593,6 +2626,24 @@
   <resource identifier="Noto Serif Devanagari Bold" checksum="(null)">
   </resource>
 
+  <resource identifier="Noto Serif Display" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Serif Display Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Serif Display Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Serif Display Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Serif Ethiopic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Serif Ethiopic Bold" checksum="(null)">
+  </resource>
+
   <resource identifier="Noto Serif Georgian" checksum="(null)">
   </resource>
 
@@ -2603,6 +2654,18 @@
   </resource>
 
   <resource identifier="Noto Serif Gujarati Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Serif Gurmukhi" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Serif Gurmukhi Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Serif Hebrew" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Serif Hebrew Bold" checksum="(null)">
   </resource>
 
   <resource identifier="Noto Serif Italic" checksum="(null)">
@@ -2632,10 +2695,28 @@
   <resource identifier="Noto Serif Malayalam Bold" checksum="(null)">
   </resource>
 
+  <resource identifier="Noto Serif Myanmar" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Serif Myanmar Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Serif Sinhala" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Serif Sinhala Bold" checksum="(null)">
+  </resource>
+
   <resource identifier="Noto Serif Tamil" checksum="(null)">
   </resource>
 
   <resource identifier="Noto Serif Tamil Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Serif Tamil Slanted" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Serif Tamil Slanted Bold" checksum="(null)">
   </resource>
 
   <resource identifier="Noto Serif Telugu" checksum="(null)">
@@ -2650,19 +2731,13 @@
   <resource identifier="Noto Serif Thai Bold" checksum="(null)">
   </resource>
 
+  <resource identifier="Noto Serif Tibetan" checksum="(null)">
+  </resource>
+
+  <resource identifier="Noto Serif Tibetan Bold" checksum="(null)">
+  </resource>
+
   <resource identifier="OpenSymbol" checksum="(null)">
-  </resource>
-
-  <resource identifier="Padauk" checksum="(null)">
-  </resource>
-
-  <resource identifier="Padauk Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Padauk Book," checksum="(null)">
-  </resource>
-
-  <resource identifier="Padauk Book, Bold" checksum="(null)">
   </resource>
 
   <resource identifier="Palladio Uralic" checksum="(null)">
@@ -2693,60 +2768,6 @@
   </resource>
 
   <resource identifier="Quicksand Ultra-Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="Roboto" checksum="(null)">
-  </resource>
-
-  <resource identifier="Roboto Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Roboto Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Roboto Condensed," checksum="(null)">
-  </resource>
-
-  <resource identifier="Roboto Condensed, Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Roboto Condensed, Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Roboto Condensed, Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Roboto Condensed, Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="Roboto Condensed, Light Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Roboto Heavy" checksum="(null)">
-  </resource>
-
-  <resource identifier="Roboto Heavy Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Roboto Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Roboto Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="Roboto Light Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Roboto Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="Roboto Medium Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Roboto Ultra-Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="Roboto Ultra-Light Italic" checksum="(null)">
   </resource>
 
   <resource identifier="Roman Uralic" checksum="(null)">
@@ -2815,211 +2836,7 @@
   <resource identifier="Standard Symbols L" checksum="(null)">
   </resource>
 
-  <resource identifier="STIX" checksum="(null)">
-  </resource>
-
-  <resource identifier="STIX Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="STIX Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="STIXGeneral" checksum="(null)">
-  </resource>
-
-  <resource identifier="STIXGeneral Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="STIXGeneral Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="STIXGeneral Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="STIXIntegralsD" checksum="(null)">
-  </resource>
-
-  <resource identifier="STIXIntegralsD Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="STIXIntegralsSm" checksum="(null)">
-  </resource>
-
-  <resource identifier="STIXIntegralsSm Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="STIXIntegralsUp" checksum="(null)">
-  </resource>
-
-  <resource identifier="STIXIntegralsUp Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="STIXIntegralsUpD" checksum="(null)">
-  </resource>
-
-  <resource identifier="STIXIntegralsUpD Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="STIXIntegralsUpSm" checksum="(null)">
-  </resource>
-
-  <resource identifier="STIXIntegralsUpSm Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="STIX Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="STIX Math" checksum="(null)">
-  </resource>
-
-  <resource identifier="STIXNonUnicode" checksum="(null)">
-  </resource>
-
-  <resource identifier="STIXNonUnicode Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="STIXNonUnicode Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="STIXNonUnicode Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="STIXSizeFiveSym" checksum="(null)">
-  </resource>
-
-  <resource identifier="STIXSizeFourSym" checksum="(null)">
-  </resource>
-
-  <resource identifier="STIXSizeFourSym Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="STIXSizeOneSym" checksum="(null)">
-  </resource>
-
-  <resource identifier="STIXSizeOneSym Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="STIXSizeThreeSym" checksum="(null)">
-  </resource>
-
-  <resource identifier="STIXSizeThreeSym Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="STIXSizeTwoSym" checksum="(null)">
-  </resource>
-
-  <resource identifier="STIXSizeTwoSym Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="STIXVariants" checksum="(null)">
-  </resource>
-
-  <resource identifier="STIXVariants Bold" checksum="(null)">
-  </resource>
-
   <resource identifier="stmary10" checksum="(null)">
-  </resource>
-
-  <resource identifier="Symbola Semi-Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="TeXGyreAdventor" checksum="(null)">
-  </resource>
-
-  <resource identifier="TeXGyreAdventor Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="TeXGyreAdventor Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="TeXGyreAdventor Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="TeXGyreBonum" checksum="(null)">
-  </resource>
-
-  <resource identifier="TeXGyreBonum Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="TeXGyreBonum Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="TeXGyreBonum Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="TeXGyreChorus Medium Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="TeXGyreCursor" checksum="(null)">
-  </resource>
-
-  <resource identifier="TeXGyreCursor Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="TeXGyreCursor Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="TeXGyreCursor Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="TeXGyreHeros" checksum="(null)">
-  </resource>
-
-  <resource identifier="TeXGyreHeros Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="TeXGyreHeros Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="TeXGyreHerosCondensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="TeXGyreHerosCondensed Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="TeXGyreHerosCondensed Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="TeXGyreHerosCondensed Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="TeXGyreHeros Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="TeXGyrePagella" checksum="(null)">
-  </resource>
-
-  <resource identifier="TeXGyrePagella Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="TeXGyrePagella Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="TeXGyrePagella Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="TeXGyreSchola" checksum="(null)">
-  </resource>
-
-  <resource identifier="TeXGyreSchola Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="TeXGyreSchola Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="TeXGyreSchola Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="TeXGyreTermes" checksum="(null)">
-  </resource>
-
-  <resource identifier="TeXGyreTermes Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="TeXGyreTermes Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="TeXGyreTermes Italic" checksum="(null)">
   </resource>
 
   <resource identifier="Times New Roman," checksum="(null)">
@@ -3034,18 +2851,6 @@
   <resource identifier="Times New Roman, Italic" checksum="(null)">
   </resource>
 
-  <resource identifier="Tinos" checksum="(null)">
-  </resource>
-
-  <resource identifier="Tinos Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Tinos Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Tinos Italic" checksum="(null)">
-  </resource>
-
   <resource identifier="Trebuchet MS" checksum="(null)">
   </resource>
 
@@ -3056,99 +2861,6 @@
   </resource>
 
   <resource identifier="Trebuchet MS Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="UnBatang" checksum="(null)">
-  </resource>
-
-  <resource identifier="UnBatang Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="UnDinaru" checksum="(null)">
-  </resource>
-
-  <resource identifier="UnDinaru Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="UnDinaru Light" checksum="(null)">
-  </resource>
-
-  <resource identifier="UnDotum" checksum="(null)">
-  </resource>
-
-  <resource identifier="UnDotum Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="UnGraphic" checksum="(null)">
-  </resource>
-
-  <resource identifier="UnGraphic Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="UnGungseo" checksum="(null)">
-  </resource>
-
-  <resource identifier="Universalis ADF Cd Std Bold Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="Universalis ADF Cd Std Bold Oblique Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="Universalis ADF Cd Std Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="Universalis ADF Cd Std Oblique Condensed" checksum="(null)">
-  </resource>
-
-  <resource identifier="Universalis ADF Std" checksum="(null)">
-  </resource>
-
-  <resource identifier="Universalis ADF Std Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Universalis ADF Std Bold Oblique" checksum="(null)">
-  </resource>
-
-  <resource identifier="Universalis ADF Std Oblique" checksum="(null)">
-  </resource>
-
-  <resource identifier="UnJamoBatang" checksum="(null)">
-  </resource>
-
-  <resource identifier="UnJamoDotum" checksum="(null)">
-  </resource>
-
-  <resource identifier="UnJamoNovel" checksum="(null)">
-  </resource>
-
-  <resource identifier="UnJamoSora" checksum="(null)">
-  </resource>
-
-  <resource identifier="UnPen" checksum="(null)">
-  </resource>
-
-  <resource identifier="UnPenheulim" checksum="(null)">
-  </resource>
-
-  <resource identifier="UnPilgi" checksum="(null)">
-  </resource>
-
-  <resource identifier="UnPilgia" checksum="(null)">
-  </resource>
-
-  <resource identifier="UnPilgi Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="UnShinmun" checksum="(null)">
-  </resource>
-
-  <resource identifier="UnTaza" checksum="(null)">
-  </resource>
-
-  <resource identifier="UnVada" checksum="(null)">
-  </resource>
-
-  <resource identifier="UnYetgul Bold" checksum="(null)">
   </resource>
 
   <resource identifier="URW Bookman L" checksum="(null)">
@@ -3188,18 +2900,6 @@
   </resource>
 
   <resource identifier="URW Palladio L Medium" checksum="(null)">
-  </resource>
-
-  <resource identifier="Utopia" checksum="(null)">
-  </resource>
-
-  <resource identifier="Utopia Bold" checksum="(null)">
-  </resource>
-
-  <resource identifier="Utopia Bold Italic" checksum="(null)">
-  </resource>
-
-  <resource identifier="Utopia Italic" checksum="(null)">
   </resource>
 
   <resource identifier="Verdana" checksum="(null)">
