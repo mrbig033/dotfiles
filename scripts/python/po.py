@@ -21,9 +21,10 @@ def choose_poetry():
 
 def generate_choices():
     for poetry in range(1, 51):
-        # /home/jerry/org/Data
-        with open(f"{environ['HOME']}/org/Data/po.org", "a") as file:
+        path = f"{environ['HOME']}/org/Data/po.org"
+        with open(path, "a") as file:
             file.write(f"** TODO {poetry:03}: {choose_poetry()}")
+    print("Poesias randomizadas!")
 
 
 generate_choices()
