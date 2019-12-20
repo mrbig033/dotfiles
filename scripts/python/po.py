@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 
 import sys
+import datetime
 from random import randint
-from datetime import datetime, timedelta
 from os import system, environ, name
 
 sys.tracebacklimit = 0
@@ -10,7 +10,7 @@ system("cls" if name == "nt" else "clear")
 
 
 def choose_poetry():
-    time = datetime.now()
+    time = datetime.datetime.now()
     time_str = time.strftime("%d/%m/%y, %H:%M")
     vol = randint(1, 2)
     vol1 = randint(1, 1120)
@@ -27,8 +27,6 @@ def generate_choices():
     start_date = datetime.date.today()
     end_date = start_date + 7 * day_delta
     for date in range((end_date - start_date).days):
-        pass
-    for poetry in range(1, 101):
         with open(f"{environ['HOME']}/.po.csv", "a") as file:
             file.write(choose_poetry())
 
