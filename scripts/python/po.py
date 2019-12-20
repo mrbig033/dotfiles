@@ -20,9 +20,10 @@ def choose_poetry():
 
 
 def generate_choices():
-    for poetry in range(1, 101):
-        with open(f"{environ['HOME']}/Documents/.po.csv", "a") as file:
-            file.write(f"{poetry:03}, {choose_poetry()}")
+    for poetry in range(1, 51):
+        # /home/jerry/org/Data
+        with open(f"{environ['HOME']}/org/Data/po.org", "a") as file:
+            file.write(f"** TODO {poetry:03}: {choose_poetry()}")
 
 
 generate_choices()
