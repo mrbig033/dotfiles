@@ -1,14 +1,10 @@
 #!/usr/bin/env python3
 
-import sys
+from os import environ
 from random import randint
-from os import system, environ, name
-
-sys.tracebacklimit = 0
-system("cls" if name == "nt" else "clear")
 
 
-def choose_poetry():
+def randomize_poetries():
     vol = randint(1, 2)
     vol1 = randint(1, 1120)
     vol2 = randint(1, 411)
@@ -19,12 +15,12 @@ def choose_poetry():
         return f"Vol{vol}, {vol2}\n"
 
 
-def generate_choices():
+def write_poetries():
     for poetry in range(1, 51):
-        path = f"{environ['HOME']}/org/Data/po.org"
+        path = f"{environ['HOME']}/org/Data/po2.org"
         with open(path, "a") as file:
-            file.write(f"** TODO {poetry:03}: {choose_poetry()}")
-    print("Poesias randomizadas!")
+            file.write(f"** TODO {poetry:03}: {randomize_poetries()}")
+    print(f"Random poetries written to {path}")
 
 
-generate_choices()
+write_poetries()
