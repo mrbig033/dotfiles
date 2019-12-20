@@ -10,8 +10,12 @@ sys.tracebacklimit = 0
 
 time = datetime.now()
 time_str = time.strftime("%d/%m/%y, %H:%M:%S")
+
 page = r(39, 292)
-ranFile = open("ran.txt", "a")
+
+ranFile = open("/home/jerry/ran.txt", "a")
 ranFile.write(f"{time_str} >> página {page}\n")
+
 print(f"\n {time_str}: página {page}")
+
 ranFile.close()
