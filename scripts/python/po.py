@@ -1,15 +1,12 @@
 #!/usr/bin/env python3
 
 import sys
-from os import system
-from os import environ
 from random import randint
-from datetime import datetime
+from datetime import datetime, timedelta
+from os import system, environ, name
 
-system("clear")
 sys.tracebacklimit = 0
-
-path = f"{environ['HOME']}/.po.csv"
+system("cls" if name == "nt" else "clear")
 
 
 def choose_poetry():
@@ -25,5 +22,15 @@ def choose_poetry():
         return f"{time_str}, Volume {vol}, Poesia {vol2}\n"
 
 
-with open(path, "a") as file:
-    file.write(choose_poetry())
+def generate_choices():
+    day_delta = datetime.timedelta(days=1)
+    start_date = datetime.date.today()
+    end_date = start_date + 7 * day_delta
+    for date in range((end_date - start_date).days):
+        pass
+    for poetry in range(1, 101):
+        with open(f"{environ['HOME']}/.po.csv", "a") as file:
+            file.write(choose_poetry())
+
+
+generate_choices()
