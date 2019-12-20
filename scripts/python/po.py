@@ -16,8 +16,8 @@ def randomize_poetries():
 
 
 def write_poetries():
+    path = f"{environ['HOME']}/org/Data/po.org"
     for poetry in range(1, 51):
-        path = f"{environ['HOME']}/org/Data/po2.org"
         with open(path, "a") as file:
             file.write(f"** TODO {poetry:03}: {randomize_poetries()}")
     print(f"Random poetries written to {path}")
