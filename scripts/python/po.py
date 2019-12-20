@@ -7,3 +7,5 @@ from datetime import datetime
 
 system("clear")
 sys.tracebacklimit = 0
+
+print
