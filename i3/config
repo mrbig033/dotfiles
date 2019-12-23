@@ -120,7 +120,7 @@ exec --no-startup-id "~/scripts/cline_scripts/sessions.sh"
 exec --no-startup-id "xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up &"
 exec --no-startup-id "xset s 600"
 exec --no-startup-id "xset mouse 10/5 0 &"
-exec --no-startup-id "xset r rate 200 60 &"
+exec --no-startup-id "xset r rate 200 80 &"
 exec --no-startup-id "compton -b --backend glx &"
 exec --no-startup-id "~/scripts/keyboard/init_keys.sh &"
 exec --no-startup-id "xrandr --output DP-1 --off --output HDMI-1 --mode 1920x1080 --pos 0x0 --rotate normal --output eDP-1 --off --output HDMI-2 --off &"
@@ -222,7 +222,7 @@ bindsym $mod+g mode default; exec "notify-send --expire-time=250 'mode: default'
 }
 
 
-bindsym $mod+Shift+space floating toggle; mode "$floating"
+bindsym $mod+Shift+space floating toggle
 bindsym $mod+apostrophe; mode "$tilling"; exec "notify-send --expire-time=250 'tilling'"
 
 mode "$tilling" {
