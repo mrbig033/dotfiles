@@ -90,13 +90,12 @@ bindsym Mod1+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcu
 **** i3blocks
 #+BEGIN_SRC i3
 bar {
-
 i3bar_command i3bar
 status_command i3blocks
 position bottom
-mode dock
+mode hide
 modifier none
-binding_mode_indicator no
+binding_mode_indicator yes
 
 bindsym button4 nop
 bindsym button5 nop
@@ -112,8 +111,8 @@ active_workspace   #595B5B #353836 #FDF6E3
 inactive_workspace #595B5B #222D31 #EEE8D5
 binding_mode       #16a085 #2C2C2C #F9FAF9
 urgent_workspace   #16a085 #FDF6E3 #E5201D
-}
-}
+}}
+
 bindsym $mod+m bar mode toggle
 #+END_SRC
 **** Colors
@@ -248,9 +247,9 @@ bindsym $mod+Control+o split h;exec "notify-send --expire-time=250 'tile horizon
 #+END_SRC
 ** Launch Mode
 #+BEGIN_SRC i3
-bindsym Menu mode "$launch"
+bindsym Menu mode "launch"
 
-mode "$launch" {
+mode "launch" {
 
 bindsym 1 exec "~/scripts/i3_scripts/touchpad_off"; mode default
 bindsym 2 exec "~/scripts/i3_scripts/touchpad_on"; mode default
@@ -263,6 +262,7 @@ bindsym Shift+p [title="term-up"] move scratchpad; [title="term-ranger"] move sc
 bindsym k exec "/home/jerry/dotfiles/scripts/keyboard/keyboard-default/init_keys.sh &"; mode default
 bindsym Shift+k exec "/home/jerry/dotfiles/scripts/keyboard/ik &"; mode default
 bindsym Shift+w exec feh --recursive --randomize --bg-fill ~/Desktop/black.png; mode default
+bindsym $mod+Shift+w exec feh --recursive --randomize --bg-fill ~/Pictures/Wallpaper/; mode default
 
 bindsym Shift+r exec "/home/jerry/dotfiles/scripts/cline_scripts/restart_terminals"; mode default
 bindsym z exec "google-chrome-stable"; mode default
@@ -272,8 +272,8 @@ bindsym Menu exec "~/scripts/emacs_scripts/markdown-scratch"; mode default
 bindsym r exec "rofi -show run"; mode default
 bindsym w exec "rofi -show window"; mode default
 
-bindsym Escape mode default; exec "notify-send --expire-time=250 'mode: default'"
-bindsym $mod+g mode default; exec "notify-send --expire-time=250 'mode: default'"
+bindsym Escape mode default
+bindsym $mod+g mode default
 }
 #+END_SRC
 ** Tilling Modes
@@ -281,9 +281,9 @@ bindsym $mod+g mode default; exec "notify-send --expire-time=250 'mode: default'
 #+BEGIN_SRC i3
 
 bindsym $mod+Shift+space floating toggle
-bindsym $mod+apostrophe; mode "$tilling"; exec "notify-send --expire-time=250 'tilling'"
+bindsym $mod+apostrophe mode tilling
 
-mode "$tilling" {
+mode "tilling" {
 
 bindsym h  resize shrink width  10 px or 10 ppt
 bindsym Shift+h  resize grow   width 10 px or 10 ppt
@@ -299,15 +299,15 @@ bindsym Down  resize grow   height 10 px or 10 ppt
 bindsym Up    resize shrink height 10 px or 10 ppt
 bindsym Right resize grow   width  10 px or 10 ppt
 
-bindsym q mode default; exec "notify-send --expire-time=250 'mode: default'"
-bindsym Return mode default; exec "notify-send --expire-time=250 'mode: default'"
-bindsym Escape mode default; exec "notify-send --expire-time=250 'mode: default'"
-bindsym $mod+apostrophe; mode "$floating"; exec "notify-send --expire-time=250 --expire-time=250 'floating'"
+bindsym q mode default
+bindsym Return mode default
+bindsym Escape mode default
+bindsym $mod+apostrophe; mode "floating"
 }
 #+END_SRC
 *** tilling float
 #+BEGIN_SRC i3
-mode "$floating" {
+mode "floating" {
 
 bindsym $mod+$left move Left 80px
 bindsym $mod+$right move Right 80px
@@ -331,12 +331,12 @@ bindsym k resize grow height         36 px or 36 ppt
 bindsym Shift+l resize shrink width  36 px or 36 ppt
 bindsym l resize grow width          36 px or 36 ppt
 
-bindsym $mod+apostrophe floating disable; mode default; exec "notify-send --expire-time=250 'mode: default'"
-bindsym $mod+Shift+space floating disable; mode default; exec "notify-send --expire-time=250 'mode: default'"
+bindsym $mod+apostrophe floating disable; mode default
+bindsym $mod+Shift+space floating disable; mode default
 
-bindsym Escape mode default; exec notify-send --expire-time=250 'mode: default'
+bindsym Escape mode default
 
-bindsym $mod+g mode default; exec "notify-send --expire-time=250 'mode: default'"
+bindsym $mod+g mode default
 }
 #+END_SRC
 
@@ -457,7 +457,7 @@ bindsym 3 exec "~/scripts/screen/mx-built-in-screen.sh"; mode default
 bindsym F1 exec "pactl set-card-profile 0 output:hdmi-stereo"; mode default
 bindsym F2 exec "pactl set-card-profile 0 output:analog-stereo"; mode default
 
-bindsym Escape; exec notify-send --expire-time=250 --expire-time=1000 "mode default"; mode default
+bindsym Escape mode default
 }
 
 bindsym $mod+p workspace prev_on_output

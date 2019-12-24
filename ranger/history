@@ -1,23 +1,7 @@
-rename org
-touch c.org
-md Bluebleard
-touch links.org
-search c
-touch barba_azul.org
-md Veep
-search pi
-search pic
-rename bobs01.png
-md Watchmen
-search tut
-open_with 0 f
-md Misc
-rename wicked.mp3
 md 
 search pye
 rename .pyenv.b
 rename .pyenv
-search jedi
 find tm
 find 
 rename .emacs.d
@@ -98,3 +82,19 @@ md 03_find_user
 rename find_user.py
 search mus
 shell  %s
+search blo
+open_with 0 f
+md oop
+md byte
+search inst
+search verti
+rename ftplugin.b
+rename ftdetect.b
+rename colors.b
+rename autoload.b
+find 3.8
+search jedi
+search g
+search gl
+search git
+search bash

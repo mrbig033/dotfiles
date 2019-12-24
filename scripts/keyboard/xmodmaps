@@ -13,5 +13,10 @@ keycode 23 = Alt_L
 !}}}
 ! {{{ F10 to Space
 ! keycode 96 = Alt_R
-keycode 108 = space
+! keycode 108 = space
+!}}}
+! {{{ F10 to Shift
+! keycode 96 = Alt_R
+keycode 108 = Shift_L
+! keycode 50 = Shift_L
 !}}}
