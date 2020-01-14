@@ -3,7 +3,9 @@
 time="$1"
 
 clear
-termdown --no-figlet -T NUCLEAR "$time" &&  play --no-show-progress "$HOME"/Sounds/apple.mp3 &&
+# termdown --no-figlet -T NUCLEAR "$time" &&  play --no-show-progress "$HOME"/Sounds/apple.mp3 &&
+termdown --no-figlet -T NUCLEAR "$time" &&
+clear
 echo ""
-echo ' ' 'NUCLEAR FINISHED'
+echo ' ' '### NUCLEAR FINISHED ###'
 echo ""

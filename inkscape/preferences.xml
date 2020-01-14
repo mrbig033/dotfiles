@@ -39,7 +39,8 @@
   <group
      id="fullscreen">
     <group
-       id="task" />
+       id="task"
+       taskset="0" />
     <group
        id="menu"
        state="1" />
@@ -324,7 +325,7 @@
        id="lpetool"
        mode="drag"
        style="fill:#ff0000;fill-opacity:1;fill-rule:nonzero;stroke:none;"
-       unit="px"
+       unit="mm"
        show_bbox="1" />
     <eventcontext
        id="text"
@@ -332,11 +333,11 @@
        gradientdrag="1"
        font_sample="AaBbCcIiPpQq12369$€¢?.;/()"
        show_sample_in_list="1"
-       style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:1.25;letter-spacing:0px;word-spacing:0px"
+       style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:0.5;letter-spacing:0px;word-spacing:0px"
        selcue="1">
       <group
-         id="lineheight"
-         display_unit="0" />
+         display_unit="0"
+         id="lineheight" />
     </eventcontext>
     <eventcontext
        id="nodes"
@@ -354,8 +355,8 @@
        live_outline="1"
        live_objects="1"
        show_helperpath="0"
-       x="0"
-       y="0"
+       x="119.667"
+       y="113.972"
        edit_clipping_paths="0"
        edit_masks="0" />
     <eventcontext
@@ -422,12 +423,12 @@
        offset="0"
        offsetunits="cm" />
     <group
-       id="measure"
-       fontsize="10"
-       precision="2"
-       scale="100"
+       unit="mm"
        offset="5"
-       unit="px" />
+       scale="100"
+       precision="2"
+       fontsize="10"
+       id="measure" />
   </group>
   <group
      id="palette">
@@ -572,11 +573,11 @@
        panel_mode="1"
        panel_wrap="0"
        panel_border="0"
-       page="0"
+       page="2"
        x="0"
        y="0"
        w="352"
-       h="520"
+       h="475"
        visible="1"
        state="2"
        placement="5" />
@@ -586,7 +587,20 @@
        id="textandfont" />
     <group
        id="transformation"
-       applyseparately="0" />
+       applyseparately="0"
+       panel_size="1"
+       panel_ratio="100"
+       panel_mode="1"
+       panel_wrap="0"
+       panel_border="0"
+       rotateCounterClockwise="1"
+       x="0"
+       y="0"
+       w="359"
+       h="192"
+       visible="0"
+       state="2"
+       placement="1" />
     <group
        id="align"
        panel_size="1"
@@ -594,11 +608,11 @@
        panel_mode="1"
        panel_wrap="0"
        panel_border="0"
-       align-to="4"
+       align-to="0"
        x="0"
        y="0"
        w="352"
-       h="520"
+       h="475"
        visible="1"
        state="2"
        placement="5" />
@@ -620,10 +634,10 @@
        panel_mode="1"
        panel_wrap="0"
        panel_border="0"
-       x="960"
-       y="540"
-       w="1916"
-       h="938"
+       x="1850"
+       y="744"
+       w="597"
+       h="653"
        visible="0"
        placement="1" />
     <group
@@ -656,23 +670,23 @@
        x="0"
        y="0"
        w="352"
-       h="520"
+       h="475"
        visible="1"
        state="2"
        placement="5">
       <group
          id="exportarea"
-         value="page" />
+         value="drawing" />
       <group
          id="defaultxdpi"
-         value="96.03" />
+         value="100" />
     </group>
     <group
        id="save_as"
-       default="org.inkscape.output.svg.plain"
+       default="org.inkscape.output.svg.inkscape"
        append_extension="1"
        enable_preview="1"
-       path="/home/jerry/Desktop"
+       path="/home/jerry/Python/my_tuto/img/lossless"
        use_current_dir="1" />
     <group
        id="save_copy"
@@ -905,7 +919,7 @@
        value="0" />
     <group
        id="stickyzoom"
-       value="0" />
+       value="1" />
     <group
        id="selcue"
        value="2" />
@@ -1034,22 +1048,28 @@
     <group
        id="rendering" />
     <group
-       value="ungroup"
-       id="kbshortcuts" />
+       id="kbshortcuts"
+       value="ungroup" />
   </group>
   <group
      id="extensions"
      org.inkscape.render.empty_video.size="Custom"
      org.inkscape.render.empty_video.width="1920"
-     org.inkscape.render.empty_video.height="1080" />
+     org.inkscape.render.empty_video.height="1080"
+     org.inkscape.effect.filter.ColorDropShadow.blur="2.77556e-17"
+     org.inkscape.effect.filter.ColorDropShadow.xoffset="0.1"
+     org.inkscape.effect.filter.ColorDropShadow.yoffset="0.1"
+     org.inkscape.effect.filter.ColorDropShadow.type="outer"
+     org.inkscape.effect.filter.ColorDropShadow.__live_effect__="0"
+     org.inkscape.effect.filter.ColorDropShadow.tab="coltab" />
   <group
      id="desktop"
-     style="line-height:1.25;stroke-width:1.065;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:0;fill:#ffffff;-inkscape-font-specification:Roboto;font-family:Roboto;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:133.33333333px">
+     style="line-height:0.5;stroke-width:2.26771654;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:1;fill:#e56969;-inkscape-font-specification:'input mono';font-family:'input mono';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:16px;fill-opacity:1;opacity:1">
     <group
        width="1920"
-       height="968"
+       height="1034"
        x="0"
-       y="88"
+       y="22"
        fullscreen="0"
        id="geometry"
        maximized="0" />

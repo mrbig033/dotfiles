@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 
 clear
-sudo chown --recursive --changes $USER /home/files/dotfiles/emacs/em/modules/ /home/files/dotfiles/emacs/em/init.org /home/files/dotfiles/emacs/em/init.el
+sudo chown --recursive --changes "$USER"  "$HOME"/.emacs.d/init.org "$HOME"/.emacs.d/init.el

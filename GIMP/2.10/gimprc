@@ -48,10 +48,14 @@
 (layer-resize-fill-type pattern)
 (fill-options
     (style solid)
-    (antialias yes))
+    (antialias yes)
+    (feather no)
+    (feather-radius 10.000000))
 (stroke-options
     (style solid)
     (antialias yes)
+    (feather no)
+    (feather-radius 10.000000)
     (method line)
     (width 6.000000)
     (unit pixels)

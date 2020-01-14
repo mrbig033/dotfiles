@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+clear
+xbindkeys -k &&
+i3-msg '[title="term-up"]' focus

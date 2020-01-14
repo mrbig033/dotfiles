@@ -215,7 +215,6 @@ bindsym $mod+F12 exec "i3-msg exit"
 bindsym --release $mod+Shift+q exec xkill
 bindsym $mod+F5 exec --no-startup-id $Locker
 bindsym $mod+z exec --no-startup-id morc_menu
-# bindsym F10 [class="Slack"] move scratchpad; [title="term-ranger"] move scratchpad; [title="term-up"] move scratchpad; [title="term-bpython"] move scratchpad; exec "~/maps/texpander/texpander.sh"
 bindsym $mod+Control+Return exec "xfce4-terminal"
 bindsym $mod+d exec dmenu_run -i -l 5 -fn 'Input Mono-13'
 bindsym --release Print exec "xfce4-screenshooter --region"
@@ -251,10 +250,12 @@ bindsym Menu mode "launch"
 
 mode "launch" {
 
+bindsym F10 [class="Slack"] move scratchpad; [title="term-ranger"] move scratchpad; [title="term-up"] move scratchpad; [title="term-bpython"] move scratchpad; exec "~/maps/texpander/texpander.sh"
 bindsym 1 exec "~/scripts/i3_scripts/touchpad_off"; mode default
 bindsym 2 exec "~/scripts/i3_scripts/touchpad_on"; mode default
 bindsym 3 [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "~/scripts/cline_scripts/open-i3-config"; mode default
-bindsym Shift+e exec "i3-msg exit"; mode default
+# bindsym Shift+e exec "i3-msg exit"; mode default
+bindsym Shift+e exec "~/.emacs_anywhere/bin/run"; mode default
 bindsym t [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "thunar"; mode default
 bindsym Shift+t [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "sudo thunar"; mode default
 bindsym s exec "~/scripts/i3_scripts/startup-manual"; mode default
@@ -394,7 +395,7 @@ for_window [class="Hexchat" title="mrblack"] border none
 for_window [class="Hexchat" title="mrblack"] floating enable sticky enable
 for_window [class="Hexchat" title="mrblack"] move scratchpad
 for_window [class="Hexchat" title="mrblack"] resize set 1250 450; move to position 350 0
-bindsym $mod+o [class="Slack"] move scratchpad; [title="term-ranger"] move scratchpad; [title="term-up"] move scratchpad; [title="term-bpython"] move scratchpad; [title="mrblack"] scratchpad show; move to position 350 0
+bindsym $mod+o [class="Slack"] move scratchpad; [title="term-ranger"] move scratchpad; [title="term-up"] move scratchpad; [title="term-bpython"] move scratchpad; [class="Hexchat"] scratchpad show; move to position 350 0
 #+END_SRC
 ** Workspaces
 #+BEGIN_SRC i3

@@ -1,5 +1,3 @@
-md 
-search pye
 rename .pyenv.b
 rename .pyenv
 find tm
@@ -98,3 +96,5 @@ search g
 search gl
 search git
 search bash
+search th
+open_with nvim
