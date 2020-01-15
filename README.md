@@ -5,12 +5,9 @@
 
 # Runtime Environment
 
-- **OS**: MX Linux 18
-- **Window Manager**: i3 version 4.13
-- **Terminal Emulator**: xfce4-terminal 0.8.3
-- **Terminal Multiplexer**: tmux master
-- **Primary Text Editor**: GNU Emacs 27.0.50
-- **Secondary Text Editor**: NVIM 0.1.7
-# dotfiles
-# dotfiles
-# dotfiles
+- **OS**: MX Linux 19
+- **Window Manager**: i3 version 4.16.1 
+- **Terminal Emulator**: xfce4-terminal 0.8.8
+- **Terminal Multiplexer**: tmux 2.8
+- **Primary Text Editor**: GNU Emacs 28.0.50
+- **Secondary Text Editor**: NVIM v0.3.4

@@ -248,7 +248,6 @@ bindsym $mod+Control+o split h;exec "notify-send --expire-time=250 'tile horizon
 #+BEGIN_SRC i3
 bindsym Menu [title="term-up"] move scratchpad; mode "launch"
 
-
 mode "launch" {
 
 bindsym F10 [class="Slack"] move scratchpad; [title="term-ranger"] move scratchpad; [title="term-up"] move scratchpad; [title="term-bpython"] move scratchpad; exec "~/maps/texpander/texpander.sh"
