@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+git -C /home/jerry/creative add -A
+git -C /home/jerry/creative commit -am "auto-commit"
+git -C /home/jerry/creative push

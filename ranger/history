@@ -1,13 +1,3 @@
-rename .pyenv.b
-rename .pyenv
-find tm
-find 
-rename .emacs.d
-search em
-search emac
-search emacs
-rename emacs
-rename .e
 search org
 search cra
 search cre
@@ -98,3 +88,13 @@ search git
 search bash
 search th
 open_with nvim
+rename elpa
+find use-p
+rename elpa.
+find git
+search .git
+search \.git
+md el
+rename elpa.back
+md elpa
+search use-p
