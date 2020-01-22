@@ -113,19 +113,18 @@ client.background       #2B2C2B
 # client.placeholder      #000000 #0c0c0c #ffffff #000000
 # client.background       #2B2C2B
 
+# exec --no-startup-id "emacs --daemon=emacs-gui"
+exec --no-startup-id "emacsclient --socket-name=emacs-gui --alternate-editor=\"\" --no-wait --create-frame"
+exec --no-startup-id "~/scripts/cline_scripts/sessions.sh"
 exec --no-startup-id "xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up --hold &"
 exec --no-startup-id "xfce4-terminal --working-directory=~ --title=term-ranger --hold &"
-exec --no-startup-id "~/scripts/cline_scripts/sessions.sh"
-exec --no-startup-id "xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up &"
 exec --no-startup-id "xset s 600"
 exec --no-startup-id "xset mouse 10/5 0 &"
 exec --no-startup-id "xset r rate 200 80 &"
 exec --no-startup-id "compton -b --backend glx &"
 exec --no-startup-id "~/scripts/keyboard/init_keys.sh &"
 exec --no-startup-id "xrandr --output DP-1 --off --output HDMI-1 --mode 1920x1080 --pos 0x0 --rotate normal --output eDP-1 --off --output HDMI-2 --off &"
-exec --no-startup-id "~/scripts/i3_scripts/delayed_init"
-exec --no-startup-id redshift
-exec --no-startup-id xfce4-power-manager
+exec --no-startup-id "sleep 60 && ~/scripts/i3_scripts/delayed_init"
 exec --no-startup-id nm-applet
 exec --no-startup-id i3-msg workspace $ws1
 # exec --no-startup-id "xinput --disable 'ETPS/2 Elantech Touchpad' &"
@@ -192,7 +191,6 @@ bindsym $mod+v split v;exec "notify-send --expire-time=250 'tile vertically'"
 bindsym $mod+Control+o split h;exec "notify-send --expire-time=250 'tile horizontally'"
 
 bindsym Menu [title="term-up"] move scratchpad; mode "launch"
-
 
 mode "launch" {
 

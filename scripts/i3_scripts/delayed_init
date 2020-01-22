@@ -3,4 +3,4 @@
 clipit
 pulseaudio
 unclutter -display :0.0 -idle 1.0
-feh --bg-fill /home/jerry/Pictures/Wallpaper/
+feh --recursive --randomize --bg-fill /home/jerry/Pictures/Wallpaper/

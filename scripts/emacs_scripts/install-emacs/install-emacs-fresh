@@ -1,9 +1,14 @@
 #!/usr/bin/env bash
 
-sudo apt -y build-dep emacs25 &&
+# sudo apt -y build-dep emacs25 &&
 git clone git://git.savannah.gnu.org/emacs.git &&
-source ./cd-emacs &&
+source /home/jerry/scripts/emacs_scripts/install-emacs/cd-emacs &&
 ./autogen.sh &&
-./configure &&
+./configure --with-x-toolkit=lucid &&
 make &&
 sudo make install
+
+# ./autogen.sh &&
+# ./configure --with-x-toolkit=lucid &&
+# make &&
+# sudo make install

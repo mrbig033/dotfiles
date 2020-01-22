@@ -4317,7 +4317,7 @@ global-key-toggle-fullscreen=Ctrl+Shift+f
 #key-leave-fullscreen=Esc
 
 # Play/Pause (string)
-#global-key-play-pause=
+global-key-play-pause=Browser Home
 
 # Play/Pause (string)
 key-play-pause=Space

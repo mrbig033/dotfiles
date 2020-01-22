@@ -2,5 +2,7 @@
 # 
 # This file will be entirely rewritten each time you exit.
 
+(parasite "gimp-metadata-exif-rotate(image/jpeg)" 1 3 "yes")
+
 
 # end of parasiterc
