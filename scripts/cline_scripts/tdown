@@ -4,8 +4,8 @@
 time="$1"
 
 clear
-# termdown --no-figlet -T "TIMER" "$time" &&  play --no-show-progress "$HOME"/Sounds/apple.mp3 &&
-termdown --no-figlet -T "TIMER" "$time" &&
+termdown --no-figlet -T "TIMER" "$time" &&  play --no-show-progress "$HOME"/Sounds/apple.mp3 &&
+# termdown --no-figlet -T "TIMER" "$time" &&
 echo "" &&
 echo ' ' $message 'TIMER FINISHED' &&
 echo ""

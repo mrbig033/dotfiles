@@ -2752,7 +2752,7 @@ freetype-monofont=DejaVu Sans Mono
 #freetype-fontsize=0
 
 # Relative font size (integer)
-freetype-rel-fontsize=18
+freetype-rel-fontsize=12
 
 # Text opacity (integer)
 #freetype-opacity=255
@@ -3924,7 +3924,7 @@ vout=any
 #video-splitter=
 
 # Enable sub-pictures (boolean)
-spu=0
+#spu=1
 
 # On Screen Display (boolean)
 #osd=1

@@ -217,6 +217,7 @@ bindsym $mod+z exec --no-startup-id morc_menu
 bindsym $mod+Control+Return exec "xfce4-terminal"
 bindsym $mod+d exec dmenu_run -i -l 5 -fn 'Input Mono-13'
 bindsym --release Print exec "xfce4-screenshooter --region"
+bindsym --release $mod+Print exec "xfce4-screenshooter --fullscreen --save '/home/jerry/Pictures/Screenshots/VLC_Sreenshots'"
 #+END_SRC
 ** Movement
 #+BEGIN_SRC i3
