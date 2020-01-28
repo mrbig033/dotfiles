@@ -66,7 +66,7 @@
                     (show-button-bar "true"))))))
 (session-info "toplevel"
     (factory-entry "gimp-file-open-dialog")
-    (position 0 114)
+    (position 0 92)
     (size 956 988))
 (session-info "toplevel"
     (factory-entry "gimp-keyboard-shortcuts-dialog")
@@ -78,7 +78,7 @@
 (session-info "toplevel"
     (factory-entry "gimp-file-save-dialog")
     (position 0 0)
-    (size 956 944))
+    (size 956 988))
 (session-info "toplevel"
     (factory-entry "gimp-toolbox-color-dialog")
     (position 0 0))

@@ -2,6 +2,18 @@
 # 
 # This file will be entirely rewritten each time you exit.
 
+(GimpTemplate "png-to-jpg"
+    (width 1920)
+    (height 1080)
+    (unit pixels)
+    (xresolution 300.000000)
+    (yresolution 300.000000)
+    (resolution-unit inches)
+    (image-type rgb)
+    (precision u8-gamma)
+    (color-managed yes)
+    (color-profile NULL)
+    (fill-type background))
 (GimpTemplate "A0 (300 ppi)"
     (width 9933)
     (height 14043)

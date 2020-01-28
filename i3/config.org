@@ -171,6 +171,7 @@ exec --no-startup-id "compton -b --backend glx &"
 exec --no-startup-id "~/scripts/keyboard/init_keys.sh &"
 exec --no-startup-id "xrandr --output DP-1 --off --output HDMI-1 --mode 1920x1080 --pos 0x0 --rotate normal --output eDP-1 --off --output HDMI-2 --off &"
 exec --no-startup-id "sleep 60 && ~/scripts/i3_scripts/delayed_init"
+exec --no-startup-id feh --recursive --randomize --bg-fill ~/Pictures/Wallpaper/
 exec --no-startup-id nm-applet
 exec --no-startup-id i3-msg workspace $ws1
 # exec --no-startup-id "xinput --disable 'ETPS/2 Elantech Touchpad' &"
@@ -250,7 +251,7 @@ bindsym Menu [title="term-up"] move scratchpad; mode "launch"
 
 mode "launch" {
 
-bindsym F10 [class="Slack"] move scratchpad; [title="term-ranger"] move scratchpad; [title="term-up"] move scratchpad; [title="term-bpython"] move scratchpad; exec "~/maps/texpander/texpander.sh"
+bindsym apostrophe mode default; [class="Slack"] move scratchpad; [title="term-ranger"] move scratchpad; [title="term-up"] move scratchpad; [title="term-bpython"] move scratchpad; exec "~/maps/texpander/texpander.sh"
 bindsym 1 exec "~/scripts/i3_scripts/touchpad_off"; mode default
 bindsym 2 exec "~/scripts/i3_scripts/touchpad_on"; mode default
 bindsym 3 [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "~/scripts/cline_scripts/open-i3-config"; mode default

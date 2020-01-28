@@ -2752,7 +2752,7 @@ freetype-monofont=DejaVu Sans Mono
 #freetype-fontsize=0
 
 # Relative font size (integer)
-freetype-rel-fontsize=12
+freetype-rel-fontsize=16
 
 # Text opacity (integer)
 #freetype-opacity=255
@@ -3843,7 +3843,7 @@ video-title-position=4
 #mouse-hide-timeout=1000
 
 # Video snapshot directory (or filename) (string)
-snapshot-path=/home/george/eva/shots_ep2
+snapshot-path=/home/jerry/Pictures/Screenshots/VLC_Sreenshots
 
 # Video snapshot file prefix (string)
 snapshot-prefix=$T___

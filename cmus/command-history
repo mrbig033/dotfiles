@@ -1,2 +1,4 @@
+bind -f common ^L refresh
+bind -f browser i toggle show_hiddennn
 shell 
 rand
