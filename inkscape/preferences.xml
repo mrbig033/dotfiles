@@ -336,8 +336,8 @@
        style="fill:black;fill-opacity:1;stroke:none;font-family:sans-serif;font-style:normal;font-weight:normal;font-size:40px;line-height:0.5;letter-spacing:0px;word-spacing:0px"
        selcue="1">
       <group
-         display_unit="0"
-         id="lineheight" />
+         id="lineheight"
+         display_unit="0" />
     </eventcontext>
     <eventcontext
        id="nodes"
@@ -355,8 +355,8 @@
        live_outline="1"
        live_objects="1"
        show_helperpath="0"
-       x="119.667"
-       y="113.972"
+       x="0"
+       y="0"
        edit_clipping_paths="0"
        edit_masks="0" />
     <eventcontext
@@ -423,12 +423,12 @@
        offset="0"
        offsetunits="cm" />
     <group
-       unit="mm"
-       offset="5"
-       scale="100"
-       precision="2"
+       id="measure"
        fontsize="10"
-       id="measure" />
+       precision="2"
+       scale="100"
+       offset="5"
+       unit="mm" />
   </group>
   <group
      id="palette">
@@ -596,7 +596,7 @@
        rotateCounterClockwise="1"
        x="0"
        y="0"
-       w="359"
+       w="390"
        h="192"
        visible="0"
        state="2"
@@ -608,7 +608,7 @@
        panel_mode="1"
        panel_wrap="0"
        panel_border="0"
-       align-to="0"
+       align-to="4"
        x="0"
        y="0"
        w="352"
@@ -634,10 +634,10 @@
        panel_mode="1"
        panel_wrap="0"
        panel_border="0"
-       x="1850"
-       y="744"
-       w="597"
-       h="653"
+       x="1874"
+       y="1043"
+       w="1916"
+       h="938"
        visible="0"
        placement="1" />
     <group
@@ -676,7 +676,7 @@
        placement="5">
       <group
          id="exportarea"
-         value="drawing" />
+         value="page" />
       <group
          id="defaultxdpi"
          value="100" />
@@ -1048,8 +1048,8 @@
     <group
        id="rendering" />
     <group
-       id="kbshortcuts"
-       value="ungroup" />
+       value="ungroup"
+       id="kbshortcuts" />
   </group>
   <group
      id="extensions"
@@ -1064,12 +1064,12 @@
      org.inkscape.effect.filter.ColorDropShadow.tab="coltab" />
   <group
      id="desktop"
-     style="line-height:0.5;stroke-width:2.26771654;stroke-miterlimit:4;stroke-dasharray:none;stroke:none;stroke-opacity:1;fill:#e56969;-inkscape-font-specification:'input mono';font-family:'input mono';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:16px;fill-opacity:1;opacity:1">
+     style="line-height:0.5;stroke-width:3.02362204;stroke-miterlimit:4;stroke-dasharray:18.14173222,3.02362204;stroke:none;stroke-opacity:1;fill:none;-inkscape-font-specification:'input mono';font-family:'input mono';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:20px;fill-opacity:1;opacity:0.8;stroke-dashoffset:0">
     <group
        width="1920"
-       height="1034"
+       height="968"
        x="0"
-       y="22"
+       y="88"
        fullscreen="0"
        id="geometry"
        maximized="0" />

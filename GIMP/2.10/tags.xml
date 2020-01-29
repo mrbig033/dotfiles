@@ -1921,6 +1921,18 @@
   <resource identifier="Gothic Uralic Bold" checksum="(null)">
   </resource>
 
+  <resource identifier="Hack" checksum="(null)">
+  </resource>
+
+  <resource identifier="Hack Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Hack Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Hack Italic" checksum="(null)">
+  </resource>
+
   <resource identifier="Impact Condensed" checksum="(null)">
   </resource>
 
@@ -3748,6 +3760,12 @@
   <resource identifier="Quicksand" checksum="(null)">
   </resource>
 
+  <resource identifier="Quicksand" checksum="(null)">
+  </resource>
+
+  <resource identifier="Quicksand Bold" checksum="(null)">
+  </resource>
+
   <resource identifier="Quicksand Bold" checksum="(null)">
   </resource>
 
@@ -3757,7 +3775,13 @@
   <resource identifier="Quicksand Light" checksum="(null)">
   </resource>
 
+  <resource identifier="Quicksand Light, Light" checksum="(null)">
+  </resource>
+
   <resource identifier="Quicksand Light Oblique" checksum="(null)">
+  </resource>
+
+  <resource identifier="Quicksand Medium, Medium" checksum="(null)">
   </resource>
 
   <resource identifier="Quicksand Oblique" checksum="(null)">

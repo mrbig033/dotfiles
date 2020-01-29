@@ -1,5 +1,3 @@
-touch dic_reader.py
-touch delimiter.py
 rename fighters2.csv
 rename 01_reading
 md 02_writing
@@ -98,3 +96,5 @@ md Poulenc
 md Handel
 md Liszt
 md Satie
+search sou
+rename white_noite_10h!.mp3
