@@ -95,24 +95,6 @@
      modifiers="Ctrl"
      action="com.nerdson.split.noprefs" />
   <bind
-     key="o"
-     modifiers="Ctrl,Shift"
-     action="com.nerdson.split"
-     display="true" />
-  <bind
-     key="O"
-     modifiers="Ctrl,Shift"
-     action="com.nerdson.split" />
-  <bind
-     key="r"
-     modifiers="Ctrl,Shift"
-     action="FitCanvasToSelection"
-     display="true" />
-  <bind
-     key="R"
-     modifiers="Ctrl,Shift"
-     action="FitCanvasToSelection" />
-  <bind
      key="s"
      modifiers="Ctrl,Alt"
      action="FitCanvasToSelectionOrDrawing"
@@ -170,4 +152,31 @@
      key="E"
      modifiers="Ctrl"
      action="AlignVerticalHorizontalCenter" />
+  <bind
+     key="p"
+     modifiers="Ctrl,Shift"
+     action="DialogDocumentProperties"
+     display="true" />
+  <bind
+     key="P"
+     modifiers="Ctrl,Shift"
+     action="DialogDocumentProperties" />
+  <bind
+     key="r"
+     modifiers="Ctrl,Shift"
+     action="DialogPreferences"
+     display="true" />
+  <bind
+     key="R"
+     modifiers="Ctrl,Shift"
+     action="DialogPreferences" />
+  <bind
+     key="o"
+     modifiers="Ctrl,Shift"
+     action="DialogFillStroke"
+     display="true" />
+  <bind
+     key="O"
+     modifiers="Ctrl,Shift"
+     action="DialogFillStroke" />
 </keys>

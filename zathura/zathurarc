@@ -23,9 +23,11 @@ map [normal] ) zoom reset
 map [normal] l scroll half-up
 map [normal] h scroll half-down
 
-map [normal] p navigate previous
-" map [normal] n navigate next
-map [normal] N n
+map [normal] P navigate previous
+map [normal] N navigate next
+
+map [normal] , navigate previous
+map [normal] . navigate next
 
 map [fullscreen] l scroll half-up
 map [fullscreen] h scroll half-down

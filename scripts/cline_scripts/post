@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+project="$1"
+action="$2"
+/usr/bin/po start -t "$project" "$action"

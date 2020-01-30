@@ -1,3 +1,6 @@
+fset 90s=date>=1990&date<2000
+live-filter ll
+live-filter LL
 live-filter llllll
 bind -f common ^L refresh
 bind -f browser i toggle show_hiddennn

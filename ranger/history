@@ -1,12 +1,3 @@
-rename fighters2.csv
-rename 01_reading
-md 02_writing
-touch csv_write.py
-touch scream.py
-search stu
-rename Python
-touch 03_dict_writer
-md 03_dict_writer
 touch 01_dw.py
 md 01_cats
 md 02_convert
@@ -55,7 +46,6 @@ find git
 search .git
 search \.git
 md el
-rename elpa.back
 md elpa
 search use-p
 search emacs
@@ -98,3 +88,13 @@ md Liszt
 md Satie
 search sou
 rename white_noite_10h!.mp3
+search rem
+md pomodoro
+search pom
+rename elpa.back
+search em
+search in
+search instal
+find un
+search uni
+find ins
