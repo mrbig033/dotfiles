@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+git -C /home/jerry/.emacs.d add -A
+git -C /home/jerry/.emacs.d commit -am "auto-commit"
+git -C /home/jerry/.emacs.d push

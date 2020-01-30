@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+git -C /home/jerry/dotfiles add -A
+git -C /home/jerry/dotfiles commit -am "auto-commit"
+git -C /home/jerry/dotfiles push
