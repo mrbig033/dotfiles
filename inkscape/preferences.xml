@@ -573,11 +573,11 @@
        panel_mode="1"
        panel_wrap="0"
        panel_border="0"
-       page="1"
+       page="0"
        x="0"
        y="0"
-       w="339"
-       h="475"
+       w="352"
+       h="520"
        visible="1"
        state="2"
        placement="5" />
@@ -611,11 +611,11 @@
        align-to="0"
        x="0"
        y="0"
-       w="341"
-       h="522"
+       w="352"
+       h="520"
        visible="1"
        state="2"
-       placement="2"
+       placement="5"
        align-nodes-to="0"
        sel-as-groups="0" />
     <group
@@ -636,10 +636,10 @@
        panel_mode="1"
        panel_wrap="0"
        panel_border="0"
-       x="1510"
-       y="770"
+       x="874"
+       y="460"
        w="1916"
-       h="984"
+       h="938"
        visible="0"
        placement="1" />
     <group
@@ -671,8 +671,8 @@
        panel_border="0"
        x="0"
        y="0"
-       w="339"
-       h="475"
+       w="352"
+       h="520"
        visible="1"
        state="2"
        placement="5">
@@ -1090,12 +1090,12 @@
      org.greygreen.inkscape.effects.edge3d.blurheight="2" />
   <group
      id="desktop"
-     style="line-height:0.5;stroke-width:3.77952756;stroke-miterlimit:4;stroke-dasharray:none;stroke:#800000;stroke-opacity:1;fill:#000000;-inkscape-font-specification:'Josefin Sans';font-family:'Josefin Sans';font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:25.33333333px;fill-opacity:1;opacity:0.8;stroke-dashoffset:0;stroke-linejoin:round;paint-order:markers fill stroke">
+     style="line-height:0.5;stroke-width:3.77952756;stroke-miterlimit:4;stroke-dasharray:none;stroke:#800000;stroke-opacity:1;fill:#000000;-inkscape-font-specification:sans-serif;font-family:sans-serif;font-weight:normal;font-style:normal;font-stretch:normal;font-variant:normal;font-size:14.66666667px;fill-opacity:1;opacity:0.8;stroke-dashoffset:0;stroke-linejoin:round;paint-order:markers fill stroke">
     <group
        width="1920"
-       height="1012"
+       height="990"
        x="0"
-       y="44"
+       y="66"
        fullscreen="0"
        id="geometry"
        maximized="0" />
