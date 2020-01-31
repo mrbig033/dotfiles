@@ -2332,6 +2332,33 @@
   <resource identifier="IPAPMincho" checksum="(null)">
   </resource>
 
+  <resource identifier="Josefin Sans" checksum="(null)">
+  </resource>
+
+  <resource identifier="Josefin Sans Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Josefin Sans Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Josefin Sans Light" checksum="(null)">
+  </resource>
+
+  <resource identifier="Josefin Sans Light Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Josefin Sans Semi-Bold" checksum="(null)">
+  </resource>
+
+  <resource identifier="Josefin Sans Semi-Bold Italic" checksum="(null)">
+  </resource>
+
+  <resource identifier="Josefin Sans weight=255" checksum="(null)">
+  </resource>
+
+  <resource identifier="Josefin Sans weight=255 Italic" checksum="(null)">
+  </resource>
+
   <resource identifier="Junicode" checksum="(null)">
   </resource>
 
