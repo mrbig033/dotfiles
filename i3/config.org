@@ -267,8 +267,11 @@ bindsym Shift+k exec "/home/jerry/dotfiles/scripts/keyboard/ik &"; mode default
 bindsym Shift+w exec feh --recursive --randomize --bg-fill ~/Desktop/black.png; mode default
 bindsym $mod+Shift+w exec feh --recursive --randomize --bg-fill ~/Pictures/Wallpaper/; mode default
 
+bindsym --release x exec "~/dotfiles/scripts/cline_scripts/xp-only"; mode default
+
 bindsym Shift+r exec "/home/jerry/dotfiles/scripts/cline_scripts/restart_terminals"; mode default
 bindsym z exec "google-chrome-stable"; mode default
+bindsym h exec "/usr/bin/houaiss"; mode default
 bindsym q exec "qbittorrent"; mode default
 bindsym e [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "emacsclient --socket-name=emacs-gui --no-wait --create-frame"; mode default
 bindsym Menu exec "~/scripts/emacs_scripts/markdown-scratch"; mode default
@@ -506,8 +509,14 @@ for_window [class="mx-tools"] floating disable
 for_window [class="qBittorrent"] floating disable
 for_window [class="vlc" title="Advanced Preferences"] floating disable
 for_window [class="vlc" title="Simple Preferences"] floating disable
+for_window [title="Dicionário eletrônico Houaiss da língua portuguesa 1.0"] floating disable
 for_window [title="Welcome to IntelliJ IDEA"] floating disable
 for_window [title="Welcome to PyCharm"] floating disable
+#+END_SRC
+** Move Scratchpad
+#+BEGIN_SRC i3
+# for_window [class="Wine" title="^Splash$"] move scratchpad
+for_window [title="^Houaiss$"] move scratchpad
 #+END_SRC
 ** Floating Enable
 #+BEGIN_SRC i3

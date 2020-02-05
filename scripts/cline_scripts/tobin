@@ -1,4 +1,4 @@
 #!/bin/bash
 arg1=$1
 arg2=$2
-sudo ln -rsf $arg1 /usr/bin/$arg2
+sudo ln -rs $arg1 /usr/bin/$arg2
