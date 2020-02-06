@@ -965,7 +965,7 @@
 ; (gtk_accel_path "<Actions>/plug-in/plug-in-gap-videoframes-player" "")
 ; (gtk_accel_path "<Actions>/plug-in/plug-in-gap-anim-resize" "")
 ; (gtk_accel_path "<Actions>/vectors/vectors-popup" "")
-; (gtk_accel_path "<Actions>/image/image-rotate-90" "")
+(gtk_accel_path "<Actions>/image/image-rotate-90" "<Primary>r")
 ; (gtk_accel_path "<Actions>/vectors/vectors-export" "")
 ; (gtk_accel_path "<Actions>/vectors/vectors-delete" "")
 ; (gtk_accel_path "<Actions>/layers/layers-mode-previous" "")
