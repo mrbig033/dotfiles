@@ -150,8 +150,8 @@ bindsym $mod+space focus mode_toggle
 bindsym $mod+$alt+h focus output Left
 bindsym $mod+$alt+l focus output Right
 
-bindsym $alt+Shift+c focus child;exec "notify-send --expire-time=250 'parent focus'"
-bindsym $alt+Shift+p focus parent;exec "notify-send --expire-time=250 'parent focus'"
+bindsym $alt+Shift+c focus child; exec "notify-send --expire-time=1000 'parent focus'"
+bindsym $alt+Shift+p focus parent; exec "notify-send --expire-time=1000 'parent focus'"
 
 bindsym $mod+Shift+b border toggle
 bindsym $mod+Shift+F5 exec "i3-nagbar -t warning -m 'Exit i3?' -b 'Yes' 'i3-msg exit'"
@@ -190,8 +190,8 @@ workspace_layout stacking
 bindsym $mod+s layout toggle
 bindsym $mod+x layout toggle all
 
-bindsym $mod+v split v;exec "notify-send --expire-time=250 'tile vertically'"
-bindsym $mod+Control+o split h;exec "notify-send --expire-time=250 'tile horizontally'"
+bindsym $mod+v split v;exec "notify-send --expire-time=1000 'tile vertically'"
+bindsym $mod+Control+o split h;exec "notify-send --expire-time=1000 'tile horizontally'"
 
 bindsym Menu [title="term-up"] move scratchpad; mode "launch"
 
@@ -405,10 +405,10 @@ bindsym $mod+Control+Shift+Left move workspace to output Left
 # bindsym $mod+Shift+n focus output Right
 # bindsym $mod+Shift+p focus output Left
 
-bindsym XF86AudioPlay exec playerctl play-pause
-bindsym XF86AudioMute exec "pactl set-sink-mute 0 toggle"
-bindsym XF86AudioRaiseVolume exec "pactl set-sink-mute 0 false; pactl set-sink-volume 0 +25%"
-bindsym XF86AudioLowerVolume exec "pactl set-sink-mute 0 false; pactl set-sink-volume 0 -25%"
+bindsym XF86AudioPlay exec playerctl play-pause; exec "notify-send --expire-time=1000 'play/play'"
+bindsym XF86AudioMute exec "pactl set-sink-mute 0 toggle; "exec "notify-send --expire-time=1000 'mute/unmute'"
+bindsym XF86AudioRaiseVolume exec "pactl set-sink-mute 0 false; pactl set-sink-volume 0 +25%"; exec "notify-send --expire-time=1000 'vol +25%'"
+bindsym XF86AudioLowerVolume exec "pactl set-sink-mute 0 false; pactl set-sink-volume 0 -25%"; exec "notify-send --expire-time=1000 'vol -25%'"
 
 for_window [class="GParted"] floating disable border normal
 for_window [class="Gnome-pomodoro"] floating disable
