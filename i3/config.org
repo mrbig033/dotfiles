@@ -271,6 +271,7 @@ bindsym --release x exec "~/dotfiles/scripts/cline_scripts/xp-only"; mode defaul
 
 bindsym Shift+r exec "/home/jerry/dotfiles/scripts/cline_scripts/restart_terminals"; mode default
 bindsym z exec "google-chrome-stable"; mode default
+bindsym a exec "pavucontrol"; mode default
 bindsym h exec "/usr/bin/houaiss"; mode default
 bindsym q exec "qbittorrent"; mode default
 bindsym e [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "emacsclient --socket-name=emacs-gui --no-wait --create-frame"; mode default
@@ -512,11 +513,7 @@ for_window [class="vlc" title="Simple Preferences"] floating disable
 for_window [title="Dicionário eletrônico Houaiss da língua portuguesa 1.0"] floating disable
 for_window [title="Welcome to IntelliJ IDEA"] floating disable
 for_window [title="Welcome to PyCharm"] floating disable
-#+END_SRC
-** Move Scratchpad
-#+BEGIN_SRC i3
-# for_window [class="Wine" title="^Splash$"] move scratchpad
-for_window [title="^Houaiss$"] move scratchpad
+for_window [class="Pavucontrol" title="Volume Control"] floating disable
 #+END_SRC
 ** Floating Enable
 #+BEGIN_SRC i3
@@ -550,7 +547,12 @@ for_window [title="MuseScore: Play Panel"] floating enable
 for_window [title="alsamixer"] floating enable border pixel 1
 for_window [title="i3_help"] floating enable sticky enable border normal
 for_window [title="term Preferences"] floating enable
-for_window [title="Atomic Chrome"] resize set 1367 384; move to position 0 0
+# for_window [title="Atomic Chrome"] resize set 1367 384; move to position 0 0
+#+END_SRC
+** Move Scratchpad
+#+BEGIN_SRC i3
+# for_window [class="Wine" title="^Splash$"] move scratchpad
+for_window [title="^Houaiss$"] move scratchpad
 #+END_SRC
 ** Others
 #+BEGIN_SRC i3
