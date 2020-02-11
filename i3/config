@@ -406,8 +406,8 @@ bindsym $mod+Control+Shift+Left move workspace to output Left
 
 bindsym XF86AudioPlay exec playerctl play-pause
 bindsym XF86AudioMute exec "pactl set-sink-mute 0 toggle"
-bindsym XF86AudioRaiseVolume exec "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 +20%"
-bindsym XF86AudioLowerVolume exec "pactl set-sink-mute 0 false ; pactl set-sink-volume 0 -20%"
+bindsym XF86AudioRaiseVolume exec "pactl set-sink-mute 0 false; pactl set-sink-volume 0 +25%"
+bindsym XF86AudioLowerVolume exec "pactl set-sink-mute 0 false; pactl set-sink-volume 0 -25%"
 
 for_window [class="GParted"] floating disable border normal
 for_window [class="Gnome-pomodoro"] floating disable
