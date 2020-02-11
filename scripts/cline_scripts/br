@@ -1,6 +1,0 @@
-#!/usr/bin/env bash
-
-clear
-term="$*"
-result=$(bro "$term")
-echo "$result" | bat
