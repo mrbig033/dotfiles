@@ -1,7 +1,3 @@
-touch convert.py
-find csv
-search fmt
-find form
 search form
 md ex
 touch 01_add_user
@@ -14,7 +10,6 @@ touch print_users
 rename 02_print_users
 touch users.csv
 md Cheat_Sheets
-search 
 md 03_find_user
 rename find_user.py
 search mus
@@ -98,3 +93,8 @@ find ins
 search xp
 rename volume-notifications!.png
 search ru
+search command_
+search ho
+search o
+search how
+search 

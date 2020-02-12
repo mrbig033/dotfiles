@@ -11,7 +11,5 @@ tmux new-session -ds 7
 tmux new-session -ds 8
 tmux new-session -ds 9
 tmux new-session -ds 0
-# tmux switch-client -t ranger &>/dev/null || tmux -L ranger
-# notify-send --expire-time=250 'tmux reloaded'
-i3-msg "[title=term-up]" scratchpad show
+tmux attach -t 0 &>/dev/null || tmux switch-client -t 0
 # vim: ft=tmux nowrap
