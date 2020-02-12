@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+source="$1"
+clear
+afterwriting --source "$source" --pdf --overwrite
