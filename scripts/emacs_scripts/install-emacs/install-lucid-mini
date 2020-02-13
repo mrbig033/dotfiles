@@ -1,0 +1,8 @@
+#!/usr/bin/env bash
+
+# run this on the directory where you want to save
+# git clone git://git.savannah.gnu.org/emacs.git . &&
+# ./autogen.sh &&
+./configure --prefix="$HOME"/maps/emacs_mini --with-x-toolkit=lucid --without-all CFLAGS='-Os -m32' &&
+make &&
+sudo make install

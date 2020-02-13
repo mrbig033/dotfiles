@@ -20,7 +20,7 @@ liblzma-dev python-openssl git keepassxc gnome-disk-utility zenity     \
 libffi-dev wordnet simplescreenrecorder okular okular-extra-backends   \
 mercurial ninja-build gettext libtool libtool-bin autoconf automake    \
 cmake g++ pkg-config unzip gcc-multilib g++-multilib                   \
-baobab xorg-dev xcape fasd rubygems mpv feh rar nscd                      
+baobab xorg-dev xcape fasd rubygems mpv feh rar nscd
 
 # pyenv dependencies
 sudo apt-get install -y make build-essential libssl-dev zlib1g-dev libbz2-dev  \
