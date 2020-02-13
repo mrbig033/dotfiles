@@ -10,7 +10,8 @@ keycode 23 = Alt_L
 ! }}}
 ! {{{ F10 to Shift
 ! keycode 96 = Alt_R
-keycode 108 = Pause
+! keycode 108 = Pause
+keycode 108 = space
 ! keycode 50 = Shift_L
 !}}}
 !{{{ disable scroll lock
