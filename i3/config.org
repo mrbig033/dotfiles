@@ -162,8 +162,8 @@ client.background       #2B2C2B
 # exec --no-startup-id "emacs --daemon=emacs-gui"
 exec --no-startup-id "emacsclient --socket-name=emacs-gui --alternate-editor=\"\" --no-wait --create-frame"
 exec --no-startup-id "~/scripts/cline_scripts/sessions.sh"
-exec --no-startup-id "xfce4-terminal --command='tmux attach' --working-directory=~ --title=term-up --hold &"
-exec --no-startup-id "xfce4-terminal --working-directory=~ --title=term-ranger --hold &"
+exec --no-startup-id "st -T term-up -e tmux attach -t 0 &>/dev/null || tmux switch-client -t 0 &>/dev/null || tmux new-session -s 0"
+exec --no-startup-id "st -T term-ranger -e ranger"
 exec --no-startup-id "xset s 600"
 exec --no-startup-id "sleep 60 && qbittorrent"
 exec --no-startup-id "xset mouse 10/5 0 &"
@@ -206,21 +206,15 @@ bindsym $alt+Shift+p focus parent; exec "notify-send --expire-time=1000 'parent 
 #+BEGIN_SRC i3
 bindsym $mod+Shift+b border toggle
 bindsym $mod+Shift+F5 exec "i3-nagbar -t warning -m 'Exit i3?' -b 'Yes' 'i3-msg exit'"
-# bindsym $mod+Shift+F8 exec "xfce4-terminal --title=term-up --hold"
-bindsym $mod+Shift+F8 exec "st -T term-up"
-
+bindsym $mod+Shift+F8 exec "st -T term-up -e tmux attach -t 0 || tmux switch-client -t 0"
+bindsym $mod+Shift+F9 exec "st -T term-ranger -e ranger"
 bindsym $mod+Return [title="term-up"] move scratchpad; exec "st"
 
-# bindsym $mod+Shift+F9 exec "xfce4-terminal --working-directory=~ --title=term-ranger --hold"
-bindsym $mod+Shift+F9 exec "st -T term-ranger -e ranger"
-bindsym $mod+Shift+F10 exec "~/maps/suckless/st_bin3/bin/st -t term-ranger2 -n term-ranger2 -e ranger"
-bindsym $mod+Shift+F11 exec "xfce4-terminal --title=term-bpython"
 bindsym $mod+q kill
 bindsym $mod+F12 exec "i3-msg exit"
 bindsym --release $mod+Shift+q exec xkill
 bindsym $mod+F5 exec --no-startup-id $Locker
 bindsym $mod+z exec --no-startup-id morc_menu
-bindsym $mod+Control+Return exec "xfce4-terminal"
 bindsym $mod+d exec dmenu_run -i -l 5 -fn 'Input Mono-13'
 bindsym --release Print exec "xfce4-screenshooter --region"
 bindsym --release $mod+Print exec "xfce4-screenshooter --fullscreen --save '/home/jerry/Pictures/Screenshots/VLC_Sreenshots'"
@@ -365,7 +359,7 @@ for_window [title="term-up"] border none
 for_window [title="term-up"] floating enable sticky enable
 for_window [title="term-up"] move scratchpad
 for_window [title="term-up"] resize set 1250 450; move to position 350 0
-bindsym $mod+u [class="Slack"] move scratchpad; [title="mrblack"] move scratchpad; [title="term-ranger"] move scratchpad; [title="term-bpython"] move scratchpad; [title="term-up"] scratchpad show; move to position 350 0; move to position 350 0
+bindsym $mod+u [class="Slack"] move scratchpad; [title="mrblack"] move scratchpad; [title="term-ranger"] move scratchpad; [title="term-bpython"] move scratchpad; [title="term-up"] scratchpad show; move to position 350 0
 #+END_SRC
 **** Term Bpython
 #+BEGIN_SRC i3
@@ -492,10 +486,15 @@ bindsym $mod+Control+Shift+Left move workspace to output Left
 #+END_SRC
 ** Media Keys
 #+BEGIN_SRC i3
-bindsym XF86AudioPlay exec playerctl play-pause; exec "notify-send --expire-time=1000 'play/play'"
+set $spotify_next "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Next"
+set $spotify_prev "dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.Previous"
+
+bindsym XF86AudioPrev exec $spotify_prev; exec "notify-send --expire-time=1000 'previous song'"
+bindsym XF86AudioNext exec $spotify_next; exec "notify-send --expire-time=1000 'next song'"
+bindsym XF86AudioPlay exec playerctl play-pause; exec "notify-send --expire-time=1000 'play/pause'"
 bindsym XF86AudioMute exec "pactl set-sink-mute 0 toggle; "exec "notify-send --expire-time=1000 'mute/unmute'"
-bindsym XF86AudioRaiseVolume exec "pactl set-sink-mute 0 false; pactl set-sink-volume 0 +25%"; exec "notify-send --expire-time=1000 'vol +25%'"
-bindsym XF86AudioLowerVolume exec "pactl set-sink-mute 0 false; pactl set-sink-volume 0 -25%"; exec "notify-send --expire-time=1000 'vol -25%'"
+bindsym XF86AudioRaiseVolume exec "pactl set-sink-mute 0 false; pactl set-sink-volume 0 +45%"
+bindsym XF86AudioLowerVolume exec "pactl set-sink-mute 0 false; pactl set-sink-volume 0 -45%"
 #+END_SRC
 * Windows
 ** Floating Disable

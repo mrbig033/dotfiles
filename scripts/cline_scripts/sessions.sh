@@ -11,5 +11,4 @@ tmux new-session -ds 7
 tmux new-session -ds 8
 tmux new-session -ds 9
 tmux new-session -ds 0
-tmux attach -t 0 &>/dev/null || tmux switch-client -t 0
 # vim: ft=tmux nowrap
