@@ -155,11 +155,15 @@ bindsym $alt+Shift+p focus parent; exec "notify-send --expire-time=1000 'parent 
 
 bindsym $mod+Shift+b border toggle
 bindsym $mod+Shift+F5 exec "i3-nagbar -t warning -m 'Exit i3?' -b 'Yes' 'i3-msg exit'"
-bindsym $mod+Shift+F8 exec "xfce4-terminal --title=term-up --hold"
-bindsym $mod+Shift+F9 exec "xfce4-terminal --working-directory=~ --title=term-ranger --hold"
+# bindsym $mod+Shift+F8 exec "xfce4-terminal --title=term-up --hold"
+bindsym $mod+Shift+F8 exec "st -T term-up"
+
+bindsym $mod+Return [title="term-up"] move scratchpad; exec "st"
+
+# bindsym $mod+Shift+F9 exec "xfce4-terminal --working-directory=~ --title=term-ranger --hold"
+bindsym $mod+Shift+F9 exec "st -T term-ranger -e ranger"
 bindsym $mod+Shift+F10 exec "~/maps/suckless/st_bin3/bin/st -t term-ranger2 -n term-ranger2 -e ranger"
 bindsym $mod+Shift+F11 exec "xfce4-terminal --title=term-bpython"
-bindsym $mod+Return [title="term-up"] move scratchpad; exec "st"
 bindsym $mod+q kill
 bindsym $mod+F12 exec "i3-msg exit"
 bindsym --release $mod+Shift+q exec xkill
@@ -302,10 +306,10 @@ for_window [title="term-bpython"] move scratchpad
 for_window [title="term-bpython"] resize set 1250 450; move to position 350 0
 bindsym $mod+comma [class="Slack"] move scratchpad; [title="mrblack"] move scratchpad; [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; [title="term-bpython"] scratchpad show; move to position 350 0; move to position 350 0
 
-for_window [class="Xfce4-terminal" title="term-ranger"] border none
-for_window [class="Xfce4-terminal" title="term-ranger"] floating enable sticky enable
-for_window [class="Xfce4-terminal" title="term-ranger"] move scratchpad
-for_window [class="Xfce4-terminal" title="term-ranger"] resize set 1250 450; move to position 350 0
+for_window [title="term-ranger"] border none
+for_window [title="term-ranger"] floating enable sticky enable
+for_window [title="term-ranger"] move scratchpad
+for_window [title="term-ranger"] resize set 1250 450; move to position 350 0
 bindsym $mod+i [class="Slack"] move scratchpad; [title="mrblack"] move scratchpad; [title="term-up"] move scratchpad; [title="term-bpython"] move scratchpad; [title="term-ranger"] scratchpad show; move to position 350 0
 
 for_window [title="term-ranger2"] border none
