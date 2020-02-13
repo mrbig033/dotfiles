@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+package="$*"
+apt-cache show "$package" | bat --color always --style="grid"
