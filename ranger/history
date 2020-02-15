@@ -1,4 +1,3 @@
-md 04_print_users
 touch print_users
 rename 02_print_users
 touch users.csv
@@ -98,3 +97,4 @@ rename source_mini_26.3
 search ^org
 search push
 rename git
+rename push-creative
