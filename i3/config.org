@@ -493,8 +493,8 @@ bindsym XF86AudioPrev exec $spotify_prev; exec "notify-send --expire-time=1000 '
 bindsym XF86AudioNext exec $spotify_next; exec "notify-send --expire-time=1000 'next song'"
 bindsym XF86AudioPlay exec playerctl play-pause; exec "notify-send --expire-time=1000 'play/pause'"
 bindsym XF86AudioMute exec "pactl set-sink-mute 0 toggle; "exec "notify-send --expire-time=1000 'mute/unmute'"
-bindsym XF86AudioRaiseVolume exec "pactl set-sink-mute 0 false; pactl set-sink-volume 0 +35%"
-bindsym XF86AudioLowerVolume exec "pactl set-sink-mute 0 false; pactl set-sink-volume 0 -35%"
+bindsym XF86AudioRaiseVolume exec "pactl set-sink-mute 0 false; pactl set-sink-volume 0 +30%"
+bindsym XF86AudioLowerVolume exec "pactl set-sink-mute 0 false; pactl set-sink-volume 0 -30%"
 #+END_SRC
 * Windows
 ** Floating Disable
