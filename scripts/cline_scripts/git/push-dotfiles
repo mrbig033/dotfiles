@@ -3,3 +3,7 @@
 git -C /home/jerry/.emacs.d add -A
 git -C /home/jerry/.emacs.d commit -am "auto-commit"
 git -C /home/jerry/.emacs.d push
+
+git -C /home/jerry/dotfiles add -A
+git -C /home/jerry/dotfiles commit -am "auto-commit"
+git -C /home/jerry/dotfiles push
