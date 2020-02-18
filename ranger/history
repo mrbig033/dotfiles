@@ -1,38 +1,3 @@
-touch print_users
-rename 02_print_users
-touch users.csv
-md Cheat_Sheets
-md 03_find_user
-rename find_user.py
-search mus
-shell  %s
-search blo
-open_with 0 f
-md oop
-md byte
-search inst
-search verti
-rename ftplugin.b
-rename ftdetect.b
-rename colors.b
-rename autoload.b
-find 3.8
-search jedi
-search g
-search gl
-search bash
-search th
-open_with nvim
-rename elpa
-find use-p
-rename elpa.
-find git
-search .git
-search \.git
-md el
-md elpa
-search use-p
-search emacs
 rename .emacs.d.back
 md .emacs.d
 search proce
@@ -51,11 +16,9 @@ md Debussy
 md Bach
 find ab
 search abb
-search git
 search mu
 md Classical
 md Witcher
-open_with  f
 open_with audacious f
 md Stravinsky
 rename v0101_Bach_Mass_in_Bm_BWV_232
@@ -95,6 +58,43 @@ search tes
 md source_26.3
 rename source_mini_26.3
 search ^org
-search push
-rename git
-rename push-creative
+touch nsf_estrutura.org
+touch nsf_plot.org
+rename nsf_.org
+rename nsf_misc.org
+search git
+open_with  f
+md Declaracao_Independencia
+search da
+open_with 1 f
+search game
+md Games
+md SNES
+md Lakka
+md thumbnails
+md Cartoons
+md Spetacular_Spider_Man
+md Films
+open_with vlc f
+md Soc
+md Spider
+md X-Men
+md Spectacular[
+rename Spectacular
+touch scratch-mode
+rename scratch-mode.elk
+rename scratch-mode.el
+md Feb_18_2020
+search def
+md History o
+md Gaming_Historian
+md Nintendo
+md Misc
+md Big_Videos
+rename tech.org
+open_with 0 f
+rename .inactive
+compress backup.7z
+rename 
+rename hora_morta
+rename web

@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 
-clipit
 pulseaudio
 unclutter -display :0.0 -idle 1.0

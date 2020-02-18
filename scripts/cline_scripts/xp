@@ -7,4 +7,4 @@ i3-msg [title="term-up"] move scratchpad &>/dev/null
 xprop >| "$tmp_file" &&
 source "$HOME"/scripts/emacs_scripts/eclauncher "$tmp_file" &>/dev/null
 i3-msg "[title=term-up]" move scratchpad &>/dev/null
-i3-msg "[class=Emacs]" focus &>/dev/null
+# i3-msg "[class=Emacs]" focus &>/dev/null

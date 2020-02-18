@@ -119,6 +119,7 @@ exec --no-startup-id "~/scripts/cline_scripts/sessions.sh"
 exec --no-startup-id "st -T term-up -e tmux attach -t 0 &>/dev/null || tmux switch-client -t 0 &>/dev/null || tmux new-session -s 0"
 exec --no-startup-id "st -T term-ranger -e ranger"
 exec --no-startup-id "xset s 600"
+exec --no-startup-id "speep 60 && parcellite"
 exec --no-startup-id "sleep 60 && qbittorrent"
 exec --no-startup-id "xset mouse 10/5 0 &"
 exec --no-startup-id "xset r rate 200 80 &"
@@ -285,8 +286,7 @@ bindsym $mod+g mode default
 }
 
 bindsym $mod+equal scratchpad show
-bindsym $mod+Shift+minus move scratchpad; mode default
-for_window [class="Autokey-gtk" title="AutoKey"] move scratchpad
+bindsym $mod+Shift+minus move scratchpad
 
 for_window [title="term-up"] border none
 for_window [title="term-up"] floating enable sticky enable

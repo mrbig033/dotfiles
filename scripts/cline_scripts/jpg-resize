@@ -1,4 +1,0 @@
-#!/usr/bin/env bash
-
-percentage="$1"
-mogrify -resize "$1"% *.jpg
