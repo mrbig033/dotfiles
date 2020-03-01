@@ -1,3 +1,23 @@
+rename .v
+rename 044.jpeg
+search view
+search pic
+open_with viewnior f
+open_with vi f
+search li
+search cont
+search org
+md Debussy
+md Bach
+find ab
+search abb
+search mu
+md Classical
+md Witcher
+open_with audacious f
+md Stravinsky
+rename v0101_Bach_Mass_in_Bm_BWV_232
+md 
 md MP3
 rename 06_CD01_Bach_Mass_in_Bm_BWV_232
 rename 06_CD06_Bach_St.Matthew_Passion_BWV_244
@@ -70,6 +90,7 @@ rename tech.org
 open_with 0 f
 rename .inactive
 compress backup.7z
+rename 
 rename hora_morta
 rename web
 md LWT
@@ -77,24 +98,3 @@ md scriptr
 search mid
 md Anime
 search ligh
-touch .nomedia
-search k
-md skins
-rename Kodi
-open_with p f
-md X-Files_Revival
-rename X-Files_Complete_b
-rename 
-rename X-Files_Season_10
-md renamed
-md Season_08
-md detox
-search ko
-rename keyboard.xml
-rename keyboard.xml.back
-rename Exterminating_Angel_Extras
-search kod
-search  kod
-md Kodi
-search key
-search var
