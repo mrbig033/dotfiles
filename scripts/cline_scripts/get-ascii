@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+char="$1"
+printf %d\\n \'"$char"

@@ -1,5 +1,0 @@
-#!/bin/bash
-
-clear
-"$HOME"/scripts/emacs_scripts/eclauncher --eval "(man \"$1\")" --eval "(my-man)" &>/dev/null
-i3-msg "[class=Emacs]" focus &>/dev/null

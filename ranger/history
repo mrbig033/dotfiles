@@ -1,5 +1,3 @@
-md 
-md MP3
 rename 06_CD01_Bach_Mass_in_Bm_BWV_232
 rename 06_CD06_Bach_St.Matthew_Passion_BWV_244
 flat 
@@ -98,3 +96,5 @@ search kod
 search  kod
 md Kodi
 search key
+rename .kodi.back
+search kodi
