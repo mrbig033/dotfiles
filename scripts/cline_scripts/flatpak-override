@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+package="$1"
+path="$2"
+
+sudo flatpak override "$package" --filesystem="$path"

@@ -247,7 +247,7 @@ bindsym $mod+Control+o split h;exec "notify-send --expire-time=1000 'tile horizo
 #+END_SRC
 ** Launch Mode
 #+BEGIN_SRC i3
-bindsym Menu [title="term-up"] move scratchpad; mode "launch"
+bindsym Menu [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; mode "launch"
 
 mode "launch" {
 

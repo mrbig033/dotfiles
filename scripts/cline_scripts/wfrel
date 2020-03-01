@@ -1,0 +1,3 @@
+#!/usr/bin/env bash
+
+nmcli radio wifi on && nmcli radio wifi off

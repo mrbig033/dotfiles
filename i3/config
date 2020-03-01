@@ -192,7 +192,7 @@ bindsym $mod+x layout toggle all
 bindsym $mod+v split v;exec "notify-send --expire-time=1000 'tile vertically'"
 bindsym $mod+Control+o split h;exec "notify-send --expire-time=1000 'tile horizontally'"
 
-bindsym Menu [title="term-up"] move scratchpad; mode "launch"
+bindsym Menu [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; mode "launch"
 
 mode "launch" {
 
