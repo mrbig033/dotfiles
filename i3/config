@@ -158,7 +158,7 @@ bindsym $mod+Shift+b border toggle
 bindsym $mod+Shift+F5 exec "i3-nagbar -t warning -m 'Exit i3?' -b 'Yes' 'i3-msg exit'"
 bindsym $mod+Shift+F8 exec "st -T term-up -e tmux attach -t 0 || tmux switch-client -t 0"
 bindsym $mod+Shift+F9 exec "st -T term-ranger -e ranger"
-bindsym $mod+Return [title="term-up"] move scratchpad; exec "st"
+bindsym $mod+Return [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "st"
 
 bindsym $mod+q kill
 bindsym $mod+F12 exec "i3-msg exit"

@@ -31,6 +31,9 @@ xz-utils tk-dev libffi-dev liblzma-dev python-openssl git
 pip install --upgrade pip
 curl https://pyenv.run | bash
 
+# flatpak
+flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
+
 # clean
 sudo apt -y autoremove
 sudo apt -y autoclean
