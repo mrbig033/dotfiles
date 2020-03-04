@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+clear
+i3-msg "[title=term-up]" move scratchpad &>/dev/null 

@@ -109,7 +109,7 @@ separator=true
 # Date Time
 #
 [time]
-command=date '+| %A, %m/%d | %H:%M | '
+command=date '+| %a, %B %d | %H:%M | '
 interval=5
 
 # Generic media player support
