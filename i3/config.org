@@ -263,8 +263,8 @@ bindsym s exec "~/scripts/i3_scripts/startup-manual"; mode default
 bindsym Shift+p [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "sudo poweroff"; mode default
 bindsym k exec "/home/jerry/dotfiles/scripts/keyboard/keyboard-default/init_keys.sh &"; mode default
 bindsym Shift+k exec "/home/jerry/dotfiles/scripts/keyboard/ik &"; mode default
-bindsym Shift+w exec feh --recursive --randomize --bg-fill ~/Desktop/black.png; mode default
-bindsym $mod+Shift+w exec feh --recursive --randomize --bg-fill ~/Pictures/Wallpaper/; mode default
+bindsym Shift+Shift+w exec "feh --recursive --randomize --bg-fill /home/jerry/Pictures/Wallpaper/Abstract/allblack.png"; mode default
+bindsym $mod+w exec feh --recursive --randomize --bg-fill ~/Pictures/Wallpaper/; mode default
 
 bindsym --release x exec "~/dotfiles/scripts/cline_scripts/xp-only"; mode default
 
