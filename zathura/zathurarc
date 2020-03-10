@@ -25,6 +25,8 @@ map [normal] h scroll half-down
 
 map [normal] p navigate previous
 map [normal] n navigate next
+map [fullscreen] p navigate previous
+map [fullscreen] n navigate next
 
 map [normal] N search next
 
