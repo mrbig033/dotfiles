@@ -6,7 +6,8 @@ clear
 
 if [ $# -ge 1 ]
 then
-    cheat "$command" | bat
+    cheat "$command"
+
 else
-    cheat | bat
+    cheat
 fi

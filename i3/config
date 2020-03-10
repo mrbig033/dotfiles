@@ -156,7 +156,7 @@ bindsym $alt+Shift+p focus parent; exec "notify-send --expire-time=1000 'parent 
 
 bindsym $mod+Shift+b border toggle
 bindsym $mod+Shift+F5 exec "i3-nagbar -t warning -m 'Exit i3?' -b 'Yes' 'i3-msg exit'"
-bindsym $mod+Shift+F8 exec "st -T term-up -e tmux attach -t 0 || tmux switch-client -t 0"
+bindsym $mod+Shift+F8 exec "st -T term-up -e tmux attach -t 0 || tmux switch-client -t 0 || ~/scripts/cline_scripts/ses"
 bindsym $mod+Shift+F9 exec "st -T term-ranger -e ranger"
 bindsym $mod+Return [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "st"
 
@@ -197,6 +197,9 @@ bindsym Menu [title="term-up"] move scratchpad; [title="term-ranger"] move scrat
 mode "launch" {
 
 bindsym apostrophe mode default; [class="Slack"] move scratchpad; [title="term-ranger"] move scratchpad; [title="term-up"] move scratchpad; [title="term-bpython"] move scratchpad; exec "~/maps/texpander/texpander.sh"
+
+bindsym Menu mode default; [class="Slack"] move scratchpad; [title="term-ranger"] move scratchpad; [title="term-up"] move scratchpad; [title="term-bpython"] move scratchpad; exec "~/maps/texpander/texpander.sh"
+
 bindsym 1 exec "~/scripts/i3_scripts/touchpad_off"; mode default
 bindsym 2 exec "~/scripts/i3_scripts/touchpad_on"; mode default
 bindsym 3 [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "~/scripts/cline_scripts/open-i3-config"; mode default
@@ -219,7 +222,6 @@ bindsym a exec "pavucontrol"; mode default
 bindsym h exec "/usr/bin/houaiss"; mode default
 bindsym q exec "qbittorrent"; mode default
 bindsym e [title="term-up"] move scratchpad; [title="term-ranger"] move scratchpad; exec "emacsclient --socket-name=emacs-gui --no-wait --create-frame"; mode default
-bindsym Menu exec "~/scripts/emacs_scripts/markdown-scratch"; mode default
 bindsym r exec "rofi -show run"; mode default
 bindsym w exec "rofi -show window"; mode default
 

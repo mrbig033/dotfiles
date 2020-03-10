@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+
+command="$*"
+
+clear
+
+if [ $# -ge 1 ]
+then
+    cheat "$command" | bat --style="grid"
+else
+    cheat | bat --style="grid"
+fi

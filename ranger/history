@@ -1,11 +1,3 @@
-rename .v
-rename 044.jpeg
-search view
-search pic
-open_with viewnior f
-open_with vi f
-search li
-search cont
 search org
 md Debussy
 md Bach
@@ -98,3 +90,11 @@ md scriptr
 search mid
 md Anime
 search ligh
+search cheat
+md community
+md personal
+search chea
+touch hep
+touch help
+rename help
+rename he
