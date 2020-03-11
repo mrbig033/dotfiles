@@ -1,0 +1,1 @@
+/home/jerry/dotfiles/bash/.env_variables.sh
