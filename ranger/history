@@ -1,5 +1,3 @@
-search org
-md Debussy
 md Bach
 find ab
 search abb
@@ -98,3 +96,5 @@ touch hep
 touch help
 rename help
 rename he
+search pyen
+rename .pyenv
