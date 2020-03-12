@@ -507,7 +507,6 @@ for_window [class="Inkscape" title="Document Properties"]  floating disable resi
 for_window [class="Inkscape" title="Preferences"]  floating disable resize set 720 400  move position 650
 for_window [class="Spotify"] floating disable
 for_window [class="Timeshift-gtk"] floating disable
-for_window [class="VirtualBox Manager"] floating disable
 for_window [class="calibre"] floating disable
 for_window [class="feh"] floating disable
 for_window [class="jetbrains-idea" title="Project Structure"] floating disable
@@ -518,12 +517,13 @@ for_window [class="vlc" title="Simple Preferences"] floating disable
 for_window [title="Dicionário eletrônico Houaiss da língua portuguesa 1.0"] floating disable
 for_window [title="Welcome to IntelliJ IDEA"] floating disable
 for_window [title="Welcome to PyCharm"] floating disable
+
 for_window [class="Pavucontrol" title="Volume Control"] floating disable
 #+END_SRC
 ** Floating Enable
 #+BEGIN_SRC i3
 for_window [class="(?i)System-config-printer.py"] floating enable border normal
-for_window [class="(?i)virtualbox"] floating enable border normal
+# for_window [class="(?i)virtualbox"] floating enable border normal
 for_window [class="Clipgrab"] floating enable
 for_window [class="File-roller"] floating enable resize set 720 400
 for_window [class="Galculator"] floating enable border pixel 1
