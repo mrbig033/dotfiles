@@ -1,7 +1,3 @@
-md Bach
-find ab
-search abb
-search mu
 md Classical
 md Witcher
 open_with audacious f
@@ -39,7 +35,6 @@ search o
 search how
 search 
 rename allmail.mbox
-search tes
 md source_26.3
 rename source_mini_26.3
 search ^org
@@ -98,3 +93,8 @@ rename help
 rename he
 search pyen
 rename .pyenv
+search eco
+search tes
+open_with nvim
+rename echo-test
+rename echo-test.sh
