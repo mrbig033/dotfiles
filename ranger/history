@@ -1,34 +1,3 @@
-md Witcher
-open_with audacious f
-md Stravinsky
-rename v0101_Bach_Mass_in_Bm_BWV_232
-md 
-md MP3
-rename 06_CD01_Bach_Mass_in_Bm_BWV_232
-rename 06_CD06_Bach_St.Matthew_Passion_BWV_244
-flat 
-shell mkdir 
-touch BMW.org
-md Poulenc
-md Handel
-md Liszt
-md Satie
-search sou
-rename white_noite_10h!.mp3
-search rem
-md pomodoro
-search pom
-rename elpa.back
-search em
-search in
-search instal
-find un
-search uni
-find ins
-search xp
-rename volume-notifications!.png
-search ru
-search command_
 search ho
 search o
 search how
@@ -97,4 +66,35 @@ search tes
 open_with nvim
 rename echo-test
 rename echo-test.sh
-rename All_Snes_Games.7z
+rename conto
+md roteiro
+md Compressed
+rename tor
+md Office
+search t1
+search todo
+search level
+search second
+search third
+search fourth
+search fifth
+search sixth
+search seve
+md Office_Mac
+md DOC
+search due
+rename Duetos JA.zip
+rename Duetos Jornal de Angola 2.f
+search arqui
+md ARQUIVOS_COMPRIMIDOS
+search comp
+search comprimidos
+open_with 
+shell 
+search COMP
+search ima
+search imag
+search plani
+search PLN
+search PLA
+search PLANILHAS
