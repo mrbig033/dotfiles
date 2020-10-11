@@ -126,7 +126,8 @@ exec --no-startup-id "xset mouse 10/5 0 &"
 exec --no-startup-id "xset r rate 200 80 &"
 exec --no-startup-id "compton -b --backend glx &"
 exec --no-startup-id "~/scripts/keyboard/init_keys.sh &"
-exec --no-startup-id "xrandr --output DP-1 --off --output HDMI-1 --mode 1920x1080 --pos 0x0 --rotate normal --output eDP-1 --off --output HDMI-2 --off &"
+# exec --no-startup-id "xrandr --output DP-1 --off --output HDMI-1 --mode 1920x1080 --pos 0x0 --rotate normal --output eDP-1 --off --output HDMI-2 --off &"
+exec --no-startup-id "xrandr --output DP-1 --off --output HDMI-1 --mode 1280x1024 --pos 0x0 --rotate normal --output eDP-1 --off --output HDMI-2 --off &"
 exec --no-startup-id "sleep 60 && ~/scripts/i3_scripts/delayed_init"
 exec --no-startup-id feh --recursive --randomize --bg-fill ~/Pictures/Wallpaper/
 exec --no-startup-id nm-applet
